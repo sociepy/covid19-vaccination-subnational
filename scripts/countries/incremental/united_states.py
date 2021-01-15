@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 
 
-source_file = "output/countries/United_States.csv"
+source_file = "data/countries/United_States.csv"
 
 
 def main():

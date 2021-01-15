@@ -13,7 +13,7 @@ def main():
     df.loc[:, "country"] = "Canada"
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df = df[["date", "country", "region", "total_vaccinations"]]
-    df.to_csv("output/countries/Canada.csv", index=False)
+    df.to_csv("data/countries/Canada.csv", index=False)
 
 
 if __name__ == "__main__":

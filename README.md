@@ -16,6 +16,8 @@ It works by running scripts on a daily basis, which gather data from different [
 - USA: https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data
 
 ### How to update data
+Make sure to install all dependencies, `pip install -r requirements.txt`.
+
 Run
 
 ```

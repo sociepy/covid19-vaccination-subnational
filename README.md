@@ -1,6 +1,6 @@
 # covid19-vaccination-subnational
 This project aims to gather COVID-19 vaccination data at subnational level for as many countries as possible. The data
-can be found in [data.csv](output/data.csv).
+can be found in [data/vaccinations.csv](data/vaccinations.csv).
 
 This project is inspired by [owid/covid-19-data](https://github.com/owid/covid-19-data) and is open to integration if
 deemed approriate.
@@ -24,4 +24,4 @@ Run
 $ python scripts/update_data.py
 ```
 
-File [data.csv](data.csv) is updated.
+File [data/vaccinations.csv](data/vaccinations.csv) is updated.

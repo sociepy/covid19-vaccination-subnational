@@ -8,7 +8,7 @@ deemed approriate.
 It works by running scripts on a daily basis, which gather data from different [sources](#sources).
 
 
-### Sources
+### Sources
 - Canada: https://github.com/ccodwg/Covid19Canada/
 - Germany: https://github.com/mathiasbynens/covid-19-vaccinations-germany/
 - Italy: https://github.com/italia/covid19-opendata-vaccini/

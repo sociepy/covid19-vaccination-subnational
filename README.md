@@ -30,6 +30,7 @@ so we may not be able to make these metrics available for some countries.
 - Italy: https://github.com/italia/covid19-opendata-vaccini/
 - Spain: https://github.com/civio/covid-vaccination-spain/
 - USA: https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data
+- Belgium: https://covid-vaccinatie.be/en/vaccines-administered
 
 ## Contribute
 The data is updated using the script [`update_data.py`](scripts/update_data.py). This script first runs all

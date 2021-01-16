@@ -34,6 +34,7 @@ def main():
         "area": "region",
         "totale": "total_vaccinations"
     })
+    df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")
     df.loc[:, "country"] = "Italy"
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     # Compute total_vaccination (cumsum)

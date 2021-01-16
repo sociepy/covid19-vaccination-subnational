@@ -10,9 +10,9 @@ def main():
         "dosis administradas": "total_vaccinations"
     })
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")
+    df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "total_vaccinations"] = df.loc[:, "total_vaccinations"].apply(lambda x: int(x.replace(".", "")))
     df.loc[:, "country"] = "Spain"
-    df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df = df[["date", "country", "region", "total_vaccinations"]]
     df.to_csv("data/countries/Spain.csv", index=False)
 

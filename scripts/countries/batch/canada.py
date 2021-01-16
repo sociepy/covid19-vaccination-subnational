@@ -11,8 +11,8 @@ def main():
         "cumulative_avaccine": "total_vaccinations"
     })
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d-%m-%Y")
-    df.loc[:, "country"] = "Canada"
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
+    df.loc[:, "country"] = "Canada"
     df = df[["date", "country", "region", "total_vaccinations"]]
     df.to_csv("data/countries/Canada.csv", index=False)
 

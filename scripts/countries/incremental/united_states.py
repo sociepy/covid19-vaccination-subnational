@@ -28,6 +28,8 @@ def main():
             "Administered_Dose1": "people_vaccinated",
             "Administered_Dose2": "people_fully_vaccinated",
         })
+        df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
+        df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
         df = df[~df["region"].isin(["United States", "Long Term Care"])]
         df.loc[:, "country"] = "United States"
         df = df.loc[:, ["date", "country", "region", "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]

@@ -1,6 +1,5 @@
 # Subnational COVID-19 vaccination data 
-> This is a work in progress 🚧
-## [Download data 🗂️](data/vaccinations.csv)
+### [Download data 🗂️](data/vaccinations.csv)
 
 This project aims to gather COVID-19 vaccination data at subnational level for as many countries as possible. The data
 can be found in [`data/vaccinations.csv`](data/vaccinations.csv).

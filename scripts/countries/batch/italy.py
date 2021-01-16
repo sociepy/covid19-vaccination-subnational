@@ -36,14 +36,14 @@ def main():
     })
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
-    df.loc[:, "country"] = "Italy"
+    df.loc[:, "location"] = "Italy"
     # Compute total_vaccination (cumsum)
     df = df.sort_values(by="date")
     df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
     df = df[df.loc[:, "region"] != "ITA"]
     # Replace area codes with area names
-    df["region"] = df["region"].replace(area_mapping)
-    df = df.loc[:, ["date", "country", "region", "total_vaccinations"]]
+    df.loc[:, "region"] = df.loc[:, "region"].replace(area_mapping)
+    df = df.loc[:, ["date", "location", "region", "total_vaccinations"]]
     df.to_csv("data/countries/Italy.csv", index=False)
 
 

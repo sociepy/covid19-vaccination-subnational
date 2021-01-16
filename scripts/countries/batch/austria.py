@@ -25,10 +25,10 @@ def main():
         # Remove rows
         df = df[~df["region"].isin(["Österreich", "Stand"])]
         # Add columns
-        df.loc[:, "country"] = "Austria"
+        df.loc[:, "location"] = "Austria"
         df.loc[:, "date"] = date.strftime("%Y-%m-%d")
         # Export
-        df = df[["date", "country", "region", "total_vaccinations"]]
+        df = df[["date", "location", "region", "total_vaccinations"]]
         df = pd.concat([df, df_source])
         df.to_csv(source_file, index=False)
 

@@ -19,7 +19,7 @@ for script in scripts:
 
 
 # Merge csvs and generate new data file
-print(f"{datetime.now().replace(microsecond=0)} - Creating data.csv")
+print(f"{datetime.now().replace(microsecond=0)} - Creating data/vaccinations.csv")
 path = "data/countries/"
 files = [f for f in os.listdir(path=path) if f.endswith(f".csv")]
 df = pd.concat([pd.read_csv(os.path.join(path, f)) for f in files])

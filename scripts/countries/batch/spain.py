@@ -3,12 +3,13 @@ import pandas as pd
 
 def main():
     url = "https://raw.githubusercontent.com/civio/covid-vaccination-spain/main/data.csv"
-    df = pd.read_csv(url, parse_dates=["informe"], dtype={"dosis administradas": str})
+    df = pd.read_csv(url, dtype={"dosis administradas": str})
     df = df.rename(columns={
         "informe": "date",
         "comunidad autónoma": "region",
         "dosis administradas": "total_vaccinations"
     })
+    df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")
     df.loc[:, "total_vaccinations"] = df.loc[:, "total_vaccinations"].apply(lambda x: int(x.replace(".", "")))
     df.loc[:, "country"] = "Spain"
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")

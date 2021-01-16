@@ -4,8 +4,8 @@
 This project aims to gather COVID-19 vaccination data at subnational level for as many countries as possible. The data
 can be found in [data/vaccinations.csv](data/vaccinations.csv).
 
-This project is inspired by [owid/covid-19-data](https://github.com/owid/covid-19-data) and is open to integration if
-deemed approriate.
+**This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data) and is open
+to integration if deemed approriate.**
 
 It works by running scripts on a daily basis, which gather data from different [sources](#sources).
 

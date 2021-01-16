@@ -26,7 +26,7 @@ def main():
         df = df[~df["region"].isin(["Österreich", "Stand"])]
         # Add columns
         df.loc[:, "location"] = "Austria"
-        df.loc[:, "date"] = date.strftime("%Y-%m-%d")
+        df.loc[:, "date"] = date
         # Export
         df = df[["date", "location", "region", "total_vaccinations"]]
         df = pd.concat([df, df_source])

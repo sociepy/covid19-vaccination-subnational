@@ -31,10 +31,11 @@ so we may not be able to make these metrics available for some countries.
 - Spain: https://github.com/civio/covid-vaccination-spain/
 - USA: https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data
 - Belgium: https://covid-vaccinatie.be/en/vaccines-administered
+- France: https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/
 
 ## Contribute
 The data is updated using the script [`update_data.py`](scripts/update_data.py). This script first runs all
-[countryscripts](scripts/countries/), which generate [country data](data/countries/) and then joins these results into
+[country/scripts](scripts/countries/), which generate [country data](data/countries/) and then joins these results into
 file [`vaccinations.csv`](data/vaccinations.csv).
 
 To contribute, feel free to issue PRs with new automated scripts. Note that the automated scripts are divided into two

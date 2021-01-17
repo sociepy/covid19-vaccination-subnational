@@ -28,6 +28,7 @@ so we may not be able to make these metrics available for some countries.
 - Belgium: https://covid-vaccinatie.be/en/vaccines-administered
 - Bulgaria: https://coronavirus.bg/bg/statistika
 - Canada: https://github.com/ccodwg/Covid19Canada/
+- Denmark: https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning
 - France: https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/
 - Germany: https://github.com/mathiasbynens/covid-19-vaccinations-germany/
 - Italy: https://github.com/italia/covid19-opendata-vaccini/

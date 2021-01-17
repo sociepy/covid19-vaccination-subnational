@@ -25,13 +25,15 @@ so we may not be able to make these metrics available for some countries.
 
 ### Data sources
 - Austria: https://info.gesundheitsministerium.gv.at/data/laender.csv
+- Belgium: https://covid-vaccinatie.be/en/vaccines-administered
+- Bulgaria: https://coronavirus.bg/bg/statistika
 - Canada: https://github.com/ccodwg/Covid19Canada/
+- France: https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/
 - Germany: https://github.com/mathiasbynens/covid-19-vaccinations-germany/
 - Italy: https://github.com/italia/covid19-opendata-vaccini/
 - Spain: https://github.com/civio/covid-vaccination-spain/
-- USA: https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data
-- Belgium: https://covid-vaccinatie.be/en/vaccines-administered
-- France: https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/
+- United Kingdom: https://coronavirus.data.gov.uk/details/download
+- United States: https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data
 
 ## Contribute
 The data is updated using the script [`update_data.py`](scripts/update_data.py). This script first runs all

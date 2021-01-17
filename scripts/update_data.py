@@ -8,14 +8,17 @@ import os
 from glob import glob
 
 
+SKIP = ["bulgaria.py"]
+
 scripts_path = "scripts/countries/*/*.py"
 scripts = glob(scripts_path)
 
 
 # Update files
 for script in scripts:
-    print(f"{datetime.now().replace(microsecond=0)} - {script}")
-    os.system(f"python {script}")
+    if script not in SKIP:
+        print(f"{datetime.now().replace(microsecond=0)} - {script}")
+        os.system(f"python {script}")
 
 
 # Merge csvs and generate new data file

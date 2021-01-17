@@ -58,4 +58,10 @@ Run
 $ python scripts/update_data.py
 ```
 
-File [data/vaccinations.csv](data/vaccinations.csv) is updated.
+File [data/vaccinations.csv](data/vaccinations.csv) is then updated.
+
+## License
+See [LICENSE](LICENSE).
+
+> This site or product includes IP2Location™ ISO 3166-2 Subdivision Code which available from
+> https://www.ip2location.com.

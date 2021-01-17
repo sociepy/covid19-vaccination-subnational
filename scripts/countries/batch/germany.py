@@ -2,7 +2,7 @@ import pandas as pd
 
 
 replace = {
-    "Baden-Württemberg": "Baden-Wurttemberg"
+    "Baden-Württemberg": "Baden-Wurttemberg",
     "Thüringen": "Thuringen"
 }
 

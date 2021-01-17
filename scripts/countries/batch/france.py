@@ -38,7 +38,8 @@ def main():
         "total_vaccines": "total_vaccinations"
     })
     df.loc[:, "location"] = "France"
-    df = df[["date", "location", "region", "total_vaccinations"]]
+    df = df[["location", "region", "date", "total_vaccinations"]]
+    df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/France.csv", index=False)
 
 

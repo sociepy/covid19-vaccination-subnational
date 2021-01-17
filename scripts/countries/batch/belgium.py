@@ -39,7 +39,8 @@ def main():
     df.loc[:, "location"] = "Belgium"
     df = df.sort_values(by="date")
     df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
-    df = df[["date", "location", "region", "total_vaccinations"]]
+    df = df[["location", "region", "date", "total_vaccinations"]]
+    df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Belgium.csv", index=False)
 
 

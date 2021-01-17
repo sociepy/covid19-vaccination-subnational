@@ -13,7 +13,8 @@ def main():
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "total_vaccinations"] = df.loc[:, "total_vaccinations"].apply(lambda x: int(x.replace(".", "")))
     df.loc[:, "location"] = "Spain"
-    df = df[["date", "location", "region", "total_vaccinations"]]
+    df = df[["location", "region", "date", "total_vaccinations"]]
+    df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Spain.csv", index=False)
 
 

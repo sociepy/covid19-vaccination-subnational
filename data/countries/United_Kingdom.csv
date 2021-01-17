@@ -1,25 +1,25 @@
-date,location,region,total_vaccinations
-2021-01-15,United Kingdom,Scotland,228171
-2021-01-14,United Kingdom,Scotland,228171
-2021-01-13,United Kingdom,Scotland,211397
-2021-01-12,United Kingdom,Scotland,194955
-2021-01-11,United Kingdom,Scotland,178799
-2021-01-10,United Kingdom,Scotland,166135
-2021-01-15,United Kingdom,Wales,126504
-2021-01-14,United Kingdom,Wales,126504
-2021-01-13,United Kingdom,Wales,113094
-2021-01-12,United Kingdom,Wales,101479
-2021-01-11,United Kingdom,Wales,91336
-2021-01-10,United Kingdom,Wales,86118
-2021-01-15,United Kingdom,England,3514385
-2021-01-14,United Kingdom,England,3189674
-2021-01-13,United Kingdom,England,2910027
-2021-01-12,United Kingdom,England,2661850
-2021-01-11,United Kingdom,England,2474205
-2021-01-10,United Kingdom,England,2333764
-2021-01-15,United Kingdom,Northern Ireland,137380
-2021-01-14,United Kingdom,Northern Ireland,133831
-2021-01-13,United Kingdom,Northern Ireland,121711
-2021-01-12,United Kingdom,Northern Ireland,109257
-2021-01-11,United Kingdom,Northern Ireland,99475
-2021-01-10,United Kingdom,Northern Ireland,91954
+location,region,date,total_vaccinations,people_vaccinated,people_fully_vaccinated
+United Kingdom,England,2021-01-10,2333764,1959151,374613
+United Kingdom,England,2021-01-11,2474205,2080280,393925
+United Kingdom,England,2021-01-12,2661850,2254556,407294
+United Kingdom,England,2021-01-13,2910027,2494371,415656
+United Kingdom,England,2021-01-14,3189674,2769164,420510
+United Kingdom,England,2021-01-15,3514385,3090058,424327
+United Kingdom,Northern Ireland,2021-01-10,91954,78005,13949
+United Kingdom,Northern Ireland,2021-01-11,99475,84187,15288
+United Kingdom,Northern Ireland,2021-01-12,109257,91417,17840
+United Kingdom,Northern Ireland,2021-01-13,121711,102701,19010
+United Kingdom,Northern Ireland,2021-01-14,133831,114567,19264
+United Kingdom,Northern Ireland,2021-01-15,137380,117906,19474
+United Kingdom,Scotland,2021-01-10,166135,163377,2758
+United Kingdom,Scotland,2021-01-11,178799,175942,2857
+United Kingdom,Scotland,2021-01-12,194955,191965,2990
+United Kingdom,Scotland,2021-01-13,211397,208207,3190
+United Kingdom,Scotland,2021-01-14,228171,224840,3331
+United Kingdom,Scotland,2021-01-15,228171,224840,3331
+United Kingdom,Wales,2021-01-10,86118,86039,79
+United Kingdom,Wales,2021-01-11,91336,91239,97
+United Kingdom,Wales,2021-01-12,101479,101371,108
+United Kingdom,Wales,2021-01-13,113094,112973,121
+United Kingdom,Wales,2021-01-14,126504,126375,129
+United Kingdom,Wales,2021-01-15,126504,126375,129

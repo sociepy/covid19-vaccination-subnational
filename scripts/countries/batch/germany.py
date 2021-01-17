@@ -11,7 +11,8 @@ def main():
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "location"] = "Germany"
-    df = df[["date", "location", "region", "total_vaccinations"]]
+    df = df[["location", "region", "date", "total_vaccinations"]]
+    df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Germany.csv", index=False)
 
 

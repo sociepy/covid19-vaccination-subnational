@@ -28,8 +28,9 @@ def main():
         df.loc[:, "location"] = "Austria"
         df.loc[:, "date"] = date
         # Export
-        df = df[["date", "location", "region", "total_vaccinations"]]
         df = pd.concat([df, df_source])
+        df = df[["location", "region", "date", "total_vaccinations"]]
+        df = df.sort_values(by=["region", "date"])
         df.to_csv(source_file, index=False)
 
 

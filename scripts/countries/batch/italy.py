@@ -43,7 +43,8 @@ def main():
     df = df[df.loc[:, "region"] != "ITA"]
     # Replace area codes with area names
     df.loc[:, "region"] = df.loc[:, "region"].replace(area_mapping)
-    df = df.loc[:, ["date", "location", "region", "total_vaccinations"]]
+    df = df[["location", "region", "date", "total_vaccinations"]]
+    df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Italy.csv", index=False)
 
 

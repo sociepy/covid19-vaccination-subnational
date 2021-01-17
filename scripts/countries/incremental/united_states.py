@@ -32,8 +32,9 @@ def main():
         df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
         df = df[~df["region"].isin(["United States", "Long Term Care"])]
         df.loc[:, "location"] = "United States"
-        df = df.loc[:, ["date", "location", "region", "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
         df = pd.concat([df, df_source])
+        df = df[["location", "region", "date", "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
+        df = df.sort_values(by=["region", "date"])
         df.to_csv(source_file, index=False)
 
 

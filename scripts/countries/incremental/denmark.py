@@ -1,3 +1,6 @@
+"""
+Reference: https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/automations/batch/denmark.py
+"""
 import urllib
 import tabula
 import pandas as pd

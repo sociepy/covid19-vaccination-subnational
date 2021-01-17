@@ -50,7 +50,7 @@ def main():
 
         # Process region column
         df.loc[:, "region"] = df.loc[:, "region"].replace({
-            "Ukendt**": "Others", "Ukendt*": "Others", "Ukendt": "Others"
+            "Ukendt**": "Others", "Ukendt*": "Others", "Ukendt": "Others", "Sjælland": "Sjaelland"
         })
         df = df[~(df["region"]=="I alt")]
 

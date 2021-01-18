@@ -8,7 +8,7 @@ import os
 from glob import glob
 
 
-SKIP = ["bulgaria.py"]
+SKIP = ["bulgaria.py", "utils.py"]
 
 scripts_path = "scripts/countries/*/*.py"
 scripts = glob(scripts_path)

@@ -1,30 +1,29 @@
-,date,location,region,total_vaccinations
-0,2021-01-16,Bulgaria,Благоевград,630
-1,2021-01-16,Bulgaria,Бургас,897
-2,2021-01-16,Bulgaria,Варна,1382
-3,2021-01-16,Bulgaria,Велико Търново,555
-4,2021-01-16,Bulgaria,Видин,175
-5,2021-01-16,Bulgaria,Враца,406
-6,2021-01-16,Bulgaria,Габрово,303
-7,2021-01-16,Bulgaria,Добрич,353
-8,2021-01-16,Bulgaria,Кърджали,234
-9,2021-01-16,Bulgaria,Кюстендил,298
-10,2021-01-16,Bulgaria,Ловеч,307
-11,2021-01-16,Bulgaria,Монтана,315
-28,2021-01-16,Bulgaria,Общо,18332
-12,2021-01-16,Bulgaria,Пазарджик,585
-13,2021-01-16,Bulgaria,Перник,260
-14,2021-01-16,Bulgaria,Плевен,811
-15,2021-01-16,Bulgaria,Пловдив,2171
-16,2021-01-16,Bulgaria,Разград,280
-17,2021-01-16,Bulgaria,Русе,585
-18,2021-01-16,Bulgaria,Силистра,228
-19,2021-01-16,Bulgaria,Сливен,370
-20,2021-01-16,Bulgaria,Смолян,201
-21,2021-01-16,Bulgaria,София,494
-22,2021-01-16,Bulgaria,София (столица),4556
-23,2021-01-16,Bulgaria,Стара Загора,620
-24,2021-01-16,Bulgaria,Търговище,246
-25,2021-01-16,Bulgaria,Хасково,405
-26,2021-01-16,Bulgaria,Шумен,387
-27,2021-01-16,Bulgaria,Ямбол,278
+location,region,date,location_iso,region_iso,total_vaccinations
+Bulgaria,Blagoevgrad,2021-01-16,BG,BG-01,630
+Bulgaria,Burgas,2021-01-16,BG,BG-02,897
+Bulgaria,Dobrich,2021-01-16,BG,BG-08,353
+Bulgaria,Gabrovo,2021-01-16,BG,BG-07,303
+Bulgaria,Haskovo,2021-01-16,BG,BG-26,405
+Bulgaria,Kardzhali,2021-01-16,BG,BG-09,234
+Bulgaria,Kyustendil,2021-01-16,BG,BG-10,298
+Bulgaria,Lovech,2021-01-16,BG,BG-11,307
+Bulgaria,Montana,2021-01-16,BG,BG-12,315
+Bulgaria,Pazardzhik,2021-01-16,BG,BG-13,585
+Bulgaria,Pernik,2021-01-16,BG,BG-14,260
+Bulgaria,Pleven,2021-01-16,BG,BG-15,811
+Bulgaria,Plovdiv,2021-01-16,BG,BG-16,2171
+Bulgaria,Razgrad,2021-01-16,BG,BG-17,280
+Bulgaria,Ruse,2021-01-16,BG,BG-18,585
+Bulgaria,Shumen,2021-01-16,BG,BG-27,387
+Bulgaria,Silistra,2021-01-16,BG,BG-19,228
+Bulgaria,Sliven,2021-01-16,BG,BG-20,370
+Bulgaria,Smolyan,2021-01-16,BG,BG-21,201
+Bulgaria,Sofia,2021-01-16,BG,BG-23,494
+Bulgaria,Sofia (stolitsa),2021-01-16,BG,BG-22,4556
+Bulgaria,Stara Zagora,2021-01-16,BG,BG-24,620
+Bulgaria,Targovishte,2021-01-16,BG,BG-25,246
+Bulgaria,Varna,2021-01-16,BG,BG-03,1382
+Bulgaria,Veliko Tarnovo,2021-01-16,BG,BG-04,555
+Bulgaria,Vidin,2021-01-16,BG,BG-05,175
+Bulgaria,Vratsa,2021-01-16,BG,BG-06,406
+Bulgaria,Yambol,2021-01-16,BG,BG-28,278

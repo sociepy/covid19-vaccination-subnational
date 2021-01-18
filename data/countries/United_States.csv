@@ -1,64 +1,64 @@
-date,location,region,total_vaccinations,people_vaccinated,people_fully_vaccinated
-2021-01-15,United States,Alaska,48952,39546,9406
-2021-01-15,United States,Alabama,100444,86956,13488
-2021-01-15,United States,Arkansas,116610,97829,18781
-2021-01-15,United States,American Samoa,3882,3144,738
-2021-01-15,United States,Arizona,197050,176213,20837
-2021-01-15,United States,Bureau of Prisons,16651,14565,2086
-2021-01-15,United States,California,1069761,865387,204374
-2021-01-15,United States,Colorado,270782,223761,47021
-2021-01-15,United States,Connecticut,183884,166722,17162
-2021-01-15,United States,District of Columbia,39917,31667,8250
-2021-01-15,United States,Dept of Defense,196950,179004,17946
-2021-01-15,United States,Delaware,31003,25649,5354
-2021-01-15,United States,Florida,851206,776430,74776
-2021-01-15,United States,Federated States of Micronesia,694,692,2
-2021-01-15,United States,Georgia,226625,204301,22324
-2021-01-15,United States,Guam,3785,3785,0
-2021-01-15,United States,Hawaii,46958,39690,7268
-2021-01-15,United States,Iowa,118798,108056,10742
-2021-01-15,United States,Idaho,46489,37646,8843
-2021-01-15,United States,Indian Health Svc,90039,77309,12730
-2021-01-15,United States,Illinois,432766,341518,91248
-2021-01-15,United States,Indiana,260282,222599,37683
-2021-01-15,United States,Kansas,96789,83293,13496
-2021-01-15,United States,Kentucky,173405,162733,10672
-2021-01-15,United States,Louisiana,197609,167193,30416
-2021-01-15,United States,Massachusetts,256994,222109,34885
-2021-01-15,United States,Maryland,194661,178831,15830
-2021-01-15,United States,Maine,59905,51631,8274
-2021-01-15,United States,Marshall Islands,634,632,2
-2021-01-15,United States,Michigan,360951,312415,48536
-2021-01-15,United States,Minnesota,198072,170273,27799
-2021-01-15,United States,Missouri,190189,153664,36525
-2021-01-15,United States,Northern Mariana Islands,4906,3760,1146
-2021-01-15,United States,Mississippi,84281,75885,8396
-2021-01-15,United States,Montana,49353,41160,8193
-2021-01-15,United States,North Carolina,302649,259859,42790
-2021-01-15,United States,North Dakota,46061,38506,7555
-2021-01-15,United States,Nebraska,90784,77734,13050
-2021-01-15,United States,New Hampshire,62497,56797,5700
-2021-01-15,United States,New Jersey,315697,278956,36741
-2021-01-15,United States,New Mexico,98883,80172,18711
-2021-01-15,United States,Nevada,82987,67679,15308
-2021-01-15,United States,New York State,744834,671311,73523
-2021-01-15,United States,Ohio,375370,361818,13552
-2021-01-15,United States,Oklahoma,202079,173162,28917
-2021-01-15,United States,Oregon,145886,133091,12795
-2021-01-15,United States,Pennsylvania,447668,380727,66941
-2021-01-15,United States,Puerto Rico,103872,87512,16360
-2021-01-15,United States,Rhode Island,47537,39381,8156
-2021-01-15,United States,Republic of Palau,1119,1118,1
-2021-01-15,United States,South Carolina,121199,101722,19477
-2021-01-15,United States,South Dakota,57055,47389,9666
-2021-01-15,United States,Tennessee,302712,264912,37800
-2021-01-15,United States,Texas,1159072,1003412,155660
-2021-01-15,United States,Utah,125038,114504,10534
-2021-01-15,United States,Virginia,242896,214732,28164
-2021-01-15,United States,Veterans Health,317444,280461,36983
-2021-01-15,United States,Virgin Islands,1631,1474,157
-2021-01-15,United States,Vermont,32455,28355,4100
-2021-01-15,United States,Washington,232263,200682,31581
-2021-01-15,United States,Wisconsin,168495,151387,17108
-2021-01-15,United States,West Virginia,134196,113034,21162
-2021-01-15,United States,Wyoming,22734,19931,2803
+location,region,date,location_iso,region_iso,total_vaccinations,people_vaccinated,people_fully_vaccinated
+United States,Alabama,2021-01-15,US,US-AL,100444,86956,13488
+United States,Alaska,2021-01-15,US,US-AK,48952,39546,9406
+United States,American Samoa,2021-01-15,US,US-AS,3882,3144,738
+United States,Arizona,2021-01-15,US,US-AZ,197050,176213,20837
+United States,Arkansas,2021-01-15,US,US-AR,116610,97829,18781
+United States,Bureau of Prisons,2021-01-15,US,-,16651,14565,2086
+United States,California,2021-01-15,US,US-CA,1069761,865387,204374
+United States,Colorado,2021-01-15,US,US-CO,270782,223761,47021
+United States,Connecticut,2021-01-15,US,US-CT,183884,166722,17162
+United States,Delaware,2021-01-15,US,US-DE,31003,25649,5354
+United States,Dept of Defense,2021-01-15,US,-,196950,179004,17946
+United States,District of Columbia,2021-01-15,US,US-DC,39917,31667,8250
+United States,Federated States of Micronesia,2021-01-15,FM,-,694,692,2
+United States,Florida,2021-01-15,US,US-FL,851206,776430,74776
+United States,Georgia,2021-01-15,US,US-GA,226625,204301,22324
+United States,Guam,2021-01-15,US,US-GU,3785,3785,0
+United States,Hawaii,2021-01-15,US,US-HI,46958,39690,7268
+United States,Idaho,2021-01-15,US,US-ID,46489,37646,8843
+United States,Illinois,2021-01-15,US,US-IL,432766,341518,91248
+United States,Indian Health Svc,2021-01-15,US,-,90039,77309,12730
+United States,Indiana,2021-01-15,US,US-IN,260282,222599,37683
+United States,Iowa,2021-01-15,US,US-IA,118798,108056,10742
+United States,Kansas,2021-01-15,US,US-KS,96789,83293,13496
+United States,Kentucky,2021-01-15,US,US-KY,173405,162733,10672
+United States,Louisiana,2021-01-15,US,US-LA,197609,167193,30416
+United States,Maine,2021-01-15,US,US-ME,59905,51631,8274
+United States,Marshall Islands,2021-01-15,MH,-,634,632,2
+United States,Maryland,2021-01-15,US,US-MD,194661,178831,15830
+United States,Massachusetts,2021-01-15,US,US-MA,256994,222109,34885
+United States,Michigan,2021-01-15,US,US-MI,360951,312415,48536
+United States,Minnesota,2021-01-15,US,US-MN,198072,170273,27799
+United States,Mississippi,2021-01-15,US,US-MS,84281,75885,8396
+United States,Missouri,2021-01-15,US,US-MO,190189,153664,36525
+United States,Montana,2021-01-15,US,US-MT,49353,41160,8193
+United States,Nebraska,2021-01-15,US,US-NE,90784,77734,13050
+United States,Nevada,2021-01-15,US,US-NV,82987,67679,15308
+United States,New Hampshire,2021-01-15,US,US-NH,62497,56797,5700
+United States,New Jersey,2021-01-15,US,US-NJ,315697,278956,36741
+United States,New Mexico,2021-01-15,US,US-NM,98883,80172,18711
+United States,New York,2021-01-15,US,US-NY,744834,671311,73523
+United States,North Carolina,2021-01-15,US,US-NC,302649,259859,42790
+United States,North Dakota,2021-01-15,US,US-ND,46061,38506,7555
+United States,Northern Mariana Islands,2021-01-15,US,US-MP,4906,3760,1146
+United States,Ohio,2021-01-15,US,US-OH,375370,361818,13552
+United States,Oklahoma,2021-01-15,US,US-OK,202079,173162,28917
+United States,Oregon,2021-01-15,US,US-OR,145886,133091,12795
+United States,Pennsylvania,2021-01-15,US,US-PA,447668,380727,66941
+United States,Puerto Rico,2021-01-15,PR,-,103872,87512,16360
+United States,Republic of Palau,2021-01-15,PW,-,1119,1118,1
+United States,Rhode Island,2021-01-15,US,US-RI,47537,39381,8156
+United States,South Carolina,2021-01-15,US,US-SC,121199,101722,19477
+United States,South Dakota,2021-01-15,US,US-SD,57055,47389,9666
+United States,Tennessee,2021-01-15,US,US-TN,302712,264912,37800
+United States,Texas,2021-01-15,US,US-TX,1159072,1003412,155660
+United States,Utah,2021-01-15,US,US-UT,125038,114504,10534
+United States,Vermont,2021-01-15,US,US-VT,32455,28355,4100
+United States,Veterans Health,2021-01-15,US,-,317444,280461,36983
+United States,Virgin Islands,2021-01-15,US,US-VI,1631,1474,157
+United States,Virginia,2021-01-15,US,US-VA,242896,214732,28164
+United States,Washington,2021-01-15,US,US-WA,232263,200682,31581
+United States,West Virginia,2021-01-15,US,US-WV,134196,113034,21162
+United States,Wisconsin,2021-01-15,US,US-WI,168495,151387,17108
+United States,Wyoming,2021-01-15,US,US-WY,22734,19931,2803

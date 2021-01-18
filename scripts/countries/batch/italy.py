@@ -1,4 +1,5 @@
 import pandas as pd
+from utils import merge_iso
 
 
 area_mapping = {
@@ -41,9 +42,11 @@ def main():
     df = df.sort_values(by="date")
     df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
     df = df[df.loc[:, "region"] != "ITA"]
-    # Replace area codes with area names
+    # Add ISO codes
     df.loc[:, "region"] = df.loc[:, "region"].replace(area_mapping)
-    df = df[["location", "region", "date", "total_vaccinations"]]
+    df = merge_iso(df, country_iso="IT")
+    # Replace area codes with area names
+    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Italy.csv", index=False)
 

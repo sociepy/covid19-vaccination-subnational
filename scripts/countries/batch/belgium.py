@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import datetime
+from utils import merge_iso
 
 
 def main():
@@ -39,7 +40,10 @@ def main():
     df.loc[:, "location"] = "Belgium"
     df = df.sort_values(by="date")
     df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
-    df = df[["location", "region", "date", "total_vaccinations"]]
+    # Add ISO codes
+    df = merge_iso(df, country_iso="BE")
+    # Reorder columns
+    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Belgium.csv", index=False)
 

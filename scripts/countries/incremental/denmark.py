@@ -6,6 +6,7 @@ import tabula
 import pandas as pd
 from bs4  import BeautifulSoup
 from datetime import datetime
+from utils import merge_iso
 
 
 source_file = "data/countries/Denmark.csv"
@@ -59,11 +60,13 @@ def main():
         df.loc[:, "location"]  = "Denmark"
         df.loc[:, "date"]  = datetime.strptime(pdf_path.split("-")[-2], "%d%m%Y").strftime("%Y-%m-%d")
 
-        # Order columns
-        df = df.loc[:, ["date", "location", "region", "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
+        # Add ISO codes
+        df = merge_iso(df, country_iso="DK")
+        df.loc[df["region"]=="Others", "location_iso"] = "DK"
 
         # Export
         df = pd.concat([df, df_source])
-        df = df[["location", "region", "date", "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
+        df = df[["location", "region", "date", "location_iso", "region_iso",
+                 "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
         df = df.sort_values(by=["region", "date"])
         df.to_csv(source_file, index=False)

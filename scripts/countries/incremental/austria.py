@@ -1,8 +1,14 @@
 import pandas as pd
 from datetime import datetime
+from utils import merge_iso
 
 
 source_file = "data/countries/Austria.csv"
+replace = {
+    "Kärnten": "Karnten",
+    "Niederösterreich": "Niederosterreich",
+    "Oberösterreich": "Oberosterreich"
+}
 
 
 def main():
@@ -22,14 +28,18 @@ def main():
             "Name": "region",
             "Auslieferungen": "total_vaccinations",
         })
+        df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
         # Remove rows
         df = df[~df["region"].isin(["Österreich", "Stand"])]
         # Add columns
         df.loc[:, "location"] = "Austria"
         df.loc[:, "date"] = date
-        # Export
+        # Add ISO codes
+        df = merge_iso(df, country_iso="AT")
+        # Concat
         df = pd.concat([df, df_source])
-        df = df[["location", "region", "date", "total_vaccinations"]]
+        # Reorder
+        df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
         df = df.sort_values(by=["region", "date"])
         df.to_csv(source_file, index=False)
 

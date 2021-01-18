@@ -1,4 +1,5 @@
 import pandas as pd
+from utils import merge_iso
 
 
 replace = {
@@ -18,7 +19,10 @@ def main():
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "location"] = "Germany"
-    df = df[["location", "region", "date", "total_vaccinations"]]
+    # Add ISO codes
+    df = merge_iso(df, country_iso="DE")
+    # Reorder columns
+    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Germany.csv", index=False)
 

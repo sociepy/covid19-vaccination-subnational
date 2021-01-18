@@ -1,4 +1,20 @@
 import pandas as pd
+from utils import merge_iso
+
+
+replace = {
+    "Andalucía": "Andalucia",
+    "Aragón": "Aragon",
+    "Asturias": "Asturias, Principado de",
+    "Baleares": "Illes Balears",
+    "C. Valenciana": "Valenciana, Comunidad",
+    "Castilla La Mancha": "Castilla-La Mancha",
+    "Cataluña": "Catalunya",
+    "Madrid": "Madrid, Comunidad de",
+    "Murcia": "Murcia, Region de",
+    "Navarra": "Navarra, Comunidad Foral de",
+    "País Vasco": "Pais Vasco",
+}
 
 
 def main():
@@ -9,11 +25,16 @@ def main():
         "comunidad autónoma": "region",
         "dosis administradas": "total_vaccinations"
     })
+    df = df[~(df.loc[:, "region"]=="Totales")]
+    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "total_vaccinations"] = df.loc[:, "total_vaccinations"].apply(lambda x: int(x.replace(".", "")))
     df.loc[:, "location"] = "Spain"
-    df = df[["location", "region", "date", "total_vaccinations"]]
+    # Add ISO codes
+    df = merge_iso(df, country_iso="ES")
+    # Reorder columns
+    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Spain.csv", index=False)
 

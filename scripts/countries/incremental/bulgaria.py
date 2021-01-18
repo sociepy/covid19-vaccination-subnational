@@ -4,6 +4,7 @@ import pandas as pd
 import re
 import pytz
 import datetime
+from utils import merge_iso
 
 
 source_file = "data/countries/Bulgaria.csv"
@@ -57,13 +58,21 @@ def main():
             "Област": "region",
             "Общо": "total_vaccinations"
         })
-        df = df[df.loc[:, "region"] != "Общо"]
+        df = df[~(df.loc[:, "region"]=="Общо")]
         df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
         df.loc[:, "date"] = date
         df.loc[:, "location"] = "Bulgaria"
-        df = df[["date", "location", "region", "total_vaccinations"]]
+        
+        # Add ISO codes
+        df = merge_iso(df, country_iso="BG")
+        
+        # Concat
         df = pd.concat([df, df_source])
-        df.to_csv("output/countries/United_Kingdom.csv", index=False)
+
+        # Reorder columns
+        df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+        df = df.sort_values(by=["region", "date"])
+        df.to_csv("output/countries/Bulgaria.csv", index=False)
 
 
 if __name__ == "__main__":

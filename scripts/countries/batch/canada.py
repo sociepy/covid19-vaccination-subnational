@@ -19,9 +19,11 @@ def main():
         "province": "region",
         "cumulative_avaccine": "total_vaccinations"
     })
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
+    # Date
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d-%m-%Y")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
+    # New cols
+    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
     df.loc[:, "location"] = "Canada"
     # Add ISO codes
     df = merge_iso(df, country_iso="CA")

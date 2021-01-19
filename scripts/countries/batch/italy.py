@@ -33,7 +33,9 @@ def main():
     df = df.rename(columns={
         "data_somministrazione": "date",
         "area": "region",
-        "totale": "total_vaccinations"
+        "totale": "total_vaccinations",
+        "prima_dose": "people_vaccinated",
+        "seconda_dose": "people_fully_vaccinated"
     })
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
@@ -46,7 +48,8 @@ def main():
     df.loc[:, "region"] = df.loc[:, "region"].replace(area_mapping)
     df = merge_iso(df, country_iso="IT")
     # Replace area codes with area names
-    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+    df = df[["location", "region", "date", "location_iso", "region_iso", 
+             "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv("data/countries/Italy.csv", index=False)
 

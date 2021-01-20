@@ -12,6 +12,15 @@ from utils import merge_iso
 source_file = "data/countries/Denmark.csv"
 
 
+regions = [
+    "Hovedstaden",
+    "Midtjylland",
+    "Nordjylland",
+    "Sjælland",
+    "Syddanmark"
+]
+
+
 def main():
     # Load current data
     df_source = pd.read_csv(source_file)
@@ -24,14 +33,21 @@ def main():
     soup = BeautifulSoup(html_page, "html.parser")
     pdf_path = soup.find('a', text="Download her").get("href")  # Get path to newest pdf
     date = datetime.strptime(pdf_path.split("-")[-2], "%d%m%Y").strftime("%Y-%m-%d")
+
     if date > df_source["date"].max():
         # Get preliminary dataframe
-        df = pd.DataFrame()
         column_string = {'dtype': str , 'header': None}  # Force dtype to be object because of thousand separator in Europe
         kwargs = {'pandas_options': column_string,}
         dfs_from_pdf = tabula.read_pdf(pdf_path, pages="all", **kwargs)
         df = dfs_from_pdf[1]
 
+        if df.shape != (11, 7):
+            raise Exception("Shape of table changed!")
+        if not all(region in df[0].tolist() for region in regions):
+            raise Exception("Region missing!")
+        
+        # Drop columns
+        df = df.drop([0, 1, 2, 3, len(df)-1])
         # Rename columns
         df = df.rename(columns={
             0: "region",
@@ -53,7 +69,6 @@ def main():
         df.loc[:, "region"] = df.loc[:, "region"].replace({
             "Ukendt**": "Others", "Ukendt*": "Others", "Ukendt": "Others", "Sjælland": "Sjaelland"
         })
-        df = df[~(df["region"]=="I alt")]
 
         # Get new columns
         df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
@@ -70,3 +85,7 @@ def main():
                  "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
         df = df.sort_values(by=["region", "date"])
         df.to_csv(source_file, index=False)
+
+
+if __name__ == "__main__":
+    main()

@@ -26,5 +26,6 @@ print(f"{datetime.now().replace(microsecond=0)} - Creating data/vaccinations.csv
 path = "data/countries/"
 files = [f for f in os.listdir(path=path) if f.endswith(f".csv")]
 df = pd.concat([pd.read_csv(os.path.join(path, f)) for f in files])
+df.loc[:, ["people_vaccinated", "people_fully_vaccinated"]] = df.loc[:, ["people_vaccinated", "people_fully_vaccinated"]].astype("Int64")
 df = df.sort_values(by=["location", "region", "date"])
 df.to_csv("data/vaccinations.csv", index=False)

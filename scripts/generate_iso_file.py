@@ -40,7 +40,14 @@ def main():
         ["US", "US-MP", "Northern Mariana Islands"],
         ["FR", "FR-MQ", "Martinique"],
         ["FR", "FR-GP", "Guadeloupe"],
-        ["FR", "FR-GF", "Guyane"]
+        ["FR", "FR-GF", "Guyane"],
+        ["NO", "NO-46", "Vestland"],
+        ["NO", "NO-42", "Agder"],
+        ["NO", "NO-30", "Viken"],
+        ["NO", "NO-54", "Troms og Finnmark"],
+        ["NO", "NO-50", "Trondelag"],
+        ["NO", "NO-38", "Vestfold og Telemark"],
+        ["NO", "NO-34", "Innlandet"]
     ]
     new_items = pd.DataFrame(new_items, columns=["location_iso", "region_iso", "subdivision_name"])
     df_iso = df_iso.append(new_items, ignore_index=True)

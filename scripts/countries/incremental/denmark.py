@@ -20,6 +20,13 @@ regions = [
     "Syddanmark"
 ]
 
+replace = {
+    "Ukendt**": "Others",
+    "Ukendt*": "Others",
+    "Ukendt": "Others",
+    "Sjælland": "Sjaelland"
+}
+
 
 def get_date(dfs_from_pdf):
     df = dfs_from_pdf[1]  # Hardcoded
@@ -78,9 +85,7 @@ def main():
     df.loc[:, "people_fully_vaccinated"] = df.loc[:, "people_fully_vaccinated"].apply(lambda x: del_separator(x)).astype("Int64")
 
     # Process region column
-    df.loc[:, "region"] = df.loc[:, "region"].replace({
-        "Ukendt**": "Others", "Ukendt*": "Others", "Ukendt": "Others", "Sjælland": "Sjaelland"
-    })
+    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
 
     # Get new columns
     df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]

@@ -22,7 +22,7 @@ regions = [
 
 
 def get_date(dfs_from_pdf):
-    df = dfs_from_pdf[0]  # Hardcoded
+    df = dfs_from_pdf[1]  # Hardcoded
     df = df.drop([0, 1, 2, 3])
     date = pd.to_datetime(df[0], format="%d-%m-%Y").max().strftime("%Y-%m-%d")
     return date
@@ -42,7 +42,7 @@ def main():
     # Get preliminary dataframe
     column_string = {'dtype': str , 'header': None}  # Force dtype to be object because of thousand separator
     kwargs = {'pandas_options': column_string,}
-    dfs_from_pdf = tabula.read_pdf(pdf_path, pages="all", **kwargs)
+    dfs_from_pdf = tabula.read_pdf(pdf_path, pages="all", **kwargs)  # len(dfs_from_pdf) == 8 ?
     #date = datetime.strptime(pdf_path.split("-")[-2], "%d%m%Y").strftime("%Y-%m-%d")
     date = get_date(dfs_from_pdf)
 
@@ -50,7 +50,7 @@ def main():
     column_string = {'dtype': str , 'header': None}  # Force dtype to be object because of thousand separator
     kwargs = {'pandas_options': column_string,}
     dfs_from_pdf = tabula.read_pdf(pdf_path, pages="all", **kwargs)
-    df = dfs_from_pdf[1] # Hardcoded
+    df = dfs_from_pdf[2] # Hardcoded
 
     if df.shape != (11, 7):
         raise Exception("Shape of table changed!")

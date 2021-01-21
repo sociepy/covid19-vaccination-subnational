@@ -23,6 +23,7 @@ It works by running scripts on a daily basis, which gather data from different [
 | 🇫🇷 France  	| https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ 	|
 | 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	|
 | 🇮🇹 Italy  	| https://github.com/italia/covid19-opendata-vaccini/ 	|
+| 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	|
 | 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	|
 | 🇬🇧  United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	|
 | 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data 	|

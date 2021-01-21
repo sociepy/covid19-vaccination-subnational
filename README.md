@@ -27,7 +27,7 @@ It works by running scripts on a daily basis, which gather data from different [
 | 🇬🇧  United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	|
 | 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data 	|
 
-### API
+### Format
 The data pretends to resemble the API proposed by [owid/covid-19-data](https://github.com/owid/covid-19-data). Find
 below the field description, mainly provided by [OWID](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/README.md).
 

@@ -33,14 +33,16 @@ It works by running scripts on a daily basis, which gather data from different [
 The data pretends to resemble the API proposed by [owid/covid-19-data](https://github.com/owid/covid-19-data). Find
 below the field description, mainly provided by [OWID](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/README.md).
 
-* `location`: name of the country.
-* `region`: name of the subnational region of the country.
-* `date`: date of the observation.
-* `location_iso`: ISO 3166-1 country codes (XX)
-* `region_iso`: ISO 3166-2 region codes (XX-YY or XX-YYY).
-* `total_vaccinations`: total number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again.
-* `people_vaccinated`: total number of people who received at least one vaccine dose. If a person receives the first dose of a 2-dose vaccine, this metric goes up by 1. If they receive the second dose, the metric stays the same.
-* `people_fully_vaccinated`: total number of people who received all doses prescribed by the vaccination protocol. If a person receives the first dose of a 2-dose vaccine, this metric stays the same. If they receive the second dose, the metric goes up by 1.
+| Field 	| Description 	|
+|-	|-	|
+| `location` 	| Name of the country. 	|
+| `region` 	| Name of the subnational region of the country. 	|
+| `date` 	| Date of the observation. 	|
+| `location_iso` 	| ISO 3166-1 country codes (XX) 	|
+| `region_iso` 	| ISO 3166-2 region codes (XX-YY or XX-YYY). 	|
+| `total_vaccinations` 	| Total number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again. 	|
+| `people_vaccinated` 	| Total number of people who received at least one vaccine dose. If a person receives the first dose of a 2-dose vaccine, this metric goes up by 1. If they receive the second dose, the metric stays the same. 	|
+|  `people_fully_vaccinated` 	| Total number of people who received all doses prescribed by the vaccination protocol. If a person receives the first dose of a 2-dose vaccine, this metric stays the same. If they receive the second dose, the metric goes up by 1. 	|
 
 Note: for `people_vaccinated` and `people_fully_vaccinated` we are dependent on the necessary data being made available,
 so we may not be able to make these metrics available for some countries.

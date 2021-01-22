@@ -1,55 +1,109 @@
 location,region,date,location_iso,region_iso,total_vaccinations
-Brazil,Acre,2021-01-20,BR,BR-AC,
-Brazil,Acre,2021-01-21,BR,BR-AC,
-Brazil,Alagoas,2021-01-20,BR,BR-AL,
-Brazil,Alagoas,2021-01-21,BR,BR-AL,
-Brazil,Amapa,2021-01-20,BR,BR-AP,
-Brazil,Amapa,2021-01-21,BR,BR-AP,
-Brazil,Amazonas,2021-01-20,BR,BR-AM,
-Brazil,Amazonas,2021-01-21,BR,BR-AM,
-Brazil,Bahia,2021-01-20,BR,BR-BA,
-Brazil,Bahia,2021-01-21,BR,BR-BA,
-Brazil,Ceara,2021-01-20,BR,BR-CE,
-Brazil,Ceara,2021-01-21,BR,BR-CE,
-Brazil,Distrito Federal,2021-01-20,BR,BR-DF,
-Brazil,Distrito Federal,2021-01-21,BR,BR-DF,
-Brazil,Espirito Santo,2021-01-20,BR,BR-ES,
-Brazil,Espirito Santo,2021-01-21,BR,BR-ES,
-Brazil,Goias,2021-01-20,BR,BR-GO,
-Brazil,Goias,2021-01-21,BR,BR-GO,
-Brazil,Maranhao,2021-01-20,BR,BR-MA,
-Brazil,Maranhao,2021-01-21,BR,BR-MA,
-Brazil,Mato Grosso,2021-01-20,BR,BR-MT,
-Brazil,Mato Grosso,2021-01-21,BR,BR-MT,
-Brazil,Mato Grosso do Sul,2021-01-20,BR,BR-MS,
-Brazil,Mato Grosso do Sul,2021-01-21,BR,BR-MS,
-Brazil,Minas Gerais,2021-01-20,BR,BR-MG,
-Brazil,Minas Gerais,2021-01-21,BR,BR-MG,
-Brazil,Para,2021-01-20,BR,BR-PA,
-Brazil,Para,2021-01-21,BR,BR-PA,
-Brazil,Paraiba,2021-01-20,BR,BR-PB,
-Brazil,Paraiba,2021-01-21,BR,BR-PB,
-Brazil,Parana,2021-01-20,BR,BR-PR,
-Brazil,Parana,2021-01-21,BR,BR-PR,
-Brazil,Pernambuco,2021-01-20,BR,BR-PE,
-Brazil,Pernambuco,2021-01-21,BR,BR-PE,
-Brazil,Piaui,2021-01-20,BR,BR-PI,
-Brazil,Piaui,2021-01-21,BR,BR-PI,
-Brazil,Rio Grande do Norte,2021-01-20,BR,BR-RN,
-Brazil,Rio Grande do Norte,2021-01-21,BR,BR-RN,
-Brazil,Rio Grande do Sul,2021-01-20,BR,BR-RS,
-Brazil,Rio Grande do Sul,2021-01-21,BR,BR-RS,
-Brazil,Rio de Janeiro,2021-01-20,BR,BR-RJ,
-Brazil,Rio de Janeiro,2021-01-21,BR,BR-RJ,
-Brazil,Rondonia,2021-01-20,BR,BR-RO,
-Brazil,Rondonia,2021-01-21,BR,BR-RO,
-Brazil,Roraima,2021-01-20,BR,BR-RR,
-Brazil,Roraima,2021-01-21,BR,BR-RR,
-Brazil,Santa Catarina,2021-01-20,BR,BR-SC,
-Brazil,Santa Catarina,2021-01-21,BR,BR-SC,
-Brazil,Sao Paulo,2021-01-20,BR,BR-SP,
-Brazil,Sao Paulo,2021-01-21,BR,BR-SP,
-Brazil,Sergipe,2021-01-20,BR,BR-SE,
-Brazil,Sergipe,2021-01-21,BR,BR-SE,
-Brazil,Tocantins,2021-01-20,BR,BR-TO,
-Brazil,Tocantins,2021-01-21,BR,BR-TO,
+Brazil,Acre,2021-01-18,BR,BR-AC,0
+Brazil,Acre,2021-01-19,BR,BR-AC,4
+Brazil,Acre,2021-01-20,BR,BR-AC,4
+Brazil,Acre,2021-01-21,BR,BR-AC,4
+Brazil,Alagoas,2021-01-18,BR,BR-AL,0
+Brazil,Alagoas,2021-01-19,BR,BR-AL,7
+Brazil,Alagoas,2021-01-20,BR,BR-AL,307
+Brazil,Alagoas,2021-01-21,BR,BR-AL,307
+Brazil,Amapa,2021-01-18,BR,BR-AP,0
+Brazil,Amapa,2021-01-19,BR,BR-AP,3
+Brazil,Amapa,2021-01-20,BR,BR-AP,3
+Brazil,Amapa,2021-01-21,BR,BR-AP,3
+Brazil,Amazonas,2021-01-18,BR,BR-AM,2
+Brazil,Amazonas,2021-01-19,BR,BR-AM,2
+Brazil,Amazonas,2021-01-20,BR,BR-AM,1142
+Brazil,Amazonas,2021-01-21,BR,BR-AM,1142
+Brazil,Bahia,2021-01-18,BR,BR-BA,0
+Brazil,Bahia,2021-01-19,BR,BR-BA,1397
+Brazil,Bahia,2021-01-20,BR,BR-BA,19999
+Brazil,Bahia,2021-01-21,BR,BR-BA,36097
+Brazil,Ceara,2021-01-18,BR,BR-CE,11
+Brazil,Ceara,2021-01-19,BR,BR-CE,753
+Brazil,Ceara,2021-01-20,BR,BR-CE,2714
+Brazil,Ceara,2021-01-21,BR,BR-CE,2714
+Brazil,Distrito Federal,2021-01-18,BR,BR-DF,0
+Brazil,Distrito Federal,2021-01-19,BR,BR-DF,2063
+Brazil,Distrito Federal,2021-01-20,BR,BR-DF,7409
+Brazil,Distrito Federal,2021-01-21,BR,BR-DF,7409
+Brazil,Espirito Santo,2021-01-18,BR,BR-ES,6
+Brazil,Espirito Santo,2021-01-19,BR,BR-ES,6
+Brazil,Espirito Santo,2021-01-20,BR,BR-ES,3489
+Brazil,Espirito Santo,2021-01-21,BR,BR-ES,3489
+Brazil,Goias,2021-01-18,BR,BR-GO,2
+Brazil,Goias,2021-01-19,BR,BR-GO,2
+Brazil,Goias,2021-01-20,BR,BR-GO,2
+Brazil,Goias,2021-01-21,BR,BR-GO,1587
+Brazil,Maranhao,2021-01-18,BR,BR-MA,5
+Brazil,Maranhao,2021-01-19,BR,BR-MA,5
+Brazil,Maranhao,2021-01-20,BR,BR-MA,5
+Brazil,Maranhao,2021-01-21,BR,BR-MA,5
+Brazil,Mato Grosso,2021-01-18,BR,BR-MT,7
+Brazil,Mato Grosso,2021-01-19,BR,BR-MT,10
+Brazil,Mato Grosso,2021-01-20,BR,BR-MT,10
+Brazil,Mato Grosso,2021-01-21,BR,BR-MT,10
+Brazil,Mato Grosso do Sul,2021-01-18,BR,BR-MS,4
+Brazil,Mato Grosso do Sul,2021-01-19,BR,BR-MS,4
+Brazil,Mato Grosso do Sul,2021-01-20,BR,BR-MS,4
+Brazil,Mato Grosso do Sul,2021-01-21,BR,BR-MS,4
+Brazil,Minas Gerais,2021-01-18,BR,BR-MG,5
+Brazil,Minas Gerais,2021-01-19,BR,BR-MG,26
+Brazil,Minas Gerais,2021-01-20,BR,BR-MG,26
+Brazil,Minas Gerais,2021-01-21,BR,BR-MG,2326
+Brazil,Para,2021-01-18,BR,BR-PA,0
+Brazil,Para,2021-01-19,BR,BR-PA,2
+Brazil,Para,2021-01-20,BR,BR-PA,2
+Brazil,Para,2021-01-21,BR,BR-PA,2
+Brazil,Paraiba,2021-01-18,BR,BR-PB,0
+Brazil,Paraiba,2021-01-19,BR,BR-PB,2
+Brazil,Paraiba,2021-01-20,BR,BR-PB,3104
+Brazil,Paraiba,2021-01-21,BR,BR-PB,3104
+Brazil,Parana,2021-01-18,BR,BR-PR,8
+Brazil,Parana,2021-01-19,BR,BR-PR,163
+Brazil,Parana,2021-01-20,BR,BR-PR,3807
+Brazil,Parana,2021-01-21,BR,BR-PR,3807
+Brazil,Pernambuco,2021-01-18,BR,BR-PE,10
+Brazil,Pernambuco,2021-01-19,BR,BR-PE,10
+Brazil,Pernambuco,2021-01-20,BR,BR-PE,1100
+Brazil,Pernambuco,2021-01-21,BR,BR-PE,1100
+Brazil,Piaui,2021-01-18,BR,BR-PI,6
+Brazil,Piaui,2021-01-19,BR,BR-PI,6
+Brazil,Piaui,2021-01-20,BR,BR-PI,287
+Brazil,Piaui,2021-01-21,BR,BR-PI,287
+Brazil,Rio Grande do Norte,2021-01-18,BR,BR-RN,0
+Brazil,Rio Grande do Norte,2021-01-19,BR,BR-RN,8
+Brazil,Rio Grande do Norte,2021-01-20,BR,BR-RN,3922
+Brazil,Rio Grande do Norte,2021-01-21,BR,BR-RN,3922
+Brazil,Rio Grande do Sul,2021-01-18,BR,BR-RS,5
+Brazil,Rio Grande do Sul,2021-01-19,BR,BR-RS,5
+Brazil,Rio Grande do Sul,2021-01-20,BR,BR-RS,2396
+Brazil,Rio Grande do Sul,2021-01-21,BR,BR-RS,9425
+Brazil,Rio de Janeiro,2021-01-18,BR,BR-RJ,2
+Brazil,Rio de Janeiro,2021-01-19,BR,BR-RJ,203
+Brazil,Rio de Janeiro,2021-01-20,BR,BR-RJ,31177
+Brazil,Rio de Janeiro,2021-01-21,BR,BR-RJ,41427
+Brazil,Rondonia,2021-01-18,BR,BR-RO,0
+Brazil,Rondonia,2021-01-19,BR,BR-RO,3
+Brazil,Rondonia,2021-01-20,BR,BR-RO,3
+Brazil,Rondonia,2021-01-21,BR,BR-RO,3
+Brazil,Roraima,2021-01-18,BR,BR-RR,0
+Brazil,Roraima,2021-01-19,BR,BR-RR,3
+Brazil,Roraima,2021-01-20,BR,BR-RR,28
+Brazil,Roraima,2021-01-21,BR,BR-RR,28
+Brazil,Santa Catarina,2021-01-18,BR,BR-SC,3
+Brazil,Santa Catarina,2021-01-19,BR,BR-SC,3
+Brazil,Santa Catarina,2021-01-20,BR,BR-SC,1816
+Brazil,Santa Catarina,2021-01-21,BR,BR-SC,1816
+Brazil,Sao Paulo,2021-01-18,BR,BR-SP,1030
+Brazil,Sao Paulo,2021-01-19,BR,BR-SP,8470
+Brazil,Sao Paulo,2021-01-20,BR,BR-SP,22701
+Brazil,Sao Paulo,2021-01-21,BR,BR-SP,54590
+Brazil,Sergipe,2021-01-18,BR,BR-SE,0
+Brazil,Sergipe,2021-01-19,BR,BR-SE,364
+Brazil,Sergipe,2021-01-20,BR,BR-SE,364
+Brazil,Sergipe,2021-01-21,BR,BR-SE,364
+Brazil,Tocantins,2021-01-18,BR,BR-TO,3
+Brazil,Tocantins,2021-01-19,BR,BR-TO,3
+Brazil,Tocantins,2021-01-20,BR,BR-TO,3
+Brazil,Tocantins,2021-01-21,BR,BR-TO,3

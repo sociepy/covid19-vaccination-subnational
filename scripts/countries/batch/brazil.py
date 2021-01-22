@@ -8,18 +8,23 @@ source_file = "data/countries/Brazil.csv"
 
 
 def main():
-    # Load current data
-    df_source = pd.read_csv(source_file)
-
     # ISO df
     df_iso = pd.read_csv("scripts/countries/input/ISO_3166_2.csv")
 
     # Get data
-    url = "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-total.csv"
+    url = "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"
     df = pd.read_csv(url, usecols=["state", "date", "vaccinated"])
     df = df.rename(columns={
-        "vaccinated": "total_vaccinated"
+        "vaccinated": "total_vaccinations"
     })
+
+    # Get data after vaccination started
+    start_date =  "2021-01-18"
+    df = df.loc[df["date"] >= start_date]
+
+    # Process vaccinations
+    df.loc[:, "total_vaccinations"] = df.loc[:, "total_vaccinations"].fillna(0).astype(int)
+
     # Get region iso
     df = df[~(df.loc[:, "state"]=="TOTAL")]
     df.loc[:, "region_iso"] = "BR-" + df.loc[:, "state"]
@@ -32,10 +37,6 @@ def main():
     df.loc[:, "location"] = "Brazil"
 
     # Export
-    regions = df["region"].tolist()
-    dates = df["date"].tolist()
-    df_source = df_source.loc[~((df_source["region"].isin(regions)) & (df_source["date"].isin(dates)))]
-    df = pd.concat([df, df_source])
     df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)

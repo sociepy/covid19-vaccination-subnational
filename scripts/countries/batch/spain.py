@@ -19,17 +19,21 @@ replace = {
 
 def main():
     url = "https://raw.githubusercontent.com/civio/covid-vaccination-spain/main/data.csv"
-    df = pd.read_csv(url)
+    df = pd.read_csv(url, dtype={"personas con pauta completa": str})
     df = df.rename(columns={
         "informe": "date",
         "comunidad autónoma": "region",
         "dosis administradas": "total_vaccinations",
         "personas con pauta completa": "people_fully_vaccinated"
     })
+    df.loc[:, "people_fully_vaccinated"] = df.loc[:, "people_fully_vaccinated"].fillna("nan")
+
     df = df.astype({
         "total_vaccinations": str,
         "people_fully_vaccinated": str
     })
+
+    print(df.loc[df["region"]=="Cataluña"])
     df = df[~(df.loc[:, "region"]=="Totales")]
     df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")

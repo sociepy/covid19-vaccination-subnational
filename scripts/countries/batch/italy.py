@@ -40,9 +40,11 @@ def main():
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "location"] = "Italy"
-    # Compute total_vaccination (cumsum)
+    # Compute cumsums
     df = df.sort_values(by="date")
     df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
+    df["people_vaccinated"] = df.groupby("region")["people_vaccinated"].cumsum().values
+    df["people_fully_vaccinated"] = df.groupby("region")["people_fully_vaccinated"].cumsum().values
     df = df[df.loc[:, "region"] != "ITA"]
     # Add ISO codes
     df.loc[:, "region"] = df.loc[:, "region"].replace(area_mapping)

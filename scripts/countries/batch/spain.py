@@ -33,7 +33,6 @@ def main():
         "people_fully_vaccinated": str
     })
 
-    print(df.loc[df["region"]=="Cataluña"])
     df = df[~(df.loc[:, "region"]=="Totales")]
     df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")

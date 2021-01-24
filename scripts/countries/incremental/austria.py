@@ -20,7 +20,7 @@ def main():
     df = pd.read_csv(url, usecols=["Name", "Auslieferungen"], sep=";")
     # Get date
     date = df[df["Name"] == "Stand"]["Auslieferungen"].iloc[0]
-    date = datetime.strptime(date, "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d")
+    date = datetime.strptime(date, "%Y-%m-%d %H:%M").strftime("%Y-%m-%d")
 
     if (date > df_source["date"].max()):
         # Renaming

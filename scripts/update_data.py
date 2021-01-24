@@ -11,7 +11,9 @@ from glob import glob
 SKIP = ["bulgaria.py", "utils.py"]
 
 scripts_path = "scripts/countries/*/*.py"
-scripts = glob(scripts_path)
+batch = glob("scripts/countries/batch/*.py")
+incremental = glob("scripts/countries/incremental/*.py")
+scripts = batch + incremental
 
 
 # Update files

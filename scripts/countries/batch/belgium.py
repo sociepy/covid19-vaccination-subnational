@@ -1,51 +1,49 @@
+import urllib.request
 import pandas as pd
-import requests
-from bs4 import BeautifulSoup
-import datetime
 from utils import merge_iso
 
 
+source_file = "data/countries/Belgium.csv"
+
+
+def download_xlsx(url, tmp_file="tmp/belgium.xlsx"):
+    local_tmp_file = "tmp/belgium.xlsx"
+    headers = {'User-Agent': "Mozilla/5.0 (X11; Linux i686)"}
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req) as response:
+        the_page = response.read()
+    with open(local_tmp_file, "wb") as f:
+        f.write(the_page)
+    df = pd.read_excel(local_tmp_file)
+    return df
+
+
 def main():
-    # Request data
-    url = "https://covid-vaccinatie.be/en/vaccines-administered"
-    page_content = requests.get(url, headers={'User-Agent': 'Custom'}).content
-    soup = BeautifulSoup(page_content, "html.parser")
+    # Load data
+    url = "https://covid-vaccinatie.be/en/vaccines-administered.xlsx"
+    df = download_xlsx(url)
 
-    # Get table data
-    table = soup.find(class_="table table-striped table-dark table-hover mb-0")
-    elems = table.find_all("tr")
+    # Rename columns
+    df = df.rename(columns={
+        "Date": "date",
+        "Region": "region",
+        "Doses administered": "total_vaccinations"
+    })
 
-    # Gather data
-    dix = {
-        "date": [],
-        "region": [],
-        "total_vaccinations": []
-    }
-    for elem in elems:
-        day, month = elem.find('td').text.strip().split("/")
-        year = datetime.datetime.now().year
-        date = datetime.date(year, int(month), int(day))
-        if date > datetime.datetime.now().date():
-            date = datetime.date(year-1, int(month), int(day))
-        date = date.strftime("%Y-%m-%d")
-        total_vaccinations = elem.find(class_="font-weight-bold text-success").text
-        total_vaccinations = int(total_vaccinations.split("+")[-1].strip().replace(",", ""))
-        region = elem.find(class_="d-none").text
-        dix["date"].append(date)
-        dix["region"].append(region)
-        dix["total_vaccinations"].append(total_vaccinations)
-
-    # Build DataFrame
-    df = pd.DataFrame(dix)
+    # Process columns
     df.loc[:, "location"] = "Belgium"
-    df = df.sort_values(by="date")
-    df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
-    # Add ISO codes
+    df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y").dt.strftime("%Y-%m-%d")
+
+    # Remove NaNs
+    df = df.loc[~df.loc[:, "region"].isnull()]
+
+    # Iso
     df = merge_iso(df, country_iso="BE")
-    # Reorder columns
+
+    # Export
     df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv("data/countries/Belgium.csv", index=False)
+    df.to_csv(source_file, index=False)
 
 
 if __name__ == "__main__":

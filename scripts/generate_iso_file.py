@@ -33,7 +33,6 @@ def main():
         ["FR", "FR-YT", "Mayotte"],
         ["BE", "BE-VLG", "Flanders"],
         ["BE", "BE-WAL", "Wallonia"],
-        ["BE", "BE-BRU", "Brussels"],
         ["US", "US-AS", "American Samoa"],
         ["US", "US-GU", "Guam"],
         ["US", "US-VI", "Virgin Islands"],

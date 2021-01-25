@@ -47,7 +47,8 @@ def main():
         ["NO", "NO-54", "Troms og Finnmark"],
         ["NO", "NO-50", "Trondelag"],
         ["NO", "NO-38", "Vestfold og Telemark"],
-        ["NO", "NO-34", "Innlandet"]
+        ["NO", "NO-34", "Innlandet"],
+        ["CL", "CL-NB", "Nuble"]
     ]
     new_items = pd.DataFrame(new_items, columns=["location_iso", "region_iso", "subdivision_name"])
     df_iso = df_iso.append(new_items, ignore_index=True)

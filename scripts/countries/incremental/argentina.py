@@ -51,7 +51,6 @@ def main():
     # Get new date
     date = get_date(soup)
     if date > df_source["date"].max():
-        print(1)
         # Get df
         df = get_df(soup)
 

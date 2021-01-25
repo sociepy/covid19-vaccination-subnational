@@ -24,6 +24,7 @@ It works by running scripts on a daily basis, which gather data from different [
 | 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	|
 | 🇮🇹 Italy  	| https://github.com/italia/covid19-opendata-vaccini/ 	|
 | 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	|
+| 🇵🇱 Poland	| https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19	|
 | 🇸🇰 Slovakia	| https://github.com/Institut-Zdravotnych-Analyz/covid19-data/blob/main/OpenData_Slovakia_Vaccination_Regions.csv 	|
 | 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	|
 | 🇸🇪 Sweden  	| https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/ 	|

@@ -89,7 +89,7 @@ def main():
     # Process columns
     df.loc[:, "total_vaccinations"] = column_str2int(df.loc[:, "Moderna"]) + column_str2int(df.loc[:, "Pfizer/BioNTech"])
     df.loc[:, "location"] = "Sweden"
-    df.loc[:, "date"] = ""
+    df.loc[:, "date"] = date
 
     # Remove total numbers
     df = df.loc[~(df.loc[:, "region"] == "Totala summan")]

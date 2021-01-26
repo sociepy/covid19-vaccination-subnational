@@ -49,7 +49,7 @@ def main():
     # Add ISO codes
     df.loc[:, "region"] = df.loc[:, "region"].replace(area_mapping)
     df = merge_iso(df, country_iso="IT")
-    # Replace area codes with area names
+    # Export
     df = df[["location", "region", "date", "location_iso", "region_iso", 
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])

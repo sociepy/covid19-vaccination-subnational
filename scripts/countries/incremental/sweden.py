@@ -54,9 +54,9 @@ def load_df(soup):
         if len(dfs) == 1:
             df = dfs[0]
         else:
-            raise Exception("Scraping failed")
+            raise Exception("Scraping failed (2/2)")
     else:
-        raise Exception("Scraping failed")
+        raise Exception("Scraping failed (1/2)")
     return df
 
 

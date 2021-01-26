@@ -39,7 +39,7 @@ def load_data(url):
     regions = df.loc["First"].index.tolist()
     num_dates = df.shape[1]
     dates = df.columns
-    dates = list(np.repeat(dates, num_regions))
+    dates = dates.tolist() * num_regions
     regions = list(np.repeat(regions, num_dates))
     
     # Build DataFrame
@@ -51,7 +51,7 @@ def load_data(url):
         "region": regions
     })
 
-    df = df.loc[: "location"] = "chile"
+    df.loc[:, "location"] = "Chile"
     
     return df
 
@@ -68,7 +68,8 @@ def main():
     df = merge_iso(df, "CL")
 
     # Export
-    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+    df = df[["location", "region", "date", "location_iso", "region_iso", 
+             "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)
 

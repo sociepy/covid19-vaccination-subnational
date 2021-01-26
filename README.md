@@ -15,7 +15,7 @@ It works by running scripts on a daily basis, which gather data from different [
 |-	|-	|
 | 🇦🇷 Argentina    | http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina   |
 | 🇦🇹 Austria  | https://info.gesundheitsministerium.gv.at/ 	|
-| 🇧🇪 Belgium  	| https://covid-vaccinatie.be/en/vaccines-administered 	|
+| 🇧🇪 Belgium  	| https://covid-vaccinatie.be/en/ 	|
 | 🇧🇷 Brazil  	| https://github.com/wcota/covid19br/master/cases-brazil-total.csv 	|
 | 🇧🇬 Bulgaria  	| https://coronavirus.bg/bg/statistika 	|
 | 🇨🇦 Canada  	| https://github.com/ccodwg/Covid19Canada/ 	|

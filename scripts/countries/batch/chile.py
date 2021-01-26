@@ -51,7 +51,7 @@ def load_data(url):
         "region": regions
     })
 
-    df.loc[: "location"] = "chile"
+    df = df.loc[: "location"] = "chile"
     
     return df
 

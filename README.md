@@ -20,6 +20,7 @@ It works by running scripts on a daily basis, which gather data from different [
 | 🇧🇬 Bulgaria  	| https://coronavirus.bg/bg/statistika 	|
 | 🇨🇦 Canada  	| https://github.com/ccodwg/Covid19Canada/ 	|
 | 🇨🇱 Chile  	| https://github.com/juancri/covid19-vaccination/blob/master/output/chile-vaccination.csv 	|
+| 🇨🇿 Czechia  	| https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani.csv 	|
 | 🇩🇰 Denmark  	| https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning 	|
 | 🇫🇷 France  	| https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ 	|
 | 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	|

@@ -48,6 +48,7 @@ def main():
         df.loc[df["region"]=="Indian Health Svc", "location_iso"] = "US"
         df.loc[df["region"]=="Veterans Health", "location_iso"] = "US"
         # Concat
+        df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
         df = pd.concat([df, df_source])
         # Reorder columns
         df = df[["location", "region", "date", "location_iso", "region_iso",

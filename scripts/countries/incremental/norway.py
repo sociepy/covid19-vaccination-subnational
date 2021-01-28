@@ -1,15 +1,23 @@
-import pandas as pd
+import json
+import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from utils import merge_iso
 
 
 source_file = "data/countries/Norway.csv"
-
-
 replace = {
-    "Møre og Romsdal": 'More og Romsdal',
-    "Trøndelag": "Trondelag"
+    "agder": "Agder",
+    "innlandet": "Innlandet",
+    "møre og romsdal": "More og Romsdal",
+    "nordland": "Nordland",
+    "oslo": "Oslo",
+    "rogaland": "Rogaland",
+    "troms og finnmark": "Troms og Finnmark",
+    "trøndelag": "Trondelag",
+    "vestfold og telemark": "Vestfold og Telemark",
+    "vestland": "Vestland",
+    "viken": "Viken" 
 }
 
 
@@ -21,25 +29,6 @@ def load_driver(url):
     return driver
 
 
-def load_data(driver):
-    # Get rows
-    elems = driver.find_elements_by_class_name("options")
-    elems[1].find_element_by_id("viewTable").send_keys("\n")
-    tables = driver.find_elements_by_tag_name("tbody")
-    table = tables[1]
-    rows = table.find_elements_by_tag_name("tr")
-
-    regions = []
-    vaccinations = []
-    for row in rows:
-        region, vaccination = [x.text for x in row.find_elements_by_tag_name("td")]
-        regions.append(region)
-        vaccinations.append(int(vaccination))
-    
-    df = pd.DataFrame({"region": regions, "total_vaccinations": vaccinations})
-    return df
-
-
 def load_date(driver):
     elem = driver.find_element_by_class_name("fhi-date")
     date = elem.find_elements_by_tag_name("time")[-1].get_attribute("datetime")
@@ -47,23 +36,30 @@ def load_date(driver):
 
 
 def main():
-    # Load current file
+    # Load current file
     df_source = pd.read_csv(source_file)
 
-    # Load new data
+    #  Get date
     url = "https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/"
     driver = load_driver(url)
-    try:
-        df = load_data(driver)
-    except:
-        raise Exception("Data could not be loaded. Check your scraping!")
     try:
         date = load_date(driver)
     except:
         raise Exception("Date not found!")
 
-    df.loc[:, "location"] = "Norway"
-    df.loc[:, "date"] = date
+    # Load dose 1 data
+    url = "https://www.fhi.no/api/chartdata/api/99112"
+    dix = json.loads(requests.get(url).content)
+    df_dose1 = pd.DataFrame(dix, columns=["region", "people_vaccinated"])
+    # Load dose 2 data
+    url = "https://www.fhi.no/api/chartdata/api/99111"
+    dix = json.loads(requests.get(url).content)
+    df_dose2 = pd.DataFrame(dix, columns=["region", "people_fully_vaccinated"])
+    # Remove row
+    df_dose1 = df_dose1.loc[~(df_dose2["region"] == "Fylke")]
+    df_dose2 = df_dose2.loc[~(df_dose2["region"] == "Fylke")]
+    # Merge
+    df = df_dose1.merge(df_dose2, on="region", how="left")
 
     # Process region column
     df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
@@ -74,10 +70,7 @@ def main():
     # Export
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
-    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+    df = df[["location", "region", "date", "location_iso", "region_iso",
+             "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)
-
-
-if __name__ == "__main__":
-    main()

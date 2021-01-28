@@ -71,6 +71,7 @@ def main():
         df = merge_iso(df, country_iso="AR")
 
         # Export
+        df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
         df = pd.concat([df, df_source])
         df = df[["location", "region", "date", "location_iso", "region_iso",
                  "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]

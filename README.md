@@ -6,7 +6,7 @@ COVID-19 vaccination data at subnational level. The source data is verified in o
 > Dataset can be found in file [`data/vaccinations.csv`](data/vaccinations.csv).
 
 ℹ️ This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data), adopting
-some of its structure, and is open to integration if deemed approriate.ℹ
+some of its structure, and is open to integration if deemed approriate.
 
 ## Content
 * [Data sources](#data-sources)

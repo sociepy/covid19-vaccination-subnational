@@ -1,5 +1,6 @@
 import json
 import requests
+import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from utils import merge_iso
@@ -64,6 +65,11 @@ def main():
     # Process region column
     df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
 
+    # Add columns
+    df.loc[:, "date"] = date
+    df.loc[:, "location"] = "Norway"
+    df.loc[:, "total_vaccinations"] = df.loc[:, "people_fully_vaccinated"] + df.loc[:, "people_vaccinated"]
+
     # Add ISO codes
     df = merge_iso(df, country_iso="NO")
 
@@ -72,5 +78,11 @@ def main():
     df = pd.concat([df, df_source])
     df = df[["location", "region", "date", "location_iso", "region_iso",
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
+    cols = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
+    df[cols] = df[cols].astype("Int64").fillna(pd.NA)
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)
+
+
+if __name__ == "__main__":
+    main()

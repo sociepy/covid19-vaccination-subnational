@@ -25,10 +25,12 @@ It works by running scripts on a daily basis, which gather data from different [
 | 🇫🇷 France  	| https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ 	|
 | 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	|
 | 🇮🇹 Italy  	| https://github.com/italia/covid19-opendata-vaccini/ 	|
+| 🇱🇮 Liechtenstein | https://github.com/rsalzer/COVID_19_VACC/blob/main/data.csv	|
 | 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	|
 | 🇵🇱 Poland	| https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19	|
 | 🇸🇰 Slovakia	| https://github.com/Institut-Zdravotnych-Analyz/covid19-data/blob/main/OpenData_Slovakia_Vaccination_Regions.csv 	|
 | 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	|
+| 🇨🇭 Switzerland	| https://github.com/rsalzer/COVID_19_VACC/blob/main/data.csv 	|
 | 🇸🇪 Sweden  	| https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/ 	|
 | 🇬🇧 United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	|
 | 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data 	|
@@ -70,7 +72,7 @@ Make sure to install all dependencies, `pip install -r requirements.txt`.
 Run
 
 ```
-$ python scripts/update_data.py
+$ python scripts/update_vaccinations.py
 ```
 
 File [data/vaccinations.csv](data/vaccinations.csv) is then updated.

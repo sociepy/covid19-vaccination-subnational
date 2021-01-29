@@ -1,41 +1,45 @@
 # Subnational COVID-19 vaccination data 
-### [Download data 🗂️](data/vaccinations.csv)
+### [Download data 🗂️ ⬇️](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv)
 
-COVID-19 vaccination data at subnational level for several countries. The source data is verified in order to ensure its
-officiality. Dataset can be found in [`data/vaccinations.csv`](data/vaccinations.csv).
+COVID-19 vaccination data at subnational level. The source data is verified in order to ensure its officiality.
+
+> Dataset can be found in file [`data/vaccinations.csv`](data/vaccinations.csv).
 
 **This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data), adopting
 some of its structure, and is open to integration if deemed approriate.**
 
 It works by running scripts on a daily basis, which gather data from different [sources](#sources).
 
-## Data
-### Data sources
-| Country  	| source 	|
-|-	|-	|
-| 🇦🇷 Argentina    | http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina   |
-| 🇦🇹 Austria  | https://info.gesundheitsministerium.gv.at/ 	|
-| 🇧🇪 Belgium  	| https://covid-vaccinatie.be/en/ 	|
-| 🇧🇷 Brazil  	| https://github.com/wcota/covid19br/master/cases-brazil-total.csv 	|
-| 🇧🇬 Bulgaria  	| https://coronavirus.bg/bg/statistika 	|
-| 🇨🇦 Canada  	| https://github.com/ccodwg/Covid19Canada/ 	|
-| 🇨🇱 Chile  	| https://github.com/juancri/covid19-vaccination/blob/master/output/chile-vaccination.csv 	|
-| 🇨🇿 Czechia  	| https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani.csv 	|
-| 🇩🇰 Denmark  	| https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning 	|
-| 🇫🇷 France  	| https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ 	|
-| 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	|
-| 🇮🇹 Italy  	| https://github.com/italia/covid19-opendata-vaccini/ 	|
-| 🇱🇮 Liechtenstein | https://github.com/rsalzer/COVID_19_VACC/blob/main/data.csv	|
-| 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	|
-| 🇵🇱 Poland	| https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19	|
-| 🇸🇰 Slovakia	| https://github.com/Institut-Zdravotnych-Analyz/covid19-data/blob/main/OpenData_Slovakia_Vaccination_Regions.csv 	|
-| 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	|
-| 🇸🇪 Sweden  	| https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/ 	|
-| 🇨🇭 Switzerland	| https://github.com/rsalzer/COVID_19_VACC/blob/main/data.csv 	|
-| 🇬🇧 United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	|
-| 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_data 	|
+## Content
+* [Data sources](#data-sources)
+* [API](#API)
+* [Contribute](#contribute)
+## Data sources
+| Country  	| Source 	| 2-dose |
+|-	|-	|- |
+| 🇦🇷 Argentina    | http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina   | <input type="checkbox" disabled checked /> |
+| 🇦🇹 Austria  | https://info.gesundheitsministerium.gv.at/ 	| <input type="checkbox" disabled checked /> |
+| 🇧🇪 Belgium  	| https://covid-vaccinatie.be/en/ 	| <input type="checkbox" disabled checked /> |
+| 🇧🇷 Brazil  	| https://github.com/wcota/covid19br/ 	| <input type="checkbox" disabled /> |
+| 🇧🇬 Bulgaria  	| https://coronavirus.bg/bg/statistika 	| <input type="checkbox" disabled /> |
+| 🇨🇦 Canada  	| https://github.com/ccodwg/Covid19Canada/ 	| <input type="checkbox" disabled checked /> |
+| 🇨🇱 Chile  	| https://github.com/juancri/covid19-vaccination/ 	| <input type="checkbox" disabled checked /> |
+| 🇨🇿 Czechia  	| https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ 	| <input type="checkbox" disabled checked /> |
+| 🇩🇰 Denmark  	| https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning 	| <input type="checkbox" disabled checked /> |
+| 🇫🇷 France  	| https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ 	| <input type="checkbox" disabled /> |
+| 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	| <input type="checkbox" disabled checked /> |
+| 🇮🇹 Italy  	| https://github.com/italia/covid19-opendata-vaccini/ 	| <input type="checkbox" disabled checked /> |
+| 🇱🇮 Liechtenstein | https://github.com/rsalzer/COVID_19_VACC/	| <input type="checkbox" disabled /> |
+| 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	| <input type="checkbox" disabled checked /> |
+| 🇵🇱 Poland	| https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19	| <input type="checkbox" disabled checked /> |
+| 🇸🇰 Slovakia	| https://github.com/Institut-Zdravotnych-Analyz/covid19-data/ 	| <input type="checkbox" disabled checked /> |
+| 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	| <input type="checkbox" disabled checked /> |
+| 🇸🇪 Sweden  	| https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/ 	| <input type="checkbox" disabled /> |
+| 🇨🇭 Switzerland	| https://github.com/rsalzer/COVID_19_VACC/ 	| <input type="checkbox" disabled /> |
+| 🇬🇧 United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	| <input type="checkbox" disabled checked /> |
+| 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/	| <input type="checkbox" disabled checked /> |
 
-### Format
+## API
 The data pretends to resemble the API proposed by [owid/covid-19-data](https://github.com/owid/covid-19-data). Find
 below the field description, mainly provided by [OWID](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/README.md).
 
@@ -55,8 +59,12 @@ so we may not be able to make these metrics available for some countries.
 
 ## Contribute
 The data is updated using the script [`update_data.py`](scripts/update_data.py). This script first runs all
-[country/scripts](scripts/countries/), which generate [country data](data/countries/) and then joins these results into
-file [`vaccinations.csv`](data/vaccinations.csv).
+[country/scripts](scripts/countries/), generates [country data](data/countries/) and finally merges these into file [`vaccinations.csv`](data/vaccinations.csv).
+
+```
+$ pip install -r requirements.txt
+$ python scripts/update_vaccinations.py
+```
 
 To contribute, feel free to issue PRs with new automated scripts. Note that the automated scripts are divided into two
 categories:
@@ -64,18 +72,8 @@ categories:
 - [`batch`](scripts/countries/batch): Gets the whole data (all dates) from a source file and overwrites the existing data.
 - [`incremental`](scripts/countries/incremental): Gets last date's data and appends it to existing data.
 
-### Data update
-Currently I manually run the [`update_data.py`](scripts/update_data.py) script and update the existing available data in this repo. This approach is described below:
-
-Make sure to install all dependencies, `pip install -r requirements.txt`.
-
-Run
-
-```
-$ python scripts/update_vaccinations.py
-```
-
-File [data/vaccinations.csv](data/vaccinations.csv) is then updated.
+Other folders [`archived`](scripts/countries/archived) and [`input`](scripts/countries/input) contain
+archived scripts and auxiliary third party files, respectively.
 
 ## License
 See [LICENSE](LICENSE).

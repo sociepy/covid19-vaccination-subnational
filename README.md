@@ -89,3 +89,17 @@ See [LICENSE](LICENSE).
 
 > This site or product includes IP2Location™ ISO 3166-2 Subdivision Code which available from
 > https://www.ip2location.com.
+
+
+| Country  	| Source 	| 2-dose |
+|-	|-	|- |
+| 🇦🇷 Argentina    | http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina   | ✅ |
+| 🇦🇹 Austria  | https://info.gesundheitsministerium.gv.at/ 	| ✅ |
+| 🇧🇪 Belgium  	| https://covid-vaccinatie.be/en/ 	| ✅ |
+
+
+| Country  	| Source 	| 2-dose 	|
+|-	|-	|- |
+| 🇦🇷 Argentina    | test   | ✅ 	|
+| 🇦🇹 Austria  | https://info.gesundheitsministerium.gv.at/ 	| ✅ 	|
+| 🇧🇪 Belgium  	| https://covid-vaccinatie.be/en/ 	| ✅ 	|

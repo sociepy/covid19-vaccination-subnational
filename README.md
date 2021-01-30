@@ -1,5 +1,5 @@
 # Subnational COVID-19 vaccination data 
-### [Download data 🗂️ ⬇️](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv)
+### [Download data 🗂️ ⬇️](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv) | [GitHub](https://github.com/sociepy/covid19-vaccination-subnational)
 
 COVID-19 vaccination data at subnational level. The source data is verified in order to ensure its officiality.
 

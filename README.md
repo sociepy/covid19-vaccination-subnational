@@ -109,3 +109,6 @@ See [LICENSE](LICENSE).
 | 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	| ✅ |
 | 🇵🇱 Poland	| https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19	| ✅ |
 | 🇸🇰 Slovakia	| https://github.com/Institut-Zdravotnych-Analyz/covid19-data/ 	| ✅ |
+| 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	| ✅ |
+| 🇸🇪 Sweden  	| https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/ 	| ❌ |
+| 🇨🇭 Switzerland	| https://github.com/rsalzer/COVID_19_VACC/ 	| ❌ |

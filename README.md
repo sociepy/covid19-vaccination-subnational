@@ -64,14 +64,24 @@ $ pip install -r requirements.txt
 $ python scripts/update_vaccinations.py
 ```
 
-To contribute, feel free to issue PRs with new automated scripts. Note that the automated scripts are divided into two
-categories:
+There is a script per country, each of them acting as ETL for the specific country. These scripts are classified into
+two categories:
 
 - [`batch`](scripts/countries/batch): Gets the whole data (all dates) from a source file and overwrites the existing data.
 - [`incremental`](scripts/countries/incremental): Gets last date's data and appends it to existing data.
 
 Other folders [`archived`](scripts/countries/archived) and [`input`](scripts/countries/input) contain
 archived scripts and auxiliary third party files, respectively.
+
+### Add new countries
+If you know of any reference publishing vaccination regional data for other countries, your contribution is very much
+appreciated! It s extremely helpfull if you could [comment this in the issues](https://github.com/sociepy/covid19-vaccination-subnational/issues/new). Also, if you feel like automating it by
+yourself (that'd be awesome!), please fork this repository and issue a pull request
+with your changes.
+
+### Bugs
+We do our best to ensure that the data is reliable. However, as the project grows and source website change their
+format, some bugs might appear. If you detect any, please [comment this in the issues](https://github.com/sociepy/covid19-vaccination-subnational/issues/new).
 
 ## License
 See [LICENSE](LICENSE).

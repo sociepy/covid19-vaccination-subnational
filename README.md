@@ -73,13 +73,13 @@ two categories:
 Other folders [`archived`](scripts/countries/archived) and [`input`](scripts/countries/input) contain
 archived scripts and auxiliary third party files, respectively.
 
-### Add new countries
+### Add new countries
 If you know of any reference publishing vaccination regional data for other countries, your contribution is very much
 appreciated! It is extremely helpfull if you could [report this in the issues](https://github.com/sociepy/covid19-vaccination-subnational/issues/new). Also, if you feel like automating it by
 yourself (that'd be awesome!), please fork this repository and issue a pull request
 with your changes.
 
-### Bugs
+### Bugs
 We do our best to ensure that the data is reliable. However, as the project grows and source website change their
 format, some bugs might appear. If you detect any, please [report this in the issues section](https://github.com/sociepy/covid19-vaccination-subnational/issues/new).
 

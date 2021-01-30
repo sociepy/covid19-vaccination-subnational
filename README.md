@@ -10,8 +10,9 @@ some of its structure, and is open to integration if deemed approriate.
 
 ## Content
 * [Data sources](#data-sources)
-* [API](#API)
+* [API](#api)
 * [Contribute](#contribute)
+* [License](#license)
 ## Data sources
 | Country  	| Source 	| 2-dose |
 |-	|-	|- |

@@ -14,29 +14,6 @@ some of its structure, and is open to integration if deemed approriate.
 * [Contribute](#contribute)
 * [License](#license)
 ## Data sources
-| Country  	| Source 	| 2-dose |
-|-	|-	|- |
-| 🇦🇷 Argentina    | http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina   | ✅ |
-| 🇦🇹 Austria  | https://info.gesundheitsministerium.gv.at/ 	| ✅ |
-| 🇧🇪 Belgium  	| https://covid-vaccinatie.be/en/ 	| ✅ |
-| 🇧🇷 Brazil  	| https://github.com/wcota/covid19br/ 	| ❌ |
-| 🇧🇬 Bulgaria  	| https://coronavirus.bg/bg/statistika 	| ❌ |
-| 🇨🇦 Canada  	| https://github.com/ccodwg/Covid19Canada/ 	| ✅ |
-| 🇨🇱 Chile  	| https://github.com/juancri/covid19-vaccination/ 	| ✅ |
-| 🇨🇿 Czechia  	| https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ 	| ✅ |
-| 🇩🇰 Denmark  	| https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning 	| ✅ |
-| 🇫🇷 France  	| https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ 	| ❌ |
-| 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	| ✅ |
-| 🇮🇹 Italy  	| https://github.com/italia/covid19-opendata-vaccini/ 	| ✅ |
-| 🇱🇮 Liechtenstein | https://github.com/rsalzer/COVID_19_VACC/	| ❌ |
-| 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	| ✅ |
-| 🇵🇱 Poland	| https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19	| ✅ |
-| 🇸🇰 Slovakia	| https://github.com/Institut-Zdravotnych-Analyz/covid19-data/ 	| ✅ |
-| 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	| ✅ |
-| 🇸🇪 Sweden  	| https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/ 	| ❌ |
-| 🇨🇭 Switzerland	| https://github.com/rsalzer/COVID_19_VACC/ 	| ❌ |
-| 🇬🇧 United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	| ✅ |
-| 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/	| ✅ |
 
 | Country  	| Source 	| 2-dose |
 |-	|-	|- |

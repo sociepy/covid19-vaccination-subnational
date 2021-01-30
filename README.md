@@ -102,3 +102,10 @@ See [LICENSE](LICENSE).
 | 🇨🇱 Chile  	| https://github.com/juancri/covid19-vaccination/ 	| ✅ |
 | 🇨🇿 Czechia  	| https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ 	| ✅ |
 | 🇩🇰 Denmark  	| https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning 	| ✅ |
+| 🇫🇷 France  	| https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ 	| ❌ |
+| 🇩🇪 Germany  	| https://github.com/mathiasbynens/covid-19-vaccinations-germany/ 	| ✅ |
+| 🇮🇹 Italy  	| https://github.com/italia/covid19-opendata-vaccini/ 	| ✅ |
+| 🇱🇮 Liechtenstein | https://github.com/rsalzer/COVID_19_VACC/	| ❌ |
+| 🇳🇴 Norway  	| https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/ 	| ✅ |
+| 🇵🇱 Poland	| https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19	| ✅ |
+| 🇸🇰 Slovakia	| https://github.com/Institut-Zdravotnych-Analyz/covid19-data/ 	| ✅ |

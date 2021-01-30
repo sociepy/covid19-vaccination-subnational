@@ -112,3 +112,5 @@ See [LICENSE](LICENSE).
 | 🇪🇸 Spain  	| https://github.com/civio/covid-vaccination-spain/ 	| ✅ |
 | 🇸🇪 Sweden  	| https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/ 	| ❌ |
 | 🇨🇭 Switzerland	| https://github.com/rsalzer/COVID_19_VACC/ 	| ❌ |
+| 🇬🇧 United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	| ✅ |
+| 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/	| ✅ |

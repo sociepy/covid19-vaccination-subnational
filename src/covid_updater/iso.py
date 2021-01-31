@@ -16,6 +16,8 @@ class ISODB():
     def __init__(self, filepath=ISO_NEW_FILE, df=None):
         self._file = filepath
         if isinstance(df, pd.DataFrame):
+            self._df = df
+        else:
             if os.path.isfile(self._file):
                 self._df = pd.read_csv(self._file)
             else:
@@ -61,14 +63,13 @@ class ISODB():
         Returns:
             pandas.DataFrame: Joined table.
         """
-        df_iso = self._df
         if mode == "region_iso" and country_iso is not None:
-            df_iso_country = df_iso[df_iso["location_iso"]==country_iso]
+            df_iso_country = self._df[self._df["location_iso"]==country_iso]
             df = df.merge(df_iso_country, left_on="region", right_on="subdivision_name", how="left")
             df["region_iso"] = df[["region_iso"]].fillna("-")
             df = df.drop(columns=["subdivision_name"])
         elif mode == "region":
-            df = df.merge(df_iso, on="region_iso")
+            df = df.merge(self._df, on="region_iso")
             df = df.rename(columns={
                 "subdivision_name": "region"
             })

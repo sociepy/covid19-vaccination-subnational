@@ -1,6 +1,5 @@
 import pandas as pd
 from covid_updater.iso import ISODB
-from covid_updater.tracking import update_country_tracking
 from covid_updater.utils import export_data
 
 

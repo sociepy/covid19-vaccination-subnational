@@ -3,7 +3,6 @@ https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/a
 """
 import pandas as pd
 from covid_updater.iso import ISODB
-from covid_updater.tracking import update_country_tracking
 from covid_updater.utils import export_data
 
 

@@ -5,6 +5,7 @@ from datetime import datetime
 import locale
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Argentina"
@@ -55,40 +56,43 @@ def main():
 
     # Get new date
     date = get_date(soup)
-    if date > df_source["date"].max():
-        # Get df
-        df = get_df(soup)
 
-        # Rename columns
-        df = df.rename(columns={
-            "primera_dosis_cantidad": "people_vaccinated",
-            "segunda_dosis_cantidad": "people_fully_vaccinated",
-            "jurisdiccion_nombre": "region"
-        })
+    # Get df
+    df = get_df(soup)
 
-        # Process columns
-        df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
-        df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
-        df.loc[:, "location"] = COUNTRY
-        df.loc[:, "date"] = date
+    # Rename columns
+    df = df.rename(columns={
+        "primera_dosis_cantidad": "people_vaccinated",
+        "segunda_dosis_cantidad": "people_fully_vaccinated",
+        "jurisdiccion_nombre": "region"
+    })
 
-        # Add ISO codes
-        df = merge_iso(df, country_iso=COUNTRY_ISO)
+    # Process columns
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
+    df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
+    df.loc[:, "location"] = COUNTRY
+    df.loc[:, "date"] = date
 
-        # Export
-        df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
-        df = pd.concat([df, df_source])
-        df = df[["location", "region", "date", "location_iso", "region_iso",
-                 "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
-        df = df.sort_values(by=["region", "date"])
-        df.to_csv(source_file, index=False)
+    # Add ISO codes
+    df = merge_iso(df, country_iso=COUNTRY_ISO)
 
-        # Tracking
-        update_country_tracking(
-            country=COUNTRY,
-            url=DATA_URL_REFERENCE,
-            last_update=df["date"].max()
-        )
+    # Concatenate
+    df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
+    df = pd.concat([df, df_source])
+
+    # Export
+    df = df[["location", "region", "date", "location_iso", "region_iso",
+                "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
+    df = keep_min_date(df)
+    df = df.sort_values(by=["region", "date"])
+    df.to_csv(OUTPUT_FILE, index=False)
+
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 
 if __name__ == "__main__":

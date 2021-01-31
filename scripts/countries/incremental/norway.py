@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from covid_updater.iso import merge_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
 from covid_updater.utils import keep_min_date
 
@@ -76,7 +76,7 @@ def main():
     df.loc[:, "total_vaccinations"] = df.loc[:, "people_fully_vaccinated"] + df.loc[:, "people_vaccinated"]
 
     # Add ISO codes
-    df = merge_iso(df, country_iso=COUNTRY_ISO)
+    df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
     # Concat
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]

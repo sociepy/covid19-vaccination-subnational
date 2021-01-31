@@ -2,9 +2,9 @@
 https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/automations/incremental/brazil.py
 """
 import pandas as pd
-from covid_updater.iso import load_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
-from covid_updater.utils import keep_min_date
+from covid_updater.utils import export_data
 
 
 COUNTRY = "Brazil"
@@ -15,9 +15,6 @@ DATA_URL_REFERENCE = "https://github.com/wcota/covid19br/"
 
 
 def main():
-    # ISO df
-    df_iso = load_iso()
-
     # Get data
     df = pd.read_csv(DATA_URL, usecols=["state", "date", "vaccinated"])
     df = df.rename(columns={
@@ -36,25 +33,14 @@ def main():
     df.loc[:, "region_iso"] = f"{COUNTRY_ISO}-" + df.loc[:, "state"]
 
     # Get region name
-    df = df.merge(df_iso, on="region_iso")
-    df = df.rename(columns={
-        "subdivision_name": "region"
-    })
+    df = ISODB().merge(df, mode="region")
     df.loc[:, "location"] = COUNTRY
 
-    # Avoid repeating reports
-    df = keep_min_date(df)
-
-    # Export
-    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
-    df = df.sort_values(by=["region", "date"])
-    df.to_csv(OUTPUT_FILE, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=COUNTRY,
-        url=DATA_URL_REFERENCE,
-        last_update=df["date"].max()
+    # Export
+    export_data(
+        df=df,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE
     )
 
 if __name__ == "__main__":

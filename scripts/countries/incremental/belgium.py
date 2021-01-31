@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import urllib.request
 import pandas as pd
-from covid_updater.iso import merge_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
 from covid_updater.utils import keep_min_date
 
@@ -68,7 +68,7 @@ def main():
     df = df.merge(df_dates, left_on="region", right_on="Region", how="left")
 
     # ISO
-    df = merge_iso(df, COUNTRY_ISO)
+    df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
     # Export
     region = df_dates.index.tolist()

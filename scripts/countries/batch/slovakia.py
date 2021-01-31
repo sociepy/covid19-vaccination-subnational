@@ -1,7 +1,7 @@
 import pandas as pd
-from covid_updater.iso import merge_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
-from covid_updater.utils import keep_min_date
+from covid_updater.utils import export_data
 
 
 COUNTRY = "Slovakia"
@@ -43,22 +43,13 @@ def main():
     df.loc[:, "location"] = COUNTRY
 
     # Get iso codes
-    df = merge_iso(df, COUNTRY_ISO)
-
-    # Avoid repeating reports
-    df = keep_min_date(df)
+    df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
     # Export
-    df = df[["location", "region", "date", "location_iso", "region_iso",
-             "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
-    df = df.sort_values(by=["region", "date"])
-    df.to_csv(OUTPUT_FILE, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=COUNTRY,
-        url=DATA_URL_REFERENCE,
-        last_update=df["date"].max()
+    export_data(
+        df=df,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE
     )
 
 if __name__ == "__main__":

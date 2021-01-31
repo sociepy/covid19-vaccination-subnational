@@ -1,7 +1,7 @@
 import pandas as pd
-from covid_updater.iso import load_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
-from covid_updater.utils import keep_min_date
+from covid_updater.utils import export_data
 
 
 COUNTRY_CH = "Switzerland"
@@ -23,25 +23,13 @@ def main_ch(df):
     df_ch.loc[:, "location"] = COUNTRY_CH
 
     # Get region names
-    df_iso = load_iso()
-    df_ch = df_ch.merge(df_iso, on="region_iso")
-    df_ch = df_ch.rename(columns={
-        "subdivision_name": "region",
-    })
+    df_ch = ISODB().merge(df_ch, mode="region")
 
-    # Avoid repeating reports
-    df = keep_min_date(df)
-
-    # Export
-    df_ch = df_ch[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
-    df_ch = df_ch.sort_values(by=["region", "date"])
-    df_ch.to_csv(OUTPUT_FILE_CH, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=COUNTRY_CH,
-        url=DATA_URL_REFERENCE,
-        last_update=df["date"].max()
+    # Export
+    export_data(
+        df=df_ch,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE_CH
     )
 
 
@@ -53,19 +41,11 @@ def main_li(df):
     df_li.loc[:, "location_iso"] = COUNTRY_ISO_LI
     df_li.loc[:, "region"] = "-"
 
-    # Avoid repeating reports
-    df = keep_min_date(df)
-
     # Export
-    df_li = df_li[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
-    df_li = df_li.sort_values(by=["region", "date"])
-    df_li.to_csv(OUTPUT_FILE_LI, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=COUNTRY_LI,
-        url=DATA_URL_REFERENCE,
-        last_update=df["date"].max()
+    export_data(
+        df=df_li,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE_LI
     )
 
 

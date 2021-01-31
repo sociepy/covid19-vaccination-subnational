@@ -3,9 +3,9 @@ from bs4  import BeautifulSoup
 import urllib.request
 from datetime import datetime
 import locale
-from covid_updater.iso import merge_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
-from covid_updater.utils import keep_min_date
+from covid_updater.utils import export_data
 
 
 COUNTRY = "Argentina"
@@ -29,7 +29,10 @@ def get_df(soup):
     s = soup.find(class_="pkg-actions")
     if "DESCARGAR" in str(s):
         url = s.find_all("a")[1].get("href")
-        df = pd.read_csv(url)
+        try:
+            df = pd.read_csv(url)
+        except:
+            raise Exception("Data file not valid!")
     else:
         raise Exception("HTML changed, no file to download was found!")
     return df
@@ -74,24 +77,17 @@ def main():
     df.loc[:, "date"] = date
 
     # Add ISO codes
-    df = merge_iso(df, country_iso=COUNTRY_ISO)
+    df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
     # Concatenate
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
 
     # Export
-    df = df[["location", "region", "date", "location_iso", "region_iso",
-                "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
-    df = keep_min_date(df)
-    df = df.sort_values(by=["region", "date"])
-    df.to_csv(OUTPUT_FILE, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=COUNTRY,
-        url=DATA_URL_REFERENCE,
-        last_update=df["date"].max()
+    export_data(
+        df=df,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE
     )
 
 

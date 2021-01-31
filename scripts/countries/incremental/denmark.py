@@ -6,7 +6,7 @@ import tabula
 import pandas as pd
 from bs4  import BeautifulSoup
 from datetime import datetime
-from covid_updater.iso import merge_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
 from covid_updater.utils import keep_min_date
 
@@ -93,7 +93,7 @@ def main():
     df.loc[:, "date"]  = date
 
     # Add ISO codes
-    df = merge_iso(df, country_iso=COUNTRY_ISO)
+    df = ISODB().merge(df, country_iso=COUNTRY_ISO)
     df.loc[df["region"]=="Others", "location_iso"] = COUNTRY_ISO
 
     # Concat

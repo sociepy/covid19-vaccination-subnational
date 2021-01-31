@@ -4,9 +4,9 @@ from datetime import datetime
 import locale
 from bs4 import BeautifulSoup
 import pandas as pd
-from covid_updater.iso import merge_iso
+from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
-from covid_updater.utils import keep_min_date
+from covid_updater.utils import export_data
 
 
 COUNTRY = "Sweden"
@@ -96,26 +96,18 @@ def main():
     df = df.loc[~(df.loc[:, "region"] == "Totala summan")]
 
     # Get iso codes
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
-    df = merge_iso(df, COUNTRY_ISO)
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
+    df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
     # Concat
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
 
-    # Avoid repeating reports
-    df = keep_min_date(df)
-
-    # Export
-    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
-    df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=COUNTRY,
-        url=DATA_URL_REFERENCE,
-        last_update=df["date"].max()
+    # Export
+    export_data(
+        df=df,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE
     )
 
 if __name__ == "__main__":

@@ -4,6 +4,7 @@ https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/a
 import pandas as pd
 from covid_updater.iso import load_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Brazil"
@@ -40,6 +41,9 @@ def main():
         "subdivision_name": "region"
     })
     df.loc[:, "location"] = COUNTRY
+
+    # Avoid repeating reports
+    df = keep_min_date(df)
 
     # Export
     df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]

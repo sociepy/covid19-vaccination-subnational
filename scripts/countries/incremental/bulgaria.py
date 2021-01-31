@@ -6,6 +6,7 @@ import pytz
 import datetime
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Bulgaria"
@@ -57,33 +58,36 @@ def main():
     df = df.droplevel(level=0, axis=1)
     date = str(datetime.datetime.now(pytz.timezone("Europe/Sofia")).date() - datetime.timedelta(days=1))
     
-    if date > df_source["date"].max():
-        df = df.rename(columns={
-            "Област": "region",
-            "Общо": "total_vaccinations"
-        })
-        df = df[~(df.loc[:, "region"]=="Общо")]
-        df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
-        df.loc[:, "date"] = date
-        df.loc[:, "location"] = COUNTRY
-        
-        # Add ISO codes
-        df = merge_iso(df, country_iso=COUNTRY_ISO)
-        
-        # Concat
-        df = pd.concat([df, df_source])
+    df = df.rename(columns={
+        "Област": "region",
+        "Общо": "total_vaccinations"
+    })
+    df = df[~(df.loc[:, "region"]=="Общо")]
+    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
+    df.loc[:, "date"] = date
+    df.loc[:, "location"] = COUNTRY
+    
+    # Add ISO codes
+    df = merge_iso(df, country_iso=COUNTRY_ISO)
 
-        # Reorder columns
-        df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
-        df = df.sort_values(by=["region", "date"])
-        df.to_csv(OUTPUT_FILE, index=False)
+    # Concat
+    df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
+    df = pd.concat([df, df_source])
 
-        # Tracking
-        update_country_tracking(
-            country=COUNTRY,
-            url=DATA_URL_REFERENCE,
-            last_update=df["date"].max()
-        )
+    # Avoid repeating reports
+    df = keep_min_date(df)
+
+    # Export
+    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+    df = df.sort_values(by=["region", "date"])
+    df.to_csv(OUTPUT_FILE, index=False)
+
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 
 if __name__ == "__main__":

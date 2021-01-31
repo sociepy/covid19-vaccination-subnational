@@ -1,6 +1,7 @@
 import pandas as pd
 from covid_updater.iso import load_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY_CH = "Switzerland"
@@ -28,6 +29,9 @@ def main_ch(df):
         "subdivision_name": "region",
     })
 
+    # Avoid repeating reports
+    df = keep_min_date(df)
+
     # Export
     df_ch = df_ch[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df_ch = df_ch.sort_values(by=["region", "date"])
@@ -49,6 +53,10 @@ def main_li(df):
     df_li.loc[:, "location_iso"] = COUNTRY_ISO_LI
     df_li.loc[:, "region"] = "-"
 
+    # Avoid repeating reports
+    df = keep_min_date(df)
+
+    # Export
     df_li = df_li[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df_li = df_li.sort_values(by=["region", "date"])
     df_li.to_csv(OUTPUT_FILE_LI, index=False)

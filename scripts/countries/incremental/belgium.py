@@ -4,6 +4,7 @@ import urllib.request
 import pandas as pd
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Belgium"
@@ -78,6 +79,10 @@ def main():
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     cols = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
     
+    # Avoid repeating reports
+    df = keep_min_date(df)
+
+    # Export
     df[cols] = df[cols].astype("Int64").fillna(pd.NA)
     df = df.sort_values(by=["region", "date"])
     df.to_csv(OUTPUT_FILE, index=False)

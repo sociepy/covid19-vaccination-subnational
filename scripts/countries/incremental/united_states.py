@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "United States"
@@ -51,9 +52,14 @@ def main():
         df.loc[df["region"]=="Dept of Defense", "location_iso"] = "US"
         df.loc[df["region"]=="Indian Health Svc", "location_iso"] = "US"
         df.loc[df["region"]=="Veterans Health", "location_iso"] = "US"
+        
         # Concat
         df = pd.concat([df, df_source])
-        # Reorder columns
+
+        # Avoid repeating reports
+        df = keep_min_date(df)
+
+        # Export
         df = df[["location", "region", "date", "location_iso", "region_iso",
                  "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
         df = df.sort_values(by=["region", "date"])

@@ -8,6 +8,7 @@ from bs4  import BeautifulSoup
 from datetime import datetime
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Denmark"
@@ -95,11 +96,14 @@ def main():
     df = merge_iso(df, country_iso=COUNTRY_ISO)
     df.loc[df["region"]=="Others", "location_iso"] = COUNTRY_ISO
 
-    # Export
+    # Concat
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
-    df = df[["location", "region", "date", "location_iso", "region_iso",
-             "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
+
+    # Export
+    cols = ["location", "region", "date", "location_iso", "region_iso",
+             "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
+    df = keep_min_date(df[cols])[cols]
     df = df.sort_values(by=["region", "date"])
     df.to_csv(OUTPUT_FILE, index=False)
 

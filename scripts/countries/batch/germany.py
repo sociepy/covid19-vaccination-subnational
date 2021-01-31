@@ -1,6 +1,7 @@
 import pandas as pd
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Germany"
@@ -28,7 +29,11 @@ def main():
     df.loc[:, "location"] = COUNTRY
     # Add ISO codes
     df = merge_iso(df, country_iso=COUNTRY_ISO)
-    # Reorder columns
+
+    # Avoid repeating reports
+    df = keep_min_date(df)
+
+    # Export
     df = df[["location", "region", "date", "location_iso", "region_iso", 
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])

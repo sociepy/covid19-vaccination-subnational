@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Sweden"
@@ -98,9 +99,14 @@ def main():
     df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
     df = merge_iso(df, COUNTRY_ISO)
 
-    # Export
+    # Concat
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
+
+    # Avoid repeating reports
+    df = keep_min_date(df)
+
+    # Export
     df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)

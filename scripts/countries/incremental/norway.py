@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Norway"
@@ -77,15 +78,18 @@ def main():
     # Add ISO codes
     df = merge_iso(df, country_iso=COUNTRY_ISO)
 
-    # Export
+    # Concat
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
+
+    # Export 
     df = df[["location", "region", "date", "location_iso", "region_iso",
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
+    df = keep_min_date(df)
     cols = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
     df[cols] = df[cols].astype("Int64").fillna(pd.NA)
     df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
     # Tracking
     update_country_tracking(

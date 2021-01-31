@@ -9,12 +9,24 @@ COVID-19 vaccination data at subnational level. The source data is verified in o
 some of its structure, and is open to integration if deemed approriate.
 
 ## Content
+* [Repository organization](#repository-organization)
 * [Data sources](#data-sources)
 * [API](#api)
 * [Contribute](#contribute)
 * [Documentation](docs/CODE.md) (WIP 🚧)
 * [License](#license)
+
+## Repository organization
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| [data](data) | Available data. |
+| [docs](docs) | Source code documentation. |
+| [scripts](scripts) | Scripts to update the data files. |
+| [src](src) | Source code.  |
+
 ## Data sources
+This project wouldn't be possible without the great resources available online.
 
 | Country  	| Source 	| 2-dose |
 |-	|-	|- |
@@ -39,7 +51,6 @@ some of its structure, and is open to integration if deemed approriate.
 | 🇨🇭 Switzerland	| https://github.com/rsalzer/COVID_19_VACC/ 	| ❌ |
 | 🇬🇧 United Kingdom  	| https://coronavirus.data.gov.uk/details/download 	| ✅ |
 | 🇺🇸 United States  	| https://covid.cdc.gov/covid-data-tracker/COVIDData/	| ✅ |
-
 
 ## API
 The data pretends to resemble the API proposed by [owid/covid-19-data](https://github.com/owid/covid-19-data). Find
@@ -86,6 +97,9 @@ with your changes.
 ### Bugs
 We do our best to ensure that the data is reliable. However, as the project grows and source website change their
 format, some bugs might appear. If you detect any, please [report this in the issues section](https://github.com/sociepy/covid19-vaccination-subnational/issues/new).
+
+## Documentation
+See [documentation](docs/CODE.md) (WIP 🚧)
 
 ## License
 See [LICENSE](LICENSE).

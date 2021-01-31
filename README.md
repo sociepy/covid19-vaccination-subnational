@@ -63,7 +63,7 @@ The data is updated using the script [`update_data.py`](scripts/update_data.py).
 [country/scripts](scripts/countries/), generates [country data](data/countries/) and finally merges these into file [`vaccinations.csv`](data/vaccinations.csv).
 
 ```
-$ pip install -r requirements.txt
+$ pip install -e .
 $ python scripts/update_vaccinations.py
 ```
 

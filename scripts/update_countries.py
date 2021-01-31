@@ -11,15 +11,13 @@ from glob import glob
 
 
 SKIP = ["bulgaria.py", "utils.py"]
-
-scripts_path = "scripts/countries/*/*.py"
-batch = glob("scripts/countries/batch/*.py")
-incremental = glob("scripts/countries/incremental/*.py")
-scripts = batch + incremental
+BATCH_PATH = glob("scripts/countries/batch/*.py")
+INCREMENTAL_PATH = glob("scripts/countries/incremental/*.py")
+SCRIPTS_PATH = BATCH_PATH + INCREMENTAL_PATH
 
 
-# Update files
-for script in scripts:
+for script in SCRIPTS_PATH:
     if os.path.basename(script) not in SKIP:
+        # Run country script
         print(f"{datetime.now().replace(microsecond=0)} - {script}")
         os.system(f"python {script}")

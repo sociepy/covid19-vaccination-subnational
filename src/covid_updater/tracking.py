@@ -17,7 +17,10 @@ def update_country_tracking(country, url, last_update, output_file=COUNTRY_TRACK
         url (str): Data source url.
         last_update (str): Date of last update.
     """
-    df = pd.read_csv(output_file)
+    if os.path.isfile(output_file):
+        df = pd.read_csv(output_file)
+    else:
+        df = pd.DataFrame()
     df = df.append({
         "country": country,
         "data_source_url": url,

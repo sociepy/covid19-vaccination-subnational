@@ -1,3 +1,8 @@
+"""To change:
+- merge_iso -> merge
+- load_iso -> as_df
+
+"""
 import os
 import pandas as pd
 
@@ -7,31 +12,71 @@ ISO_ORIGINAL_FILE = os.path.join(this_directory, "assets/IP2LOCATION-ISO3166-2.C
 ISO_NEW_FILE = os.path.join(this_directory, "assets/ISO_3166_2.csv")
 
 
-def merge_iso(df, country_iso):
-    """Merge input dataframe with ISOs, using region as join field.
+class ISODB():
+    def __init__(self):
+        self.__file = ISO_NEW_FILE
 
-    Args:
-        df (pandas.DataFrame): ISO data.
-        country_iso (str): Country ISO code
+    def as_df(self):
+        """Load DB as DataFrame.
 
-    Returns:
-        pandas.DataFrame: Joined table.
-    """
-    df_iso = load_iso()
-    df_iso_country = df_iso[df_iso["location_iso"]==country_iso]
-    df = df.merge(df_iso_country, left_on="region", right_on="subdivision_name", how="left")
-    df["region_iso"] = df[["region_iso"]].fillna("-")
-    df = df.drop(columns=["subdivision_name"])
-    return df
+        Returns:
+            pandas.DataFrame: ISO codes as DataFrame.
+        """
+        if os.path.isfile:
+            return pd.read_csv(self.__file)
+        raise Exception("DB file not created. Run `create_from_source` before.")
 
+    def create_from_source(self, source_file=ISO_ORIGINAL_FILE):
+        """Create ISO db.
 
-def load_iso():
-    """Load ISO file.
+        Uses IP2LOCATION-ISO3166-2 file.
 
-    Returns:
-        pandas.DataFrame: ISO codes as DataFrame.
-    """
-    return pd.read_csv(ISO_NEW_FILE)
+        Args:
+            source_file (str): Path to source file.
+        """
+        df = pd.read_csv(source_file)
+        df = df.rename(columns={
+            "country_code": "location_iso",
+            "code": "region_iso"
+        })
+        df_iso = df_iso.sort_values(["location_iso", "region_iso"])
+        df_iso.to_csv(self.__file, index=False)
+
+    def append(self, items):
+        df = self.as_df()
+        new_items = pd.DataFrame(items, columns=["location_iso", "region_iso", "subdivision_name"])
+        df_iso = df_iso.append(new_items, ignore_index=True)
+        df_iso = df_iso.sort_values(["location_iso", "region_iso"])
+        df_iso.to_csv(self.__file, index=False)
+
+    def merge(self, df, mode="region_iso", country_iso=None):
+        """Merge input dataframe with ISO database.
+
+        To get ISO codes, use `mode='region_iso'`. Use `mode='region'` to get region names.
+
+        Args:
+            df (pandas.DataFrame): ISO data.
+            mode (str): Merge mode. Currently supports two modes ('region' or 'region_iso').
+            country_iso (str): Country ISO code
+
+        Returns:
+            pandas.DataFrame: Joined table.
+        """
+        df_iso = self.as_df()
+        if mode == "region_iso" and country_iso is not None:
+            df_iso_country = df_iso[df_iso["location_iso"]==country_iso]
+            df = df.merge(df_iso_country, left_on="region", right_on="subdivision_name", how="left")
+            df["region_iso"] = df[["region_iso"]].fillna("-")
+            df = df.drop(columns=["subdivision_name"])
+        elif mode == "region":
+            df = df.merge(df_iso, on="region_iso")
+            df = df.rename(columns={
+                "subdivision_name": "region"
+            })
+        else:
+            raise ValueError("Not valid `mode` value. Choose either 'region_iso' or 'region'. If 'region_iso'," + \
+                             "make sure to set a value for `country_iso`.")
+        return df
 
 
 def generate_iso():

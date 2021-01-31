@@ -4,7 +4,7 @@ import urllib.request
 import pandas as pd
 from covid_updater.iso import ISODB
 from covid_updater.tracking import update_country_tracking
-from covid_updater.utils import keep_min_date
+from covid_updater.utils import export_data
 
 
 COUNTRY = "Belgium"
@@ -70,28 +70,17 @@ def main():
     # ISO
     df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
-    # Export
+    # Concatenate
     region = df_dates.index.tolist()
     date = df_dates.date.tolist()
     df_source = df_source.loc[~(df_source["region"].isin(region) & df_source["date"].isin(date))]
     df = pd.concat([df, df_source])
-    df = df[["location", "region", "date", "location_iso", "region_iso",
-             "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
-    cols = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
     
-    # Avoid repeating reports
-    df = keep_min_date(df)
-
     # Export
-    df[cols] = df[cols].astype("Int64").fillna(pd.NA)
-    df = df.sort_values(by=["region", "date"])
-    df.to_csv(OUTPUT_FILE, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=COUNTRY,
-        url=DATA_URL_REFERENCE,
-        last_update=df["date"].max()
+    export_data(
+        df=df,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE
     )
 
 if __name__ == "__main__":

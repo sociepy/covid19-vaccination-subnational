@@ -2,18 +2,23 @@
 https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/automations/incremental/brazil.py
 """
 import pandas as pd
+from covid_updater.iso import load_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Brazil.csv"
+COUNTRY = "Brazil"
+COUNTRY_ISO = "BR"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"
+DATA_URL_REFERENCE = "https://github.com/wcota/covid19br/"
 
 
 def main():
     # ISO df
-    df_iso = pd.read_csv("scripts/countries/input/ISO_3166_2.csv")
+    df_iso = load_iso()
 
     # Get data
-    url = "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"
-    df = pd.read_csv(url, usecols=["state", "date", "vaccinated"])
+    df = pd.read_csv(DATA_URL, usecols=["state", "date", "vaccinated"])
     df = df.rename(columns={
         "vaccinated": "total_vaccinations"
     })
@@ -27,20 +32,26 @@ def main():
 
     # Get region iso
     df = df[~(df.loc[:, "state"]=="TOTAL")]
-    df.loc[:, "region_iso"] = "BR-" + df.loc[:, "state"]
+    df.loc[:, "region_iso"] = f"{COUNTRY_ISO}-" + df.loc[:, "state"]
 
     # Get region name
     df = df.merge(df_iso, on="region_iso")
     df = df.rename(columns={
-        "subdivision_name": "region",
+        "subdivision_name": "region"
     })
-    df.loc[:, "location"] = "Brazil"
+    df.loc[:, "location"] = COUNTRY
 
     # Export
     df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

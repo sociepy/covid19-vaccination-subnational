@@ -1,11 +1,14 @@
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Czechia.csv"
-
-
-rename = {
+COUNTRY = "Czechia"
+COUNTRY_ISO = "CZ"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani.csv"
+DATA_URL_REFERENCE = "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/"
+REGION_RENAMING = {
     "Hlavní město Praha": "Praha, Hlavni mesto",
     "Jihomoravský kraj": "Jihomoravsky kraj",
     "Moravskoslezský kraj": "Moravskoslezsky kraj",
@@ -25,8 +28,7 @@ rename = {
 
 def main():
     # Load data
-    url = "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/ockovani.csv"
-    df = pd.read_csv(url)
+    df = pd.read_csv(DATA_URL)
 
     # Check 1
     cols = ["datum", "vakcina", "kraj_nuts_kod", "kraj_nazev", "vekova_skupina", "prvnich_davek", "druhych_davek", "celkem_davek"]
@@ -54,11 +56,11 @@ def main():
         raise Exception("Error in columns. dose_1 + dose_2 != total_doses")
 
     # Rename regions
-    df.loc[:, "region"] = df.loc[:, "region"].replace(rename)
-    df.loc[:, "location"] = "Czechia"
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
+    df.loc[:, "location"] = COUNTRY
 
     # ISO
-    df = merge_iso(df, "CZ")
+    df = merge_iso(df, COUNTRY_ISO)
 
     # Compute cumsums
     df = df.sort_values(by="date")
@@ -70,8 +72,14 @@ def main():
     df = df[["location", "region", "date", "location_iso", "region_iso", 
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

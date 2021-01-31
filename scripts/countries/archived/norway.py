@@ -1,7 +1,7 @@
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from utils import merge_iso
+from covid_updater.iso import merge_iso
 
 
 source_file = "data/countries/Norway.csv"

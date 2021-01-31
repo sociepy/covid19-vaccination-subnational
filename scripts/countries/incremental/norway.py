@@ -3,11 +3,16 @@ import requests
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Norway.csv"
-replace = {
+COUNTRY = "Norway"
+COUNTRY_ISO = "NO"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/"
+DATA_URL_REFERENCE = DATA_URL
+REGION_RENAMING = {
     "agder": "Agder",
     "innlandet": "Innlandet",
     "møre og romsdal": "More og Romsdal",
@@ -38,11 +43,10 @@ def load_date(driver):
 
 def main():
     # Load current file
-    df_source = pd.read_csv(source_file)
+    df_source = pd.read_csv(OUTPUT_FILE)
 
     #  Get date
-    url = "https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/"
-    driver = load_driver(url)
+    driver = load_driver(DATA_URL)
     try:
         date = load_date(driver)
     except:
@@ -63,15 +67,15 @@ def main():
     df = df_dose1.merge(df_dose2, on="region", how="left")
 
     # Process region column
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
 
     # Add columns
     df.loc[:, "date"] = date
-    df.loc[:, "location"] = "Norway"
+    df.loc[:, "location"] = COUNTRY
     df.loc[:, "total_vaccinations"] = df.loc[:, "people_fully_vaccinated"] + df.loc[:, "people_vaccinated"]
 
     # Add ISO codes
-    df = merge_iso(df, country_iso="NO")
+    df = merge_iso(df, country_iso=COUNTRY_ISO)
 
     # Export
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
@@ -83,6 +87,12 @@ def main():
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

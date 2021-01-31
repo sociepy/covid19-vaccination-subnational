@@ -4,16 +4,16 @@ from datetime import datetime
 import locale
 from bs4 import BeautifulSoup
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-locale.setlocale(locale.LC_TIME, 'sv_SE')
-
-
-source_file = "data/countries/Sweden.csv"
-
-
-replace = {
+COUNTRY = "Sweden"
+COUNTRY_ISO = "SE"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/"
+DATA_URL_REFERENCE = DATA_URL
+REGION_RENAMING = {
     "Stockholm": "Stockholms lan",
     "Västerbotten": "Vasterbottens lan",
     "Norrbotten": "Norrbottens lan",
@@ -36,6 +36,7 @@ replace = {
     "Västernorrland": "Vasternorrlands lan",
     "Jämtland": "Jamtlands lan"
 }
+locale.setlocale(locale.LC_TIME, 'sv_SE')
 
 
 # Load
@@ -75,11 +76,10 @@ def  column_str2int(x):
 
 def main():
     # Load current data
-    df_source = pd.read_csv(source_file)
+    df_source = pd.read_csv(OUTPUT_FILE)
 
     # Load data
-    url = "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik-over-forbrukade-vaccindoser/"
-    df, date = load_data(url)
+    df, date = load_data(DATA_URL)
 
     # Rename columns 
     df = df.rename(columns={
@@ -88,7 +88,7 @@ def main():
 
     # Process columns
     df.loc[:, "total_vaccinations"] = column_str2int(df.loc[:, "Moderna"]) + column_str2int(df.loc[:, "Pfizer/BioNTech"])
-    df.loc[:, "location"] = "Sweden"
+    df.loc[:, "location"] = COUNTRY
     df.loc[:, "date"] = date
 
     # Remove total numbers
@@ -96,7 +96,7 @@ def main():
 
     # Get iso codes
     df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
-    df = merge_iso(df, "SE")
+    df = merge_iso(df, COUNTRY_ISO)
 
     # Export
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
@@ -105,6 +105,12 @@ def main():
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

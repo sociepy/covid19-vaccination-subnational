@@ -2,10 +2,15 @@ import requests
 from bs4 import BeautifulSoup
 import urllib.request
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Belgium.csv"
+COUNTRY = "Belgium"
+COUNTRY_ISO = "BE"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://covid-vaccinatie.be/en"
+DATA_URL_REFERENCE = DATA_URL
 
 
 def download_xlsx(url, tmp_file="tmp/belgium.xlsx"):
@@ -30,11 +35,10 @@ def get_date(url):
 
 def main():
     # Load current data
-    df_source = pd.read_csv(source_file)
+    df_source = pd.read_csv(OUTPUT_FILE)
 
     # Load data
-    url = "https://covid-vaccinatie.be/en"
-    page_content = requests.get(url, headers={'User-Agent': 'Custom'}).content
+    page_content = requests.get(DATA_URL, headers={'User-Agent': 'Custom'}).content
     soup = BeautifulSoup(page_content, "html.parser")
 
     # Get new data
@@ -55,7 +59,7 @@ def main():
 
     # Process
     df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
-    df.loc[:, "location"] = "Belgium"
+    df.loc[:, "location"] = COUNTRY
 
     # Join with date
     url = "https://covid-vaccinatie.be/en/vaccines-administered.xlsx"
@@ -63,7 +67,7 @@ def main():
     df = df.merge(df_dates, left_on="region", right_on="Region", how="left")
 
     # ISO
-    df = merge_iso(df, "BE")
+    df = merge_iso(df, COUNTRY_ISO)
 
     # Export
     region = df_dates.index.tolist()
@@ -76,8 +80,14 @@ def main():
     
     df[cols] = df[cols].astype("Int64").fillna(pd.NA)
     df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

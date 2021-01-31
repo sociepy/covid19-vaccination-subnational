@@ -1,6 +1,6 @@
 import urllib.request
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
 
 
 source_file = "data/countries/Belgium.csv"

@@ -3,13 +3,18 @@ import json
 import pytz
 import datetime
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Poland.csv"
-
-
-replace = {
+COUNTRY = "Poland"
+COUNTRY_ISO = "PL"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://services9.arcgis.com/RykcEgwHWuMsJXPj/arcgis/rest/services/wojewodztwa_szczepienia_widok3/" + \
+          "FeatureServer/0/query?f=json&where=1=1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields" + \
+          "=*&orderByFields=SZCZEPIENIA_DZIENNIE desc&resultOffset=0&resultRecordCount=16&resultType=standard&cacheHint=true"
+DATA_URL_REFERENCE = "https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19"
+REGION_RENAMING = {
     "dolnośląskie": "Dolnoslaskie",
     "kujawsko-pomorskie": "Kujawsko-pomorskie",
     "lubelskie": "Lubelskie",
@@ -38,13 +43,10 @@ def load_data(url):
 
 def main():
     # Load current data
-    df_source = pd.read_csv(source_file)
+    df_source = pd.read_csv(OUTPUT_FILE)
 
     # Load data
-    url = "https://services9.arcgis.com/RykcEgwHWuMsJXPj/arcgis/rest/services/wojewodztwa_szczepienia_widok3/" + \
-          "FeatureServer/0/query?f=json&where=1=1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields" + \
-          "=*&orderByFields=SZCZEPIENIA_DZIENNIE desc&resultOffset=0&resultRecordCount=16&resultType=standard&cacheHint=true"
-    df = load_data(url)
+    df = load_data(DATA_URL)
 
     # Process columns
     df = df.rename(columns={
@@ -52,14 +54,14 @@ def main():
         "SZCZEPIENIA_SUMA": "total_vaccinations",
         "DAWKA_2_SUMA": "people_fully_vaccinated"
     })
-    df.loc[:, "location"] = "Poland"
+    df.loc[:, "location"] = COUNTRY
     date = datetime.datetime.now(pytz.timezone("Europe/Warsaw")).date().strftime("%Y-%m-%d")
     df.loc[:, "date"] = date
     df.loc[:, "people_vaccinated"] = df.loc[:, "total_vaccinations"] - df.loc[:, "people_fully_vaccinated"]
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
     
     # ISO
-    df = merge_iso(df, "PL")
+    df = merge_iso(df, COUNTRY_ISO)
     
     # Export
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
@@ -67,8 +69,14 @@ def main():
     df = df[["location", "region", "date", "location_iso", "region_iso",
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

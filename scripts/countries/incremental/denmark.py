@@ -6,12 +6,21 @@ import tabula
 import pandas as pd
 from bs4  import BeautifulSoup
 from datetime import datetime
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Denmark.csv"
-
-
+COUNTRY = "Denmark"
+COUNTRY_ISO = "DK"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning"
+DATA_URL_REFERENCE = DATA_URL
+REGION_RENAMING = {
+    "Ukendt**": "Others",
+    "Ukendt*": "Others",
+    "Ukendt": "Others",
+    "Sjælland": "Sjaelland"
+}
 regions = [
     "Hovedstaden",
     "Midtjylland",
@@ -19,13 +28,6 @@ regions = [
     "Sjælland",
     "Syddanmark"
 ]
-
-replace = {
-    "Ukendt**": "Others",
-    "Ukendt*": "Others",
-    "Ukendt": "Others",
-    "Sjælland": "Sjaelland"
-}
 
 
 def get_date(dfs_from_pdf):
@@ -37,13 +39,10 @@ def get_date(dfs_from_pdf):
 
 def main():
     # Load current data
-    df_source = pd.read_csv(source_file)
-
-    # Load new data
-    url = "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning"
+    df_source = pd.read_csv(OUTPUT_FILE)
 
     # Locate newest pdf
-    html_page = urllib.request.urlopen(url)
+    html_page = urllib.request.urlopen(DATA_URL)
     soup = BeautifulSoup(html_page, "html.parser")
     pdf_path = soup.find('a', text="Download her").get("href")  # Get path to newest pdf
     # Get preliminary dataframe
@@ -85,16 +84,16 @@ def main():
     df.loc[:, "people_fully_vaccinated"] = df.loc[:, "people_fully_vaccinated"].apply(lambda x: del_separator(x)).astype("Int64")
 
     # Process region column
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
 
     # Get new columns
     df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
-    df.loc[:, "location"]  = "Denmark"
+    df.loc[:, "location"]  = COUNTRY
     df.loc[:, "date"]  = date
 
     # Add ISO codes
-    df = merge_iso(df, country_iso="DK")
-    df.loc[df["region"]=="Others", "location_iso"] = "DK"
+    df = merge_iso(df, country_iso=COUNTRY_ISO)
+    df.loc[df["region"]=="Others", "location_iso"] = COUNTRY_ISO
 
     # Export
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
@@ -102,8 +101,14 @@ def main():
     df = df[["location", "region", "date", "location_iso", "region_iso",
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

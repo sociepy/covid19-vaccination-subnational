@@ -3,10 +3,16 @@ import io
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-replace = {
+COUNTRY = "France"
+COUNTRY_ISO = "FR"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://www.data.gouv.fr/fr/datasets/r/eb672d49-7cc7-4114-a5a1-fa6fd147406b"
+DATA_URL_REFERENCE = "https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19/ "
+REGION_RENAMING = {
     "Auvergne-Rhône-Alpes": "Auvergne-Rhone-Alpes",
     "Bourgogne-Franche-Comté": "Bourgogne-Franche-Comte",
     "Grand Est": "Grand-Est",
@@ -40,8 +46,7 @@ def read_psv(str_input: str, **kwargs) -> pd.DataFrame:
 
 def main():
     # Request & downloa data
-    url = "https://www.data.gouv.fr/fr/datasets/r/eb672d49-7cc7-4114-a5a1-fa6fd147406b"
-    page_content = requests.get(url, headers={'User-Agent': 'Custom'}).content
+    page_content = requests.get(DATA_URL, headers={'User-Agent': 'Custom'}).content
     soup = BeautifulSoup(page_content, "html.parser")
     # Build DataFrame
     df = read_psv(str(soup), sep=",")
@@ -49,14 +54,21 @@ def main():
         "nom": "region",
         "total_vaccines": "total_vaccinations"
     })
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
-    df.loc[:, "location"] = "France"
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
+    df.loc[:, "location"] = COUNTRY
     # Add ISO codes
-    df = merge_iso(df, country_iso="FR")
+    df = merge_iso(df, country_iso=COUNTRY_ISO)
     # Reorder columns
     df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv("data/countries/France.csv", index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
+
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 
 if __name__ == "__main__":

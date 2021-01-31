@@ -4,11 +4,16 @@ import pandas as pd
 import re
 import pytz
 import datetime
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Bulgaria.csv"
-replace = {
+COUNTRY = "Bulgaria"
+COUNTRY_ISO = "BG"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://coronavirus.bg/bg/statistika"
+DATA_URL_REFERENCE = DATA_URL_REFERENCE
+REGION_RENAMING = {
     "Благоевград": "Blagoevgrad",
     "Бургас": "Burgas",
     "Варна": "Varna",
@@ -42,11 +47,10 @@ replace = {
 
 def main():
     # Load current data
-    df_source = pd.read_csv(source_file)
+    df_source = pd.read_csv(OUTPUT_FILE)
     
     # Request and Get data
-    url = "https://coronavirus.bg/bg/statistika"
-    page = requests.get(url)
+    page = requests.get(DATA_URL)
     soup = BeautifulSoup(page.content, "html.parser")
     table = soup.find("p", string=re.compile("Ваксинирани лица по")).parent.find("table")
     df = pd.read_html(str(table))[0]
@@ -61,10 +65,10 @@ def main():
         df = df[~(df.loc[:, "region"]=="Общо")]
         df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
         df.loc[:, "date"] = date
-        df.loc[:, "location"] = "Bulgaria"
+        df.loc[:, "location"] = COUNTRY
         
         # Add ISO codes
-        df = merge_iso(df, country_iso="BG")
+        df = merge_iso(df, country_iso=COUNTRY_ISO)
         
         # Concat
         df = pd.concat([df, df_source])
@@ -72,7 +76,14 @@ def main():
         # Reorder columns
         df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
         df = df.sort_values(by=["region", "date"])
-        df.to_csv("output/countries/Bulgaria.csv", index=False)
+        df.to_csv(OUTPUT_FILE, index=False)
+
+        # Tracking
+        update_country_tracking(
+            country=COUNTRY,
+            url=DATA_URL_REFERENCE,
+            last_update=df["date"].max()
+        )
 
 
 if __name__ == "__main__":

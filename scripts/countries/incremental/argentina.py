@@ -1,14 +1,18 @@
 import pandas as pd
 from bs4  import BeautifulSoup
 import urllib.request
-from utils import merge_iso
 from datetime import datetime
 import locale
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
-source_file = "data/countries/Argentina.csv"
-replace = {
+COUNTRY = "Argentina"
+COUNTRY_ISO = "AR"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina"
+DATA_URL_REFERENCE = DATA_URL
+REGION_RENAMING = {
     "CABA": "Ciudad Autonoma de Buenos Aires",
     "Córdoba": "Cordoba",
     "Entre Ríos": "Entre Rios",
@@ -16,6 +20,8 @@ replace = {
     "Río Negro": "Rio Negro",
     "Tucumán": "Tucuman"
 }
+locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
+
 
 
 def get_df(soup):
@@ -41,11 +47,10 @@ def get_date(soup):
 
 def main():
     # Load current data
-    df_source = pd.read_csv(source_file)
+    df_source = pd.read_csv(OUTPUT_FILE)
 
     # Load new data
-    url = "http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina"
-    html_page = urllib.request.urlopen(url)
+    html_page = urllib.request.urlopen(DATA_URL)
     soup = BeautifulSoup(html_page, "html.parser")
 
     # Get new date
@@ -62,13 +67,13 @@ def main():
         })
 
         # Process columns
-        df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
+        df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
         df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
-        df.loc[:, "location"] = "Argentina"
+        df.loc[:, "location"] = COUNTRY
         df.loc[:, "date"] = date
 
         # Add ISO codes
-        df = merge_iso(df, country_iso="AR")
+        df = merge_iso(df, country_iso=COUNTRY_ISO)
 
         # Export
         df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
@@ -77,6 +82,13 @@ def main():
                  "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
         df = df.sort_values(by=["region", "date"])
         df.to_csv(source_file, index=False)
+
+        # Tracking
+        update_country_tracking(
+            country=COUNTRY,
+            url=DATA_URL_REFERENCE,
+            last_update=df["date"].max()
+        )
 
 
 if __name__ == "__main__":

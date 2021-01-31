@@ -1,8 +1,14 @@
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-replace = {
+COUNTRY = "Spain"
+COUNTRY_ISO = "ES"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://raw.githubusercontent.com/civio/covid-vaccination-spain/main/data.csv"
+DATA_URL_REFERENCE = "https://github.com/civio/covid-vaccination-spain/"
+REGION_RENAMING = {
     "Andalucía": "Andalucia",
     "Aragón": "Aragon",
     "Asturias": "Asturias, Principado de",
@@ -18,8 +24,7 @@ replace = {
 
 
 def main():
-    url = "https://raw.githubusercontent.com/civio/covid-vaccination-spain/main/data.csv"
-    df = pd.read_csv(url, dtype={"personas con pauta completa": str})
+    df = pd.read_csv(DATA_URL, dtype={"personas con pauta completa": str})
     df = df.rename(columns={
         "informe": "date",
         "comunidad autónoma": "region",
@@ -34,7 +39,7 @@ def main():
     })
 
     df = df[~(df.loc[:, "region"]=="Totales")]
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "total_vaccinations"] = df.loc[:, "total_vaccinations"].apply(lambda x: int(x.replace(".", "")))
@@ -42,15 +47,21 @@ def main():
         lambda x: int(x.replace(".", "") if x != "nan" else 0)
     )
     df.loc[:, "people_vaccinated"] = df.loc[:, "total_vaccinations"] - df.loc[:, "people_fully_vaccinated"]
-    df.loc[:, "location"] = "Spain"
+    df.loc[:, "location"] = COUNTRY
     # Add ISO codes
-    df = merge_iso(df, country_iso="ES")
+    df = merge_iso(df, country_iso=COUNTRY_ISO)
     # Reorder columns
     df = df[["location", "region", "date", "location_iso", "region_iso", 
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv("data/countries/Spain.csv", index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

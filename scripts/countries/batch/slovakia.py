@@ -1,11 +1,14 @@
 import pandas as pd
-from utils import merge_iso
+from covid_updater.iso import merge_iso
+from covid_updater.tracking import update_country_tracking
 
 
-source_file = "data/countries/Slovakia.csv"
-
-
-replace = {
+COUNTRY = "Slovakia"
+COUNTRY_ISO = "SK"
+OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
+DATA_URL = "https://raw.githubusercontent.com/Institut-Zdravotnych-Analyz/covid19-data/main/OpenData_Slovakia_Vaccination_Regions.csv"
+DATA_URL_REFERENCE = "https://github.com/Institut-Zdravotnych-Analyz/covid19-data/"
+REGION_RENAMING = {
     "Trenčiansky kraj": "Trenciansky kraj",
     "Banskobystrický kraj": "Banskobystricky kraj",
     "Bratislavský kraj": "Bratislavsky kraj",
@@ -19,8 +22,7 @@ replace = {
 
 def main():
     # Load data
-    url = "https://raw.githubusercontent.com/Institut-Zdravotnych-Analyz/covid19-data/main/OpenData_Slovakia_Vaccination_Regions.csv"
-    df = pd.read_csv(url, sep=";")
+    df = pd.read_csv(DATA_URL, sep=";")
 
     df = df.rename(columns={
         "Date": "date",
@@ -30,18 +32,24 @@ def main():
     })
 
     df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
-    df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
-    df.loc[:, "location"] = "Slovakia"
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
+    df.loc[:, "location"] = COUNTRY
 
     # Get iso codes
-    df = merge_iso(df, "SK")
+    df = merge_iso(df, COUNTRY_ISO)
 
     # Export
     df = df[["location", "region", "date", "location_iso", "region_iso",
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]]
     df = df.sort_values(by=["region", "date"])
-    df.to_csv(source_file, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
+    # Tracking
+    update_country_tracking(
+        country=COUNTRY,
+        url=DATA_URL_REFERENCE,
+        last_update=df["date"].max()
+    )
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime
-from utils import merge_iso
+from covid_updater.iso import merge_iso
 
 
 source_file = "data/countries/Austria.csv"

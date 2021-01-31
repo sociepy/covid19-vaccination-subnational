@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import datetime
-from utils import merge_iso
+from covid_updater.iso import merge_iso
 
 
 def main():

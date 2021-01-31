@@ -10,7 +10,7 @@ import os
 from glob import glob
 
 PATH_COUNTRIES = "data/countries/"
-PATH_DATA = "data/vaccinations"
+PATH_DATA = "data/vaccinations.csv"
 
 print(f"{datetime.now().replace(microsecond=0)} - Creating {PATH_DATA}")
 

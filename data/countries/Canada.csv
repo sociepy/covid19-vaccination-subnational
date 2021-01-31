@@ -1,25 +1,17 @@
 location,region,date,location_iso,region_iso,total_vaccinations,people_vaccinated,people_fully_vaccinated
 Canada,Alberta,2020-12-14,CA,CA-AB,0,0,0
 Canada,Alberta,2020-12-15,CA,CA-AB,20,20,0
-Canada,Alberta,2020-12-16,CA,CA-AB,20,20,0
 Canada,Alberta,2020-12-17,CA,CA-AB,394,394,0
-Canada,Alberta,2020-12-18,CA,CA-AB,394,394,0
-Canada,Alberta,2020-12-19,CA,CA-AB,394,394,0
 Canada,Alberta,2020-12-20,CA,CA-AB,2148,2148,0
-Canada,Alberta,2020-12-21,CA,CA-AB,2148,2148,0
 Canada,Alberta,2020-12-22,CA,CA-AB,3074,3074,0
 Canada,Alberta,2020-12-23,CA,CA-AB,3636,3636,0
 Canada,Alberta,2020-12-24,CA,CA-AB,4711,4711,0
-Canada,Alberta,2020-12-25,CA,CA-AB,4711,4711,0
-Canada,Alberta,2020-12-26,CA,CA-AB,4711,4711,0
-Canada,Alberta,2020-12-27,CA,CA-AB,4711,4711,0
 Canada,Alberta,2020-12-28,CA,CA-AB,6016,6016,0
 Canada,Alberta,2020-12-29,CA,CA-AB,6502,6502,0
 Canada,Alberta,2020-12-30,CA,CA-AB,8544,8544,0
 Canada,Alberta,2020-12-31,CA,CA-AB,11102,11102,0
 Canada,Alberta,2021-01-01,CA,CA-AB,14244,14244,0
 Canada,Alberta,2021-01-02,CA,CA-AB,17244,17244,0
-Canada,Alberta,2021-01-03,CA,CA-AB,17244,17244,0
 Canada,Alberta,2021-01-04,CA,CA-AB,22861,22861,0
 Canada,Alberta,2021-01-05,CA,CA-AB,26269,26269,0
 Canada,Alberta,2021-01-06,CA,CA-AB,30033,30033,0
@@ -46,74 +38,49 @@ Canada,Alberta,2021-01-26,CA,CA-AB,99814,89640,10174
 Canada,Alberta,2021-01-27,CA,CA-AB,101123,89761,11362
 Canada,Alberta,2021-01-28,CA,CA-AB,102524,89852,12672
 Canada,Alberta,2021-01-29,CA,CA-AB,104327,89975,14352
+Canada,Alberta,2021-01-30,CA,CA-AB,105752,90104,15648
 Canada,British Columbia,2020-12-14,CA,CA-BC,0,0,0
 Canada,British Columbia,2020-12-15,CA,CA-BC,409,409,0
-Canada,British Columbia,2020-12-16,CA,CA-BC,409,409,0
 Canada,British Columbia,2020-12-17,CA,CA-BC,1215,1215,0
 Canada,British Columbia,2020-12-18,CA,CA-BC,2592,2592,0
-Canada,British Columbia,2020-12-19,CA,CA-BC,2592,2592,0
-Canada,British Columbia,2020-12-20,CA,CA-BC,2592,2592,0
 Canada,British Columbia,2020-12-21,CA,CA-BC,3644,3644,0
 Canada,British Columbia,2020-12-22,CA,CA-BC,4108,4108,0
 Canada,British Columbia,2020-12-23,CA,CA-BC,5603,5603,0
 Canada,British Columbia,2020-12-24,CA,CA-BC,8178,8178,0
-Canada,British Columbia,2020-12-25,CA,CA-BC,8178,8178,0
-Canada,British Columbia,2020-12-26,CA,CA-BC,8178,8178,0
-Canada,British Columbia,2020-12-27,CA,CA-BC,8178,8178,0
-Canada,British Columbia,2020-12-28,CA,CA-BC,8178,8178,0
 Canada,British Columbia,2020-12-29,CA,CA-BC,11930,11930,0
 Canada,British Columbia,2020-12-30,CA,CA-BC,14027,14027,0
 Canada,British Columbia,2020-12-31,CA,CA-BC,17510,17510,0
-Canada,British Columbia,2021-01-01,CA,CA-BC,17510,17510,0
-Canada,British Columbia,2021-01-02,CA,CA-BC,17510,17510,0
-Canada,British Columbia,2021-01-03,CA,CA-BC,17510,17510,0
 Canada,British Columbia,2021-01-04,CA,CA-BC,24139,24139,0
 Canada,British Columbia,2021-01-05,CA,CA-BC,28209,28209,0
 Canada,British Columbia,2021-01-06,CA,CA-BC,33665,33665,0
 Canada,British Columbia,2021-01-07,CA,CA-BC,41064,41064,0
 Canada,British Columbia,2021-01-08,CA,CA-BC,46259,46259,0
-Canada,British Columbia,2021-01-09,CA,CA-BC,46259,46259,0
-Canada,British Columbia,2021-01-10,CA,CA-BC,46259,46259,0
 Canada,British Columbia,2021-01-11,CA,CA-BC,59902,59902,0
 Canada,British Columbia,2021-01-12,CA,CA-BC,62294,62294,0
 Canada,British Columbia,2021-01-13,CA,CA-BC,63430,63430,0
 Canada,British Columbia,2021-01-14,CA,CA-BC,69746,69746,0
 Canada,British Columbia,2021-01-15,CA,CA-BC,75914,75914,0
-Canada,British Columbia,2021-01-16,CA,CA-BC,75914,75914,0
-Canada,British Columbia,2021-01-17,CA,CA-BC,75914,75914,0
 Canada,British Columbia,2021-01-18,CA,CA-BC,87346,87346,0
 Canada,British Columbia,2021-01-19,CA,CA-BC,92369,92369,0
 Canada,British Columbia,2021-01-20,CA,CA-BC,98125,98125,0
 Canada,British Columbia,2021-01-21,CA,CA-BC,104901,103238,1663
 Canada,British Columbia,2021-01-22,CA,CA-BC,110566,108364,2202
-Canada,British Columbia,2021-01-23,CA,CA-BC,110566,108364,2202
-Canada,British Columbia,2021-01-24,CA,CA-BC,110566,108364,2202
 Canada,British Columbia,2021-01-25,CA,CA-BC,119850,116657,3193
 Canada,British Columbia,2021-01-26,CA,CA-BC,122359,118254,4105
 Canada,British Columbia,2021-01-27,CA,CA-BC,124365,120205,4160
 Canada,British Columbia,2021-01-28,CA,CA-BC,127255,123070,4185
 Canada,British Columbia,2021-01-29,CA,CA-BC,129241,124979,4262
 Canada,Manitoba,2020-12-14,CA,CA-MB,0,0,0
-Canada,Manitoba,2020-12-15,CA,CA-MB,0,0,0
 Canada,Manitoba,2020-12-16,CA,CA-MB,302,302,0
-Canada,Manitoba,2020-12-17,CA,CA-MB,302,302,0
 Canada,Manitoba,2020-12-18,CA,CA-MB,593,593,0
-Canada,Manitoba,2020-12-19,CA,CA-MB,593,593,0
-Canada,Manitoba,2020-12-20,CA,CA-MB,593,593,0
 Canada,Manitoba,2020-12-21,CA,CA-MB,894,894,0
 Canada,Manitoba,2020-12-22,CA,CA-MB,1192,1192,0
 Canada,Manitoba,2020-12-23,CA,CA-MB,1687,1687,0
 Canada,Manitoba,2020-12-24,CA,CA-MB,2177,2177,0
-Canada,Manitoba,2020-12-25,CA,CA-MB,2177,2177,0
-Canada,Manitoba,2020-12-26,CA,CA-MB,2177,2177,0
-Canada,Manitoba,2020-12-27,CA,CA-MB,2177,2177,0
-Canada,Manitoba,2020-12-28,CA,CA-MB,2177,2177,0
 Canada,Manitoba,2020-12-29,CA,CA-MB,2477,2477,0
 Canada,Manitoba,2020-12-30,CA,CA-MB,2900,2900,0
 Canada,Manitoba,2020-12-31,CA,CA-MB,3400,3400,0
-Canada,Manitoba,2021-01-01,CA,CA-MB,3400,3400,0
 Canada,Manitoba,2021-01-02,CA,CA-MB,3432,3432,0
-Canada,Manitoba,2021-01-03,CA,CA-MB,3432,3432,0
 Canada,Manitoba,2021-01-04,CA,CA-MB,3442,3442,0
 Canada,Manitoba,2021-01-05,CA,CA-MB,4292,4292,0
 Canada,Manitoba,2021-01-06,CA,CA-MB,5165,5165,0
@@ -122,14 +89,9 @@ Canada,Manitoba,2021-01-08,CA,CA-MB,7484,7484,0
 Canada,Manitoba,2021-01-09,CA,CA-MB,8674,8674,0
 Canada,Manitoba,2021-01-10,CA,CA-MB,9498,9498,0
 Canada,Manitoba,2021-01-11,CA,CA-MB,10353,10353,0
-Canada,Manitoba,2021-01-12,CA,CA-MB,10353,10353,0
 Canada,Manitoba,2021-01-13,CA,CA-MB,12409,10749,1660
-Canada,Manitoba,2021-01-14,CA,CA-MB,12409,10749,1660
 Canada,Manitoba,2021-01-15,CA,CA-MB,13539,11401,2138
-Canada,Manitoba,2021-01-16,CA,CA-MB,13539,11401,2138
-Canada,Manitoba,2021-01-17,CA,CA-MB,13539,11401,2138
 Canada,Manitoba,2021-01-18,CA,CA-MB,17751,15607,2144
-Canada,Manitoba,2021-01-19,CA,CA-MB,17751,15607,2144
 Canada,Manitoba,2021-01-20,CA,CA-MB,22365,19771,2594
 Canada,Manitoba,2021-01-21,CA,CA-MB,23884,20846,3038
 Canada,Manitoba,2021-01-22,CA,CA-MB,25838,22448,3390
@@ -140,236 +102,61 @@ Canada,Manitoba,2021-01-26,CA,CA-MB,31369,27127,4242
 Canada,Manitoba,2021-01-27,CA,CA-MB,33361,28274,5087
 Canada,Manitoba,2021-01-28,CA,CA-MB,35338,29404,5934
 Canada,Manitoba,2021-01-29,CA,CA-MB,37309,30520,6789
+Canada,Manitoba,2021-01-30,CA,CA-MB,39290,31645,7645
 Canada,New Brunswick,2020-12-14,CA,CA-NB,0,0,0
-Canada,New Brunswick,2020-12-15,CA,CA-NB,0,0,0
-Canada,New Brunswick,2020-12-16,CA,CA-NB,0,0,0
-Canada,New Brunswick,2020-12-17,CA,CA-NB,0,0,0
-Canada,New Brunswick,2020-12-18,CA,CA-NB,0,0,0
 Canada,New Brunswick,2020-12-19,CA,CA-NB,5,5,0
-Canada,New Brunswick,2020-12-20,CA,CA-NB,5,5,0
 Canada,New Brunswick,2020-12-21,CA,CA-NB,1871,1871,0
-Canada,New Brunswick,2020-12-22,CA,CA-NB,1871,1871,0
-Canada,New Brunswick,2020-12-23,CA,CA-NB,1871,1871,0
-Canada,New Brunswick,2020-12-24,CA,CA-NB,1871,1871,0
-Canada,New Brunswick,2020-12-25,CA,CA-NB,1871,1871,0
-Canada,New Brunswick,2020-12-26,CA,CA-NB,1871,1871,0
-Canada,New Brunswick,2020-12-27,CA,CA-NB,1871,1871,0
 Canada,New Brunswick,2020-12-28,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2020-12-29,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2020-12-30,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2020-12-31,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2021-01-01,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2021-01-02,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2021-01-03,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2021-01-04,CA,CA-NB,2905,2905,0
-Canada,New Brunswick,2021-01-05,CA,CA-NB,2905,2905,0
 Canada,New Brunswick,2021-01-06,CA,CA-NB,4105,4105,0
 Canada,New Brunswick,2021-01-07,CA,CA-NB,5019,5019,0
-Canada,New Brunswick,2021-01-08,CA,CA-NB,5019,5019,0
-Canada,New Brunswick,2021-01-09,CA,CA-NB,5019,5019,0
-Canada,New Brunswick,2021-01-10,CA,CA-NB,5019,5019,0
 Canada,New Brunswick,2021-01-11,CA,CA-NB,7732,7732,0
 Canada,New Brunswick,2021-01-12,CA,CA-NB,7732,5870,1862
-Canada,New Brunswick,2021-01-13,CA,CA-NB,7732,5870,1862
-Canada,New Brunswick,2021-01-14,CA,CA-NB,7732,5870,1862
-Canada,New Brunswick,2021-01-15,CA,CA-NB,7732,5870,1862
-Canada,New Brunswick,2021-01-16,CA,CA-NB,7732,5870,1862
-Canada,New Brunswick,2021-01-17,CA,CA-NB,7732,5870,1862
 Canada,New Brunswick,2021-01-18,CA,CA-NB,10436,7869,2567
-Canada,New Brunswick,2021-01-19,CA,CA-NB,10436,7869,2567
-Canada,New Brunswick,2021-01-20,CA,CA-NB,10436,7869,2567
-Canada,New Brunswick,2021-01-21,CA,CA-NB,10436,7869,2567
-Canada,New Brunswick,2021-01-22,CA,CA-NB,10436,7869,2567
-Canada,New Brunswick,2021-01-23,CA,CA-NB,10436,7869,2567
-Canada,New Brunswick,2021-01-24,CA,CA-NB,10436,7869,2567
 Canada,New Brunswick,2021-01-25,CA,CA-NB,14257,11418,2839
-Canada,New Brunswick,2021-01-26,CA,CA-NB,14257,11418,2839
-Canada,New Brunswick,2021-01-27,CA,CA-NB,14257,11418,2839
-Canada,New Brunswick,2021-01-28,CA,CA-NB,14257,11418,2839
-Canada,New Brunswick,2021-01-29,CA,CA-NB,14257,11418,2839
 Canada,Newfoundland and Labrador,2020-12-14,CA,CA-NL,0,0,0
-Canada,Newfoundland and Labrador,2020-12-15,CA,CA-NL,0,0,0
 Canada,Newfoundland and Labrador,2020-12-16,CA,CA-NL,2,2,0
 Canada,Newfoundland and Labrador,2020-12-17,CA,CA-NL,15,15,0
 Canada,Newfoundland and Labrador,2020-12-18,CA,CA-NL,175,175,0
-Canada,Newfoundland and Labrador,2020-12-19,CA,CA-NL,175,175,0
-Canada,Newfoundland and Labrador,2020-12-20,CA,CA-NL,175,175,0
 Canada,Newfoundland and Labrador,2020-12-21,CA,CA-NL,972,972,0
-Canada,Newfoundland and Labrador,2020-12-22,CA,CA-NL,972,972,0
 Canada,Newfoundland and Labrador,2020-12-23,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-24,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-25,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-26,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-27,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-28,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-29,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-30,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2020-12-31,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-01,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-02,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-03,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-04,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-05,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-06,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-07,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-08,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-09,CA,CA-NL,1785,1785,0
-Canada,Newfoundland and Labrador,2021-01-10,CA,CA-NL,1785,1785,0
 Canada,Newfoundland and Labrador,2021-01-11,CA,CA-NL,3760,3760,0
-Canada,Newfoundland and Labrador,2021-01-12,CA,CA-NL,3760,3760,0
 Canada,Newfoundland and Labrador,2021-01-13,CA,CA-NL,5291,3796,1495
-Canada,Newfoundland and Labrador,2021-01-14,CA,CA-NL,5291,3796,1495
-Canada,Newfoundland and Labrador,2021-01-15,CA,CA-NL,5291,3796,1495
-Canada,Newfoundland and Labrador,2021-01-16,CA,CA-NL,5291,3796,1495
-Canada,Newfoundland and Labrador,2021-01-17,CA,CA-NL,5291,3796,1495
-Canada,Newfoundland and Labrador,2021-01-18,CA,CA-NL,5291,3796,1495
-Canada,Newfoundland and Labrador,2021-01-19,CA,CA-NL,5291,3796,1495
 Canada,Newfoundland and Labrador,2021-01-20,CA,CA-NL,8549,6812,1737
-Canada,Newfoundland and Labrador,2021-01-21,CA,CA-NL,8549,6812,1737
-Canada,Newfoundland and Labrador,2021-01-22,CA,CA-NL,8549,6812,1737
-Canada,Newfoundland and Labrador,2021-01-23,CA,CA-NL,8549,6812,1737
-Canada,Newfoundland and Labrador,2021-01-24,CA,CA-NL,8549,6812,1737
-Canada,Newfoundland and Labrador,2021-01-25,CA,CA-NL,8549,6812,1737
-Canada,Newfoundland and Labrador,2021-01-26,CA,CA-NL,8549,6812,1737
 Canada,Newfoundland and Labrador,2021-01-27,CA,CA-NL,10080,8343,1737
-Canada,Newfoundland and Labrador,2021-01-28,CA,CA-NL,10080,8343,1737
-Canada,Newfoundland and Labrador,2021-01-29,CA,CA-NL,10080,8343,1737
 Canada,Northwest Territories,2020-12-14,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-15,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-16,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-17,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-18,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-19,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-20,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-21,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-22,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-23,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-24,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-25,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-26,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-27,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-28,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-29,CA,CA-NT,0,0,0
-Canada,Northwest Territories,2020-12-30,CA,CA-NT,0,0,0
 Canada,Northwest Territories,2020-12-31,CA,CA-NT,2,2,0
-Canada,Northwest Territories,2021-01-01,CA,CA-NT,2,2,0
-Canada,Northwest Territories,2021-01-02,CA,CA-NT,2,2,0
-Canada,Northwest Territories,2021-01-03,CA,CA-NT,2,2,0
-Canada,Northwest Territories,2021-01-04,CA,CA-NT,2,2,0
 Canada,Northwest Territories,2021-01-05,CA,CA-NT,130,130,0
-Canada,Northwest Territories,2021-01-06,CA,CA-NT,130,130,0
-Canada,Northwest Territories,2021-01-07,CA,CA-NT,130,130,0
 Canada,Northwest Territories,2021-01-08,CA,CA-NT,162,162,0
-Canada,Northwest Territories,2021-01-09,CA,CA-NT,162,162,0
-Canada,Northwest Territories,2021-01-10,CA,CA-NT,162,162,0
-Canada,Northwest Territories,2021-01-11,CA,CA-NT,162,162,0
 Canada,Northwest Territories,2021-01-12,CA,CA-NT,512,512,0
-Canada,Northwest Territories,2021-01-13,CA,CA-NT,512,512,0
-Canada,Northwest Territories,2021-01-14,CA,CA-NT,512,512,0
-Canada,Northwest Territories,2021-01-15,CA,CA-NT,512,512,0
-Canada,Northwest Territories,2021-01-16,CA,CA-NT,512,512,0
-Canada,Northwest Territories,2021-01-17,CA,CA-NT,512,512,0
 Canada,Northwest Territories,2021-01-18,CA,CA-NT,1893,1893,0
-Canada,Northwest Territories,2021-01-19,CA,CA-NT,1893,1893,0
-Canada,Northwest Territories,2021-01-20,CA,CA-NT,1893,1893,0
-Canada,Northwest Territories,2021-01-21,CA,CA-NT,1893,1893,0
-Canada,Northwest Territories,2021-01-22,CA,CA-NT,1893,1893,0
-Canada,Northwest Territories,2021-01-23,CA,CA-NT,1893,1893,0
-Canada,Northwest Territories,2021-01-24,CA,CA-NT,1893,1893,0
-Canada,Northwest Territories,2021-01-25,CA,CA-NT,1893,1893,0
 Canada,Northwest Territories,2021-01-26,CA,CA-NT,9471,9471,0
-Canada,Northwest Territories,2021-01-27,CA,CA-NT,9471,9471,0
-Canada,Northwest Territories,2021-01-28,CA,CA-NT,9471,9471,0
-Canada,Northwest Territories,2021-01-29,CA,CA-NT,9471,9471,0
 Canada,Nova Scotia,2020-12-14,CA,CA-NS,0,0,0
-Canada,Nova Scotia,2020-12-15,CA,CA-NS,0,0,0
 Canada,Nova Scotia,2020-12-16,CA,CA-NS,376,376,0
-Canada,Nova Scotia,2020-12-17,CA,CA-NS,376,376,0
-Canada,Nova Scotia,2020-12-18,CA,CA-NS,376,376,0
-Canada,Nova Scotia,2020-12-19,CA,CA-NS,376,376,0
-Canada,Nova Scotia,2020-12-20,CA,CA-NS,376,376,0
 Canada,Nova Scotia,2020-12-21,CA,CA-NS,1463,1463,0
-Canada,Nova Scotia,2020-12-22,CA,CA-NS,1463,1463,0
-Canada,Nova Scotia,2020-12-23,CA,CA-NS,1463,1463,0
-Canada,Nova Scotia,2020-12-24,CA,CA-NS,1463,1463,0
-Canada,Nova Scotia,2020-12-25,CA,CA-NS,1463,1463,0
-Canada,Nova Scotia,2020-12-26,CA,CA-NS,1463,1463,0
-Canada,Nova Scotia,2020-12-27,CA,CA-NS,1463,1463,0
-Canada,Nova Scotia,2020-12-28,CA,CA-NS,1463,1463,0
 Canada,Nova Scotia,2020-12-29,CA,CA-NS,2290,2290,0
 Canada,Nova Scotia,2020-12-30,CA,CA-NS,2596,2596,0
-Canada,Nova Scotia,2020-12-31,CA,CA-NS,2596,2596,0
-Canada,Nova Scotia,2021-01-01,CA,CA-NS,2596,2596,0
 Canada,Nova Scotia,2021-01-02,CA,CA-NS,2720,2720,0
-Canada,Nova Scotia,2021-01-03,CA,CA-NS,2720,2720,0
-Canada,Nova Scotia,2021-01-04,CA,CA-NS,2720,2720,0
-Canada,Nova Scotia,2021-01-05,CA,CA-NS,2720,2720,0
-Canada,Nova Scotia,2021-01-06,CA,CA-NS,2720,2720,0
-Canada,Nova Scotia,2021-01-07,CA,CA-NS,2720,2720,0
-Canada,Nova Scotia,2021-01-08,CA,CA-NS,2720,2720,0
 Canada,Nova Scotia,2021-01-09,CA,CA-NS,3831,3831,0
-Canada,Nova Scotia,2021-01-10,CA,CA-NS,3831,3831,0
-Canada,Nova Scotia,2021-01-11,CA,CA-NS,3831,3831,0
 Canada,Nova Scotia,2021-01-12,CA,CA-NS,3831,2755,1076
-Canada,Nova Scotia,2021-01-13,CA,CA-NS,3831,2755,1076
-Canada,Nova Scotia,2021-01-14,CA,CA-NS,3831,2755,1076
 Canada,Nova Scotia,2021-01-15,CA,CA-NS,7600,5400,2200
-Canada,Nova Scotia,2021-01-16,CA,CA-NS,7600,5400,2200
-Canada,Nova Scotia,2021-01-17,CA,CA-NS,7600,5400,2200
-Canada,Nova Scotia,2021-01-18,CA,CA-NS,7600,5400,2200
 Canada,Nova Scotia,2021-01-19,CA,CA-NS,8520,6305,2215
 Canada,Nova Scotia,2021-01-20,CA,CA-NS,9175,6668,2507
 Canada,Nova Scotia,2021-01-21,CA,CA-NS,9827,7131,2696
 Canada,Nova Scotia,2021-01-22,CA,CA-NS,10575,7870,2705
-Canada,Nova Scotia,2021-01-23,CA,CA-NS,10575,7870,2705
-Canada,Nova Scotia,2021-01-24,CA,CA-NS,10575,7870,2705
 Canada,Nova Scotia,2021-01-25,CA,CA-NS,11083,8375,2708
 Canada,Nova Scotia,2021-01-26,CA,CA-NS,11622,8914,2708
 Canada,Nova Scotia,2021-01-27,CA,CA-NS,12286,9577,2709
 Canada,Nova Scotia,2021-01-28,CA,CA-NS,13504,10795,2709
 Canada,Nova Scotia,2021-01-29,CA,CA-NS,14589,11875,2714
 Canada,Nunavut,2020-12-14,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-15,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-16,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-17,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-18,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-19,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-20,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-21,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-22,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-23,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-24,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-25,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-26,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-27,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-28,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-29,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-30,CA,CA-NU,0,0,0
-Canada,Nunavut,2020-12-31,CA,CA-NU,0,0,0
-Canada,Nunavut,2021-01-01,CA,CA-NU,0,0,0
-Canada,Nunavut,2021-01-02,CA,CA-NU,0,0,0
-Canada,Nunavut,2021-01-03,CA,CA-NU,0,0,0
-Canada,Nunavut,2021-01-04,CA,CA-NU,0,0,0
-Canada,Nunavut,2021-01-05,CA,CA-NU,0,0,0
 Canada,Nunavut,2021-01-06,CA,CA-NU,29,29,0
-Canada,Nunavut,2021-01-07,CA,CA-NU,29,29,0
-Canada,Nunavut,2021-01-08,CA,CA-NU,29,29,0
-Canada,Nunavut,2021-01-09,CA,CA-NU,29,29,0
-Canada,Nunavut,2021-01-10,CA,CA-NU,29,29,0
-Canada,Nunavut,2021-01-11,CA,CA-NU,29,29,0
-Canada,Nunavut,2021-01-12,CA,CA-NU,29,29,0
 Canada,Nunavut,2021-01-13,CA,CA-NU,400,400,0
 Canada,Nunavut,2021-01-14,CA,CA-NU,521,521,0
 Canada,Nunavut,2021-01-15,CA,CA-NU,983,983,0
-Canada,Nunavut,2021-01-16,CA,CA-NU,983,983,0
-Canada,Nunavut,2021-01-17,CA,CA-NU,983,983,0
 Canada,Nunavut,2021-01-18,CA,CA-NU,2141,2141,0
 Canada,Nunavut,2021-01-19,CA,CA-NU,2545,2545,0
-Canada,Nunavut,2021-01-20,CA,CA-NU,2545,2545,0
 Canada,Nunavut,2021-01-21,CA,CA-NU,3375,3375,0
 Canada,Nunavut,2021-01-22,CA,CA-NU,3822,3822,0
-Canada,Nunavut,2021-01-23,CA,CA-NU,3822,3822,0
-Canada,Nunavut,2021-01-24,CA,CA-NU,3822,3822,0
 Canada,Nunavut,2021-01-25,CA,CA-NU,4458,4458,0
 Canada,Nunavut,2021-01-26,CA,CA-NU,4723,4723,0
 Canada,Nunavut,2021-01-27,CA,CA-NU,4930,4930,0
@@ -387,7 +174,6 @@ Canada,Ontario,2020-12-22,CA,CA-ON,5250,5250,0
 Canada,Ontario,2020-12-23,CA,CA-ON,8718,8718,0
 Canada,Ontario,2020-12-24,CA,CA-ON,10756,10756,0
 Canada,Ontario,2020-12-25,CA,CA-ON,11058,11058,0
-Canada,Ontario,2020-12-26,CA,CA-ON,11058,11058,0
 Canada,Ontario,2020-12-27,CA,CA-ON,11227,11227,0
 Canada,Ontario,2020-12-28,CA,CA-ON,13200,13200,0
 Canada,Ontario,2020-12-29,CA,CA-ON,18048,18048,0
@@ -422,55 +208,21 @@ Canada,Ontario,2021-01-26,CA,CA-ON,295817,254174,41643
 Canada,Ontario,2021-01-27,CA,CA-ON,305330,257100,48230
 Canada,Ontario,2021-01-28,CA,CA-ON,317240,261954,55286
 Canada,Ontario,2021-01-29,CA,CA-ON,327455,265776,61679
+Canada,Ontario,2021-01-30,CA,CA-ON,336828,269041,67787
 Canada,Prince Edward Island,2020-12-14,CA,CA-PE,0,0,0
-Canada,Prince Edward Island,2020-12-15,CA,CA-PE,0,0,0
 Canada,Prince Edward Island,2020-12-16,CA,CA-PE,140,140,0
 Canada,Prince Edward Island,2020-12-17,CA,CA-PE,344,344,0
-Canada,Prince Edward Island,2020-12-18,CA,CA-PE,344,344,0
-Canada,Prince Edward Island,2020-12-19,CA,CA-PE,344,344,0
-Canada,Prince Edward Island,2020-12-20,CA,CA-PE,344,344,0
-Canada,Prince Edward Island,2020-12-21,CA,CA-PE,344,344,0
 Canada,Prince Edward Island,2020-12-22,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-23,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-24,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-25,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-26,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-27,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-28,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-29,CA,CA-PE,1500,1500,0
-Canada,Prince Edward Island,2020-12-30,CA,CA-PE,1500,1500,0
 Canada,Prince Edward Island,2020-12-31,CA,CA-PE,1950,1950,0
-Canada,Prince Edward Island,2021-01-01,CA,CA-PE,1950,1950,0
-Canada,Prince Edward Island,2021-01-02,CA,CA-PE,1950,1950,0
-Canada,Prince Edward Island,2021-01-03,CA,CA-PE,1950,1950,0
-Canada,Prince Edward Island,2021-01-04,CA,CA-PE,1950,1950,0
 Canada,Prince Edward Island,2021-01-05,CA,CA-PE,2120,2120,0
-Canada,Prince Edward Island,2021-01-06,CA,CA-PE,2120,2120,0
-Canada,Prince Edward Island,2021-01-07,CA,CA-PE,2120,2120,0
 Canada,Prince Edward Island,2021-01-08,CA,CA-PE,3600,3600,0
-Canada,Prince Edward Island,2021-01-09,CA,CA-PE,3600,3600,0
-Canada,Prince Edward Island,2021-01-10,CA,CA-PE,3600,3600,0
-Canada,Prince Edward Island,2021-01-11,CA,CA-PE,3600,3600,0
 Canada,Prince Edward Island,2021-01-12,CA,CA-PE,4226,3072,1154
-Canada,Prince Edward Island,2021-01-13,CA,CA-PE,4226,3072,1154
 Canada,Prince Edward Island,2021-01-14,CA,CA-PE,5102,3948,1154
-Canada,Prince Edward Island,2021-01-15,CA,CA-PE,5102,3948,1154
-Canada,Prince Edward Island,2021-01-16,CA,CA-PE,5102,3948,1154
-Canada,Prince Edward Island,2021-01-17,CA,CA-PE,5102,3948,1154
-Canada,Prince Edward Island,2021-01-18,CA,CA-PE,5102,3948,1154
 Canada,Prince Edward Island,2021-01-19,CA,CA-PE,5910,4503,1407
-Canada,Prince Edward Island,2021-01-20,CA,CA-PE,5910,4503,1407
 Canada,Prince Edward Island,2021-01-21,CA,CA-PE,6525,4726,1799
-Canada,Prince Edward Island,2021-01-22,CA,CA-PE,6525,4726,1799
-Canada,Prince Edward Island,2021-01-23,CA,CA-PE,6525,4726,1799
-Canada,Prince Edward Island,2021-01-24,CA,CA-PE,6525,4726,1799
-Canada,Prince Edward Island,2021-01-25,CA,CA-PE,6525,4726,1799
 Canada,Prince Edward Island,2021-01-26,CA,CA-PE,7117,5225,1892
-Canada,Prince Edward Island,2021-01-27,CA,CA-PE,7117,5225,1892
 Canada,Prince Edward Island,2021-01-28,CA,CA-PE,7510,5278,2232
-Canada,Prince Edward Island,2021-01-29,CA,CA-PE,7510,5278,2232
 Canada,Quebec,2020-12-14,CA,CA-QC,292,292,0
-Canada,Quebec,2020-12-15,CA,CA-QC,292,292,0
 Canada,Quebec,2020-12-16,CA,CA-QC,1448,1448,0
 Canada,Quebec,2020-12-17,CA,CA-QC,2389,2389,0
 Canada,Quebec,2020-12-18,CA,CA-QC,3290,3290,0
@@ -480,14 +232,12 @@ Canada,Quebec,2020-12-21,CA,CA-QC,4836,4836,0
 Canada,Quebec,2020-12-22,CA,CA-QC,5338,5338,0
 Canada,Quebec,2020-12-23,CA,CA-QC,7229,7229,0
 Canada,Quebec,2020-12-24,CA,CA-QC,11171,11171,0
-Canada,Quebec,2020-12-25,CA,CA-QC,11171,11171,0
 Canada,Quebec,2020-12-26,CA,CA-QC,14190,14190,0
 Canada,Quebec,2020-12-27,CA,CA-QC,17582,17582,0
 Canada,Quebec,2020-12-28,CA,CA-QC,20439,20439,0
 Canada,Quebec,2020-12-29,CA,CA-QC,20941,20941,0
 Canada,Quebec,2020-12-30,CA,CA-QC,23680,23680,0
 Canada,Quebec,2020-12-31,CA,CA-QC,27622,27622,0
-Canada,Quebec,2021-01-01,CA,CA-QC,27622,27622,0
 Canada,Quebec,2021-01-02,CA,CA-QC,27964,27964,0
 Canada,Quebec,2021-01-03,CA,CA-QC,28762,28762,0
 Canada,Quebec,2021-01-04,CA,CA-QC,30473,30473,0
@@ -516,25 +266,18 @@ Canada,Quebec,2021-01-26,CA,CA-QC,224879,224879,0
 Canada,Quebec,2021-01-27,CA,CA-QC,229219,229219,0
 Canada,Quebec,2021-01-28,CA,CA-QC,232986,232986,0
 Canada,Quebec,2021-01-29,CA,CA-QC,236057,236057,0
+Canada,Quebec,2021-01-30,CA,CA-QC,238143,238143,0
 Canada,Saskatchewan,2020-12-14,CA,CA-SK,0,0,0
 Canada,Saskatchewan,2020-12-15,CA,CA-SK,11,11,0
-Canada,Saskatchewan,2020-12-16,CA,CA-SK,11,11,0
 Canada,Saskatchewan,2020-12-17,CA,CA-SK,250,250,0
 Canada,Saskatchewan,2020-12-18,CA,CA-SK,551,551,0
-Canada,Saskatchewan,2020-12-19,CA,CA-SK,551,551,0
-Canada,Saskatchewan,2020-12-20,CA,CA-SK,551,551,0
 Canada,Saskatchewan,2020-12-21,CA,CA-SK,1285,1285,0
 Canada,Saskatchewan,2020-12-22,CA,CA-SK,1519,1519,0
 Canada,Saskatchewan,2020-12-23,CA,CA-SK,1597,1597,0
 Canada,Saskatchewan,2020-12-24,CA,CA-SK,1786,1786,0
-Canada,Saskatchewan,2020-12-25,CA,CA-SK,1786,1786,0
-Canada,Saskatchewan,2020-12-26,CA,CA-SK,1786,1786,0
-Canada,Saskatchewan,2020-12-27,CA,CA-SK,1786,1786,0
-Canada,Saskatchewan,2020-12-28,CA,CA-SK,1786,1786,0
 Canada,Saskatchewan,2020-12-29,CA,CA-SK,2371,2371,0
 Canada,Saskatchewan,2020-12-30,CA,CA-SK,2942,2942,0
 Canada,Saskatchewan,2020-12-31,CA,CA-SK,3458,3458,0
-Canada,Saskatchewan,2021-01-01,CA,CA-SK,3458,3458,0
 Canada,Saskatchewan,2021-01-02,CA,CA-SK,3722,3722,0
 Canada,Saskatchewan,2021-01-03,CA,CA-SK,3866,3866,0
 Canada,Saskatchewan,2021-01-04,CA,CA-SK,4013,4013,0
@@ -563,50 +306,18 @@ Canada,Saskatchewan,2021-01-26,CA,CA-SK,34080,30367,3713
 Canada,Saskatchewan,2021-01-27,CA,CA-SK,34615,30435,4180
 Canada,Saskatchewan,2021-01-28,CA,CA-SK,34672,30322,4350
 Canada,Saskatchewan,2021-01-29,CA,CA-SK,35091,30520,4571
+Canada,Saskatchewan,2021-01-30,CA,CA-SK,35239,30602,4637
 Canada,Yukon,2020-12-14,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-15,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-16,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-17,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-18,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-19,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-20,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-21,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-22,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-23,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-24,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-25,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-26,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-27,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-28,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-29,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-30,CA,CA-YT,0,0,0
-Canada,Yukon,2020-12-31,CA,CA-YT,0,0,0
-Canada,Yukon,2021-01-01,CA,CA-YT,0,0,0
-Canada,Yukon,2021-01-02,CA,CA-YT,0,0,0
-Canada,Yukon,2021-01-03,CA,CA-YT,0,0,0
 Canada,Yukon,2021-01-04,CA,CA-YT,50,50,0
-Canada,Yukon,2021-01-05,CA,CA-YT,50,50,0
-Canada,Yukon,2021-01-06,CA,CA-YT,50,50,0
 Canada,Yukon,2021-01-07,CA,CA-YT,310,310,0
-Canada,Yukon,2021-01-08,CA,CA-YT,310,310,0
-Canada,Yukon,2021-01-09,CA,CA-YT,310,310,0
-Canada,Yukon,2021-01-10,CA,CA-YT,310,310,0
 Canada,Yukon,2021-01-11,CA,CA-YT,495,495,0
-Canada,Yukon,2021-01-12,CA,CA-YT,495,495,0
 Canada,Yukon,2021-01-13,CA,CA-YT,685,685,0
-Canada,Yukon,2021-01-14,CA,CA-YT,685,685,0
 Canada,Yukon,2021-01-15,CA,CA-YT,1184,1184,0
-Canada,Yukon,2021-01-16,CA,CA-YT,1184,1184,0
-Canada,Yukon,2021-01-17,CA,CA-YT,1184,1184,0
 Canada,Yukon,2021-01-18,CA,CA-YT,1347,1347,0
-Canada,Yukon,2021-01-19,CA,CA-YT,1347,1347,0
 Canada,Yukon,2021-01-20,CA,CA-YT,2590,2590,0
 Canada,Yukon,2021-01-21,CA,CA-YT,3160,3160,0
 Canada,Yukon,2021-01-22,CA,CA-YT,3730,3730,0
-Canada,Yukon,2021-01-23,CA,CA-YT,3730,3730,0
-Canada,Yukon,2021-01-24,CA,CA-YT,3730,3730,0
 Canada,Yukon,2021-01-25,CA,CA-YT,3952,3952,0
 Canada,Yukon,2021-01-26,CA,CA-YT,4397,4397,0
 Canada,Yukon,2021-01-27,CA,CA-YT,5170,5170,0
-Canada,Yukon,2021-01-28,CA,CA-YT,5170,5170,0
 Canada,Yukon,2021-01-29,CA,CA-YT,6496,6496,0

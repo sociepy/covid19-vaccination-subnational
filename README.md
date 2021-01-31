@@ -12,6 +12,7 @@ some of its structure, and is open to integration if deemed approriate.
 * [Data sources](#data-sources)
 * [API](#api)
 * [Contribute](#contribute)
+* [Documentation](docs/CODE.md) (WIP 🚧)
 * [License](#license)
 ## Data sources
 

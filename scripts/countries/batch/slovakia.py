@@ -1,6 +1,7 @@
 import pandas as pd
 from covid_updater.iso import merge_iso
 from covid_updater.tracking import update_country_tracking
+from covid_updater.utils import keep_min_date
 
 
 COUNTRY = "Slovakia"
@@ -31,12 +32,21 @@ def main():
         "second_dose": "people_fully_vaccinated"
     })
 
+    # Cumsum
+    df = df.sort_values(by="date")
+    df["people_vaccinated"] = df.groupby("region")["people_vaccinated"].cumsum().values
+    df["people_fully_vaccinated"] = df.groupby("region")["people_fully_vaccinated"].cumsum().values
+
+    # Add columns
     df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
     df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
     df.loc[:, "location"] = COUNTRY
 
     # Get iso codes
     df = merge_iso(df, COUNTRY_ISO)
+
+    # Avoid repeating reports
+    df = keep_min_date(df)
 
     # Export
     df = df[["location", "region", "date", "location_iso", "region_iso",

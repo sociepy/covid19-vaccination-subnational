@@ -34,8 +34,8 @@ def load_data(url):
     
     # Get vaccine numbers
     df = df.sort_values(by=["Dose", "Region"]).set_index(["Dose", "Region"])
-    people_vaccinated = df.loc["First"].values.T.reshape(-1, 1).squeeze()
-    people_fully_vaccinated = df.loc["Second"].values.T.reshape(-1, 1).squeeze()
+    people_vaccinated = df.loc["First"].values.reshape(-1, 1).squeeze()
+    people_fully_vaccinated = df.loc["Second"].values.reshape(-1, 1).squeeze()
     total_vaccinations = people_vaccinated + people_fully_vaccinated
     
     # Build missing columns

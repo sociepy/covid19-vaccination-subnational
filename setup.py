@@ -46,9 +46,4 @@ setup(
         'Bug Tracker': 'http://github.com/sociepy/covid19-vaccination-subnational/issues',
     },
     python_requires='>=3.7',
-    entry_points={
-        'console_scripts': [
-            'covid-updater-generate-iso=covid_updater.iso:generate_iso'
-        ]
-    }
 )

@@ -15,7 +15,7 @@ PATH_DATA = "data/vaccinations"
 print(f"{datetime.now().replace(microsecond=0)} - Creating {PATH_DATA}")
 
 # Load country data
-files = [os.path.join(PATH_COUNTRIES, f) for f in os.listdir(path=PATH_COUNTRIES) if f.endswith(f".csv")]
+files = [pd.read_csv(os.path.join(PATH_COUNTRIES, f)) for f in os.listdir(path=PATH_COUNTRIES) if f.endswith(f".csv")]
 df = pd.concat(files)
 
 # Process data

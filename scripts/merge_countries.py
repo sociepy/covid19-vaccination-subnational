@@ -9,14 +9,19 @@ from datetime import datetime
 import os
 from glob import glob
 
+PATH_COUNTRIES = "data/countries/"
+PATH_DATA = "data/vaccinations"
 
+print(f"{datetime.now().replace(microsecond=0)} - Creating {PATH_DATA}")
 
-# Merge csvs and generate new data file
-print(f"{datetime.now().replace(microsecond=0)} - Creating data/vaccinations.csv")
-path = "data/countries/"
-files = [f for f in os.listdir(path=path) if f.endswith(f".csv")]
-df = pd.concat([pd.read_csv(os.path.join(path, f)) for f in files])
+# Load country data
+files = [os.path.join(PATH_COUNTRIES, f) for f in os.listdir(path=PATH_COUNTRIES) if f.endswith(f".csv")]
+df = pd.concat(files)
+
+# Process data
 colnames = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
 df.loc[:, colnames] = df.loc[:, colnames].astype("Int64")
+
+# Export
 df = df.sort_values(by=["location", "region", "date"])
-df.to_csv("data/vaccinations.csv", index=False)
+df.to_csv(PATH_DATA, index=False)

@@ -1,3 +1,4 @@
+import urllib
 import pandas as pd
 from covid_updater.tracking import update_country_tracking
 
@@ -6,6 +7,17 @@ COLUMNS_ALL = ["location", "region", "date", "location_iso", "region_iso",
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
 COLUMNS_ORDER = ["region", "date"]
 COLUMNS_INT = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
+
+
+def read_xlsx_from_url(url, tmp_file="tmp/file.xlsx"):
+    headers = {'User-Agent': "Mozilla/5.0 (X11; Linux i686)"}
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req) as response:
+        the_page = response.read()
+    with open(tmp_file, "wb") as f:
+        f.write(the_page)
+    df = pd.read_excel(tmp_file)
+    return df
 
 
 def keep_min_date(df):

@@ -25,42 +25,45 @@ def main():
     ).fillna(0).astype({"Administered_Dose1": int, "Administered_Dose2": int})
     
     # Add data if new is available
-    if (df["Date"].nunique()==1) & (df["Date"].min() > df_source["date"].max()):
-        cols = ["LongName", "Date", "Administered_Dose1", "Administered_Dose2"]
-        df = df[cols]
-        # Process columns
-        df.loc[:, "total_vaccinations"] = df.loc[:, "Administered_Dose1"] + df.loc[:, "Administered_Dose2"]
-        df = df.rename(columns={
-            "LongName": "region",
-            "Date": "date",
-            "Administered_Dose1": "people_vaccinated",
-            "Administered_Dose2": "people_fully_vaccinated",
-        })
-        df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
-        df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
-        df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
-        df = df[~df["region"].isin(["United States", "Long Term Care"])]
-        df.loc[:, "location"] = "United States"
-        # Add ISO codes
-        df = ISODB().merge(df, country_iso=COUNTRY_ISO)
-        df.loc[df["region"]=="Federated States of Micronesia", "location_iso"] = "FM"
-        df.loc[df["region"]=="Marshall Islands", "location_iso"] = "MH"
-        df.loc[df["region"]=="Puerto Rico", "location_iso"] = "PR"
-        df.loc[df["region"]=="Republic of Palau", "location_iso"] = "PW"
-        df.loc[df["region"]=="Bureau of Prisons", "location_iso"] = "US"
-        df.loc[df["region"]=="Dept of Defense", "location_iso"] = "US"
-        df.loc[df["region"]=="Indian Health Svc", "location_iso"] = "US"
-        df.loc[df["region"]=="Veterans Health", "location_iso"] = "US"
-        
-        # Concat
-        df = pd.concat([df, df_source])
+    cols = ["LongName", "Date", "Administered_Dose1", "Administered_Dose2"]
+    df = df[cols]
+    # Process columns
+    df.loc[:, "total_vaccinations"] = df.loc[:, "Administered_Dose1"] + df.loc[:, "Administered_Dose2"]
+    df = df.rename(columns={
+        "LongName": "region",
+        "Date": "date",
+        "Administered_Dose1": "people_vaccinated",
+        "Administered_Dose2": "people_fully_vaccinated",
+    })
+    df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
+    df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
+    df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
+    df = df[~df["region"].isin(["United States", "Long Term Care"])]
+    df.loc[:, "location"] = "United States"
+    # Add ISO codes
+    df = ISODB().merge(df, country_iso=COUNTRY_ISO)
+    df.loc[df["region"]=="Federated States of Micronesia", "location_iso"] = "FM"
+    df.loc[df["region"]=="Marshall Islands", "location_iso"] = "MH"
+    df.loc[df["region"]=="Puerto Rico", "location_iso"] = "PR"
+    df.loc[df["region"]=="Republic of Palau", "location_iso"] = "PW"
+    df.loc[df["region"]=="Bureau of Prisons", "location_iso"] = "US"
+    df.loc[df["region"]=="Dept of Defense", "location_iso"] = "US"
+    df.loc[df["region"]=="Indian Health Svc", "location_iso"] = "US"
+    df.loc[df["region"]=="Veterans Health", "location_iso"] = "US"
+    
+    # Concat
+    dates = df.loc[:, "date"].unique().tolist()
+    if len(dates) != 1:
+        raise Exception("Multiple dates detected!")
+    df_source = df_source.loc[~(df_source.loc[:, "date"] == dates[0])]
+    df = pd.concat([df, df_source])
 
-        # Export
-        export_data(
-            df=df,
-            data_url_reference=DATA_URL_REFERENCE,
-            output_file=OUTPUT_FILE
-        )
+    # Export
+    export_data(
+        df=df,
+        data_url_reference=DATA_URL_REFERENCE,
+        output_file=OUTPUT_FILE
+    )
 
 if __name__ == "__main__":
     main()

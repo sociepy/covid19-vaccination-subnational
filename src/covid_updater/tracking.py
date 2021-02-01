@@ -5,6 +5,7 @@ import pandas as pd
 
 this_directory = os.path.abspath(os.path.dirname(__file__))
 COUNTRY_TRACKING_FILE = os.path.join(this_directory, "assets/country_tracking.csv")
+README_FILE = os.path.join(this_directory, "assets/README.template.md")
 
 
 def update_country_tracking(country, url, last_update, second_dose, output_file=COUNTRY_TRACKING_FILE):
@@ -46,3 +47,38 @@ def get_country_tracking(output_file=COUNTRY_TRACKING_FILE):
     """
     df = pd.read_csv(output_file)
     return df
+
+
+def tracking_csv_as_md():
+    # Load tracking csv
+    df = pd.read_csv(COUNTRY_TRACKING_FILE)
+    df = df.sort_values("country")
+
+    # Process columns
+    df.loc[:, "second_dose"] = df.loc[:, "second_dose"].apply(lambda x: "✅" if x==1 else "❌")
+    df.loc[:, "data_source_url"] = df.loc[:, "data_source_url"].apply(lambda x: f"[{x}]({x})")
+
+    # Rename + Reorder columns
+    df = df.rename(columns={
+        "country": "Country",
+        "data_source_url": "Source",
+        "second_dose": "2-Dose",
+        "last_update": "Last update"
+    })
+    df = df[["Country", "Source", "2-Dose", "Last update"]]
+
+    # Get markdown
+    table_md = df.to_markdown(index=False)
+    return table_md
+
+
+def generate_readme(output_file):
+    # Load table
+    table_md = tracking_csv_as_md()
+
+    # Export README
+    with open(README_FILE, "r") as f:
+        readme = f.read()
+    readme = readme.format(data_sources=table_md)
+    with open(output_file, "w") as f:
+        f.write(readme)

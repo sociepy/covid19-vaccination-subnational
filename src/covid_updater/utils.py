@@ -1,8 +1,10 @@
+import os
 import urllib.request
 import pandas as pd
-from covid_updater.tracking import update_country_tracking
+from covid_updater.tracking import update_country_tracking, generate_readme
 
 
+project_dir = os.path.abspath(os.path.join(__file__, "../../.."))
 COLUMNS_ALL = ["location", "region", "date", "location_iso", "region_iso", 
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
 COLUMNS_ORDER = ["region", "date"]
@@ -79,3 +81,6 @@ def export_data(df, data_url_reference, output_file):
         last_update=last_update,
         second_dose=second_dose
     )
+
+    # Update readme
+    generate_readme(output_file=os.path.join(project_dir, "README.md"))

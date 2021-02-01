@@ -54,7 +54,6 @@ def get_country_tracking(output_file=COUNTRY_TRACKING_FILE):
 def tracking_csv_as_md():
     # Load tracking csv
     df = pd.read_csv(COUNTRY_TRACKING_FILE)
-    df = df.sort_values("country")
 
     # Process columns
     df.loc[:, "second_dose"] = df.loc[:, "second_dose"].apply(lambda x: "✅" if x==1 else "❌")
@@ -74,6 +73,7 @@ def tracking_csv_as_md():
 
     # Reorder columns
     df = df[["Country", "Source", "2-Dose", "Last update"]]
+    df = df.sort_values("Last update", ascending=False)
 
     # Get markdown
     table_md = df.to_markdown(index=False)

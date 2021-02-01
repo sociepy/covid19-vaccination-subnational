@@ -1,6 +1,7 @@
 """Module to track references and updates."""
 import os
 import pandas as pd
+import flag
 
 
 this_directory = os.path.abspath(os.path.dirname(__file__))
@@ -8,7 +9,7 @@ COUNTRY_TRACKING_FILE = os.path.join(this_directory, "assets/country_tracking.cs
 README_FILE = os.path.join(this_directory, "assets/README.template.md")
 
 
-def update_country_tracking(country, url, last_update, second_dose, output_file=COUNTRY_TRACKING_FILE):
+def update_country_tracking(country, country_iso, url, last_update, second_dose, output_file=COUNTRY_TRACKING_FILE):
     """Update tracking info from a country.
 
     This includes last update and information source url.
@@ -29,10 +30,11 @@ def update_country_tracking(country, url, last_update, second_dose, output_file=
         df.loc[country, "data_source_url"] = url
         df.loc[country, "last_update"] = last_update
         df.loc[country, "second_dose"] = second_dose
+        df.loc[country, "country_iso"] = country_iso
     else:
         s = pd.Series(
-            data=[url, last_update, second_dose],
-            index=["data_source_url", "last_update", "second_dose"],
+            data=[country_iso, url, last_update, second_dose],
+            index=["country_iso", "data_source_url", "last_update", "second_dose"],
             name=country
         )
         df = df.append(s)
@@ -65,6 +67,12 @@ def tracking_csv_as_md():
         "second_dose": "2-Dose",
         "last_update": "Last update"
     })
+
+    # Add flag
+    flags = df["country_iso"].apply(lambda x: flag.flag(x))
+    df.loc[:, "Country"] = flags + " " + df.loc[:, "Country"]
+
+    # Reorder columns
     df = df[["Country", "Source", "2-Dose", "Last update"]]
 
     # Get markdown

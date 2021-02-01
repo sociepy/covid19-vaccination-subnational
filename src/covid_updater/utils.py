@@ -55,7 +55,9 @@ def export_data(df, data_url_reference, output_file):
     locations = df["location"].unique().tolist()
     if len(locations) != 1:
         raise Exception("More than one country detected!")
+    location_iso = df["location_iso"].value_counts().index.tolist()[0]
     country = locations[0]
+    country_iso = location_iso
     last_update = df["date"].max()
     second_dose = int("people_fully_vaccinated" in df.columns)
 
@@ -77,6 +79,7 @@ def export_data(df, data_url_reference, output_file):
     # Tracking
     update_country_tracking(
         country=country,
+        country_iso=country_iso,
         url=data_url_reference,
         last_update=last_update,
         second_dose=second_dose

@@ -1,7 +1,6 @@
 from covid_updater.scraping.austria import AustriaScraper
 
 
-
 def main():
     scraper = AustriaScraper()
     output_file = f"data/countries/{scraper.filename}.csv"

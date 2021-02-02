@@ -53,10 +53,7 @@ def main():
     date = get_date(dfs_from_pdf)
 
     # Get preliminary dataframe
-    column_string = {'dtype': str , 'header': None}  # Force dtype to be object because of thousand separator
-    kwargs = {'pandas_options': column_string,}
-    dfs_from_pdf = tabula.read_pdf(pdf_path, pages="all", **kwargs)
-    df = dfs_from_pdf[2] # Hardcoded
+    df = dfs_from_pdf[3] # Hardcoded
 
     if df.shape != (11, 7):
         raise Exception("Shape of table changed!")

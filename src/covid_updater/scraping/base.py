@@ -1,3 +1,4 @@
+import os
 from covid_updater.iso import ISODB
 from covid_updater.utils import export_data
 
@@ -23,24 +24,36 @@ class Scraper:
             df.loc[:, "location"] = self.country
 
         # Rename regions
-        df.loc[:, "region"] = df.loc[:, "region"].replace(self.region_renaming)
-
+        if "region" in df.columns:
+            df.loc[:, "region"] = df.loc[:, "region"].replace(self.region_renaming)
+        elif "region_iso" in df.columns:
+            pass
+        else:
+            raise Exception("Need a region (or region_iso) field!")
         return df
 
     def _process(self, df):
         raise NotImplementedError("Call child's method instead!")
 
+    def _postprocess(self, df):
+        df = ISODB().merge(df, country_iso=self.country_iso)
+        return df
+
     def process(self, df):
         # Common preprocessing
         df = self._preprocess(df)
-
         # Country-specific processing
         df = self._process(df)
-
         # Add ISO codes
-        df = ISODB().merge(df, country_iso=self.country_iso)
-
+        df = self._postprocess(df)
         return df
+
+    def export(self, df, output_file):
+        export_data(
+            df=df,
+            data_url_reference=self.data_url_reference,
+            output_file=output_file
+        )
 
     def run(self, output_file):
         # Load
@@ -48,12 +61,24 @@ class Scraper:
         # Process
         df = self.process(df)
         # Export
-        export_data(
-            df=df,
-            data_url_reference=self.data_url_reference,
-            output_file=output_file
-        )
+        self.export(df, output_file)
 
     @property
     def filename(self):
         return self.country.title().replace(" ", "_")
+
+
+class IncrementalScraper(Scraper):
+    def export(self, df, output_file):
+        df = self._merge_with_current_data(df, output_file)
+        super().export(df, output_file)
+
+    def _merge_with_current_data(self, df, filepath):
+        # Load current data
+        if os.path.isfile(filepath):
+            df_current = pd.read_csv(filepath)
+            # Merge
+            key = df.loc[:, "region"].astype(str) + df.loc[:, "date"]
+            df_current = df_current[~(df_current["region"].astype(str) + df_current["date"]).isin(key)]
+            df = pd.concat([df, df_current])
+        return df

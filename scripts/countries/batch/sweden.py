@@ -1,4 +1,4 @@
-from covid_updater.scraping.sweden import SwedenScraper
+from covid_updater.scraping import SwedenScraper
 
 
 def main():

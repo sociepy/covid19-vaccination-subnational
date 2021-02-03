@@ -74,6 +74,6 @@ class ISODB():
                 "subdivision_name": "region"
             })
         else:
-            raise ValueError("Not valid `mode` value. Choose either 'region_iso' or 'region'. If 'region_iso'," + \
-                             "make sure to set a value for `country_iso`.")
+            raise ValueError(f"{mode} is not a  valid `mode` value. Choose either 'region_iso' or 'region'. If" + \
+                            "'region_iso', make sure to set a value for `country_iso`.")
         return df

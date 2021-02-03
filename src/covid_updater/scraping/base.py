@@ -4,13 +4,15 @@ from covid_updater.utils import export_data
 
 
 class Scraper:
-    def __init__(self, country, country_iso, data_url, data_url_reference, region_renaming, column_renaming):
+    def __init__(self, country, country_iso, data_url, data_url_reference, region_renaming=None, column_renaming=None,
+                 mode_iso_merge=None):
         self.country = country
         self.country_iso = country_iso
         self.data_url = data_url
         self.data_url_reference = data_url_reference
-        self.region_renaming = region_renaming
-        self.column_renaming = column_renaming
+        self.region_renaming = region_renaming if region_renaming is not None else {}
+        self.column_renaming = column_renaming if column_renaming is not None else {}
+        self.mode_iso_merge = mode_iso_merge if mode_iso_merge is not None else "region_iso"
 
     def load_data(self):
         raise NotImplementedError("Call child's method instead.")
@@ -36,7 +38,7 @@ class Scraper:
         raise NotImplementedError("Call child's method instead!")
 
     def _postprocess(self, df):
-        df = ISODB().merge(df, country_iso=self.country_iso)
+        df = ISODB().merge(df, country_iso=self.country_iso, mode=self.mode_iso_merge)
         return df
 
     def process(self, df):

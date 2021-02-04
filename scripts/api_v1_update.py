@@ -77,7 +77,7 @@ def main():
             "first_update": df["date"].min(),
             "source_url": source,
             "api_url_all": f"{api_endpoint}/all/{country_iso}.json",
-            "api_url_latest": f"{api_endpoint}/latest/{country_iso}.json"
+            "api_url_latest": f"{api_endpoint}/latest/country_by_iso/{country_iso}.json"
         })
 
     path = os.path.join(export_folder, f"metadata.json")

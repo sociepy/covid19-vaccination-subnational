@@ -1,0 +1,573 @@
+{
+    "country": "Switzerland",
+    "country_iso": "CH",
+    "last_update": "2021-01-31",
+    "first_update": "2021-01-21",
+    "source_url": "https://github.com/rsalzer/COVID_19_VACC/",
+    "data": [
+        {
+            "region_iso": "CH-AG",
+            "region_name": "Aargau",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 12100
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 12973
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 16730
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 20034
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-AR",
+            "region_name": "Appenzell Ausserrhoden",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1718
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 2349
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 2787
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 3542
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-AI",
+            "region_name": "Appenzell Innerrhoden",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 823
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 917
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 1077
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 1092
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-BL",
+            "region_name": "Basel-Landschaft",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 6989
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 8315
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 9715
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 11364
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-BS",
+            "region_name": "Basel-Stadt",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 10856
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 10890
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 13204
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 13754
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-BE",
+            "region_name": "Bern",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 11500
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 14308
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 20094
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 24385
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-FR",
+            "region_name": "Fribourg",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 5039
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 6084
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 7640
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 9580
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-GE",
+            "region_name": "Geneve",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 10819
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 11811
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 16284
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 18012
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-GL",
+            "region_name": "Glarus",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1250
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 1540
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 1960
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 2330
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-GR",
+            "region_name": "Graubunden",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 3747
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 4316
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 6640
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 7339
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-JU",
+            "region_name": "Jura",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1906
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 2032
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 2670
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 2792
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-LU",
+            "region_name": "Luzern",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 9101
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 11241
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 15454
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 18076
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-NE",
+            "region_name": "Neuchatel",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 2040
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 2585
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 3852
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 4907
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-NW",
+            "region_name": "Nidwalden",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1950
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 3218
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-OW",
+            "region_name": "Obwalden",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1865
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 1866
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 2036
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 2156
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-SG",
+            "region_name": "Sankt Gallen",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 7230
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 8870
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 12782
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 19281
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-SH",
+            "region_name": "Schaffhausen",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 3554
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 3982
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 4989
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 5685
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-SZ",
+            "region_name": "Schwyz",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 3045
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 3250
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 4130
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 5165
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-SO",
+            "region_name": "Solothurn",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 8500
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 10234
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 13272
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 15099
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-TG",
+            "region_name": "Thurgau",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 2980
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 4072
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 6376
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 8868
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-TI",
+            "region_name": "Ticino",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 10275
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 11815
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 15823
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 19737
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-UR",
+            "region_name": "Uri",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1134
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 1361
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 1873
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 2184
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-VS",
+            "region_name": "Valais",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 7975
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 10210
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 13725
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 14240
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-VD",
+            "region_name": "Vaud",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 13392
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 15847
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 22846
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 27848
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-ZG",
+            "region_name": "Zug",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 4700
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 6599
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 7361
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 7431
+                }
+            ]
+        },
+        {
+            "region_iso": "CH-ZH",
+            "region_name": "Zurich",
+            "data": [
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 24989
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 25528
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 34900
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 46081
+                }
+            ]
+        }
+    ]
+}

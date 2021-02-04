@@ -1,0 +1,386 @@
+{
+    "country": "United States",
+    "country_iso": "US",
+    "last_update": "2021-02-03",
+    "source_url": "https://covid.cdc.gov/covid-data-tracker/COVIDData/",
+    "data": [
+        {
+            "region_name": "Alabama",
+            "region_iso": "US-AL",
+            "date": "2021-02-03",
+            "total_vaccinations": 387988
+        },
+        {
+            "region_name": "Alaska",
+            "region_iso": "US-AK",
+            "date": "2021-02-03",
+            "total_vaccinations": 125604
+        },
+        {
+            "region_name": "American Samoa",
+            "region_iso": "US-AS",
+            "date": "2021-02-03",
+            "total_vaccinations": 11064
+        },
+        {
+            "region_name": "Arizona",
+            "region_iso": "US-AZ",
+            "date": "2021-02-03",
+            "total_vaccinations": 655480
+        },
+        {
+            "region_name": "Arkansas",
+            "region_iso": "US-AR",
+            "date": "2021-02-03",
+            "total_vaccinations": 319663
+        },
+        {
+            "region_name": "Bureau of Prisons",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 34179
+        },
+        {
+            "region_name": "California",
+            "region_iso": "US-CA",
+            "date": "2021-02-03",
+            "total_vaccinations": 3658825
+        },
+        {
+            "region_name": "Colorado",
+            "region_iso": "US-CO",
+            "date": "2021-02-03",
+            "total_vaccinations": 613430
+        },
+        {
+            "region_name": "Connecticut",
+            "region_iso": "US-CT",
+            "date": "2021-02-03",
+            "total_vaccinations": 456549
+        },
+        {
+            "region_name": "Delaware",
+            "region_iso": "US-DE",
+            "date": "2021-02-03",
+            "total_vaccinations": 106893
+        },
+        {
+            "region_name": "Dept of Defense",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 499631
+        },
+        {
+            "region_name": "District of Columbia",
+            "region_iso": "US-DC",
+            "date": "2021-02-03",
+            "total_vaccinations": 84960
+        },
+        {
+            "region_name": "Federated States of Micronesia",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 6227
+        },
+        {
+            "region_name": "Florida",
+            "region_iso": "US-FL",
+            "date": "2021-02-03",
+            "total_vaccinations": 2125937
+        },
+        {
+            "region_name": "Georgia",
+            "region_iso": "US-GA",
+            "date": "2021-02-03",
+            "total_vaccinations": 954114
+        },
+        {
+            "region_name": "Guam",
+            "region_iso": "US-GU",
+            "date": "2021-02-03",
+            "total_vaccinations": 25893
+        },
+        {
+            "region_name": "Hawaii",
+            "region_iso": "US-HI",
+            "date": "2021-02-03",
+            "total_vaccinations": 143685
+        },
+        {
+            "region_name": "Idaho",
+            "region_iso": "US-ID",
+            "date": "2021-02-03",
+            "total_vaccinations": 131405
+        },
+        {
+            "region_name": "Illinois",
+            "region_iso": "US-IL",
+            "date": "2021-02-03",
+            "total_vaccinations": 1089926
+        },
+        {
+            "region_name": "Indian Health Svc",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 220415
+        },
+        {
+            "region_name": "Indiana",
+            "region_iso": "US-IN",
+            "date": "2021-02-03",
+            "total_vaccinations": 637499
+        },
+        {
+            "region_name": "Iowa",
+            "region_iso": "US-IA",
+            "date": "2021-02-03",
+            "total_vaccinations": 263476
+        },
+        {
+            "region_name": "Kansas",
+            "region_iso": "US-KS",
+            "date": "2021-02-03",
+            "total_vaccinations": 239420
+        },
+        {
+            "region_name": "Kentucky",
+            "region_iso": "US-KY",
+            "date": "2021-02-03",
+            "total_vaccinations": 433279
+        },
+        {
+            "region_name": "Louisiana",
+            "region_iso": "US-LA",
+            "date": "2021-02-03",
+            "total_vaccinations": 488111
+        },
+        {
+            "region_name": "Maine",
+            "region_iso": "US-ME",
+            "date": "2021-02-01",
+            "total_vaccinations": 144216
+        },
+        {
+            "region_name": "Marshall Islands",
+            "region_iso": "-",
+            "date": "2021-02-02",
+            "total_vaccinations": 4220
+        },
+        {
+            "region_name": "Maryland",
+            "region_iso": "US-MD",
+            "date": "2021-02-03",
+            "total_vaccinations": 545905
+        },
+        {
+            "region_name": "Massachusetts",
+            "region_iso": "US-MA",
+            "date": "2021-02-02",
+            "total_vaccinations": 624005
+        },
+        {
+            "region_name": "Michigan",
+            "region_iso": "US-MI",
+            "date": "2021-02-03",
+            "total_vaccinations": 1028596
+        },
+        {
+            "region_name": "Minnesota",
+            "region_iso": "US-MN",
+            "date": "2021-02-02",
+            "total_vaccinations": 550803
+        },
+        {
+            "region_name": "Mississippi",
+            "region_iso": "US-MS",
+            "date": "2021-02-03",
+            "total_vaccinations": 250646
+        },
+        {
+            "region_name": "Missouri",
+            "region_iso": "US-MO",
+            "date": "2021-02-03",
+            "total_vaccinations": 478224
+        },
+        {
+            "region_name": "Montana",
+            "region_iso": "US-MT",
+            "date": "2021-02-03",
+            "total_vaccinations": 110220
+        },
+        {
+            "region_name": "Nebraska",
+            "region_iso": "US-NE",
+            "date": "2021-02-03",
+            "total_vaccinations": 187243
+        },
+        {
+            "region_name": "Nevada",
+            "region_iso": "US-NV",
+            "date": "2021-02-03",
+            "total_vaccinations": 278026
+        },
+        {
+            "region_name": "New Hampshire",
+            "region_iso": "US-NH",
+            "date": "2021-02-03",
+            "total_vaccinations": 138172
+        },
+        {
+            "region_name": "New Jersey",
+            "region_iso": "US-NJ",
+            "date": "2021-02-03",
+            "total_vaccinations": 849527
+        },
+        {
+            "region_name": "New Mexico",
+            "region_iso": "US-NM",
+            "date": "2021-02-03",
+            "total_vaccinations": 281854
+        },
+        {
+            "region_name": "New York",
+            "region_iso": "US-NY",
+            "date": "2021-02-03",
+            "total_vaccinations": 1930999
+        },
+        {
+            "region_name": "North Carolina",
+            "region_iso": "US-NC",
+            "date": "2021-02-03",
+            "total_vaccinations": 1025537
+        },
+        {
+            "region_name": "North Dakota",
+            "region_iso": "US-ND",
+            "date": "2021-02-03",
+            "total_vaccinations": 100007
+        },
+        {
+            "region_name": "Northern Mariana Islands",
+            "region_iso": "US-MP",
+            "date": "2021-02-03",
+            "total_vaccinations": 10649
+        },
+        {
+            "region_name": "Ohio",
+            "region_iso": "US-OH",
+            "date": "2021-02-03",
+            "total_vaccinations": 1084414
+        },
+        {
+            "region_name": "Oklahoma",
+            "region_iso": "US-OK",
+            "date": "2021-02-03",
+            "total_vaccinations": 459616
+        },
+        {
+            "region_name": "Oregon",
+            "region_iso": "US-OR",
+            "date": "2021-02-03",
+            "total_vaccinations": 452489
+        },
+        {
+            "region_name": "Pennsylvania",
+            "region_iso": "US-PA",
+            "date": "2021-02-03",
+            "total_vaccinations": 1155373
+        },
+        {
+            "region_name": "Puerto Rico",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 265381
+        },
+        {
+            "region_name": "Republic of Palau",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 3228
+        },
+        {
+            "region_name": "Rhode Island",
+            "region_iso": "US-RI",
+            "date": "2021-02-03",
+            "total_vaccinations": 101446
+        },
+        {
+            "region_name": "South Carolina",
+            "region_iso": "US-SC",
+            "date": "2021-02-03",
+            "total_vaccinations": 475595
+        },
+        {
+            "region_name": "South Dakota",
+            "region_iso": "US-SD",
+            "date": "2021-02-03",
+            "total_vaccinations": 110888
+        },
+        {
+            "region_name": "Tennessee",
+            "region_iso": "US-TN",
+            "date": "2021-02-03",
+            "total_vaccinations": 655974
+        },
+        {
+            "region_name": "Texas",
+            "region_iso": "US-TX",
+            "date": "2021-02-03",
+            "total_vaccinations": 2650926
+        },
+        {
+            "region_name": "Utah",
+            "region_iso": "US-UT",
+            "date": "2021-02-02",
+            "total_vaccinations": 308820
+        },
+        {
+            "region_name": "Vermont",
+            "region_iso": "US-VT",
+            "date": "2021-02-03",
+            "total_vaccinations": 74594
+        },
+        {
+            "region_name": "Veterans Health",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 1013009
+        },
+        {
+            "region_name": "Virgin Islands",
+            "region_iso": "US-VI",
+            "date": "2021-02-03",
+            "total_vaccinations": 7387
+        },
+        {
+            "region_name": "Virginia",
+            "region_iso": "US-VA",
+            "date": "2021-02-03",
+            "total_vaccinations": 895865
+        },
+        {
+            "region_name": "Washington",
+            "region_iso": "US-WA",
+            "date": "2021-02-03",
+            "total_vaccinations": 754270
+        },
+        {
+            "region_name": "West Virginia",
+            "region_iso": "US-WV",
+            "date": "2021-02-03",
+            "total_vaccinations": 267656
+        },
+        {
+            "region_name": "Wisconsin",
+            "region_iso": "US-WI",
+            "date": "2021-02-03",
+            "total_vaccinations": 542598
+        },
+        {
+            "region_name": "Wyoming",
+            "region_iso": "US-WY",
+            "date": "2021-02-03",
+            "total_vaccinations": 59856
+        }
+    ]
+}

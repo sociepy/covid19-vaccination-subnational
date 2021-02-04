@@ -1,0 +1,44 @@
+{
+    "country": "Denmark",
+    "country_iso": "DK",
+    "last_update": "2021-02-03",
+    "source_url": "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
+    "data": [
+        {
+            "region_name": "Hovedstaden",
+            "region_iso": "DK-84",
+            "date": "2021-02-03",
+            "total_vaccinations": 95186
+        },
+        {
+            "region_name": "Midtjylland",
+            "region_iso": "DK-82",
+            "date": "2021-02-03",
+            "total_vaccinations": 67136
+        },
+        {
+            "region_name": "Nordjylland",
+            "region_iso": "DK-81",
+            "date": "2021-02-03",
+            "total_vaccinations": 32230
+        },
+        {
+            "region_name": "Others",
+            "region_iso": "-",
+            "date": "2021-02-03",
+            "total_vaccinations": 821
+        },
+        {
+            "region_name": "Sjaelland",
+            "region_iso": "DK-85",
+            "date": "2021-02-03",
+            "total_vaccinations": 40943
+        },
+        {
+            "region_name": "Syddanmark",
+            "region_iso": "DK-83",
+            "date": "2021-02-03",
+            "total_vaccinations": 61796
+        }
+    ]
+}

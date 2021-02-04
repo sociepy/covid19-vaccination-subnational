@@ -1,0 +1,4447 @@
+{
+    "country": "United States",
+    "country_iso": "US",
+    "last_update": "2021-02-03",
+    "first_update": "2021-01-15",
+    "source_url": "https://covid.cdc.gov/covid-data-tracker/COVIDData/",
+    "data": [
+        {
+            "region_iso": "US-AL",
+            "region_name": "Alabama",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 100444
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 130665
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 139069
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 165774
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 199157
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 221377
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 243569
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 250442
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 254787
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 266228
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 278768
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 300674
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 342110
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 353632
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 357936
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 371536
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 387988
+                }
+            ]
+        },
+        {
+            "region_iso": "US-AK",
+            "region_name": "Alaska",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 48952
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 66236
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 68194
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 71801
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 80980
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 88220
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 94126
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 96899
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 98015
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 101460
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 105717
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 110247
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 115114
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 119434
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 121863
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 123283
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 125604
+                }
+            ]
+        },
+        {
+            "region_iso": "US-AS",
+            "region_name": "American Samoa",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 3882
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 4755
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 5312
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 5663
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 6567
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 6829
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 8044
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 8313
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 9083
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 9923
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 10759
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 11064
+                }
+            ]
+        },
+        {
+            "region_iso": "US-AZ",
+            "region_name": "Arizona",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 197050
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 266223
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 281748
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 303733
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 329165
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 360758
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 390386
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 413359
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 430569
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 457905
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 486768
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 520670
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 556906
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 593608
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 620084
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 631136
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 655480
+                }
+            ]
+        },
+        {
+            "region_iso": "US-AR",
+            "region_name": "Arkansas",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 116610
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 140497
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 171333
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 199388
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 211862
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 218705
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 233870
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 250355
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 267470
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 286053
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 301131
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 308556
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 311744
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 319663
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Bureau of Prisons",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 16651
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 17591
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 19041
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 20803
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 21278
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 23273
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 24009
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 24289
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 25442
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 27261
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 28449
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 29685
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 30875
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 31215
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 32279
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 34179
+                }
+            ]
+        },
+        {
+            "region_iso": "US-CA",
+            "region_name": "California",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 1069761
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 1456807
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 1528587
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1629720
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 1799034
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 2003414
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 2194846
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 2325530
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 2441215
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 2573635
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 2740038
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 2903211
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 3087909
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 3276507
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 3443752
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 3532533
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 3658825
+                }
+            ]
+        },
+        {
+            "region_iso": "US-CO",
+            "region_name": "Colorado",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 270782
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 328536
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 338634
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 351290
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 375303
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 375297
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 432026
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 445356
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 455212
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 471879
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 492819
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 518446
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 541824
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 565654
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 586160
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 597690
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 613430
+                }
+            ]
+        },
+        {
+            "region_iso": "US-CT",
+            "region_name": "Connecticut",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 183884
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 224814
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 238163
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 259515
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 281902
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 301140
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 315632
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 325095
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 336447
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 354649
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 374754
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 396773
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 414592
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 429390
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 441443
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 448097
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 456549
+                }
+            ]
+        },
+        {
+            "region_iso": "US-DE",
+            "region_name": "Delaware",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 31003
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 42447
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 45529
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 49255
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 54139
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 59890
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 64050
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 66778
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 68370
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 77304
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 82080
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 86894
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 91936
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 99367
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 102110
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 103183
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 106893
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Dept of Defense",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 196950
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 249687
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 251710
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 269006
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 286887
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 305858
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 330380
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 339864
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 359097
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 382188
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 406566
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 440744
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 471878
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 475828
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 481078
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 499631
+                }
+            ]
+        },
+        {
+            "region_iso": "US-DC",
+            "region_name": "District of Columbia",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 39917
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 49943
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 51688
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 55062
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 56818
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 59737
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 62335
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 64138
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 64692
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 68024
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 70776
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 73264
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 76599
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 80447
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 82425
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 83459
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 84960
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Federated States of Micronesia",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 694
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 1436
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 1756
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 2087
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 2514
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 2752
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 2758
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 2977
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 3214
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 3475
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 3938
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 5083
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 5699
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 6227
+                }
+            ]
+        },
+        {
+            "region_iso": "US-FL",
+            "region_name": "Florida",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 851206
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 1171960
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 1237101
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 1311301
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 1485325
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 1540705
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 1540705
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 1571352
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 1628178
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 1702526
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 1791013
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 1884636
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 1953589
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 1999066
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 2041503
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 2125937
+                }
+            ]
+        },
+        {
+            "region_iso": "US-GA",
+            "region_name": "Georgia",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 226625
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 307058
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 391039
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 446972
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 593590
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 594126
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 656374
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 698265
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 748517
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 793026
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 838428
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 886753
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 911035
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 920239
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 954114
+                }
+            ]
+        },
+        {
+            "region_iso": "US-GU",
+            "region_name": "Guam",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 3785
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 17181
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 18138
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 19374
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 21105
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 22283
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 23274
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 24636
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 25893
+                }
+            ]
+        },
+        {
+            "region_iso": "US-HI",
+            "region_name": "Hawaii",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 46958
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 63954
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 71944
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 79414
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 84793
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 84792
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 92091
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 93759
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 97691
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 103943
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 111164
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 120501
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 129266
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 135835
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 137913
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 143685
+                }
+            ]
+        },
+        {
+            "region_iso": "US-ID",
+            "region_name": "Idaho",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 46489
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 63774
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 69066
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 72878
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 77370
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 82003
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 86483
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 90618
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 93111
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 96300
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 102097
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 107945
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 113780
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 119923
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 123414
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 125684
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 131405
+                }
+            ]
+        },
+        {
+            "region_iso": "US-IL",
+            "region_name": "Illinois",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 432766
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 518895
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 533475
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 563943
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 600602
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 647686
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 691847
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 715871
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 730606
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 758949
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 805641
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 866592
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 930649
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 993064
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 1036348
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 1054582
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 1089926
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Indian Health Svc",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 90039
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 103677
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 108509
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 116782
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 122897
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 142438
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 152486
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 154230
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 156983
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 164451
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 178553
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 189111
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 192956
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 206095
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 207007
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 210525
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 220415
+                }
+            ]
+        },
+        {
+            "region_iso": "US-IN",
+            "region_name": "Indiana",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 260282
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 334641
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 356336
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 387067
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 414041
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 445929
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 491735
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 498701
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 524046
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 551994
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 581136
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 606979
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 612079
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 637499
+                }
+            ]
+        },
+        {
+            "region_iso": "US-IA",
+            "region_name": "Iowa",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 118798
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 142671
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 147523
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 156360
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 168071
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 177571
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 188584
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 193594
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 195342
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 201533
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 209818
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 221440
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 234861
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 249056
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 254268
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 256319
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 263476
+                }
+            ]
+        },
+        {
+            "region_iso": "US-KS",
+            "region_name": "Kansas",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 96789
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 117426
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 121692
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 129337
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 135894
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 143696
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 150027
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 153496
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 157502
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 167142
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 188965
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 189202
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 205081
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 219909
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 225332
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 229485
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 239420
+                }
+            ]
+        },
+        {
+            "region_iso": "US-KY",
+            "region_name": "Kentucky",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 173405
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 214599
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 222493
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 233536
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 252441
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 269186
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 297654
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 305620
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 310348
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 321345
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 340250
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 364624
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 383948
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 402628
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 413461
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 417474
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 433279
+                }
+            ]
+        },
+        {
+            "region_iso": "US-LA",
+            "region_name": "Louisiana",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 197609
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 255076
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 263880
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 278857
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 297055
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 314418
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 333475
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 340835
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 345063
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 358089
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 375192
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 397582
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 420160
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 442922
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 462363
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 475180
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 488111
+                }
+            ]
+        },
+        {
+            "region_iso": "US-ME",
+            "region_name": "Maine",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 59905
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 72734
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 74921
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 79204
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 85086
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 91672
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 98461
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 102710
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 103560
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 107810
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 113803
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 121768
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 130523
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 138786
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 144216
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Marshall Islands",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 634
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 1252
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 1484
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1961
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 2408
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 2843
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 3068
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 3253
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 3507
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 3723
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 3893
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 3957
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 4090
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 4220
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MD",
+            "region_name": "Maryland",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 194661
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 247250
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 257798
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 271556
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 287098
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 306991
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 338116
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 350407
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 365088
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 388820
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 411758
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 442107
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 475292
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 504961
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 527802
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 536536
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 545905
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MA",
+            "region_name": "Massachusetts",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 256994
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 318665
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 330271
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 352893
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 370292
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 392383
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 419198
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 433006
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 442074
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 463622
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 489661
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 519176
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 545651
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 577723
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 607481
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 624005
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MI",
+            "region_name": "Michigan",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 360951
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 480008
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 504937
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 544931
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 590431
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 642118
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 684410
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 716505
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 731052
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 760719
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 802875
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 854959
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 910020
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 963721
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 992161
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 1002076
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 1028596
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MN",
+            "region_name": "Minnesota",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 198072
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 251234
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 252246
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 259110
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 277897
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 304777
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 320643
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 346239
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 359817
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 374746
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 402933
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 438945
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 484160
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 516970
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 544505
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 550803
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MS",
+            "region_name": "Mississippi",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 84281
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 113491
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 122504
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 136498
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 150325
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 177425
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 180749
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 181802
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 190021
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 201025
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 212499
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 222235
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 236144
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 238602
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 239868
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 250646
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MO",
+            "region_name": "Missouri",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 190189
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 235161
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 243197
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 263999
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 284296
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 290315
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 316185
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 334121
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 338697
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 356516
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 380699
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 405550
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 440945
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 458628
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 462825
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 478224
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MT",
+            "region_name": "Montana",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 49353
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 55880
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 57207
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 60375
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 66331
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 72524
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 76569
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 77335
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 77726
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 81143
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 86181
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 92541
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 99217
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 104469
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 106065
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 107244
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 110220
+                }
+            ]
+        },
+        {
+            "region_iso": "US-NE",
+            "region_name": "Nebraska",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 90784
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 102914
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 105503
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 111056
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 117657
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 123266
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 132035
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 133219
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 134313
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 138752
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 149149
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 157471
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 166356
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 176714
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 179909
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 181400
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 187243
+                }
+            ]
+        },
+        {
+            "region_iso": "US-NV",
+            "region_name": "Nevada",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 82987
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 102056
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 106319
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 115133
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 125567
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 136132
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 151291
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 158949
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 163442
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 173316
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 193808
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 208968
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 222958
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 239815
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 247490
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 251910
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 278026
+                }
+            ]
+        },
+        {
+            "region_iso": "US-NH",
+            "region_name": "New Hampshire",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 62497
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 71522
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 75379
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 80600
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 85554
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 89775
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 93297
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 94581
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 96959
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 103037
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 110405
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 117360
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 123692
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 128260
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 130462
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 135745
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 138172
+                }
+            ]
+        },
+        {
+            "region_iso": "US-NJ",
+            "region_name": "New Jersey",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 315697
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 398532
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 430579
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 462707
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 499217
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 533924
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 561435
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 574024
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 610060
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 646354
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 725358
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 766826
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 793300
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 808143
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 834414
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 849527
+                }
+            ]
+        },
+        {
+            "region_iso": "US-NM",
+            "region_name": "New Mexico",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 98883
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 135686
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 140834
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 149970
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 159489
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 182097
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 197514
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 202037
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 207402
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 214330
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 221941
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 235960
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 245480
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 261282
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 272315
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 274681
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 281854
+                }
+            ]
+        },
+        {
+            "region_iso": "US-NY",
+            "region_name": "New York",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 744834
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 987095
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 1033160
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1102984
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 1190458
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 1268620
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 1349580
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 1399365
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 1435006
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 1499507
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 1559294
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 1631844
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 1720475
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 1803409
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 1855591
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 1894362
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 1930999
+                }
+            ]
+        },
+        {
+            "region_iso": "US-NC",
+            "region_name": "North Carolina",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 302649
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 400545
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 427225
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 472993
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 524571
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 576584
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 635946
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 675500
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 699145
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 716125
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 849031
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 850453
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 897898
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 950688
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 974682
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 975092
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 1025537
+                }
+            ]
+        },
+        {
+            "region_iso": "US-ND",
+            "region_name": "North Dakota",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 46061
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 56257
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 57304
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 58867
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 63446
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 67903
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 71747
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 73676
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 73873
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 75625
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 78408
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 84473
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 89853
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 96181
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 97723
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 98228
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 100007
+                }
+            ]
+        },
+        {
+            "region_iso": "US-MP",
+            "region_name": "Northern Mariana Islands",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 4906
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 6369
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 6788
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 7306
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 7716
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 8035
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 8386
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 8491
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 8734
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 9022
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 9247
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 9544
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 9729
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 10046
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 10144
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 10403
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 10649
+                }
+            ]
+        },
+        {
+            "region_iso": "US-OH",
+            "region_name": "Ohio",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 375370
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 471951
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 487334
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 545318
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 594697
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 646832
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 685328
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 707719
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 745909
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 789358
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 842471
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 910285
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 953227
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 1003765
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 1044243
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 1084414
+                }
+            ]
+        },
+        {
+            "region_iso": "US-OK",
+            "region_name": "Oklahoma",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 202079
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 240606
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 249998
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 265608
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 285389
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 302605
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 320572
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 324313
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 326613
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 342904
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 360923
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 384305
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 407892
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 435350
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 440901
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 442994
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 459616
+                }
+            ]
+        },
+        {
+            "region_iso": "US-OR",
+            "region_name": "Oregon",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 145886
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 216416
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 252949
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 269589
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 285017
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 299722
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 307109
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 324461
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 339190
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 358172
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 381152
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 406619
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 422349
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 436933
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 452489
+                }
+            ]
+        },
+        {
+            "region_iso": "US-PA",
+            "region_name": "Pennsylvania",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 447668
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 543865
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 568081
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 604786
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 652123
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 695077
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 743267
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 775465
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 799015
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 850529
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 854915
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 970692
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 1029853
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 1085510
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 1131498
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 1153230
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 1155373
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Puerto Rico",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 103872
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 129029
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 135952
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 146877
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 160465
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 172105
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 182926
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 186368
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 187432
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 198508
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 210919
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 223036
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 234789
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 248118
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 252159
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 265381
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Republic of Palau",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 1119
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 1914
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 1981
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 2405
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 2685
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 3046
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 3046
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 3067
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 3089
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 3110
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 3172
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 3228
+                }
+            ]
+        },
+        {
+            "region_iso": "US-RI",
+            "region_name": "Rhode Island",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 47537
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 54066
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 56600
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 58995
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 61955
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 63230
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 67547
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 70400
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 72245
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 76263
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 80116
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 83584
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 88069
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 91152
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 94214
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 99513
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 101446
+                }
+            ]
+        },
+        {
+            "region_iso": "US-SC",
+            "region_name": "South Carolina",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 121199
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 185791
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 191197
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 208183
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 227353
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 247475
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 277067
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 305578
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 315419
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 325160
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 358073
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 383169
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 405830
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 436016
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 459174
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 467111
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 475595
+                }
+            ]
+        },
+        {
+            "region_iso": "US-SD",
+            "region_name": "South Dakota",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 57055
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 61065
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 62470
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 65327
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 70593
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 77146
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 80384
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 82454
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 82765
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 86926
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 91714
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 97167
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 102776
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 105885
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 107609
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 107928
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 110888
+                }
+            ]
+        },
+        {
+            "region_iso": "US-TN",
+            "region_name": "Tennessee",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 302712
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 351127
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 357831
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 374897
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 400705
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 423199
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 451026
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 461609
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 466892
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 486470
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 508798
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 544542
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 572652
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 607592
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 626225
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 630179
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 655974
+                }
+            ]
+        },
+        {
+            "region_iso": "US-TX",
+            "region_name": "Texas",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 1159072
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 1402753
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 1470501
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 1543244
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 1643363
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 1726386
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 1761807
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 1802499
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 1916332
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 1972787
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 2105349
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 2218135
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 2338853
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 2407039
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 2494349
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 2650926
+                }
+            ]
+        },
+        {
+            "region_iso": "US-UT",
+            "region_name": "Utah",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 125038
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 159423
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 176086
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 183609
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 196061
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 220914
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 222324
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 231199
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 260377
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 273490
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 307220
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 308820
+                }
+            ]
+        },
+        {
+            "region_iso": "US-VT",
+            "region_name": "Vermont",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 32455
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 40541
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 40774
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 42778
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 46386
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 49361
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 51803
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 53551
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 54343
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 55304
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 58794
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 61653
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 63686
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 67062
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 72305
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 73897
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 74594
+                }
+            ]
+        },
+        {
+            "region_iso": "-",
+            "region_name": "Veterans Health",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 317444
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 415851
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 432199
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 526734
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 579062
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 622952
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 663575
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 702081
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 702653
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 745369
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 791555
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 840665
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 887443
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 931375
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 962437
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 972462
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 1013009
+                }
+            ]
+        },
+        {
+            "region_iso": "US-VI",
+            "region_name": "Virgin Islands",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 1631
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 2135
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 2418
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 2744
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 3070
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 3355
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 3378
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 3399
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 3747
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 4174
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 4620
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 5256
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 5967
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 6008
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 6116
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 6709
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 7387
+                }
+            ]
+        },
+        {
+            "region_iso": "US-VA",
+            "region_name": "Virginia",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 242896
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 325385
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 341839
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 360515
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 399812
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 425385
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 444297
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 475536
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 569683
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 603639
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 642554
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 698643
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 759255
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 806495
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 844046
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 874309
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 895865
+                }
+            ]
+        },
+        {
+            "region_iso": "US-WA",
+            "region_name": "Washington",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 232263
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 310744
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 336231
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 362844
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 392509
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 426344
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 438717
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 478064
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 496872
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 523681
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 560261
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 595963
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 632687
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 672903
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 709092
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 730221
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 754270
+                }
+            ]
+        },
+        {
+            "region_iso": "US-WV",
+            "region_name": "West Virginia",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 134196
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 152646
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 158610
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 167537
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 180751
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 194833
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 202872
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 203981
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 210481
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 214915
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 224593
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 239952
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 256390
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 259763
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 260314
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 264194
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 267656
+                }
+            ]
+        },
+        {
+            "region_iso": "US-WI",
+            "region_name": "Wisconsin",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 168495
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 211785
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 220773
+                },
+                {
+                    "date": "2021-01-21",
+                    "total_vaccinations": 237014
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 258968
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 283741
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 306305
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 313890
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 316108
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 333498
+                },
+                {
+                    "date": "2021-01-28",
+                    "total_vaccinations": 359847
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 404650
+                },
+                {
+                    "date": "2021-01-30",
+                    "total_vaccinations": 447907
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 488516
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 510706
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 518979
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 542598
+                }
+            ]
+        },
+        {
+            "region_iso": "US-WY",
+            "region_name": "Wyoming",
+            "data": [
+                {
+                    "date": "2021-01-15",
+                    "total_vaccinations": 22734
+                },
+                {
+                    "date": "2021-01-19",
+                    "total_vaccinations": 28030
+                },
+                {
+                    "date": "2021-01-20",
+                    "total_vaccinations": 29282
+                },
+                {
+                    "date": "2021-01-22",
+                    "total_vaccinations": 34508
+                },
+                {
+                    "date": "2021-01-23",
+                    "total_vaccinations": 37519
+                },
+                {
+                    "date": "2021-01-24",
+                    "total_vaccinations": 40763
+                },
+                {
+                    "date": "2021-01-25",
+                    "total_vaccinations": 41115
+                },
+                {
+                    "date": "2021-01-26",
+                    "total_vaccinations": 41298
+                },
+                {
+                    "date": "2021-01-27",
+                    "total_vaccinations": 43382
+                },
+                {
+                    "date": "2021-01-29",
+                    "total_vaccinations": 49115
+                },
+                {
+                    "date": "2021-01-31",
+                    "total_vaccinations": 56960
+                },
+                {
+                    "date": "2021-02-01",
+                    "total_vaccinations": 57806
+                },
+                {
+                    "date": "2021-02-02",
+                    "total_vaccinations": 58103
+                },
+                {
+                    "date": "2021-02-03",
+                    "total_vaccinations": 59856
+                }
+            ]
+        }
+    ]
+}

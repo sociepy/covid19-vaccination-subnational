@@ -31,7 +31,7 @@ regions = [
 
 
 def get_date(dfs_from_pdf):
-    df = dfs_from_pdf[0]  # Hardcoded
+    df = dfs_from_pdf[1]  # Hardcoded
     df = df.drop([0, 1, 2, 3])
     date = pd.to_datetime(df[0], format="%d-%m-%Y").max().strftime("%Y-%m-%d")
     return date
@@ -53,7 +53,7 @@ def main():
     date = get_date(dfs_from_pdf)
 
     # Get preliminary dataframe
-    df = dfs_from_pdf[2] # Hardcoded
+    df = dfs_from_pdf[3] # Hardcoded
 
     if df.shape != (11, 7):
         raise Exception("Shape of table changed!")

@@ -10,6 +10,7 @@ rename_fields = {"region": "region_name"}
 export_folder = "api/v1"
 export_folder_all = os.path.join(export_folder, "all/country_by_iso/")
 export_folder_latest = os.path.join(export_folder, "latest/country_by_iso/")
+api_endpoint = "https://sociepy.org/covid19-vaccination-subnational/api/v1/"
 
 
 def build_api_json(df, country, country_iso, source):
@@ -75,8 +76,8 @@ def main():
             "last_update": df["date"].max(),
             "first_update": df["date"].min(),
             "source_url": source,
-            "api_url_all": f"api/v1/all/{country_iso}.json",
-            "api_url_latest": f"api/v1/latest/{country_iso}.json"
+            "api_url_all": f"{api_endpoint}/all/{country_iso}.json",
+            "api_url_latest": f"{api_endpoint}/latest/{country_iso}.json"
         })
 
     path = os.path.join(export_folder, f"metadata.json")

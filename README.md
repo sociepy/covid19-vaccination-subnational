@@ -3,7 +3,7 @@
 
 COVID-19 vaccination data at subnational level. To ensure its officiality, the source data is carefully verified.
 
-> 🆕 API static endpoint available [here](https://sociepy.org/covid19-vaccination-subnational/api)
+> 🆕 API static endpoint available [here](https://sociepy.org/covid19-vaccination-subnational/api/v1)
 
 > CSV dataset can be found [here](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv).
 
@@ -15,7 +15,7 @@ some of its structure, and is open to integration if deemed approriate.
 * [Repository organization](#repository-organization)
 * [Data sources](#data-sources)
 * [CSV API](#api)
-* [JSON Endpoint API](api/README.md)
+* [JSON Endpoint API](api/v1/README.md)
 * [Contribute](#contribute)
 * [Documentation](docs/CODE.md) (WIP 🚧)
 * [License](#license)

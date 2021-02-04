@@ -14,11 +14,10 @@ https://sociepy.org/covid19-vaccination-subnational/api/v1/latest/country_by_iso
 
 To see which countries are available you can check [this table](https://sociepy.org/covid19-vaccination-subnational/#data-sources) or directly via the API:
 
-```
-https://sociepy.org/covid19-vaccination-subnational/api/v1/metadata.json
-```
+[`https://sociepy.org/covid19-vaccination-subnational/api/v1/metadata.json`](https://sociepy.org/covid19-vaccination-subnational/api/v1/metadata.json)
 
-> This API is been inspired by [https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io)
+
+This API is inspired by [https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io)
 
 ## All data
 Get all available data for a country.

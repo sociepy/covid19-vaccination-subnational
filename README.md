@@ -3,9 +3,9 @@
 
 COVID-19 vaccination data at subnational level. To ensure its officiality, the source data is carefully verified.
 
-> 🆕 API static endpoint available [here](sociepy.org/covid19-vaccination-subnational/api)
+> 🆕 API static endpoint available [here](https://sociepy.org/covid19-vaccination-subnational/api)
 
-> CSV dataset can be found [`here`](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv).
+> CSV dataset can be found [here](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv).
 
 
 This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data), adopting
@@ -38,7 +38,7 @@ This project wouldn't be possible without the great resources available online.
 | 🇧🇪 Belgium        | [https://covid-vaccinatie.be/en](https://covid-vaccinatie.be/en)                                                                                                                                                                                                                                                                                                       | ✅        | 2021-02-03    |
 | 🇩🇰 Denmark        | [https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning](https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning)                                                                                                                                                                                                                                     | ✅        | 2021-02-03    |
 | 🇫🇷 France         | [https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/](https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/)                                                                                                                                                           | ✅        | 2021-02-03    |
-| 🇮🇳 India          | [https://github.com/india-covid19vaccine/](https://github.com/india-covid19vaccine/)                                                                                                                                                                                                                                                                                   | ❌        | 2021-02-03    |
+| 🇮🇳 India          | [https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io)                                                                                                                                                                                                                                                                                       | ❌        | 2021-02-03    |
 | 🇬🇧 United Kingdom | [https://coronavirus.data.gov.uk/details/download](https://coronavirus.data.gov.uk/details/download)                                                                                                                                                                                                                                                                   | ✅        | 2021-02-03    |
 | 🇨🇱 Chile          | [https://github.com/juancri/covid19-vaccination/](https://github.com/juancri/covid19-vaccination/)                                                                                                                                                                                                                                                                     | ✅        | 2021-02-03    |
 | 🇸🇰 Slovakia       | [https://github.com/Institut-Zdravotnych-Analyz/covid19-data/](https://github.com/Institut-Zdravotnych-Analyz/covid19-data/)                                                                                                                                                                                                                                           | ✅        | 2021-02-03    |

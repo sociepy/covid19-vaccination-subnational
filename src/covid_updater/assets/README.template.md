@@ -1,29 +1,25 @@
 # Subnational COVID-19 vaccination data 
-### [Download data 🗂️ ⬇️](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv) | [GitHub](https://github.com/sociepy/covid19-vaccination-subnational)
+### [Download data 🗂️ ⬇️](data/vaccinations.csv) | [GitHub](https://github.com/sociepy/covid19-vaccination-subnational)
 
-COVID-19 vaccination data at subnational level. The source data is verified in order to ensure its officiality.
+COVID-19 vaccination data at subnational level. To ensure its officiality, the source data is carefully verified.
 
-> Dataset can be found in file [`data/vaccinations.csv`](data/vaccinations.csv).
+> 🆕 API static endpoint available [here](sociepy.org/covid19-vaccination-subnational/api)
 
-ℹ️ This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data), adopting
+> CSV dataset can be found [`here`](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv).
+
+
+This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data), adopting
 some of its structure, and is open to integration if deemed approriate.
 
 ## Content
 * [Repository organization](#repository-organization)
 * [Data sources](#data-sources)
-* [API](#api)
+* [CSV API](#api)
+* [JSON Endpoint API](api/README.md)
 * [Contribute](#contribute)
 * [Documentation](docs/CODE.md) (WIP 🚧)
 * [License](#license)
 
-## Repository organization
-
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| [data](data) | Available data. |
-| [docs](docs) | Source code documentation. |
-| [scripts](scripts) | Scripts to update the data files. |
-| [src](src) | Source code.  |
 
 ## Data sources
 This project wouldn't be possible without the great resources available online.

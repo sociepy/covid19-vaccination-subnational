@@ -7,6 +7,10 @@ We recommend installing the software in a virtual environment.
 pip install -e .
 ```
 
+Note that some dependencies require additional steps:
+
+- [`tabula-py`](https://github.com/chezou/tabula-py): Ensure you have a Java runtime and that it is visible to environment variable `PATH`.
+- [`selenium`](https://github.com/SeleniumHQ/selenium): Download [chromedriver binary](https://chromedriver.chromium.org/downloads) and place it so that it is visible to environment variable `PATH`.
 
 ## ISO codes
 > This site or product includes IP2Location™ ISO 3166-2 Subdivision Code which available from

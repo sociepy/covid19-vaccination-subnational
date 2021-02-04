@@ -18,6 +18,8 @@ To see which countries are available you can check [this table](https://sociepy.
 https://sociepy.org/covid19-vaccination-subnational/api/v1/metadata.json
 ```
 
+> This API is been inspired by [https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io)
+
 ## All data
 Get all available data for a country.
 

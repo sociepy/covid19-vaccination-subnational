@@ -9,7 +9,7 @@ class IndiaScraper(Scraper):
             country="India", 
             country_iso="IN", 
             data_url="https://github.com/india-covid19vaccine/india-covid19vaccine.github.io/raw/main/csv/state_timeline.csv", 
-            data_url_reference="https://github.com/india-covid19vaccine/", 
+            data_url_reference="https://india-covid19vaccine.github.io", 
             column_renaming={
                 "state_code": "region_iso"
             },

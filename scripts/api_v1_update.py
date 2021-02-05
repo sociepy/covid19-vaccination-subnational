@@ -49,9 +49,10 @@ def build_api_json(df, country, country_iso, source):
 
 def main():
     metadata = []
-    countries_path = glob("data/countries/*")
+    countries_path = [f for f in glob("data/countries/*") if f.endswith(".csv")]
     country_tracking = pd.read_csv("src/covid_updater/assets/country_tracking.csv")
     for country_path in countries_path:
+        print(country_path)
         # Load
         df = pd.read_csv(country_path)
         country_iso = df["location_iso"].value_counts().index.tolist()[0]

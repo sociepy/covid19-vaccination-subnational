@@ -11,7 +11,7 @@
     {
         "country_iso": "DK",
         "country_name": "Denmark",
-        "last_update": "2021-02-03",
+        "last_update": "2021-02-04",
         "first_update": "2020-12-27",
         "source_url": "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/DK.json",
@@ -20,7 +20,7 @@
     {
         "country_iso": "IT",
         "country_name": "Italy",
-        "last_update": "2021-02-04",
+        "last_update": "2021-02-05",
         "first_update": "2020-12-27",
         "source_url": "https://github.com/italia/covid19-opendata-vaccini/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/IT.json",
@@ -47,7 +47,7 @@
     {
         "country_iso": "SK",
         "country_name": "Slovakia",
-        "last_update": "2021-02-03",
+        "last_update": "2021-02-04",
         "first_update": "2021-01-04",
         "source_url": "https://github.com/Institut-Zdravotnych-Analyz/covid19-data/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/SK.json",
@@ -56,7 +56,7 @@
     {
         "country_iso": "NO",
         "country_name": "Norway",
-        "last_update": "2021-02-04",
+        "last_update": "2021-02-05",
         "first_update": "2021-01-21",
         "source_url": "https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/NO.json",
@@ -74,7 +74,7 @@
     {
         "country_iso": "DE",
         "country_name": "Germany",
-        "last_update": "2021-02-03",
+        "last_update": "2021-02-04",
         "first_update": "2020-12-27",
         "source_url": "https://github.com/mathiasbynens/covid-19-vaccinations-germany/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/DE.json",
@@ -119,7 +119,7 @@
     {
         "country_iso": "AT",
         "country_name": "Austria",
-        "last_update": "2021-02-04",
+        "last_update": "2021-02-05",
         "first_update": "2021-01-10",
         "source_url": "https://info.gesundheitsministerium.gv.at/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/AT.json",
@@ -146,7 +146,7 @@
     {
         "country_iso": "BE",
         "country_name": "Belgium",
-        "last_update": "2021-02-03",
+        "last_update": "2021-02-04",
         "first_update": "2020-12-28",
         "source_url": "https://covid-vaccinatie.be/en",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/BE.json",
@@ -164,7 +164,7 @@
     {
         "country_iso": "CH",
         "country_name": "Switzerland",
-        "last_update": "2021-01-31",
+        "last_update": "2021-02-03",
         "first_update": "2021-01-21",
         "source_url": "https://github.com/rsalzer/COVID_19_VACC/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/CH.json",
@@ -173,7 +173,7 @@
     {
         "country_iso": "GB",
         "country_name": "United Kingdom",
-        "last_update": "2021-02-03",
+        "last_update": "2021-02-04",
         "first_update": "2021-01-10",
         "source_url": "https://coronavirus.data.gov.uk/details/download",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/GB.json",
@@ -182,7 +182,7 @@
     {
         "country_iso": "AR",
         "country_name": "Argentina",
-        "last_update": "2021-02-04",
+        "last_update": "2021-02-05",
         "first_update": "2021-01-20",
         "source_url": "http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/AR.json",

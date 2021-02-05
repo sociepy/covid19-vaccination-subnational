@@ -40,6 +40,7 @@ Get all available data for a country.
 
 ### Example
 > [sociepy.org/covid19-vaccination-subnational/api/v1/all/country_by_iso/AT.json](https://sociepy.org/covid19-vaccination-subnational/api/v1/all/country_by_iso/AT.json)
+> (Austria)
 
 ```json
 {
@@ -100,6 +101,9 @@ Get latest data for a country.
 | `data.date`  | string | Date data entry, as "YYYY-MM-DD". Note that some regions may have different update frequencies.  |
 | `data.total_vaccinations`  | string | Last cummulative number of vaccinations reported in this region (first doses + second doses).  |
 
+### Example
+> [sociepy.org/covid19-vaccination-subnational/api/v1/latest/country_by_iso/BR.json](https://sociepy.org/covid19-vaccination-subnational/api/v1/latest/country_by_iso/BR.json)
+> (Brazil)
 
 ```json
 {

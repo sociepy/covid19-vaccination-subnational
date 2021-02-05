@@ -1,3 +1,7 @@
+"""Update API v1 data files
+
+files: api/v1/*/*/*.json
+"""
 import os
 import json
 from glob import glob

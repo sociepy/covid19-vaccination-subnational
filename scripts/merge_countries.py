@@ -2,7 +2,7 @@
 
 https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/run_python_scripts.py
 
-Merge data/countries/* csv data into vdata/accinations.csv file
+Merge data/countries/*.csv data into vdata/accinations.csv file
 """
 import pandas as pd
 from datetime import datetime

@@ -1,3 +1,6 @@
+"""Generate ISO files."""
+
+
 from covid_updater.iso import ISODB
 
 

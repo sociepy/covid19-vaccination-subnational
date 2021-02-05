@@ -1,3 +1,11 @@
+"""Update data:
+
+- Update country data (data/countries/*.csv).
+- Merge country csvs into file data/vaccinations.csv
+- Update API data.
+"""
+
+
 import os
 
 

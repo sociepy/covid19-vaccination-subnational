@@ -2,7 +2,7 @@
 
 https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/run_python_scripts.py
 
-Update data/countries/* csv data.
+Update data/countries/*.csv data.
 """
 import pandas as pd
 from datetime import datetime

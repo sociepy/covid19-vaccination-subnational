@@ -19,11 +19,11 @@ def get_population(region_iso_list: list):
     SELECT ?item ?value ?population
     WHERE
     {
-      #?item wdt:P300 "AR-U".
-      ?item wdt:P1082 ?population.
-      ?item wdt:P300 ?value .
-      FILTER(?value IN %s)
-      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+    ?item p:P1082 [pq:P585 ?date; ps:P1082 ?population].
+    ?item wdt:P300 ?value.
+    FILTER NOT EXISTS {?item p:P1082 [pq:P585 ?date_] FILTER (?date_ > ?date)}
+    FILTER(?value IN %s)
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
     }
     """ % str(tuple(region_iso_list))
     res = qwikidata.sparql.return_sparql_query_results(query)

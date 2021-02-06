@@ -39,6 +39,7 @@ class Scraper:
 
     def _postprocess(self, df):
         df = ISODB().merge(df, country_iso=self.country_iso, mode=self.mode_iso_merge)
+        # TODO: Insert here population info (need path to population.csv as class attribute)
         return df
 
     def process(self, df):

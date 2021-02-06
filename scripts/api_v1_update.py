@@ -63,15 +63,14 @@ def main():
         country = df["location"].value_counts().index.tolist()[0]
         source = country_tracking.loc[country_tracking["country_iso"] == country_iso, "data_source_url"].values[0]
         # Process
+        print(f"Generating API file for {country}...", sep=",")
         api_json_all, api_json_latest = build_api_json(df, country, country_iso, source)
         # Export all
         path = os.path.join(export_folder_all, f"{country_iso}.json")
-        print(f"Generating API file for {country} --> {path}...")
         with open(path, "w") as f:
             json.dump(api_json_all, f, indent=4)
         # Export latest
         path = os.path.join(export_folder_latest, f"{country_iso}.json")
-        print(f"Generating API file for {country} --> {path}...")
         with open(path, "w") as f:
             json.dump(api_json_latest, f, indent=4)
         

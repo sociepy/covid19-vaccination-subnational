@@ -27,9 +27,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-      - name: OS dependencies
-        run: |
-          apt install chromium-chromedriver
       - name: Python dependencies
         run: |
           python -m pip install --upgrade pip

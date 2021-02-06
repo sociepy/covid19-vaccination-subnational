@@ -22,7 +22,7 @@ def main():
     df_current = df_current[~(df_current["region_iso"].astype(str) + df_current["date"]).isin(key)]
     df = pd.concat([df, df_current])
     # Export
-    df.to_csv("data/population.csv")
+    df.to_csv("data/population.csv", index=False)
 
 
 if __name__ == "__main__":

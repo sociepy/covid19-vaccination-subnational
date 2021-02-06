@@ -9,7 +9,7 @@
 import os
 
 
-SCRIPTS = ["update_countries.py", "merge_countries.py", "api_v1_update.py"]
+SCRIPTS = ["update_countries.py", "merge_countries.py", "cross_with_population.py", "api_v1_update.py"]
 
 
 # Run all scripts

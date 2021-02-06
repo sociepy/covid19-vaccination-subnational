@@ -11,10 +11,10 @@ import pandas as pd
 region_fields = ["region", "region_iso"]
 data_fields = ["date", "total_vaccinations"]
 rename_fields = {"region": "region_name"}
-export_folder = "api/v1"
-export_folder_all = os.path.join(export_folder, "all/country_by_iso/")
-export_folder_latest = os.path.join(export_folder, "latest/country_by_iso/")
-api_endpoint = "https://sociepy.org/covid19-vaccination-subnational/api/v1/"
+export_folder = "data/api/v1"
+export_folder_all = f"{export_folder}/all/country_by_iso/"
+export_folder_latest =f"{export_folder}/latest/country_by_iso/"
+api_endpoint = f"https://sociepy.org/covid19-vaccination-subnational/{export_folder}"
 
 
 def build_api_json(df, country, country_iso, source):

@@ -22,6 +22,7 @@ def main():
     df_current = df_current[~(df_current["region_iso"].astype(str) + df_current["date"]).isin(key)]
     df = pd.concat([df, df_current])
     # Export
+    df.drop_duplicates()
     df.to_csv("data/population.csv", index=False)
 
 

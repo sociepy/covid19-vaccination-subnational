@@ -12,9 +12,8 @@ This project is inspired by wonderful project [owid/covid-19-data](https://githu
 some of its structure, and is open to integration if deemed approriate.
 
 ## Content
-* [Repository organization](#repository-organization)
 * [Data sources](#data-sources)
-* [CSV API](#api)
+* [Data format](#data-format)
 * [JSON Endpoint API](api/v1/README.md)
 * [Contribute](#contribute)
 * [Documentation](docs/CODE.md) (WIP 🚧)
@@ -26,7 +25,7 @@ This project wouldn't be possible without the great resources available online.
 
 {data_sources}
 
-## API
+## Data format
 The data pretends to resemble the API proposed by [owid/covid-19-data](https://github.com/owid/covid-19-data). Find
 below the field description, mainly provided by [OWID](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/README.md).
 
@@ -48,7 +47,18 @@ Note: for `people_vaccinated` and `people_fully_vaccinated` we are dependent on 
 so we may not be able to make these metrics available for some countries.
 
 ## Contribute
-The data is updated using the script [`update_data.py`](scripts/update_data.py). This script first runs all
+To construct the dataset, a scraping script is required for each country.
+### Set up environment
+Install the package and initiate the dataset with ISO codes:
+
+```
+$ pip instal -e .
+$ python scripts/create_iso_db.py
+```
+
+### Execute scripts
+
+The data is updated using the script [`update_vaccinations.py`](scripts/update_vaccinations.py). This script first runs all
 [country/scripts](scripts/countries/), generates [country data](data/countries/) and finally merges these into file [`vaccinations.csv`](data/vaccinations.csv).
 
 ```

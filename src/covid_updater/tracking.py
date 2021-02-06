@@ -6,7 +6,8 @@ import flag
 
 this_directory = os.path.abspath(os.path.dirname(__file__))
 COUNTRY_TRACKING_FILE = os.path.join(this_directory, "assets/country_tracking.csv")
-README_FILE = os.path.join(this_directory, "assets/README.template.md")
+README_TEMPLATE = "_templates/README.template.md"
+#README_TEMPLATE = "https://github.com/sociepy/covid19-vaccination-subnational/_templates/README.template.md"
 
 
 def update_country_tracking(country, country_iso, url, last_update, second_dose, output_file=COUNTRY_TRACKING_FILE):
@@ -80,12 +81,12 @@ def tracking_csv_as_md():
     return table_md
 
 
-def generate_readme(output_file):
+def generate_readme(output_file, input_template=README_TEMPLATE):
     # Load table
     table_md = tracking_csv_as_md()
 
     # Export README
-    with open(README_FILE, "r") as f:
+    with open(input_template, "r") as f:
         readme = f.read()
     readme = readme.format(data_sources=table_md)
     with open(output_file, "w") as f:

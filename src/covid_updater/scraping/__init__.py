@@ -1,12 +1,6 @@
-from .austria import AustriaScraper
-from .india import IndiaScraper
-from .sweden import SwedenScraper
-from .united_states import UnitedStatesScraper
+from .core import get_country_scraper
 
 
 __all__ = [
-    "AustriaScrapper",
-    "IndiaScrapper",
-    "SwedenScrapper",
-    "UnitedStatesScraper"
+    "get_country_scraper"
 ]

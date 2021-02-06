@@ -5,7 +5,7 @@ from covid_updater.utils import export_data
 
 class Scraper:
     def __init__(self, country, country_iso, data_url, data_url_reference, region_renaming=None, column_renaming=None,
-                 mode_iso_merge=None):
+                 mode_iso_merge=None, do_cumsum_fields=None):
         self.country = country
         self.country_iso = country_iso
         self.data_url = data_url
@@ -13,6 +13,7 @@ class Scraper:
         self.region_renaming = region_renaming if region_renaming is not None else {}
         self.column_renaming = column_renaming if column_renaming is not None else {}
         self.mode_iso_merge = mode_iso_merge if mode_iso_merge is not None else "region_iso"
+        self.do_cumsum_fields = do_cumsum_fields if do_cumsum_fields is not None else []
 
     def load_data(self):
         raise NotImplementedError("Call child's method instead.")
@@ -27,11 +28,8 @@ class Scraper:
 
         # Rename regions
         if "region" in df.columns:
+            df = df.loc[~df.loc[:, "region"].isnull()]
             df.loc[:, "region"] = df.loc[:, "region"].replace(self.region_renaming)
-        elif "region_iso" in df.columns:
-            pass
-        else:
-            raise Exception("Need a region (or region_iso) field!")
         return df
 
     def _process(self, df):
@@ -39,6 +37,9 @@ class Scraper:
 
     def _postprocess(self, df):
         df = ISODB().merge(df, country_iso=self.country_iso, mode=self.mode_iso_merge)
+        df = df.sort_values(by="date")
+        for field in self.do_cumsum_fields:
+            df[field] = df.groupby("region")[field].cumsum().values
         # TODO: Insert here population info (need path to population.csv as class attribute)
         return df
 

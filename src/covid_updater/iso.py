@@ -19,6 +19,10 @@ class ISODB():
         if isinstance(df, pd.DataFrame):
             self._df = df
         else:
+            print("-------------")
+            print(self._file)
+            print("-------------")
+            print(os.listdir())
             if os.path.isfile(self._file):
                 self._df = pd.read_csv(self._file)
             else:

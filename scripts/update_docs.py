@@ -1,5 +1,6 @@
 import argparse
 import pandas as pd
+from covid_updater.docs import generate_readme
 
 
 def get_parser():
@@ -26,19 +27,16 @@ def get_parser():
     return parser
 
 
-def update_readme(input_template, output_path, data_folder):
-    files = [f for f in os.listdir(data_folder) if f.endswith(f".csv")]
-    for f in files:
-        df = pd.read_csv(os.path.join(data_folder, f)
+def main():
+    parser = get_parser()
+    args = parser.parse_args()
 
-# Tracking
-update_country_tracking(
-    country=country,
-    country_iso=country_iso,
-    url=data_url_reference,
-    last_update=last_update,
-    second_dose=second_dose
-)
+    generate_readme(
+        input_country_info=args.input_country_info_path,
+        input_readme_template=args.input_readme_template_path,
+        output_readme=args.output_readme_path
+    )
 
-# Update readme
-generate_readme(output_file=os.path.join(project_dir, "README.md"))
+
+if __name__ == "__main__":
+    main()

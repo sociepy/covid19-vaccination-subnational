@@ -32,7 +32,7 @@ jobs:
           python -m pip install .
       - name: Locale
         run: |
-          apt-get install -y locales
+          sudo apt-get install -y locales
       # Runs a set of commands using the runners shell
       - name: Data refresh
         run: |

@@ -1,8 +1,8 @@
-from covid_updater.scraping import SwedenScraper
+from covid_updater.scraping import get_country_scraper
 
 
 def main():
-    scraper = SwedenScraper()
+    scraper = get_country_scraper(iso_code="SE")
     output_file = f"data/countries/{scraper.filename}.csv"
     scraper.run(output_file=output_file)
 

@@ -21,6 +21,11 @@ def get_parser():
         help="Path to country data folder."
     )
     parser.add_argument(
+        "input_country_info_path",
+        type=str,
+        help="Path country info file."
+    )
+    parser.add_argument(
         "output_folder",
         type=str,
         help="Path to place all API files."
@@ -73,37 +78,39 @@ def main():
 
     metadata = []
     countries_path = [f for f in os.listdir(args.input_data_folder) if f.endswith(".csv")]
-    # country_tracking = pd.read_csv("src/covid_updater/assets/country_tracking.csv")
+    country_info = pd.read_csv(args.input_country_info_path)
     for country_path in countries_path:
         print(country_path)
         # Load
         df = pd.read_csv(os.path.join(args.input_data_folder, country_path))
         country_iso = df["location_iso"].value_counts().index.tolist()[0]
         country = df["location"].value_counts().index.tolist()[0]
-        #source = country_tracking.loc[country_tracking["country_iso"] == country_iso, "data_source_url"].values[0]
-        source = "PLACEHOLDER(source_url)"
-        # Process
-        print(f"Generating API file for {country}...", sep=",")
-        api_json_all, api_json_latest = build_api_json(df, country, country_iso, source)
-        # Export all
-        path = os.path.join(export_folder_all, f"{country_iso}.json")
-        with open(path, "w") as f:
-            json.dump(api_json_all, f, indent=4)
-        # Export latest
-        path = os.path.join(export_folder_latest, f"{country_iso}.json")
-        with open(path, "w") as f:
-            json.dump(api_json_latest, f, indent=4)
-        
-        metadata.append({
-            "country_iso": country_iso,
-            "country_name": country,
-            "last_update": df["date"].max(),
-            "first_update": df["date"].min(),
-            "source_url": source,
-            "api_url_all": f"{api_endpoint}/all/country_by_iso/{country_iso}.json",
-            "api_url_latest": f"{api_endpoint}/latest/country_by_iso/{country_iso}.json"
-        })
-
+        if  country_info["country_iso"].isin([country_iso]):
+            source = country_info.loc[country_info["country_iso"] == country_iso, "data_source_url"].values[0]
+            source = "PLACEHOLDER(source_url)"
+            # Process
+            print(f"Generating API file for {country}...", sep=",")
+            api_json_all, api_json_latest = build_api_json(df, country, country_iso, source)
+            # Export all
+            path = os.path.join(export_folder_all, f"{country_iso}.json")
+            with open(path, "w") as f:
+                json.dump(api_json_all, f, indent=4)
+            # Export latest
+            path = os.path.join(export_folder_latest, f"{country_iso}.json")
+            with open(path, "w") as f:
+                json.dump(api_json_latest, f, indent=4)
+            
+            metadata.append({
+                "country_iso": country_iso,
+                "country_name": country,
+                "last_update": df["date"].max(),
+                "first_update": df["date"].min(),
+                "source_url": source,
+                "api_url_all": f"{api_endpoint}/all/country_by_iso/{country_iso}.json",
+                "api_url_latest": f"{api_endpoint}/latest/country_by_iso/{country_iso}.json"
+            })
+        else:
+            print("ignored")
     path = os.path.join(args.output_folder, f"metadata.json")
     print(f"Generating metadata file {path}...")
     with open(path, "w") as f:

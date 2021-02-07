@@ -12,7 +12,7 @@ COUNTRY = "Bulgaria"
 COUNTRY_ISO = "BG"
 OUTPUT_FILE = f"data/countries/{COUNTRY}.csv"
 DATA_URL = "https://coronavirus.bg/bg/statistika"
-DATA_URL_REFERENCE = DATA_URL_REFERENCE
+DATA_URL_REFERENCE = DATA_URL
 REGION_RENAMING = {
     "Благоевград": "Blagoevgrad",
     "Бургас": "Burgas",

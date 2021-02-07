@@ -3,18 +3,18 @@
 For a given country, you can access [all the tracked data](#all-data) using its ISO code:
 
 ```
-https://sociepy.org/covid19-vaccination-subnational/api/v1/all/country_by_iso/[COUNTRY_ISO].json
+https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/[COUNTRY_ISO].json
 ```
 
 Alternatively, you can check [latest data](#latest-data):
 
 ```
-https://sociepy.org/covid19-vaccination-subnational/api/v1/latest/country_by_iso/[COUNTRY_ISO].json
+https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/[COUNTRY_ISO].json
 ```
 
 To see which countries are available you can check [this table](https://sociepy.org/covid19-vaccination-subnational/#data-sources) or directly via the API:
 
-[`https://sociepy.org/covid19-vaccination-subnational/api/v1/metadata.json`](https://sociepy.org/covid19-vaccination-subnational/api/v1/metadata.json)
+[`https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json`](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json)
 
 
 This API is inspired by [https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io)
@@ -39,7 +39,7 @@ Get all available data for a country.
 | `data.data.total_vaccinations`  | string | Cummulative number of vaccinations reported on this date and region (first doses + second doses).  |
 
 ### Example
-> [sociepy.org/covid19-vaccination-subnational/api/v1/all/country_by_iso/AT.json](https://sociepy.org/covid19-vaccination-subnational/api/v1/all/country_by_iso/AT.json)
+> [sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AT.json](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AT.json)
 > (Austria)
 
 ```json
@@ -102,7 +102,7 @@ Get latest data for a country.
 | `data.total_vaccinations`  | string | Last cummulative number of vaccinations reported in this region (first doses + second doses).  |
 
 ### Example
-> [sociepy.org/covid19-vaccination-subnational/api/v1/latest/country_by_iso/BR.json](https://sociepy.org/covid19-vaccination-subnational/api/v1/latest/country_by_iso/BR.json)
+> [sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BR.json](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BR.json)
 > (Brazil)
 
 ```json

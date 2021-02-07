@@ -5,8 +5,8 @@
         "last_update": "2021-02-05",
         "first_update": "2021-01-16",
         "source_url": "https://india-covid19vaccine.github.io",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/IN.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/IN.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/IN.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/IN.json"
     },
     {
         "country_iso": "DK",
@@ -14,8 +14,8 @@
         "last_update": "2021-02-05",
         "first_update": "2020-12-27",
         "source_url": "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/DK.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/DK.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/DK.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/DK.json"
     },
     {
         "country_iso": "IT",
@@ -23,8 +23,8 @@
         "last_update": "2021-02-06",
         "first_update": "2020-12-27",
         "source_url": "https://github.com/italia/covid19-opendata-vaccini/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/IT.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/IT.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/IT.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/IT.json"
     },
     {
         "country_iso": "LI",
@@ -32,8 +32,8 @@
         "last_update": "2021-01-31",
         "first_update": "2021-01-21",
         "source_url": "https://github.com/rsalzer/COVID_19_VACC/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/LI.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/LI.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/LI.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/LI.json"
     },
     {
         "country_iso": "CL",
@@ -41,8 +41,8 @@
         "last_update": "2021-02-05",
         "first_update": "2021-01-23",
         "source_url": "https://github.com/juancri/covid19-vaccination/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/CL.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/CL.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/CL.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/CL.json"
     },
     {
         "country_iso": "SK",
@@ -50,8 +50,8 @@
         "last_update": "2021-02-04",
         "first_update": "2021-01-04",
         "source_url": "https://github.com/Institut-Zdravotnych-Analyz/covid19-data/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/SK.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/SK.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/SK.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/SK.json"
     },
     {
         "country_iso": "NO",
@@ -59,8 +59,8 @@
         "last_update": "2021-02-05",
         "first_update": "2021-01-21",
         "source_url": "https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/NO.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/NO.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/NO.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/NO.json"
     },
     {
         "country_iso": "US",
@@ -68,8 +68,8 @@
         "last_update": "2021-02-06",
         "first_update": "2020-12-14",
         "source_url": "https://github.com/youyanggu/covid19-cdc-vaccination-data",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/US.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/US.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/US.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/US.json"
     },
     {
         "country_iso": "DE",
@@ -77,8 +77,8 @@
         "last_update": "2021-02-05",
         "first_update": "2020-12-27",
         "source_url": "https://github.com/mathiasbynens/covid-19-vaccinations-germany/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/DE.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/DE.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/DE.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/DE.json"
     },
     {
         "country_iso": "BG",
@@ -86,8 +86,8 @@
         "last_update": "2021-01-16",
         "first_update": "2021-01-16",
         "source_url": "https://coronavirus.bg/bg/statistika",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/BG.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/BG.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/BG.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BG.json"
     },
     {
         "country_iso": "CA",
@@ -95,8 +95,8 @@
         "last_update": "2021-02-05",
         "first_update": "2020-12-14",
         "source_url": "https://github.com/ccodwg/Covid19Canada",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/CA.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/CA.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/CA.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/CA.json"
     },
     {
         "country_iso": "FR",
@@ -104,8 +104,8 @@
         "last_update": "2021-02-05",
         "first_update": "2020-12-27",
         "source_url": "https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/FR.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/FR.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/FR.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/FR.json"
     },
     {
         "country_iso": "ES",
@@ -113,8 +113,8 @@
         "last_update": "2021-02-05",
         "first_update": "2021-01-04",
         "source_url": "https://github.com/civio/covid-vaccination-spain/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/ES.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/ES.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/ES.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/ES.json"
     },
     {
         "country_iso": "AT",
@@ -122,8 +122,8 @@
         "last_update": "2021-02-06",
         "first_update": "2021-01-10",
         "source_url": "https://info.gesundheitsministerium.gv.at/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/AT.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/AT.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/AT.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/AT.json"
     },
     {
         "country_iso": "BR",
@@ -131,8 +131,8 @@
         "last_update": "2021-02-06",
         "first_update": "2021-01-18",
         "source_url": "https://github.com/wcota/covid19br/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/BR.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/BR.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/BR.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BR.json"
     },
     {
         "country_iso": "SE",
@@ -140,8 +140,8 @@
         "last_update": "2021-01-31",
         "first_update": "2020-12-27",
         "source_url": "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/vaccination-mot-covid-19/statistik/statistik-over-registrerade-vaccinationer-covid-19/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/SE.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/SE.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/SE.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/SE.json"
     },
     {
         "country_iso": "BE",
@@ -149,8 +149,8 @@
         "last_update": "2021-02-05",
         "first_update": "2020-12-28",
         "source_url": "https://covid-vaccinatie.be/en",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/BE.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/BE.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/BE.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BE.json"
     },
     {
         "country_iso": "CZ",
@@ -158,8 +158,8 @@
         "last_update": "2021-02-05",
         "first_update": "2020-12-27",
         "source_url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/CZ.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/CZ.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/CZ.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/CZ.json"
     },
     {
         "country_iso": "CH",
@@ -167,8 +167,8 @@
         "last_update": "2021-02-03",
         "first_update": "2021-01-21",
         "source_url": "https://github.com/rsalzer/COVID_19_VACC/",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/CH.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/CH.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/CH.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/CH.json"
     },
     {
         "country_iso": "GB",
@@ -176,8 +176,8 @@
         "last_update": "2021-02-05",
         "first_update": "2021-01-10",
         "source_url": "https://coronavirus.data.gov.uk/details/download",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/GB.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/GB.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/GB.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/GB.json"
     },
     {
         "country_iso": "AR",
@@ -185,8 +185,8 @@
         "last_update": "2021-02-06",
         "first_update": "2021-01-20",
         "source_url": "http://datos.salud.gob.ar/dataset/vacunas-contra-covid-19-dosis-aplicadas-en-la-republica-argentina",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/AR.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/AR.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/AR.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/AR.json"
     },
     {
         "country_iso": "PL",
@@ -194,7 +194,7 @@
         "last_update": "2021-02-06",
         "first_update": "2021-01-25",
         "source_url": "https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19",
-        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/api/v1//all/PL.json",
-        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/api/v1//latest/country_by_iso/PL.json"
+        "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/PL.json",
+        "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/PL.json"
     }
 ]

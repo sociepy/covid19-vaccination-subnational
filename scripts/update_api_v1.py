@@ -18,17 +18,20 @@ def get_parser():
     parser.add_argument(
         "input_data_folder",
         type=str,
-        help="Path to country data folder."
+        help="Path to country data folder.",
+        default="data/countries"
     )
     parser.add_argument(
         "input_country_info_path",
         type=str,
-        help="Path country info file."
+        help="Path country info file.",
+        default="data/country_info.csv"
     )
     parser.add_argument(
         "output_folder",
         type=str,
-        help="Path to place all API files."
+        help="Path to place all API files.",
+        default="data/api/v1"
     )
     args = parser.parse_args()
     return parser
@@ -85,11 +88,10 @@ def main():
         df = pd.read_csv(os.path.join(args.input_data_folder, country_path))
         country_iso = df["location_iso"].value_counts().index.tolist()[0]
         country = df["location"].value_counts().index.tolist()[0]
-        if  country_info["country_iso"].isin([country_iso]):
+        if country_iso in country_info["country_iso"].unique():
             source = country_info.loc[country_info["country_iso"] == country_iso, "data_source_url"].values[0]
-            source = "PLACEHOLDER(source_url)"
             # Process
-            print(f"Generating API file for {country}...", sep=",")
+            print(f"  Generating API file for {country}...", sep=",")
             api_json_all, api_json_latest = build_api_json(df, country, country_iso, source)
             # Export all
             path = os.path.join(export_folder_all, f"{country_iso}.json")
@@ -110,7 +112,7 @@ def main():
                 "api_url_latest": f"{api_endpoint}/latest/country_by_iso/{country_iso}.json"
             })
         else:
-            print("ignored")
+            print("  (ignored)")
     path = os.path.join(args.output_folder, f"metadata.json")
     print(f"Generating metadata file {path}...")
     with open(path, "w") as f:

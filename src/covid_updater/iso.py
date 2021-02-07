@@ -10,6 +10,7 @@ import pandas as pd
 this_directory = os.path.abspath(os.path.dirname(__file__))
 ISO_ORIGINAL_FILE = os.path.join(this_directory, "assets/IP2LOCATION-ISO3166-2.CSV")
 ISO_NEW_FILE = os.path.join(this_directory, "assets/ISO_3166_2.csv")
+ISO_NEW_FILE_URL = "" # Add remote file reference
 
 
 class ISODB():

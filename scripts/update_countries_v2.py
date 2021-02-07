@@ -2,7 +2,7 @@ import os
 from covid_updater.scraping import get_country_scraper
 
 
-ISO_CODES = ["IT"]#['AT', 'IN', 'SE', 'US', 'BE', 'BR', 'CZ', 'DE', 'IT']
+ISO_CODES = ["FR"]#['AT', 'IN', 'SE', 'US', 'BE', 'BR', 'CZ', 'DE', 'IT', 'SK', 'ES', 'GB', 'AR', 'PL', 'FR']
 OUTPUT_PATH = os.path.join("data", "countries")
 
 

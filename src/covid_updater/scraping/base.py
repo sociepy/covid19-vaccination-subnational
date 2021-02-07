@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 from covid_updater.iso import ISODB
 from covid_updater.utils import export_data
 

@@ -3,18 +3,30 @@
 files: api/v1/*/*/*.json
 """
 import os
+import argparse
 import json
-from glob import glob
 import pandas as pd
 
 
 region_fields = ["region", "region_iso"]
 data_fields = ["date", "total_vaccinations"]
 rename_fields = {"region": "region_name"}
-export_folder = "data/api/v1"
-export_folder_all = f"{export_folder}/all/country_by_iso/"
-export_folder_latest =f"{export_folder}/latest/country_by_iso/"
-api_endpoint = f"https://sociepy.org/covid19-vaccination-subnational/{export_folder}"
+
+
+def get_parser():
+    parser = argparse.ArgumentParser(description="Merge all country data into single csv file.")
+    parser.add_argument(
+        "input_data_folder",
+        type=str,
+        help="Path to country data folder."
+    )
+    parser.add_argument(
+        "output_folder",
+        type=str,
+        help="Path to place all API files."
+    )
+    args = parser.parse_args()
+    return parser
 
 
 def build_api_json(df, country, country_iso, source):
@@ -52,16 +64,24 @@ def build_api_json(df, country, country_iso, source):
 
 
 def main():
+    parser = get_parser()
+    args = parser.parse_args()
+
+    export_folder_all = os.path.join(args.output_folder, "all/country_by_iso/")
+    export_folder_latest = os.path.join(args.output_folder, "latest/country_by_iso/")
+    api_endpoint = f"https://sociepy.org/covid19-vaccination-subnational/{args.output_folder}"
+
     metadata = []
-    countries_path = [f for f in glob("data/countries/*") if f.endswith(".csv")]
-    country_tracking = pd.read_csv("src/covid_updater/assets/country_tracking.csv")
+    countries_path = [f for f in os.listdir(args.input_data_folder) if f.endswith(".csv")]
+    # country_tracking = pd.read_csv("src/covid_updater/assets/country_tracking.csv")
     for country_path in countries_path:
         print(country_path)
         # Load
-        df = pd.read_csv(country_path)
+        df = pd.read_csv(os.path.join(args.input_data_folder, country_path))
         country_iso = df["location_iso"].value_counts().index.tolist()[0]
         country = df["location"].value_counts().index.tolist()[0]
-        source = country_tracking.loc[country_tracking["country_iso"] == country_iso, "data_source_url"].values[0]
+        #source = country_tracking.loc[country_tracking["country_iso"] == country_iso, "data_source_url"].values[0]
+        source = "PLACEHOLDER(source_url)"
         # Process
         print(f"Generating API file for {country}...", sep=",")
         api_json_all, api_json_latest = build_api_json(df, country, country_iso, source)
@@ -80,11 +100,11 @@ def main():
             "last_update": df["date"].max(),
             "first_update": df["date"].min(),
             "source_url": source,
-            "api_url_all": f"{api_endpoint}/all/{country_iso}.json",
+            "api_url_all": f"{api_endpoint}/all/country_by_iso/{country_iso}.json",
             "api_url_latest": f"{api_endpoint}/latest/country_by_iso/{country_iso}.json"
         })
 
-    path = os.path.join(export_folder, f"metadata.json")
+    path = os.path.join(args.output_folder, f"metadata.json")
     print(f"Generating metadata file {path}...")
     with open(path, "w") as f:
         json.dump(metadata, f, indent=4)

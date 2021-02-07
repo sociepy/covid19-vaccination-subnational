@@ -7,7 +7,7 @@ All country data can be found in a [single
 csv file](https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/data/vaccinations.csv). If you
 are interested in indiviual country data, you may want to check [countries](data/countries) folder.
 
-Additionally, we provide a static API endpoint, which contains the data per country as JSONs. For more details check [here](https://sociepy.org/covid19-vaccination-subnational/api/v1).
+Additionally, we provide a static API endpoint, which contains the data per country as JSONs. For more details check [here](https://sociepy.org/covid19-vaccination-subnational/data/api/v1).
 
 
 ### Thanks to
@@ -79,7 +79,7 @@ check [here](scripts/README.md).
 Install the package:
 
 ```
-$ pip instal -e .
+$ pip install -e .
 ```
 
 ### Execute update

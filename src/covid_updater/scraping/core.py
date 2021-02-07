@@ -16,6 +16,7 @@ from covid_updater.scraping.countries.france import FranceScraper
 from covid_updater.scraping.countries.denmark import DenmarkScraper
 from covid_updater.scraping.countries.norway import NorwayScraper
 from covid_updater.scraping.countries.switzerland import SwitzerlandScraper
+from covid_updater.scraping.countries.chile import ChileScraper
 
 
 scrappers = [
@@ -36,7 +37,8 @@ scrappers = [
     FranceScraper(),
     DenmarkScraper(),
     NorwayScraper(),
-    SwitzerlandScraper()
+    SwitzerlandScraper(),
+    ChileScraper()
 ]
 scrappers_dict = {scrapper.country_iso: scrapper for scrapper in scrappers}
 iso_codes = list(scrappers_dict.keys())

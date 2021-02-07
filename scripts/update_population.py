@@ -1,4 +1,4 @@
-"""Update population data
+"""Update population data.
 
 file: data/population.csv
 """
@@ -10,20 +10,41 @@ import pandas as pd
 from covid_updater.population import get_population
 
 
+def get_parser():
+    parser = argparse.ArgumentParser(description="Merge all country data into single csv file.")
+    parser.add_argument(
+        "input_path",
+        type=str,
+        help="Path to vaccination data file. Used to extract relevant countries.",
+        default="data/vaccination.csv"
+    )
+    parser.add_argument(
+        "output_path",
+        type=str,
+        help="Path to population data file.",
+        default="data/population.csv"
+    )
+    args = parser.parse_args()
+    return parser
+
+
 def main():
+    parser = get_parser()
+
     # Load new data
-    df = pd.read_csv("data/vaccinations.csv", index_col=False)
+    df = pd.read_csv(args.input_path, index_col=False)
     df = df[df["region_iso"] != "-"]
     region_iso_list = df.loc[:, "region_iso"].unique()
     df = get_population(region_iso_list)
     # Merge with current data
-    df_current = pd.read_csv("data/population.csv", index_col=False)
-    key = df.loc[:, "region_iso"].astype(str) + df.loc[:, "date"]
-    df_current = df_current[~(df_current["region_iso"].astype(str) + df_current["date"]).isin(key)]
-    df = pd.concat([df, df_current])
+    if os.isfile(args.output_path):
+        df_current = pd.read_csv(args.output_path, index_col=False)
+        key = df.loc[:, "region_iso"].astype(str) + df.loc[:, "date"]
+        df_current = df_current[~(df_current["region_iso"].astype(str) + df_current["date"]).isin(key)]
+        df = pd.concat([df, df_current])
     # Export
     df.drop_duplicates()
-    df.to_csv("data/population.csv", index=False)
+    df.to_csv(args.output_path, index=False)
 
 
 if __name__ == "__main__":

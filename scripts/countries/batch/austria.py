@@ -1,8 +1,8 @@
-from covid_updater.scraping import AustriaScraper
+from covid_updater.scraping import get_country_scraper
 
 
 def main():
-    scraper = AustriaScraper()
+    scraper = get_country_scraper("AT")
     output_file = f"data/countries/{scraper.filename}.csv"
     scraper.run(output_file=output_file)
 

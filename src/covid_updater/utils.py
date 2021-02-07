@@ -1,7 +1,6 @@
 import os
 import urllib.request
 import pandas as pd
-from covid_updater.tracking import update_country_tracking, generate_readme
 
 
 project_dir = os.path.abspath(os.path.join(__file__, "../../.."))
@@ -51,10 +50,10 @@ def keep_min_date(df):
     return df.loc[:, cols]
 
 
-def export_data(df, data_url_reference, output_file):
+def export_data(df, location, country_iso, country, output_file):
     locations = df["location"].unique().tolist()
-    if len(locations) != 1:
-        raise Exception("More than one country detected!")
+    #if len(locations) != 1:
+    #    raise Exception("More than one country detected!")
     country_iso = df["location_iso"].value_counts().index.tolist()[0]
     country = locations[0]
     last_update = df["date"].max()
@@ -74,15 +73,3 @@ def export_data(df, data_url_reference, output_file):
     # Export
     df = df.sort_values(by=COLUMNS_ORDER)
     df.to_csv(output_file, index=False)
-
-    # Tracking
-    update_country_tracking(
-        country=country,
-        country_iso=country_iso,
-        url=data_url_reference,
-        last_update=last_update,
-        second_dose=second_dose
-    )
-
-    # Update readme
-    generate_readme(output_file=os.path.join(project_dir, "README.md"))

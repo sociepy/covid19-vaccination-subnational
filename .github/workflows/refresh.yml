@@ -33,6 +33,9 @@ jobs:
       - name: Locale
         run: |
           sudo locale-gen es_ES.UTF-8
+      - name: Temporary folder
+        run: |
+          sudo mkdir tmp
       # Runs a set of commands using the runners shell
       - name: Data refresh
         run: |

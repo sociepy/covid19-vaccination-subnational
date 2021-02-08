@@ -44,5 +44,5 @@ jobs:
       - name: Data refresh
         run: |
           sudo pip install .
-          sudo bash scripts/update_all.sh
+          bash scripts/update_all.sh
           

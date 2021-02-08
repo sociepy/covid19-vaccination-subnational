@@ -22,7 +22,8 @@ class ISODB():
             print(">> -------------")
             print(f">> {self._file}")
             print(">> -------------")
-            print(f">> {os.listdir(os.path.join(this_directory, "assets"))}")
+            files = str(os.listdir(os.path.join(this_directory, "assets")))
+            print(f">> {files}")
             print(f">> {os.path.isfile(self._file)}")
             #if os.path.isfile(self._file):
             #    self._df = pd.read_csv(self._file)

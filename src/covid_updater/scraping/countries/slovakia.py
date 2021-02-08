@@ -7,7 +7,7 @@ class SlovakiaScraper(Scraper):
         super().__init__(
             country="Slovakia", 
             country_iso="SK", 
-            data_url="https://raw.githubusercontent.com/Institut-Zdravotnych-Analyz/covid19-data/main/OpenData_Slovakia_Vaccination_Regions.csv", 
+            data_url="https://raw.githubusercontent.com/Institut-Zdravotnych-Analyz/covid19-data/main/Vaccination/OpenData_Slovakia_Vaccination_Regions.csv", 
             data_url_reference="https://github.com/Institut-Zdravotnych-Analyz/covid19-data/", 
             region_renaming={
                 "Trenčiansky kraj": "Trenciansky kraj",

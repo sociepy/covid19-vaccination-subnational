@@ -9,9 +9,9 @@ from covid_updater.scraping import get_country_scraper
 
 ISO_CODES = [
     #'AR', 
-    #'AT', 'BE', 'BR', 'CA', 'CL', 'CZ', 'DK', 'FR', 'DE',
-    #'IN', 'IT', 'NO', 'PL', 'SK', 'ES', 'SE', 'CH', 'US', 'GB'
-    'BE'
+    'AT', 'BE', 'BR', 'CA', 'CL', 'CZ', 'DK', 'FR', 'DE',
+    'IN', 'IT', 'NO', 'PL', 'SK', 'ES', 'SE', 'CH', 'US', 'GB'
+    #'BE'
 ]
 OUTPUT_PATH = os.path.join("data", "countries")
 

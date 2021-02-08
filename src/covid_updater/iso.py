@@ -22,11 +22,12 @@ class ISODB():
             print("-------------")
             print(self._file)
             print("-------------")
-            print(os.listdir())
-            if os.path.isfile(self._file):
-                self._df = pd.read_csv(self._file)
-            else:
-                raise Exception("DB file not created. Run `create_from_source` before.")
+            print(os.listdir(os.path.joins(this_directory, "assets")))
+            print(f">> {os.path.isfile(self._file)}")
+            #if os.path.isfile(self._file):
+            #    self._df = pd.read_csv(self._file)
+            #else:
+            #    raise Exception("DB file not created. Run `create_from_source` before.")
 
     @classmethod
     def create_from_source(cls, source_file=ISO_ORIGINAL_FILE, filepath=ISO_NEW_FILE):

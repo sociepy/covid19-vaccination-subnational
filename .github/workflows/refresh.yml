@@ -48,7 +48,7 @@ jobs:
       - name: Data refresh
         run: |
           bash scripts/update_all.sh
-      - name: Push
+      - name: Commit & Push
         run: |
           git config user.name lucasrodes
           git config user.email lucasrodes@users.noreply.github.com

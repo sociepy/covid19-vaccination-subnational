@@ -10,19 +10,16 @@ import pandas as pd
 this_directory = os.path.abspath(os.path.dirname(__file__))
 ISO_ORIGINAL_FILE = os.path.join(this_directory, "assets/IP2LOCATION-ISO3166-2.CSV")
 ISO_NEW_FILE = os.path.join(this_directory, "assets/ISO_3166_2.csv")
-ISO_NEW_FILE_URL = "" # Add remote file reference
+ISO_NEW_FILE_URL = "https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/src/covid_updater/assets/ISO_3166_2.csv"
 
 
 class ISODB():
-    def __init__(self, filepath=ISO_NEW_FILE, df=None):
+    def __init__(self, filepath=ISO_NEW_FILE_URL, df=None):
         self._file = filepath
         if isinstance(df, pd.DataFrame):
             self._df = df
         else:
-            if os.path.isfile(self._file):
-                self._df = pd.read_csv(self._file)
-            else:
-                raise Exception("DB file not created. Run `create_from_source` before.")
+            self._df = pd.read_csv(self._file)
 
     @classmethod
     def create_from_source(cls, source_file=ISO_ORIGINAL_FILE, filepath=ISO_NEW_FILE):

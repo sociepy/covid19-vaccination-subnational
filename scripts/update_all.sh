@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Make sure to run this script from project root directory
 # $ bash scripts/update_all.sh
 

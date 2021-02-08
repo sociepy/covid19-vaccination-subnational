@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Update country data."""
 
 
@@ -18,12 +19,14 @@ def get_parser():
     parser.add_argument(
         "output_data_folder",
         type=str,
-        help="Path to folder to export country csv data."
+        help="Path to folder to export country csv data.",
+        default="data/countries/"
     )
     parser.add_argument(
         "output_info_path",
         type=str,
-        help="Path to file to export source info data file."
+        help="Path to file to export source info data file.",
+        default="data/country_info.csv"
     )
     args = parser.parse_args()
     return parser
@@ -39,6 +42,6 @@ def main():
             output_file_info=args.output_info_path,
         )
 
-
+ 
 if __name__ == "__main__":
     main()

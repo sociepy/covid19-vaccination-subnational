@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import argparse
 import pandas as pd
 from covid_updater.docs import generate_readme

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Inspired by OWID repo:
 
 https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/run_python_scripts.py

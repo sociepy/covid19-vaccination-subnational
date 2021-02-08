@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Update vaccinations file with population data.
 
 Adds metrics relative to region population.

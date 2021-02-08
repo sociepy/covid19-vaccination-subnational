@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Update population data.
 
 file: data/population.csv
@@ -37,7 +38,7 @@ def main():
     region_iso_list = df.loc[:, "region_iso"].unique()
     df = get_population(region_iso_list)
     # Merge with current data
-    if os.isfile(args.output_path):
+    if os.path.isfile(args.output_path):
         df_current = pd.read_csv(args.output_path, index_col=False)
         key = df.loc[:, "region_iso"].astype(str) + df.loc[:, "date"]
         df_current = df_current[~(df_current["region_iso"].astype(str) + df_current["date"]).isin(key)]

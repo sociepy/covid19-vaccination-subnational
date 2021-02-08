@@ -36,6 +36,7 @@ jobs:
       - name: Temporary folder
         run: |
           sudo mkdir tmp
+          python -V
       # Runs a set of commands using the runners shell
       - name: Data refresh
         run: |

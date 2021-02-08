@@ -18,14 +18,14 @@ README_PATH="README.md"
 echo ">>> UPDATING COUNTRIES <<<"
 python scripts/update_countries.py ${COUNTRY_DATA_FOLDER_PATH} ${COUNTRY_INFO_PATH}
 # Merge all country data in single file (data/vaccinations.csv)
-#echo ">>> MERGING DATA <<<"
-#python scripts/merge_countries.py ${COUNTRY_DATA_FOLDER_PATH} ${VACCINATIONS_DATA_PATH}
+echo ">>> MERGING DATA <<<"
+python scripts/merge_countries.py ${COUNTRY_DATA_FOLDER_PATH} ${VACCINATIONS_DATA_PATH}
 # Combine vaccination data with regional population and update data/vaccinations.csv
-#echo ">>> ADDING POPULATION INFO <<<"
-#python scripts/update_vaccinations_with_population.py ${VACCINATIONS_DATA_PATH} ${POPULATION_DATA_PATH}
+echo ">>> ADDING POPULATION INFO <<<"
+python scripts/update_vaccinations_with_population.py ${VACCINATIONS_DATA_PATH} ${POPULATION_DATA_PATH}
 # Generate API files with available data
-#echo ">>> UPDATING API FILES <<<"
-#python scripts/update_api_v1.py ${COUNTRY_DATA_FOLDER_PATH} ${COUNTRY_INFO_PATH} ${API_PATH}
+echo ">>> UPDATING API FILES <<<"
+python scripts/update_api_v1.py ${COUNTRY_DATA_FOLDER_PATH} ${COUNTRY_INFO_PATH} ${API_PATH}
 # Update docs
-#echo ">>> UPDATING DOCS <<<"
-#python scripts/update_docs.py ${COUNTRY_INFO_PATH} ${README_TEMPLATE_PATH} ${README_PATH}
+echo ">>> UPDATING DOCS <<<"
+python scripts/update_docs.py ${COUNTRY_INFO_PATH} ${README_TEMPLATE_PATH} ${README_PATH}

@@ -1,7 +1,7 @@
 {
     "country": "Slovakia",
     "country_iso": "SK",
-    "last_update": "2021-02-04",
+    "last_update": "2021-02-07",
     "first_update": "2021-01-04",
     "source_url": "https://github.com/Institut-Zdravotnych-Analyz/covid19-data/",
     "data": [
@@ -104,6 +104,10 @@
                 {
                     "date": "2021-02-04",
                     "total_vaccinations": 19112
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 20826
                 }
             ]
         },
@@ -214,6 +218,18 @@
                 {
                     "date": "2021-02-04",
                     "total_vaccinations": 36962
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 39485
+                },
+                {
+                    "date": "2021-02-06",
+                    "total_vaccinations": 39797
+                },
+                {
+                    "date": "2021-02-07",
+                    "total_vaccinations": 39977
                 }
             ]
         },
@@ -303,19 +319,23 @@
                 },
                 {
                     "date": "2021-02-01",
-                    "total_vaccinations": 26659
+                    "total_vaccinations": 26707
                 },
                 {
                     "date": "2021-02-02",
-                    "total_vaccinations": 28665
+                    "total_vaccinations": 28761
                 },
                 {
                     "date": "2021-02-03",
-                    "total_vaccinations": 30350
+                    "total_vaccinations": 30572
                 },
                 {
                     "date": "2021-02-04",
-                    "total_vaccinations": 32138
+                    "total_vaccinations": 32540
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 34404
                 }
             ]
         },
@@ -413,7 +433,11 @@
                 },
                 {
                     "date": "2021-02-04",
-                    "total_vaccinations": 20895
+                    "total_vaccinations": 21747
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 23324
                 }
             ]
         },
@@ -528,6 +552,10 @@
                 {
                     "date": "2021-02-04",
                     "total_vaccinations": 27629
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 29439
                 }
             ]
         },
@@ -637,7 +665,15 @@
                 },
                 {
                     "date": "2021-02-04",
-                    "total_vaccinations": 16941
+                    "total_vaccinations": 17139
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 18822
+                },
+                {
+                    "date": "2021-02-06",
+                    "total_vaccinations": 20718
                 }
             ]
         },
@@ -695,55 +731,59 @@
                 },
                 {
                     "date": "2021-01-19",
-                    "total_vaccinations": 5451
+                    "total_vaccinations": 5577
                 },
                 {
                     "date": "2021-01-20",
-                    "total_vaccinations": 5912
+                    "total_vaccinations": 6038
                 },
                 {
                     "date": "2021-01-21",
-                    "total_vaccinations": 6142
+                    "total_vaccinations": 6268
                 },
                 {
                     "date": "2021-01-22",
-                    "total_vaccinations": 6340
+                    "total_vaccinations": 6466
                 },
                 {
                     "date": "2021-01-25",
-                    "total_vaccinations": 6690
+                    "total_vaccinations": 6816
                 },
                 {
                     "date": "2021-01-26",
-                    "total_vaccinations": 7199
+                    "total_vaccinations": 7325
                 },
                 {
                     "date": "2021-01-27",
-                    "total_vaccinations": 7693
+                    "total_vaccinations": 7819
                 },
                 {
                     "date": "2021-01-28",
-                    "total_vaccinations": 8277
+                    "total_vaccinations": 8403
                 },
                 {
                     "date": "2021-01-29",
-                    "total_vaccinations": 8948
+                    "total_vaccinations": 9074
                 },
                 {
                     "date": "2021-02-01",
-                    "total_vaccinations": 9958
+                    "total_vaccinations": 10084
                 },
                 {
                     "date": "2021-02-02",
-                    "total_vaccinations": 11374
+                    "total_vaccinations": 11500
                 },
                 {
                     "date": "2021-02-03",
-                    "total_vaccinations": 12730
+                    "total_vaccinations": 13012
                 },
                 {
                     "date": "2021-02-04",
-                    "total_vaccinations": 14045
+                    "total_vaccinations": 14477
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 15826
                 }
             ]
         },
@@ -866,6 +906,14 @@
                 {
                     "date": "2021-02-04",
                     "total_vaccinations": 23605
+                },
+                {
+                    "date": "2021-02-05",
+                    "total_vaccinations": 25578
+                },
+                {
+                    "date": "2021-02-06",
+                    "total_vaccinations": 26076
                 }
             ]
         }

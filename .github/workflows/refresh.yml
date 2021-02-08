@@ -37,8 +37,12 @@ jobs:
         run: |
           sudo mkdir tmp
           python -V
+          sudo python -V
+          sudo python3 -V
+          python -c "import covid_updater"
       # Runs a set of commands using the runners shell
       - name: Data refresh
         run: |
+          sudo pip install .
           sudo bash scripts/update_all.sh
           

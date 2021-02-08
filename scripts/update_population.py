@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Update population data.
 
 file: data/population.csv

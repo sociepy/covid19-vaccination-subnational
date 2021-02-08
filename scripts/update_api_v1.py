@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Update API v1 data files
 
 files: api/v1/*/*/*.json

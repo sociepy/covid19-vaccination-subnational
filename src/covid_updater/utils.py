@@ -3,14 +3,13 @@ import urllib.request
 import pandas as pd
 
 
-project_dir = os.path.abspath(os.path.join(__file__, "../../.."))
 COLUMNS_ALL = ["location", "region", "date", "location_iso", "region_iso", 
              "total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
 COLUMNS_ORDER = ["region", "date"]
 COLUMNS_INT = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
 
 
-def read_xlsx_from_url(url, tmp_file="tmp/file.xlsx"):
+def read_xlsx_from_url(url, tmp_file="./tmp/file.xlsx"):
     """Download and load xls file from URL.
 
     Args:

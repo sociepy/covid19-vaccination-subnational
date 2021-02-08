@@ -44,5 +44,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Data refresh
         run: |
+          sudo chmod 777
           bash scripts/update_all.sh
           

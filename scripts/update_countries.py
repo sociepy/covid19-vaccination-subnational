@@ -9,8 +9,9 @@ from covid_updater.scraping import get_country_scraper
 
 ISO_CODES = [
     #'AR', 
-    'AT', 'BE', 'BR', 'CA', 'CL', 'CZ', 'DK', 'FR', 'DE',
-    'IN', 'IT', 'NO', 'PL', 'SK', 'ES', 'SE', 'CH', 'US', 'GB'
+    #'AT', 'BE', 'BR', 'CA', 'CL', 'CZ', 'DK', 'FR', 'DE',
+    #'IN', 'IT', 'NO', 'PL', 'SK', 'ES', 'SE', 'CH', 'US', 'GB'
+    'BE'
 ]
 OUTPUT_PATH = os.path.join("data", "countries")
 
@@ -20,12 +21,14 @@ def get_parser():
     parser.add_argument(
         "output_data_folder",
         type=str,
-        help="Path to folder to export country csv data."
+        help="Path to folder to export country csv data.",
+        default="data/countries/"
     )
     parser.add_argument(
         "output_info_path",
         type=str,
-        help="Path to file to export source info data file."
+        help="Path to file to export source info data file.",
+        default="data/country_info.csv"
     )
     args = parser.parse_args()
     return parser
@@ -37,10 +40,10 @@ def main():
         scraper = get_country_scraper(iso_code=iso_code)
         print(scraper.country)
         scraper.run(
-            output_file_data=os.path.join(args.output_data_folder, "test.csv"),
+            output_file_data=os.path.join(args.output_data_folder, f"{scraper.filename}.csv"),
             output_file_info=args.output_info_path,
         )
 
-# {scraper.filename}
+ 
 if __name__ == "__main__":
     main()

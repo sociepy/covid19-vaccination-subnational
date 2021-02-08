@@ -37,10 +37,10 @@ def main():
         scraper = get_country_scraper(iso_code=iso_code)
         print(scraper.country)
         scraper.run(
-            output_file_data=os.path.join(args.output_data_folder, f"{scraper.filename}.csv"),
+            output_file_data=os.path.join(args.output_data_folder, "test.csv"),
             output_file_info=args.output_info_path,
         )
 
-
+# {scraper.filename}
 if __name__ == "__main__":
     main()

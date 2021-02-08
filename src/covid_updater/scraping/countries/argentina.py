@@ -27,7 +27,7 @@ class ArgentinaScraper(IncrementalScraper):
                 "jurisdiccion_nombre": "region"
             }
         )
-        locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
+        #locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
     def _get_date_from_soup(self, soup):
         try:

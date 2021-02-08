@@ -32,7 +32,7 @@ jobs:
           python -m pip install .
       - name: Locale
         run: |
-          sudo locale-gen es_ES.UTF-8
+          echo hello #sudo locale-gen es_ES.UTF-8
       - name: Temporary folder
         run: |
           sudo mkdir tmp

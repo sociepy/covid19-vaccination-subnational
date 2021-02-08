@@ -43,3 +43,7 @@ def main():
     df = df.drop(columns=["population"])
     df = df.sort_values(by=["location", "region", "date"])
     df.to_csv(args.input_vaccination_path, index=False)
+
+
+if __name__ == "__main__":
+    main()

@@ -13,7 +13,16 @@ class IndiaScraper(Scraper):
             column_renaming={
                 "state_code": "region_iso"
             },
-            mode_iso_merge="region"
+            mode_iso_merge="region",
+            field_renaming={
+                "region_iso": {
+                    "CG": "CT",
+                    "OD": "OR",
+                    "TR": "TG",
+                    "TS": "TR",
+                    "UK": "UT"
+                }
+            }
         )
 
     def load_data(self):

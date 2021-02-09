@@ -5,13 +5,14 @@ from covid_updater.utils import keep_min_date, COLUMNS_ALL, COLUMNS_ORDER, COLUM
 
 
 class Scraper:
-    def __init__(self, country, country_iso, data_url, data_url_reference, region_renaming=None, column_renaming=None,
-                 mode_iso_merge=None, do_cumsum_fields=None):
+    def __init__(self, country, country_iso, data_url, data_url_reference, region_renaming=None, 
+                 field_renaming=None, column_renaming=None, mode_iso_merge=None, do_cumsum_fields=None):
         self.country = country
         self.country_iso = country_iso
         self.data_url = data_url
         self.data_url_reference = data_url_reference
         self.region_renaming = region_renaming if region_renaming is not None else {}
+        self.field_renaming = field_renaming if field_renaming is not None else {}
         self.column_renaming = column_renaming if column_renaming is not None else {}
         self.mode_iso_merge = mode_iso_merge if mode_iso_merge is not None else "region_iso"
         self.do_cumsum_fields = do_cumsum_fields if do_cumsum_fields is not None else []
@@ -24,6 +25,9 @@ class Scraper:
     def _preprocess(self, df):
          # Rename column names
         df = df.rename(columns=self.column_renaming)
+        # Replace field values
+        for field, renaming in self.field_renaming.items():
+            df.loc[:, field] = df.loc[:, field].replace(renaming)
 
         # Add location info
         if "location" not in df.columns:

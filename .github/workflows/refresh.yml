@@ -26,21 +26,23 @@ jobs:
         with:
           python-version: 3.9
       # Runs a single command using the runners shell
+      - name: Log
+        run: |
+          date +"%Y-%m-%d %H:%M:%S"
       - name: Python dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install .
       - name: Locale
         run: |
-          echo hello
           sudo locale-gen es_ES.UTF-8
-      - name: Temporary folder
+      - name: Permissions
         run: |
           sudo mkdir tmp
           sudo touch tmp/belgium.xlsx
           sudo chmod 777 tmp/belgium.xlsx
           sudo chmod 777 *
-      - name: Debug
+      - name: Sanity checks
         run: |
           python -V
           python -c "import covid_updater"
@@ -54,5 +56,5 @@ jobs:
           git config user.email lucasrodes@users.noreply.github.com
           git status
           git add data/ README.md
-          git commit -m "data update [gh-action]"
+          git commit -m "data update @ $(date +"%Y-%m-%d %H:%M:%S") [gh-action]"
           git push origin main

@@ -14,7 +14,7 @@ ISO_NEW_FILE_URL = "https://raw.githubusercontent.com/sociepy/covid19-vaccinatio
 
 
 class ISODB():
-    def __init__(self, filepath=ISO_NEW_FILE_URL, df=None):
+    def __init__(self, filepath=ISO_NEW_FILE, df=None):
         self._file = filepath
         if isinstance(df, pd.DataFrame):
             self._df = df

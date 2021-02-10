@@ -50,11 +50,13 @@ jobs:
       - name: Data refresh
         run: |
           bash scripts/update_all.sh
-      - name: Commit & Push
+      - name: Git config
         run: |
           git config user.name lucasrodes
           git config user.email lucasrodes@users.noreply.github.com
           git status
+      - name: Commit & Push
+        run: |
           git add data/ README.md
           git commit -m "data update @ $(date +"%Y-%m-%d %H:%M:%S") [gh-action]"
           git push origin main

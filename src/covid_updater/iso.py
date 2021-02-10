@@ -22,7 +22,7 @@ class ISODB():
             self._df = pd.read_csv(self._file)
 
     @classmethod
-    def create_from_source(cls, source_file=ISO_ORIGINAL_FILE, filepath=ISO_NEW_FILE):
+    def create_from_source(cls, source_file=ISO_ORIGINAL_FILE, filepath=ISO_NEW_FILE_URL):
         """Create ISO db.
 
         Uses IP2LOCATION-ISO3166-2 file.

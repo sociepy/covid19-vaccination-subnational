@@ -61,8 +61,8 @@ class DenmarkScraper(IncrementalScraper):
                 df = pd.DataFrame(tbl)
                 break
         df = df.astype(pd.StringDtype())
-        if df.shape != (11, 7):
-            raise Exception("Shape of table changed!")
+        #if df.shape != (11, 7):
+        #    raise Exception("Shape of table changed!")
         if not all(region in df[0].dropna().tolist() for region in self.regions):
             raise Exception("Region missing!")
         df = df.drop([0, 1, 2, 3, len(df)-1])

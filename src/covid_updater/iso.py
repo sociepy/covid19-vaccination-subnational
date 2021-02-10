@@ -14,7 +14,7 @@ ISO_NEW_FILE_URL = "https://raw.githubusercontent.com/sociepy/covid19-vaccinatio
 
 
 class ISODB():
-    def __init__(self, filepath=ISO_NEW_FILE, df=None):
+    def __init__(self, filepath=ISO_NEW_FILE_URL, df=None):
         self._file = filepath
         if isinstance(df, pd.DataFrame):
             self._df = df
@@ -22,7 +22,7 @@ class ISODB():
             self._df = pd.read_csv(self._file)
 
     @classmethod
-    def create_from_source(cls, source_file=ISO_ORIGINAL_FILE, filepath=ISO_NEW_FILE_URL):
+    def create_from_source(cls, source_file=ISO_ORIGINAL_FILE, filepath=ISO_NEW_FILE):
         """Create ISO db.
 
         Uses IP2LOCATION-ISO3166-2 file.

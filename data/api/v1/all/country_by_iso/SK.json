@@ -1,7 +1,7 @@
 {
     "country": "Slovakia",
     "country_iso": "SK",
-    "last_update": "2021-02-10",
+    "last_update": "2021-02-11",
     "first_update": "2021-01-04",
     "source_url": "https://github.com/Institut-Zdravotnych-Analyz/covid19-data/",
     "data": [
@@ -120,6 +120,10 @@
                 {
                     "date": "2021-02-10",
                     "total_vaccinations": 26421
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 28148
                 }
             ]
         },
@@ -245,15 +249,19 @@
                 },
                 {
                     "date": "2021-02-08",
-                    "total_vaccinations": 41875
+                    "total_vaccinations": 41947
                 },
                 {
                     "date": "2021-02-09",
-                    "total_vaccinations": 43921
+                    "total_vaccinations": 44077
                 },
                 {
                     "date": "2021-02-10",
-                    "total_vaccinations": 46039
+                    "total_vaccinations": 46339
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 48538
                 }
             ]
         },
@@ -371,11 +379,15 @@
                 },
                 {
                     "date": "2021-02-09",
-                    "total_vaccinations": 38880
+                    "total_vaccinations": 38952
                 },
                 {
                     "date": "2021-02-10",
-                    "total_vaccinations": 40410
+                    "total_vaccinations": 40590
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 41866
                 }
             ]
         },
@@ -490,6 +502,10 @@
                 {
                     "date": "2021-02-10",
                     "total_vaccinations": 29563
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 31940
                 }
             ]
         },
@@ -616,6 +632,10 @@
                 {
                     "date": "2021-02-10",
                     "total_vaccinations": 35163
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 36875
                 }
             ]
         },
@@ -749,7 +769,11 @@
                 },
                 {
                     "date": "2021-02-10",
-                    "total_vaccinations": 24601
+                    "total_vaccinations": 24823
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 25755
                 }
             ]
         },
@@ -872,6 +896,10 @@
                 {
                     "date": "2021-02-10",
                     "total_vaccinations": 22776
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 24173
                 }
             ]
         },
@@ -1014,6 +1042,10 @@
                 {
                     "date": "2021-02-10",
                     "total_vaccinations": 30373
+                },
+                {
+                    "date": "2021-02-11",
+                    "total_vaccinations": 31549
                 }
             ]
         }

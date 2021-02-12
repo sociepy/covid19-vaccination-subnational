@@ -44,7 +44,7 @@ class ItalyScraper(Scraper):
 
     def load_data(self):
         # Load
-        df = pd.read_csv(self.data_url, parse_dates=["data_somministrazione"])
+        df = pd.read_csv(self.data_url)
         return df
 
     def _process(self, df):

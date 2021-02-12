@@ -6,7 +6,7 @@ from covid_updater.scraping.countries.belgium import BelgiumScraper
 from covid_updater.scraping.countries.brazil import BrazilScraper
 from covid_updater.scraping.countries.czechia import CzechiaScraper
 from covid_updater.scraping.countries.germany import GermanyScraper
-from covid_updater.scraping.countries.italia import ItalyScraper
+from covid_updater.scraping.countries.italy import ItalyScraper
 from covid_updater.scraping.countries.slovakia import SlovakiaScraper
 from covid_updater.scraping.countries.spain import SpainScraper
 from covid_updater.scraping.countries.united_kingdom import UnitedKingdomScraper

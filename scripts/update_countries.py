@@ -12,6 +12,7 @@ ISO_CODES = [
     'IN', 'IT', 'NO', 'PL', 'SK', 'ES', 'SE', 'CH', 'US', 'GB',
     'PE'
 ]
+ISO_CODES.sort()
 OUTPUT_PATH = os.path.join("data", "countries")
 
 

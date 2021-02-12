@@ -5,6 +5,8 @@ file: data/population.csv
 """
 
 
+import os
+import argparse
 import qwikidata
 import qwikidata.sparql
 import pandas as pd
@@ -16,7 +18,7 @@ def get_parser():
     parser.add_argument(
         "input_path",
         type=str,
-        help="Path to vaccination data file. Used to extract relevant countries.",
+        help="Path to vaccination data file. Used to extract list of regions to get population for.",
         default="data/vaccination.csv"
     )
     parser.add_argument(
@@ -31,6 +33,7 @@ def get_parser():
 
 def main():
     parser = get_parser()
+    args = parser.parse_args()
 
     # Load new data
     df = pd.read_csv(args.input_path, index_col=False)
@@ -45,6 +48,8 @@ def main():
         df = pd.concat([df, df_current])
     # Export
     df.drop_duplicates()
+    df = df[["region_iso", "date", "population"]]
+    df = df.sort_values(by="region_iso")
     df.to_csv(args.output_path, index=False)
 
 

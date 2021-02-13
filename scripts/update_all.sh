@@ -34,7 +34,7 @@ echo ">>> ADDING POPULATION INFO <<<"
 python scripts/update_vaccinations_with_population.py ${VACCINATIONS_DATA_PATH} ${POPULATION_DATA_PATH}
 # Generate API files with available data
 echo ">>> UPDATING API FILES <<<"
-python scripts/update_api_v1.py ${COUNTRY_DATA_FOLDER_PATH} ${COUNTRY_INFO_PATH} ${API_PATH}
+python scripts/update_api_v1.py ${VACCINATIONS_DATA_PATH} ${COUNTRY_INFO_PATH} ${API_PATH}
 # Update docs
 echo ">>> UPDATING DOCS <<<"
 python scripts/update_docs.py ${COUNTRY_INFO_PATH} ${README_TEMPLATE_PATH} ${README_PATH}

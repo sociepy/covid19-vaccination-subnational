@@ -14,7 +14,7 @@ from covid_updater.population import get_population
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Merge all country data into single csv file.")
+    parser = argparse.ArgumentParser(description="Update population data file with all regions in the project.")
     parser.add_argument(
         "input_path",
         type=str,

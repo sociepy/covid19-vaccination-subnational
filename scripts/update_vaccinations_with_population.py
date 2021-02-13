@@ -8,7 +8,7 @@ import pandas as pd
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Merge all country data into single csv file.")
+    parser = argparse.ArgumentParser(description="Update vaccination data with population-related metrics.")
     parser.add_argument(
         "input_vaccination_path",
         type=str,

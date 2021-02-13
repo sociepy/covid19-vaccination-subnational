@@ -5,7 +5,7 @@ from covid_updater.docs import generate_readme
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Merge all country data into single csv file.")
+    parser = argparse.ArgumentParser(description="Update docs.")
     parser.add_argument(
         "input_country_info_path",
         type=str,

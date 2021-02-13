@@ -15,7 +15,7 @@ rename_fields = {"region": "region_name"}
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Merge all country data into single csv file.")
+    parser = argparse.ArgumentParser(description="Update API files.")
     parser.add_argument(
         "input_data_folder",
         type=str,

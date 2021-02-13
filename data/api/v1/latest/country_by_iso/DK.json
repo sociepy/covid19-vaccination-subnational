@@ -8,37 +8,43 @@
             "region_name": "Hovedstaden",
             "region_iso": "DK-84",
             "date": "2021-02-12",
-            "total_vaccinations": 123296
+            "total_vaccinations": 123296,
+            "total_vaccinations_per_100": 6.668
         },
         {
             "region_name": "Midtjylland",
             "region_iso": "DK-82",
             "date": "2021-02-12",
-            "total_vaccinations": 88532
+            "total_vaccinations": 88532,
+            "total_vaccinations_per_100": 6.672
         },
         {
             "region_name": "Nordjylland",
             "region_iso": "DK-81",
             "date": "2021-02-12",
-            "total_vaccinations": 43700
+            "total_vaccinations": 43700,
+            "total_vaccinations_per_100": 7.4
         },
         {
             "region_name": "Others",
             "region_iso": "-",
             "date": "2021-02-08",
-            "total_vaccinations": 959
+            "total_vaccinations": 959,
+            "total_vaccinations_per_100": NaN
         },
         {
             "region_name": "Sjaelland",
             "region_iso": "DK-85",
             "date": "2021-02-12",
-            "total_vaccinations": 52917
+            "total_vaccinations": 52917,
+            "total_vaccinations_per_100": 6.322
         },
         {
             "region_name": "Syddanmark",
             "region_iso": "DK-83",
             "date": "2021-02-12",
-            "total_vaccinations": 82074
+            "total_vaccinations": 82074,
+            "total_vaccinations_per_100": 6.706
         }
     ]
 }

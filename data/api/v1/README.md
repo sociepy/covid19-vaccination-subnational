@@ -1,6 +1,6 @@
 # API
 
-For a given country, you can access [all the tracked data](#all-data) using its ISO code:
+For a given country, you can access [all the tracked data](#all-data) using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2):
 
 ```
 https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/[COUNTRY_ISO].json
@@ -12,12 +12,14 @@ Alternatively, you can check [latest data](#latest-data):
 https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/[COUNTRY_ISO].json
 ```
 
-To see which countries are available you can check [this table](https://sociepy.org/covid19-vaccination-subnational/#data-sources) or directly via the API:
-
+### Available countries:
 [`https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json`](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json)
 
 
-This API is inspired by [https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io)
+#### Thanks to
+
+[@sanyam-git](https://github.com/sanyam-git) and their project
+[https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io), which has inspired this API.
 
 ## All data
 Get all available data for a country.
@@ -36,17 +38,19 @@ Get all available data for a country.
 | `data.region_iso`  | string | [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code of the region.  |
 | `data.data`         | list   | Region data per date.                          |
 | `data.data.date`  | string | Date data entry, as "YYYY-MM-DD".  |
-| `data.data.total_vaccinations`  | string | Cummulative number of vaccinations reported on this date and region (first doses + second doses).  |
+| `data.data.total_vaccinations`  | int | Cummulative number of vaccinations reported on this date and region (first doses + second doses).  |
+| `data.data.total_vaccinations_per_100`  | float | Cummulative number of vaccinations reported on this date and region (first doses + second doses) per 100 inhabitants.  |
+
 
 ### Example
-> [sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AT.json](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AT.json)
-> (Austria)
+
+Austria: [`https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AT.json`](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AT.json)
 
 ```json
 {
     "country": "Austria",
     "country_iso": "AT",
-    "last_update": "2021-02-04",
+    "last_update": "2021-02-13",
     "first_update": "2021-01-10",
     "source_url": "https://info.gesundheitsministerium.gv.at/",
     "data": [
@@ -56,11 +60,13 @@ Get all available data for a country.
             "data": [
                 {
                     "date": "2021-01-10",
-                    "total_vaccinations": 64
+                    "total_vaccinations": 64,
+                    "total_vaccinations_per_100": 0.022
                 },
                 {
                     "date": "2021-01-12",
-                    "total_vaccinations": 127
+                    "total_vaccinations": 127,
+                    "total_vaccinations_per_100": 0.043
                 },
                 ...
             ]
@@ -72,12 +78,14 @@ Get all available data for a country.
             "data": [
                 ...
                 {
-                    "date": "2021-02-03",
-                    "total_vaccinations": 50897
+                    "date": "2021-02-12",
+                    "total_vaccinations": 78723,
+                    "total_vaccinations_per_100": 4.119
                 },
                 {
-                    "date": "2021-02-04",
-                    "total_vaccinations": 52556
+                    "date": "2021-02-13",
+                    "total_vaccinations": 83686,
+                    "total_vaccinations_per_100": 4.379
                 }
             ]
         }
@@ -99,31 +107,35 @@ Get latest data for a country.
 | `data.region_name`  | string | Name of the region.  |
 | `data.region_iso`  | string | [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code of the region.  |
 | `data.date`  | string | Date data entry, as "YYYY-MM-DD". Note that some regions may have different update frequencies.  |
-| `data.total_vaccinations`  | string | Last cummulative number of vaccinations reported in this region (first doses + second doses).  |
+| `data.total_vaccinations`  | int | Last cummulative number of vaccinations reported in this region (first doses + second doses).  |
+| `data.total_vaccinations_per_100`  | float | Cummulative number of vaccinations reported on this date and region (first doses + second doses) per 100 inhabitants.  |
 
 ### Example
-> [sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BR.json](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BR.json)
-> (Brazil)
+
+Brazil: [`https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BR.json`](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BR.json)
+
 
 ```json
 {
     "country": "Brazil",
     "country_iso": "BR",
-    "last_update": "2021-02-03",
+    "last_update": "2021-02-12",
     "source_url": "https://github.com/wcota/covid19br/",
     "data": [
         {
             "region_name": "Acre",
             "region_iso": "BR-AC",
-            "date": "2021-02-03",
-            "total_vaccinations": 7229
+            "date": "2021-02-12",
+            "total_vaccinations": 12310,
+            "total_vaccinations_per_100": 1.396
         },
         ...
         {
             "region_name": "Tocantins",
             "region_iso": "BR-TO",
-            "date": "2021-02-03",
-            "total_vaccinations": 10683
+            "date": "2021-02-12",
+            "total_vaccinations": 24198,
+            "total_vaccinations_per_100": 1.561
         }
     ]
 }

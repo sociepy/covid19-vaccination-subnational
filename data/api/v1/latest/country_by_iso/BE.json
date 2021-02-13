@@ -8,19 +8,22 @@
             "region_name": "Brussels",
             "region_iso": "BE-BRU",
             "date": "2021-02-12",
-            "total_vaccinations": 34411
+            "total_vaccinations": 34411,
+            "total_vaccinations_per_100": 2.871
         },
         {
             "region_name": "Flanders",
             "region_iso": "BE-VLG",
             "date": "2021-02-12",
-            "total_vaccinations": 328176
+            "total_vaccinations": 328176,
+            "total_vaccinations_per_100": 5.142
         },
         {
             "region_name": "Wallonia",
             "region_iso": "BE-WAL",
             "date": "2021-02-12",
-            "total_vaccinations": 174195
+            "total_vaccinations": 174195,
+            "total_vaccinations_per_100": 4.806
         }
     ]
 }

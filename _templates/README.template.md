@@ -12,7 +12,7 @@ Additionally, we provide a static API endpoint, which contains the data per coun
 
 ### Thanks to
 This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data), adopting
-some of its structure, and is open to integration if deemed approriate.
+some of its structure, and is open to integration if deemed appropriate.
 In addition, thanks to all of the people involved in the different [source data](#data-sources) initiatives. 
 
 ## Content

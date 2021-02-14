@@ -40,6 +40,9 @@ def main():
     for column in columns:
         df.loc[:, f"{column}_per_100"] = (100*df.loc[:, column]/df.loc[:, "population"]).apply(lambda x: round(x, 2))
 
+    # Process data
+    df.loc[:, columns] = df.loc[:, columns].astype("Int64")
+
     df = df.drop(columns=["population"])
     df = df.sort_values(by=["location", "region", "date"])
     df.to_csv(args.input_vaccination_path, index=False)

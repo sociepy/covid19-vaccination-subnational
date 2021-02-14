@@ -18,11 +18,12 @@ class BrazilScraper(Scraper):
 
     def load_data(self):
         # Load
-        df = pd.read_csv(self.data_url, usecols=["state", "date", "vaccinated", "vaccinated_second"])
+        df = pd.read_csv(self.data_url, usecols=["state", "date", "vaccinated", "vaccinated_second", "city"])
         start_date =  "2021-01-18"
         # Filter
         df = df.loc[df["date"] >= start_date]
         df = df[~(df.loc[:, "state"]=="TOTAL")]
+        df = df[df["city"] == "TOTAL"]
         return df
 
     def _process(self, df):

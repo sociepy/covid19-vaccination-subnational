@@ -8,21 +8,17 @@ class BrazilScraper(Scraper):
             country="Brazil", 
             country_iso="BR", 
             data_url="https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv", 
-            data_url_reference="https://github.com/wcota/covid19br/", 
-            region_renaming={
-                "Kärnten": "Karnten",
-                "Niederösterreich": "Niederosterreich",
-                "Oberösterreich": "Oberosterreich"
-            }, 
+            data_url_reference="https://github.com/wcota/covid19br/",
             column_renaming={
-                "vaccinated": "total_vaccinations"
+                "vaccinated": "people_vaccinated",
+                "vaccinated_second": "people_fully_vaccinated"
             },
             mode_iso_merge="region"
         )
 
     def load_data(self):
         # Load
-        df = pd.read_csv(self.data_url, usecols=["state", "date", "vaccinated"])
+        df = pd.read_csv(self.data_url, usecols=["state", "date", "vaccinated", "vaccinated_second"])
         start_date =  "2021-01-18"
         # Filter
         df = df.loc[df["date"] >= start_date]
@@ -35,5 +31,7 @@ class BrazilScraper(Scraper):
         # Build region iso
         df.loc[:, "region_iso"] = f"{self.country_iso}-" + df.loc[:, "state"]
         # Process vaccinations
-        df.loc[:, "total_vaccinations"] = df.loc[:, "total_vaccinations"].fillna(0).astype(int)
+        df.loc[:, "people_vaccinated"] = df.loc[:, "people_vaccinated"].fillna(0).astype(int)
+        df.loc[:, "people_fully_vaccinated"] = df.loc[:, "people_fully_vaccinated"].fillna(0).astype(int)
+        df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
         return df

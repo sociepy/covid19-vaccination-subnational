@@ -2,6 +2,7 @@ from datetime import datetime
 import pytz
 import pandas as pd
 import urllib.request
+from bs4 import BeautifulSoup
 from covid_updater.scraping.base import IncrementalScraper
 
 

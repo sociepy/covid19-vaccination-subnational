@@ -10,9 +10,13 @@
 link!](https://img.shields.io/badge/website-link-1abc9c.svg)](https://sociepy.org/covid19-vaccination-subnational/)
 
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/sociepy" data-color-scheme="no-preference: light; light: light; dark:
-dark;" data-size="large" aria-label="Follow @sociepy on GitHub">Follow @sociepy</a>
-
+<a class="github-button" href="https://github.com/sociepy" data-color-scheme="no-preference: light; light: dark; dark: light;" data-size="large" aria-label="Follow @sociepy on GitHub">Follow @sociepy</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sociepy/covid19-vaccination-subnational"
+data-color-scheme="no-preference: light; light: dark; dark: light;" data-icon="octicon-star" data-size="large"
+aria-label="Star sociepy/covid19-vaccination-subnational on GitHub">Star</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sociepy/covid19-vaccination-subnational/fork" data-color-scheme="no-preference: light; light: dark; dark: light;" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork sociepy/covid19-vaccination-subnational on GitHub">Fork</a>
 
 For a given country, you can access [all the tracked data](#all-data) using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2):
 

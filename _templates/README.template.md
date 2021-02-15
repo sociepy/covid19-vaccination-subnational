@@ -6,6 +6,16 @@
 [![Website link!](https://img.shields.io/badge/website-link-1abc9c.svg)](https://sociepy.org/covid19-vaccination-subnational/)
 [![API link!](https://img.shields.io/badge/API-link-1abc9c.svg)](https://sociepy.org/covid19-vaccination-subnational/data/api/v1)
 
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sociepy" data-color-scheme="no-preference: light; light: dark; dark: light;" data-size="large" aria-label="Follow @sociepy on GitHub">Follow @sociepy</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sociepy/covid19-vaccination-subnational"
+data-color-scheme="no-preference: light; light: dark; dark: light;" data-icon="octicon-star" data-size="large"
+aria-label="Star sociepy/covid19-vaccination-subnational on GitHub">Star</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sociepy/covid19-vaccination-subnational/fork"
+data-color-scheme="no-preference: light; light: dark; dark: light;" data-icon="octicon-repo-forked" data-size="large"
+aria-label="Fork sociepy/covid19-vaccination-subnational on GitHub">Fork</a>
 
 
 COVID-19 vaccination data at subnational level. To ensure its officiality, the source data is carefully verified.

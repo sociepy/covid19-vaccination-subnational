@@ -1,7 +1,7 @@
 {
     "country": "Brazil",
     "country_iso": "BR",
-    "last_update": "2021-02-14",
+    "last_update": "2021-02-15",
     "first_update": "2021-01-18",
     "source_url": "https://github.com/wcota/covid19br/",
     "data": [
@@ -92,6 +92,11 @@
                 {
                     "date": "2021-02-14",
                     "total_vaccinations": 12776.0,
+                    "total_vaccinations_per_100": 1.45
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 12800.0,
                     "total_vaccinations_per_100": 1.45
                 }
             ]
@@ -401,6 +406,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 202771.0,
                     "total_vaccinations_per_100": 4.99
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 202811.0,
+                    "total_vaccinations_per_100": 4.99
                 }
             ]
         },
@@ -546,6 +556,11 @@
                 {
                     "date": "2021-02-14",
                     "total_vaccinations": 374051.0,
+                    "total_vaccinations_per_100": 2.44
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 374504.0,
                     "total_vaccinations_per_100": 2.44
                 }
             ]
@@ -961,6 +976,16 @@
                     "date": "2021-02-12",
                     "total_vaccinations": 164444.0,
                     "total_vaccinations_per_100": 2.43
+                },
+                {
+                    "date": "2021-02-14",
+                    "total_vaccinations": 166173.0,
+                    "total_vaccinations_per_100": 2.45
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 166423.0,
+                    "total_vaccinations_per_100": 2.46
                 }
             ]
         },
@@ -1178,6 +1203,16 @@
                     "date": "2021-02-12",
                     "total_vaccinations": 71594.0,
                     "total_vaccinations_per_100": 2.14
+                },
+                {
+                    "date": "2021-02-14",
+                    "total_vaccinations": 82432.0,
+                    "total_vaccinations_per_100": 2.46
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 83496.0,
+                    "total_vaccinations_per_100": 2.5
                 }
             ]
         },
@@ -1264,6 +1299,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 119781.0,
                     "total_vaccinations_per_100": 4.41
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 120599.0,
+                    "total_vaccinations_per_100": 4.44
                 }
             ]
         },
@@ -1385,6 +1425,11 @@
                     "date": "2021-02-12",
                     "total_vaccinations": 446608.0,
                     "total_vaccinations_per_100": 2.11
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 482129.0,
+                    "total_vaccinations_per_100": 2.28
                 }
             ]
         },
@@ -1627,6 +1672,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 90195.0,
                     "total_vaccinations_per_100": 2.24
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 90544.0,
+                    "total_vaccinations_per_100": 2.25
                 }
             ]
         },
@@ -1970,6 +2020,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 57410.0,
                     "total_vaccinations_per_100": 1.78
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 59605.0,
+                    "total_vaccinations_per_100": 1.85
                 }
             ]
         },
@@ -2111,6 +2166,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 79457.0,
                     "total_vaccinations_per_100": 2.27
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 80129.0,
+                    "total_vaccinations_per_100": 2.28
                 }
             ]
         },
@@ -2252,6 +2312,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 320930.0,
                     "total_vaccinations_per_100": 2.83
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 352171.0,
+                    "total_vaccinations_per_100": 3.11
                 }
             ]
         },
@@ -2755,8 +2820,13 @@
                 },
                 {
                     "date": "2021-02-14",
-                    "total_vaccinations": 1450847.0,
+                    "total_vaccinations": 1451542.0,
                     "total_vaccinations_per_100": 3.18
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 1539731.0,
+                    "total_vaccinations_per_100": 3.38
                 }
             ]
         },

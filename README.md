@@ -1,6 +1,13 @@
 # Subnational COVID-19 vaccination data 
 ### [**API**](https://sociepy.org/covid19-vaccination-subnational/data/api/v1) | [**Download data**](data/vaccinations.csv) | [**GitHub**](https://github.com/sociepy/covid19-vaccination-subnational)
 
+![refresh](https://github.com/sociepy/covid19-vaccination-subnational/workflows/refresh/badge.svg?branch=main)
+![GitHub last commit](https://img.shields.io/github/last-commit/sociepy/covid19-vaccination-subnational)
+[![Website link!](https://img.shields.io/badge/website-link-1abc9c.svg)](https://sociepy.org/covid19-vaccination-subnational/)
+[![API link!](https://img.shields.io/badge/API-link-1abc9c.svg)](https://sociepy.org/covid19-vaccination-subnational/data/api/v1)
+
+
+
 COVID-19 vaccination data at subnational level. To ensure its officiality, the source data is carefully verified.
 
 All country data can be found in a [single

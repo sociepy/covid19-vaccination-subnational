@@ -31,10 +31,11 @@ class IndiaScraper(Scraper):
         df = pd.read_csv(self.data_url)
         # Unpivot
         # df = df.melt(id_vars=["state_code"], var_name="date", value_name="total_vaccinations")
-        df = df.loc[~(df.loc[:, "region_iso"] == "MISC")]
         return df
 
     def _process(self, df):
+        df = df.loc[~(df.loc[:, "region_iso"] == "MISC")].copy()
+
         # ISO
         df.loc[:, "region_iso"] = "IN-" + df.loc[:, "region_iso"]
 

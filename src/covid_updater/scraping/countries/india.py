@@ -11,15 +11,17 @@ class IndiaScraper(Scraper):
             data_url="https://github.com/india-covid19vaccine/india-covid19vaccine.github.io/raw/main/csv/state_timeline.csv", 
             data_url_reference="https://india-covid19vaccine.github.io", 
             column_renaming={
-                "state_code": "region_iso"
+                "state_code": "region_iso",
+                "total_doses": "total_vaccinations",
+                "total_vaccinated": "people_vaccinated",
+                "total_fully_vaccinated": "people_fully_vaccinated"
             },
             mode_iso_merge="region",
             field_renaming={
                 "region_iso": {
                     "CG": "CT",
                     "OD": "OR",
-                    "TR": "TG",
-                    "TS": "TR",
+                    "TS": "TG",
                     "UK": "UT"
                 }
             }
@@ -28,12 +30,11 @@ class IndiaScraper(Scraper):
     def load_data(self):
         df = pd.read_csv(self.data_url)
         # Unpivot
-        df = df.melt(id_vars=["state_code"], var_name="date", value_name="total_vaccinations")
+        # df = df.melt(id_vars=["state_code"], var_name="date", value_name="total_vaccinations")
+        df = df.loc[~(df.loc[:, "region_iso"] == "MISC")]
         return df
 
     def _process(self, df):
-        df = df.loc[~(df.loc[:, "region_iso"] == "MISC")].copy()
-
         # ISO
         df.loc[:, "region_iso"] = "IN-" + df.loc[:, "region_iso"]
 

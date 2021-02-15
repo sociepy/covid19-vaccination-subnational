@@ -1,6 +1,3 @@
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
 # API: Subnational COVID-19 vaccination data
 ### [**Home**](https://sociepy.org/covid19-vaccination-subnational/) | [**Download data**](data/vaccinations.csv) | [**GitHub**](https://github.com/sociepy/covid19-vaccination-subnational)
 

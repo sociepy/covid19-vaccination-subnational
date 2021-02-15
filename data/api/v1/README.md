@@ -1,4 +1,11 @@
 # API: Subnational COVID-19 vaccination data
+### [**Home**](https://sociepy.org/covid19-vaccination-subnational/) | [**Download data**](data/vaccinations.csv) | [**GitHub**](https://github.com/sociepy/covid19-vaccination-subnational)
+
+![refresh](https://github.com/sociepy/covid19-vaccination-subnational/workflows/refresh/badge.svg?branch=main)
+![GitHub last commit](https://img.shields.io/github/last-commit/sociepy/covid19-vaccination-subnational)
+[![Website
+link!](https://img.shields.io/badge/website-link-1abc9c.svg)](https://sociepy.org/covid19-vaccination-subnational/)
+
 
 For a given country, you can access [all the tracked data](#all-data) using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2):
 

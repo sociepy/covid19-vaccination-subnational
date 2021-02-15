@@ -1,3 +1,6 @@
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 # API: Subnational COVID-19 vaccination data
 ### [**Home**](https://sociepy.org/covid19-vaccination-subnational/) | [**Download data**](data/vaccinations.csv) | [**GitHub**](https://github.com/sociepy/covid19-vaccination-subnational)
 
@@ -5,6 +8,10 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/sociepy/covid19-vaccination-subnational)
 [![Website
 link!](https://img.shields.io/badge/website-link-1abc9c.svg)](https://sociepy.org/covid19-vaccination-subnational/)
+
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sociepy" data-color-scheme="no-preference: light; light: light; dark:
+dark;" data-size="large" aria-label="Follow @sociepy on GitHub">Follow @sociepy</a>
 
 
 For a given country, you can access [all the tracked data](#all-data) using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2):

@@ -1,4 +1,4 @@
-# API
+# API: Subnational COVID-19 vaccination data
 
 For a given country, you can access [all the tracked data](#all-data) using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2):
 
@@ -16,10 +16,8 @@ https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_b
 [`https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json`](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json)
 
 
-#### Thanks to
-
-[@sanyam-git](https://github.com/sanyam-git) and their project
-[https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io), which has inspired this API.
+### Thanks to
+[@sanyam-git](https://github.com/sanyam-git) and their project [https://india-covid19vaccine.github.io](https://india-covid19vaccine.github.io), which has inspired this API.
 
 ## All data
 Get all available data for a country.

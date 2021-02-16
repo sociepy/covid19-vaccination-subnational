@@ -40,7 +40,7 @@ def get_parser():
 
 def build_api_json(df, country, country_iso, source):
     df = df[region_fields + data_fields]
-
+    df = df.astype({"total_vaccinations": int})
     dfg = df.groupby(region_fields).apply(lambda x: x.drop(columns=region_fields).to_dict(orient="records"))
     dfg.name = "data"
     data = dfg.tolist()
@@ -59,7 +59,6 @@ def build_api_json(df, country, country_iso, source):
             } for region, data_sample in zip(regions, data)
         ]
     }
-
     dfg = df.groupby(region_fields)[data_fields].max()
     data = dfg.reset_index().rename(columns=rename_fields).to_dict(orient="records")
     api_json_latest = {

@@ -32,6 +32,7 @@ This project is inspired by wonderful project [owid/covid-19-data](https://githu
 some of its structure, and is open to integration if deemed appropriate.
 In addition, thanks to all of the people involved in the different [source data](#data-sources) initiatives. 
 
+
 ## Content
 * [Data sources](#data-sources)
 * [Data format](#data-format)

@@ -1,7 +1,7 @@
 {
     "country": "Denmark",
     "country_iso": "DK",
-    "last_update": "2021-02-14",
+    "last_update": "2021-02-15",
     "first_update": "2020-12-27",
     "source_url": "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
     "data": [
@@ -223,6 +223,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 123645.0,
                     "total_vaccinations_per_100": 6.69
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 129208.0,
+                    "total_vaccinations_per_100": 6.99
                 }
             ]
         },
@@ -444,6 +449,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 92904.0,
                     "total_vaccinations_per_100": 7.0
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 97602.0,
+                    "total_vaccinations_per_100": 7.36
                 }
             ]
         },
@@ -665,6 +675,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 44036.0,
                     "total_vaccinations_per_100": 7.46
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 44158.0,
+                    "total_vaccinations_per_100": 7.48
                 }
             ]
         },
@@ -1027,6 +1042,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 57561.0,
                     "total_vaccinations_per_100": 6.88
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 60344.0,
+                    "total_vaccinations_per_100": 7.21
                 }
             ]
         },
@@ -1248,6 +1268,11 @@
                     "date": "2021-02-14",
                     "total_vaccinations": 86669.0,
                     "total_vaccinations_per_100": 7.08
+                },
+                {
+                    "date": "2021-02-15",
+                    "total_vaccinations": 90415.0,
+                    "total_vaccinations_per_100": 7.39
                 }
             ]
         }

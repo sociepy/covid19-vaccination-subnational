@@ -2,7 +2,7 @@
 Reference: https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/automations/batch/denmark.py
 """
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 import tabula
 import pandas as pd
 from bs4  import BeautifulSoup
@@ -47,12 +47,16 @@ class DenmarkScraper(IncrementalScraper):
         return tables
 
     def _get_date_from_tables(self, tables):
+        df = None
         for tbl in tables:
             if "Vaccinationsdato" in tbl[0].values:
                 df = pd.DataFrame(tbl)
                 break
-        df = df.drop([0, 1, 2, 3])
-        date = df.loc[:, 0].apply(lambda x: datetime.strptime(x, "%d-%m-%Y").strftime("%Y-%m-%d")).max()
+        if df is not None:
+            df = df.drop([0, 1, 2, 3])
+            date = df.loc[:, 0].apply(lambda x: datetime.strptime(x, "%d-%m-%Y").strftime("%Y-%m-%d")).max()
+        else:
+            date = (datetime.now().date() - timedelta(days=1)).strftime("%Y-%m-%d")
         return date
 
     def _get_df_from_tables(self, tables):

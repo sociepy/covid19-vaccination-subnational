@@ -27,6 +27,7 @@ class BelgiumScraper(Scraper):
 
     def _process(self, df):
         df.loc[:, "people_fully_vaccinated"] = df.loc[:, "people_fully_vaccinated"].fillna(0).astype(int)
+        df.loc[:, "people_vaccinated"] = df.loc[:, "people_vaccinated"].fillna(0).astype(int)
         df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
         df.loc[:, "date"] = df.loc[:, "date"].apply(lambda x: datetime.strptime(x, "%d/%m/%Y").strftime("%Y-%m-%d"))
         return df

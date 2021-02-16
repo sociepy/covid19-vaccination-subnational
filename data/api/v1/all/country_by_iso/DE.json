@@ -2,13 +2,18 @@
     "country": "Germany",
     "country_iso": "DE",
     "last_update": "2021-02-15",
-    "first_update": "2020-12-27",
+    "first_update": "2020-12-26",
     "source_url": "https://github.com/mathiasbynens/covid-19-vaccinations-germany/",
     "data": [
         {
             "region_iso": "DE-BW",
             "region_name": "Baden-Wurttemberg",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 2084.0,
@@ -236,6 +241,11 @@
             "region_name": "Bayern",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 3389.0,
                     "total_vaccinations_per_100": 0.03
@@ -461,6 +471,11 @@
             "region_iso": "DE-BE",
             "region_name": "Berlin",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 1626.0,
@@ -688,6 +703,11 @@
             "region_name": "Brandenburg",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 100.0,
                     "total_vaccinations_per_100": 0.0
@@ -898,6 +918,11 @@
             "region_iso": "DE-HB",
             "region_name": "Bremen",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 420.0,
@@ -1119,6 +1144,11 @@
             "region_iso": "DE-HH",
             "region_name": "Hamburg",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 445.0,
@@ -1346,6 +1376,11 @@
             "region_name": "Hessen",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 3112.0,
                     "total_vaccinations_per_100": 0.05
@@ -1572,6 +1607,11 @@
             "region_name": "Mecklenburg-Vorpommern",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 590.0,
                     "total_vaccinations_per_100": 0.04
@@ -1772,6 +1812,11 @@
             "region_iso": "DE-NI",
             "region_name": "Niedersachsen",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 334.0,
@@ -1999,6 +2044,11 @@
             "region_name": "Nordrhein-Westfalen",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 5405.0,
                     "total_vaccinations_per_100": 0.03
@@ -2224,6 +2274,11 @@
             "region_iso": "DE-RP",
             "region_name": "Rheinland-Pfalz",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 1252.0,
@@ -2451,6 +2506,11 @@
             "region_name": "Saarland",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 215.0,
                     "total_vaccinations_per_100": 0.02
@@ -2671,6 +2731,11 @@
             "region_iso": "DE-SN",
             "region_name": "Sachsen",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 182.0,
@@ -2898,6 +2963,11 @@
             "region_name": "Sachsen-Anhalt",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 1504.0,
                     "total_vaccinations_per_100": 0.07
@@ -3124,6 +3194,11 @@
             "region_name": "Schleswig-Holstein",
             "data": [
                 {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2020-12-27",
                     "total_vaccinations": 809.0,
                     "total_vaccinations_per_100": 0.03
@@ -3349,6 +3424,11 @@
             "region_iso": "DE-TH",
             "region_name": "Thuringen",
             "data": [
+                {
+                    "date": "2020-12-26",
+                    "total_vaccinations": 0.0,
+                    "total_vaccinations_per_100": 0.0
+                },
                 {
                     "date": "2020-12-27",
                     "total_vaccinations": 99.0,

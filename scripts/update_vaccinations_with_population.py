@@ -30,7 +30,8 @@ def main():
     print("Adding indices relative to population")
 
     # Load data
-    df_pop = pd.read_csv(args.input_population_path, index_col=False).drop_duplicates()
+    df_pop = pd.read_csv(args.input_population_path, index_col=False)
+    df_pop = df_pop.drop_duplicates()
     df_pop = df_pop.loc[df_pop["date"]==df_pop["date"].max(), ["region_iso", "population"]]
     df_vac = pd.read_csv(args.input_vaccination_path, index_col=False)
 

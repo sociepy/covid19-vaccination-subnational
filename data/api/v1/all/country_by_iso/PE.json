@@ -1,7 +1,7 @@
 {
     "country": "Peru",
     "country_iso": "PE",
-    "last_update": "2021-02-16",
+    "last_update": "2021-02-17",
     "first_update": "2021-02-12",
     "source_url": "https://www.gob.pe/minsa/",
     "data": [
@@ -120,6 +120,11 @@
                 {
                     "date": "2021-02-16",
                     "total_vaccinations": 6174,
+                    "total_vaccinations_per_100": 0.45
+                },
+                {
+                    "date": "2021-02-17",
+                    "total_vaccinations": 6182,
                     "total_vaccinations_per_100": 0.45
                 }
             ]
@@ -436,6 +441,11 @@
                 {
                     "date": "2021-02-16",
                     "total_vaccinations": 35116,
+                    "total_vaccinations_per_100": 0.37
+                },
+                {
+                    "date": "2021-02-17",
+                    "total_vaccinations": 35329,
                     "total_vaccinations_per_100": 0.37
                 }
             ]

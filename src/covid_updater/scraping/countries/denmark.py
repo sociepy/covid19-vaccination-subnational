@@ -53,7 +53,7 @@ class DenmarkScraper(IncrementalScraper):
                 df = pd.DataFrame(tbl)
                 break
         if df is not None:
-            df = df.drop([0, 1, 2, 3])
+            df = df.drop(0).dropna()
             date = df.loc[:, 0].apply(lambda x: datetime.strptime(x, "%d-%m-%Y").strftime("%Y-%m-%d")).max()
         else:
             date = (datetime.now().date() - timedelta(days=1)).strftime("%Y-%m-%d")

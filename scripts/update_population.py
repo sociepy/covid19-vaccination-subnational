@@ -50,6 +50,7 @@ def main():
     df.drop_duplicates()
     df = df[["region_iso", "date", "population"]]
     df = df.sort_values(by="region_iso")
+    df = df.drop_duplicates()
     df.to_csv(args.output_path, index=False)
 
 

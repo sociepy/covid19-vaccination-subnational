@@ -11,7 +11,7 @@ class PeruScraper(IncrementalScraper):
             country="Peru", 
             country_iso="PE", 
             data_url="https://gis.minsa.gob.pe/WebApiReplica/api/Departamento/ListarVacunadosPublico", 
-            data_url_reference="https://www.gob.pe/minsa/", 
+            data_url_reference="https://gis.minsa.gob.pe/GisVisorVacunados/", 
             column_renaming={
                 "Id": "region_iso",
                 "Vacunados": "total_vaccinations"

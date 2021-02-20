@@ -48,7 +48,7 @@ def main():
         df = pd.concat([df, df_current])
     # Add extra TODO: move somewhere else (https://en.wikipedia.org/wiki/Regions_of_Iceland)
     iso_is = pd.DataFrame({
-        "region_iso":["IS-1", "IS-3", "IS-5", "IS-6", "IS-6,IS-7"],
+        "region_iso":["IS-1", "IS-3", "IS-5", "IS-6", "IS-5,IS-6"],
         "date": ["2021-02-20", "2021-02-20", "2021-02-20", "2021-02-20", "2021-02-20"],
         "population": [233034, 16662, 7322, 30600, 30600+7322]
     })

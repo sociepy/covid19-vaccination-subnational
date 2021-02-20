@@ -41,6 +41,7 @@ def get_parser():
 def build_api_json(df, country, country_iso, source):
     df = df[region_fields + data_fields]
     df = df.astype({"total_vaccinations": int})
+    df = df[df.region_iso!="-"]
     dfg = df.groupby(region_fields).apply(lambda x: x.drop(columns=region_fields).to_dict(orient="records"))
     dfg.name = "data"
     data = dfg.tolist()

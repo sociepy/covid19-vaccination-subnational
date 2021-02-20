@@ -111,7 +111,10 @@ class Scraper:
 
     def run(self, output_file_data, output_file_info=None):
         # Load
-        df = self.load_data()
+        try:
+            df = self.load_data()
+        except pd.errors.EmptyDataError:
+            return 0
         # Process
         df = self.process(df)
         # Export country data

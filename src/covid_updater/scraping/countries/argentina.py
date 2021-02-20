@@ -46,6 +46,8 @@ class ArgentinaScraper(IncrementalScraper):
             url = s.find_all("a")[1].get("href")
             try:
                 df = pd.read_csv(url)
+            except pd.errors.EmptyDataError as e:
+                raise e
             except:
                 raise Exception("Data file not valid!")
         else:

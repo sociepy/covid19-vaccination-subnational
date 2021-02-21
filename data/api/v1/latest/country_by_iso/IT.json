@@ -1,92 +1,92 @@
 {
     "country": "Italy",
     "country_iso": "IT",
-    "last_update": "2021-02-20",
+    "last_update": "2021-02-21",
     "source_url": "https://github.com/italia/covid19-opendata-vaccini/",
     "data": [
         {
             "region_name": "Abruzzo",
             "region_iso": "IT-65",
-            "date": "2021-02-20",
-            "total_vaccinations": 61815,
-            "total_vaccinations_per_100": 4.72
+            "date": "2021-02-21",
+            "total_vaccinations": 62699,
+            "total_vaccinations_per_100": 4.79
         },
         {
             "region_name": "Basilicata",
             "region_iso": "IT-77",
-            "date": "2021-02-20",
-            "total_vaccinations": 29745,
-            "total_vaccinations_per_100": 5.28
+            "date": "2021-02-21",
+            "total_vaccinations": 29821,
+            "total_vaccinations_per_100": 5.3
         },
         {
             "region_name": "Calabria",
             "region_iso": "IT-78",
-            "date": "2021-02-20",
-            "total_vaccinations": 81252,
-            "total_vaccinations_per_100": 4.17
+            "date": "2021-02-21",
+            "total_vaccinations": 81680,
+            "total_vaccinations_per_100": 4.19
         },
         {
             "region_name": "Campania",
             "region_iso": "IT-72",
-            "date": "2021-02-20",
-            "total_vaccinations": 303084,
-            "total_vaccinations_per_100": 5.24
+            "date": "2021-02-21",
+            "total_vaccinations": 311604,
+            "total_vaccinations_per_100": 5.39
         },
         {
             "region_name": "Emilia-Romagna",
             "region_iso": "IT-45",
-            "date": "2021-02-20",
-            "total_vaccinations": 321896,
-            "total_vaccinations_per_100": 7.22
+            "date": "2021-02-21",
+            "total_vaccinations": 325567,
+            "total_vaccinations_per_100": 7.3
         },
         {
             "region_name": "Friuli Venezia Giulia",
             "region_iso": "IT-36",
-            "date": "2021-02-20",
-            "total_vaccinations": 90231,
-            "total_vaccinations_per_100": 7.43
+            "date": "2021-02-21",
+            "total_vaccinations": 90889,
+            "total_vaccinations_per_100": 7.48
         },
         {
             "region_name": "Lazio",
             "region_iso": "IT-62",
-            "date": "2021-02-20",
-            "total_vaccinations": 332632,
-            "total_vaccinations_per_100": 5.66
+            "date": "2021-02-21",
+            "total_vaccinations": 339075,
+            "total_vaccinations_per_100": 5.77
         },
         {
             "region_name": "Liguria",
             "region_iso": "IT-42",
-            "date": "2021-02-20",
-            "total_vaccinations": 89616,
-            "total_vaccinations_per_100": 5.78
+            "date": "2021-02-21",
+            "total_vaccinations": 89993,
+            "total_vaccinations_per_100": 5.8
         },
         {
             "region_name": "Lombardia",
             "region_iso": "IT-25",
-            "date": "2021-02-20",
-            "total_vaccinations": 577347,
-            "total_vaccinations_per_100": 5.73
+            "date": "2021-02-21",
+            "total_vaccinations": 582015,
+            "total_vaccinations_per_100": 5.78
         },
         {
             "region_name": "Marche",
             "region_iso": "IT-57",
-            "date": "2021-02-20",
-            "total_vaccinations": 76994,
-            "total_vaccinations_per_100": 5.06
+            "date": "2021-02-21",
+            "total_vaccinations": 77371,
+            "total_vaccinations_per_100": 5.08
         },
         {
             "region_name": "Molise",
             "region_iso": "IT-67",
-            "date": "2021-02-20",
-            "total_vaccinations": 16046,
+            "date": "2021-02-21",
+            "total_vaccinations": 16047,
             "total_vaccinations_per_100": 5.27
         },
         {
             "region_name": "Piemonte",
             "region_iso": "IT-21",
-            "date": "2021-02-20",
-            "total_vaccinations": 302294,
-            "total_vaccinations_per_100": 6.96
+            "date": "2021-02-21",
+            "total_vaccinations": 305241,
+            "total_vaccinations_per_100": 7.03
         },
         {
             "region_name": "Provincia autonoma di Bolzano - Alto Adige",
@@ -98,37 +98,37 @@
         {
             "region_name": "Provincia autonoma di Trento",
             "region_iso": "IT-TN",
-            "date": "2021-02-20",
-            "total_vaccinations": 35220,
-            "total_vaccinations_per_100": 6.51
+            "date": "2021-02-21",
+            "total_vaccinations": 35338,
+            "total_vaccinations_per_100": 6.53
         },
         {
             "region_name": "Puglia",
             "region_iso": "IT-75",
-            "date": "2021-02-20",
-            "total_vaccinations": 185153,
-            "total_vaccinations_per_100": 4.6
+            "date": "2021-02-21",
+            "total_vaccinations": 186322,
+            "total_vaccinations_per_100": 4.62
         },
         {
             "region_name": "Sardegna",
             "region_iso": "IT-88",
-            "date": "2021-02-20",
-            "total_vaccinations": 72529,
-            "total_vaccinations_per_100": 4.42
+            "date": "2021-02-21",
+            "total_vaccinations": 73786,
+            "total_vaccinations_per_100": 4.5
         },
         {
             "region_name": "Sicilia",
             "region_iso": "IT-82",
-            "date": "2021-02-20",
-            "total_vaccinations": 260751,
-            "total_vaccinations_per_100": 5.23
+            "date": "2021-02-21",
+            "total_vaccinations": 265554,
+            "total_vaccinations_per_100": 5.33
         },
         {
             "region_name": "Toscana",
             "region_iso": "IT-52",
-            "date": "2021-02-20",
-            "total_vaccinations": 242369,
-            "total_vaccinations_per_100": 6.5
+            "date": "2021-02-21",
+            "total_vaccinations": 246514,
+            "total_vaccinations_per_100": 6.61
         },
         {
             "region_name": "Umbria",
@@ -140,16 +140,16 @@
         {
             "region_name": "Valle d'Aosta",
             "region_iso": "IT-23",
-            "date": "2021-02-20",
-            "total_vaccinations": 11207,
-            "total_vaccinations_per_100": 8.92
+            "date": "2021-02-21",
+            "total_vaccinations": 11225,
+            "total_vaccinations_per_100": 8.93
         },
         {
             "region_name": "Veneto",
             "region_iso": "IT-34",
-            "date": "2021-02-20",
-            "total_vaccinations": 276714,
-            "total_vaccinations_per_100": 5.64
+            "date": "2021-02-21",
+            "total_vaccinations": 277687,
+            "total_vaccinations_per_100": 5.66
         }
     ]
 }

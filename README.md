@@ -1,4 +1,4 @@
-# Subnational COVID-19 vaccination data 
+# Subnational COVID-19 vaccination data
 ### [**API**](https://sociepy.org/covid19-vaccination-subnational/data/api/v1) | [**Download data**](data/vaccinations.csv) | [**GitHub**](https://github.com/sociepy/covid19-vaccination-subnational)
 
 ![refresh](https://github.com/sociepy/covid19-vaccination-subnational/workflows/refresh/badge.svg?branch=main)
@@ -30,7 +30,7 @@ Additionally, we provide a static API endpoint, which contains the data per coun
 ### Thanks to
 This project is inspired by wonderful project [owid/covid-19-data](https://github.com/owid/covid-19-data), adopting
 some of its structure, and is open to integration if deemed appropriate.
-In addition, thanks to all of the people involved in the different [source data](#data-sources) initiatives. 
+In addition, thanks to all of the people involved in the different [source data](#data-sources) initiatives.
 
 
 ## Content

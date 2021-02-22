@@ -13,16 +13,14 @@ import pandas as pd
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Merge all country data into single csv file.")
-    parser.add_argument(
-        "input_data_folder",
-        type=str,
-        help="Path where all country data is placed."
+    parser = argparse.ArgumentParser(
+        description="Merge all country data into single csv file."
     )
     parser.add_argument(
-        "output_path",
-        type=str,
-        help="Path to file to export merged data."
+        "input_data_folder", type=str, help="Path where all country data is placed."
+    )
+    parser.add_argument(
+        "output_path", type=str, help="Path to file to export merged data."
     )
     args = parser.parse_args()
     return parser
@@ -31,15 +29,16 @@ def get_parser():
 def main():
     parser = get_parser()
     args = parser.parse_args()
-    
-    # Load country data
+
+    #  Load country data
     files = [
-        pd.read_csv(os.path.join(args.input_data_folder, f)) \
-            for f in os.listdir(path=args.input_data_folder) if f.endswith(f".csv")
+        pd.read_csv(os.path.join(args.input_data_folder, f))
+        for f in os.listdir(path=args.input_data_folder)
+        if f.endswith(f".csv")
     ]
     df = pd.concat(files)
 
-    # Process data
+    #  Process data
     colnames = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
     df.loc[:, colnames] = df.loc[:, colnames].astype("Int64")
 

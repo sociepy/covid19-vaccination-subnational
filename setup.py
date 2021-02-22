@@ -6,22 +6,22 @@ import os
 import glob
 
 this_directory = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(this_directory, 'README.md')) as f:
+with open(os.path.join(this_directory, "README.md")) as f:
     long_description = f.read()
 
-with open(os.path.join(this_directory, 'requirements.txt')) as f:
+with open(os.path.join(this_directory, "requirements.txt")) as f:
     requirements = f.readlines()
 
 
 setup(
-    name='covid19-subnational-updater',
+    name="covid19-subnational-updater",
     version="0.0.0",
     description="Update tools for covid19-vaccination-subnational project.",
     long_description=long_description,
-    long_description_content_type='text/markdown',
-    author='sociepy',
-    author_email='hi@lcsrg.me',
-    license='GPL-v3',
+    long_description_content_type="text/markdown",
+    author="sociepy",
+    author_email="hi@lcsrg.me",
+    license="GPL-v3",
     install_requires=requirements,
     packages=find_packages("src"),
     package_dir={"": "src"},
@@ -40,10 +40,10 @@ setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
-    keywords='whatsapp analysis parser chat',
+    keywords="whatsapp analysis parser chat",
     project_urls={
-        'Github': 'http://github.com/sociepy/covid19-vaccination-subnational',
-        'Bug Tracker': 'http://github.com/sociepy/covid19-vaccination-subnational/issues',
+        "Github": "http://github.com/sociepy/covid19-vaccination-subnational",
+        "Bug Tracker": "http://github.com/sociepy/covid19-vaccination-subnational/issues",
     },
-    python_requires='>=3.7',
+    python_requires=">=3.7",
 )

@@ -8,10 +8,10 @@ from covid_updater.scraping.utils import load_driver
 class NorwayScraper(IncrementalScraper):
     def __init__(self):
         super().__init__(
-            country="Norway", 
-            country_iso="NO", 
-            data_url="https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/", 
-            data_url_reference="https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/", 
+            country="Norway",
+            country_iso="NO",
+            data_url="https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/",
+            data_url_reference="https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/",
             region_renaming={
                 "agder": "Agder",
                 "innlandet": "Innlandet",
@@ -23,13 +23,13 @@ class NorwayScraper(IncrementalScraper):
                 "trøndelag": "Trondelag",
                 "vestfold og telemark": "Vestfold og Telemark",
                 "vestland": "Vestland",
-                "viken": "Viken" 
-            }, 
+                "viken": "Viken",
+            },
             column_renaming={
                 "primera_dosis_cantidad": "people_vaccinated",
                 "segunda_dosis_cantidad": "people_fully_vaccinated",
-                "jurisdiccion_nombre": "region"
-            }
+                "jurisdiccion_nombre": "region",
+            },
         )
 
     def _get_date(self):
@@ -56,5 +56,7 @@ class NorwayScraper(IncrementalScraper):
 
     def _process(self, df):
         df.loc[:, "date"] = self._get_date()
-        df.loc[:, "total_vaccinations"] = df.loc[:, "people_fully_vaccinated"] + df.loc[:, "people_vaccinated"]
+        df.loc[:, "total_vaccinations"] = (
+            df.loc[:, "people_fully_vaccinated"] + df.loc[:, "people_vaccinated"]
+        )
         return df

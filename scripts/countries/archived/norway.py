@@ -7,10 +7,7 @@ from covid_updater.iso import merge_iso
 source_file = "data/countries/Norway.csv"
 
 
-replace = {
-    "Møre og Romsdal": 'More og Romsdal',
-    "Trøndelag": "Trondelag"
-}
+replace = {"Møre og Romsdal": "More og Romsdal", "Trøndelag": "Trondelag"}
 
 
 def load_driver(url):
@@ -35,7 +32,7 @@ def load_data(driver):
         region, vaccination = [x.text for x in row.find_elements_by_tag_name("td")]
         regions.append(region)
         vaccinations.append(int(vaccination))
-    
+
     df = pd.DataFrame({"region": regions, "total_vaccinations": vaccinations})
     return df
 
@@ -47,10 +44,10 @@ def load_date(driver):
 
 
 def main():
-    # Load current file
+    #  Load current file
     df_source = pd.read_csv(source_file)
 
-    # Load new data
+    #  Load new data
     url = "https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/"
     driver = load_driver(url)
     try:
@@ -74,7 +71,16 @@ def main():
     # Export
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
-    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+    df = df[
+        [
+            "location",
+            "region",
+            "date",
+            "location_iso",
+            "region_iso",
+            "total_vaccinations",
+        ]
+    ]
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)
 

@@ -7,14 +7,14 @@ source_file = "data/countries/Austria.csv"
 replace = {
     "Kärnten": "Karnten",
     "Niederösterreich": "Niederosterreich",
-    "Oberösterreich": "Oberosterreich"
+    "Oberösterreich": "Oberosterreich",
 }
 
 
 def main():
     # Load current data
     df_source = pd.read_csv(source_file)
-    
+
     # Load new data
     url = "https://info.gesundheitsministerium.gv.at/data/laender.csv"
     df = pd.read_csv(url, usecols=["Name", "Auslieferungen"], sep=";")
@@ -22,12 +22,11 @@ def main():
     date = df[df["Name"] == "Stand"]["Auslieferungen"].iloc[0]
     date = datetime.strptime(date, "%Y-%m-%d %H:%M").strftime("%Y-%m-%d")
 
-    if (date > df_source["date"].max()):
+    if date > df_source["date"].max():
         # Renaming
-        df = df.rename(columns={
-            "Name": "region",
-            "Auslieferungen": "total_vaccinations",
-        })
+        df = df.rename(
+            columns={"Name": "region", "Auslieferungen": "total_vaccinations"}
+        )
         df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
         # Remove rows
         df = df[~df["region"].isin(["Österreich", "Stand"])]
@@ -39,7 +38,16 @@ def main():
         # Concat
         df = pd.concat([df, df_source])
         # Reorder
-        df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+        df = df[
+            [
+                "location",
+                "region",
+                "date",
+                "location_iso",
+                "region_iso",
+                "total_vaccinations",
+            ]
+        ]
         df = df.sort_values(by=["region", "date"])
         df.to_csv(source_file, index=False)
 

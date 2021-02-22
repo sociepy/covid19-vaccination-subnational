@@ -41,44 +41,42 @@ REGION_RENAMING = {
     "Търговище": "Targovishte",
     "Хасково": "Haskovo",
     "Шумен": "Shumen",
-    "Ямбол": "Yambol"
+    "Ямбол": "Yambol",
 }
 
 
 def main():
     # Load current data
     df_source = pd.read_csv(OUTPUT_FILE)
-    
+
     # Request and Get data
     page = requests.get(DATA_URL)
     soup = BeautifulSoup(page.content, "html.parser")
-    table = soup.find("p", string=re.compile("Ваксинирани лица по")).parent.find("table")
+    table = soup.find("p", string=re.compile("Ваксинирани лица по")).parent.find(
+        "table"
+    )
     df = pd.read_html(str(table))[0]
     df = df.droplevel(level=0, axis=1)
-    date = str(datetime.datetime.now(pytz.timezone("Europe/Sofia")).date() - datetime.timedelta(days=1))
-    
-    df = df.rename(columns={
-        "Област": "region",
-        "Общо": "total_vaccinations"
-    })
-    df = df[~(df.loc[:, "region"]=="Общо")]
+    date = str(
+        datetime.datetime.now(pytz.timezone("Europe/Sofia")).date()
+        - datetime.timedelta(days=1)
+    )
+
+    df = df.rename(columns={"Област": "region", "Общо": "total_vaccinations"})
+    df = df[~(df.loc[:, "region"] == "Общо")]
     df.loc[:, "region"] = df.loc[:, "region"].replace(replace)
     df.loc[:, "date"] = date
     df.loc[:, "location"] = COUNTRY
-    
+
     # Add ISO codes
     df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
-    # Concat
+    #  Concat
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
 
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
-    )
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
 
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@ source_file = "data/countries/Belgium.csv"
 
 def download_xlsx(url, tmp_file="tmp/belgium.xlsx"):
     local_tmp_file = "tmp/belgium.xlsx"
-    headers = {'User-Agent': "Mozilla/5.0 (X11; Linux i686)"}
+    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686)"}
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req) as response:
         the_page = response.read()
@@ -24,27 +24,42 @@ def main():
     df = download_xlsx(url)
 
     # Rename columns
-    df = df.rename(columns={
-        "Date": "date",
-        "Region": "region",
-        "Doses administered": "total_vaccinations"
-    })
+    df = df.rename(
+        columns={
+            "Date": "date",
+            "Region": "region",
+            "Doses administered": "total_vaccinations",
+        }
+    )
 
     # Process columns
     df.loc[:, "location"] = "Belgium"
-    df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%d/%m/%Y").dt.strftime("%Y-%m-%d")
+    df.loc[:, "date"] = pd.to_datetime(
+        df.loc[:, "date"], format="%d/%m/%Y"
+    ).dt.strftime("%Y-%m-%d")
     df = df.groupby(["location", "region", "date"]).sum().reset_index()
     df = df.sort_values(by="date")
-    df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
+    df["total_vaccinations"] = (
+        df.groupby("region")["total_vaccinations"].cumsum().values
+    )
 
     # Remove NaNs
     df = df.loc[~df.loc[:, "region"].isnull()]
 
-    # Iso
+    #  Iso
     df = merge_iso(df, country_iso="BE")
 
     # Export
-    df = df[["location", "region", "date", "location_iso", "region_iso", "total_vaccinations"]]
+    df = df[
+        [
+            "location",
+            "region",
+            "date",
+            "location_iso",
+            "region_iso",
+            "total_vaccinations",
+        ]
+    ]
     df = df.sort_values(by=["region", "date"])
     df.to_csv(source_file, index=False)
 

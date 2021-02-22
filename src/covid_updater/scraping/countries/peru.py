@@ -8,14 +8,11 @@ from covid_updater.scraping.base import IncrementalScraper
 class PeruScraper(IncrementalScraper):
     def __init__(self):
         super().__init__(
-            country="Peru", 
-            country_iso="PE", 
-            data_url="https://gis.minsa.gob.pe/WebApiRep2/api/Departamento/ListarVacunadosPublico", 
-            data_url_reference="https://gis.minsa.gob.pe/GisVisorVacunados/", 
-            column_renaming={
-                "Id": "region_iso",
-                "Vacunados": "total_vaccinations"
-            },
+            country="Peru",
+            country_iso="PE",
+            data_url="https://gis.minsa.gob.pe/WebApiRep2/api/Departamento/ListarVacunadosPublico",
+            data_url_reference="https://gis.minsa.gob.pe/GisVisorVacunados/",
+            column_renaming={"Id": "region_iso", "Vacunados": "total_vaccinations"},
             mode_iso_merge="region",
             field_renaming={
                 "region_iso": {
@@ -43,19 +40,15 @@ class PeruScraper(IncrementalScraper):
                     22: "PE-SAM",
                     23: "PE-TAC",
                     24: "PE-TUM",
-                    25: "PE-UCA"
+                    25: "PE-UCA",
                 }
-            }
+            },
         )
 
     def load_data(self):
-        headers = {'Content-type': 'application/json', 'Accept': '*/*'}
-        json = {"DisaCodigo":0, "IdDepartamento":""}
-        request = requests.post(
-            self.data_url,
-            json=json,
-            headers=headers
-        )
+        headers = {"Content-type": "application/json", "Accept": "*/*"}
+        json = {"DisaCodigo": 0, "IdDepartamento": ""}
+        request = requests.post(self.data_url, json=json, headers=headers)
         request.raise_for_status()
         data = request.json()
         df = pd.DataFrame.from_dict(data["Data"])[["Id", "Vacunados"]]
@@ -63,5 +56,7 @@ class PeruScraper(IncrementalScraper):
 
     def _process(self, df):
         # Date format
-        df.loc[:, "date"] = datetime.now(pytz.timezone("America/Lima")).date().strftime("%Y-%m-%d")
+        df.loc[:, "date"] = (
+            datetime.now(pytz.timezone("America/Lima")).date().strftime("%Y-%m-%d")
+        )
         return df

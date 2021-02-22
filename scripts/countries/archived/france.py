@@ -16,10 +16,10 @@ REGION_RENAMING = {
     "Auvergne-Rhône-Alpes": "Auvergne-Rhone-Alpes",
     "Bourgogne-Franche-Comté": "Bourgogne-Franche-Comte",
     "Grand Est": "Grand-Est",
-    "La Réunion": "La Reunion" ,
+    "La Réunion": "La Reunion",
     "Pays de la Loire": "Pays-de-la-Loire",
     "Provence-Alpes-Côte d'Azur": "Provence-Alpes-Cote-d'Azur",
-    "Île-de-France": "Ile-de-France"
+    "Île-de-France": "Ile-de-France",
 }
 
 
@@ -30,15 +30,20 @@ def read_psv(str_input: str, **kwargs) -> pd.DataFrame:
     """
 
     substitutions = [
-        ('^ *', ''),  # Remove leading spaces
-        (' *$', ''),  # Remove trailing spaces
-        (r' *\| *', '|'),  # Remove spaces between columns
+        ("^ *", ""),  # Remove leading spaces
+        (" *$", ""),  # Remove trailing spaces
+        (r" *\| *", "|"),  # Remove spaces between columns
     ]
-    if all(line.lstrip().startswith('|') and line.rstrip().endswith('|') for line in str_input.strip().split('\n')):
-        substitutions.extend([
-            (r'^\|', ''),  # Remove redundant leading delimiter
-            (r'\|$', ''),  # Remove redundant trailing delimiter
-        ])
+    if all(
+        line.lstrip().startswith("|") and line.rstrip().endswith("|")
+        for line in str_input.strip().split("\n")
+    ):
+        substitutions.extend(
+            [
+                (r"^\|", ""),  # Remove redundant leading delimiter
+                (r"\|$", ""),  # Remove redundant trailing delimiter
+            ]
+        )
     for pattern, replacement in substitutions:
         str_input = re.sub(pattern, replacement, str_input, flags=re.MULTILINE)
     return pd.read_csv(io.StringIO(str_input), **kwargs)
@@ -46,25 +51,18 @@ def read_psv(str_input: str, **kwargs) -> pd.DataFrame:
 
 def main():
     # Request & downloa data
-    page_content = requests.get(DATA_URL, headers={'User-Agent': 'Custom'}).content
+    page_content = requests.get(DATA_URL, headers={"User-Agent": "Custom"}).content
     soup = BeautifulSoup(page_content, "html.parser")
     # Build DataFrame
     df = read_psv(str(soup), sep=",")
-    df = df.rename(columns={
-        "nom": "region",
-        "total_vaccines": "total_vaccinations"
-    })
+    df = df.rename(columns={"nom": "region", "total_vaccines": "total_vaccinations"})
     df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
     df.loc[:, "location"] = COUNTRY
     # Add ISO codes
     df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
-    )
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
 
 
 if __name__ == "__main__":

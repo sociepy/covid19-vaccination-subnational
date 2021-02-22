@@ -15,7 +15,7 @@ DATA_URL_REFERENCE = DATA_URL
 
 def download_xlsx(url, tmp_file="tmp/belgium.xlsx"):
     local_tmp_file = "tmp/belgium.xlsx"
-    headers = {'User-Agent': "Mozilla/5.0 (X11; Linux i686)"}
+    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686)"}
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req) as response:
         the_page = response.read()
@@ -27,7 +27,9 @@ def download_xlsx(url, tmp_file="tmp/belgium.xlsx"):
 
 def get_date(url):
     df_dates = download_xlsx(url)
-    df_dates.loc[:, "Date"] = pd.to_datetime(df_dates.loc[:, "Date"], format="%d/%m/%Y").dt.strftime("%Y-%m-%d")
+    df_dates.loc[:, "Date"] = pd.to_datetime(
+        df_dates.loc[:, "Date"], format="%d/%m/%Y"
+    ).dt.strftime("%Y-%m-%d")
     df_dates = df_dates.groupby("Region").agg({"Date": "max"})
     df_dates = df_dates.rename(columns={"Date": "date"})
     return df_dates
@@ -38,7 +40,7 @@ def main():
     df_source = pd.read_csv(OUTPUT_FILE)
 
     # Load data
-    page_content = requests.get(DATA_URL, headers={'User-Agent': 'Custom'}).content
+    page_content = requests.get(DATA_URL, headers={"User-Agent": "Custom"}).content
     soup = BeautifulSoup(page_content, "html.parser")
 
     # Get new data
@@ -51,14 +53,21 @@ def main():
                 region = fields[0].text.strip()
                 if "Vaccines administered" in fields[1].text:
                     total, regional = fields[1].findAll(class_="col-auto text-end")
-                    dose_1, dose_2 = list(map(lambda x: int(x.replace(",", "")), regional.text.strip().split("\n")))
-                    new_data.append(
-                        [region, dose_1, dose_2]
+                    dose_1, dose_2 = list(
+                        map(
+                            lambda x: int(x.replace(",", "")),
+                            regional.text.strip().split("\n"),
+                        )
                     )
-    df = pd.DataFrame(new_data, columns=["region", "people_vaccinated", "people_fully_vaccinated"])
+                    new_data.append([region, dose_1, dose_2])
+    df = pd.DataFrame(
+        new_data, columns=["region", "people_vaccinated", "people_fully_vaccinated"]
+    )
 
     # Process
-    df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
+    df.loc[:, "total_vaccinations"] = (
+        df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
+    )
     df.loc[:, "location"] = COUNTRY
 
     # Join with date
@@ -72,15 +81,14 @@ def main():
     # Concatenate
     region = df_dates.index.tolist()
     date = df_dates.date.tolist()
-    df_source = df_source.loc[~(df_source["region"].isin(region) & df_source["date"].isin(date))]
+    df_source = df_source.loc[
+        ~(df_source["region"].isin(region) & df_source["date"].isin(date))
+    ]
     df = pd.concat([df, df_source])
-    
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
-    )
+
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
+
 
 if __name__ == "__main__":
     main()

@@ -5,8 +5,18 @@ from covid_updater.utils import keep_min_date, COLUMNS_ALL, COLUMNS_ORDER, COLUM
 
 
 class Scraper:
-    def __init__(self, country, country_iso, data_url, data_url_reference, region_renaming=None, 
-                 field_renaming=None, column_renaming=None, mode_iso_merge=None, do_cumsum_fields=None):
+    def __init__(
+        self,
+        country,
+        country_iso,
+        data_url,
+        data_url_reference,
+        region_renaming=None,
+        field_renaming=None,
+        column_renaming=None,
+        mode_iso_merge=None,
+        do_cumsum_fields=None,
+    ):
         self.country = country
         self.country_iso = country_iso
         self.data_url = data_url
@@ -14,7 +24,9 @@ class Scraper:
         self.region_renaming = region_renaming if region_renaming is not None else {}
         self.field_renaming = field_renaming if field_renaming is not None else {}
         self.column_renaming = column_renaming if column_renaming is not None else {}
-        self.mode_iso_merge = mode_iso_merge if mode_iso_merge is not None else "region_iso"
+        self.mode_iso_merge = (
+            mode_iso_merge if mode_iso_merge is not None else "region_iso"
+        )
         self.do_cumsum_fields = do_cumsum_fields if do_cumsum_fields is not None else []
         self.last_update = None
         self.second_dose = None
@@ -23,7 +35,7 @@ class Scraper:
         raise NotImplementedError("Call child's method instead.")
 
     def _preprocess(self, df):
-         # Rename column names
+        # Rename column names
         df = df.rename(columns=self.column_renaming)
         # Replace field values
         for field, renaming in self.field_renaming.items():
@@ -33,7 +45,7 @@ class Scraper:
         if "location" not in df.columns:
             df.loc[:, "location"] = self.country
 
-        # Rename regions
+        #  Rename regions
         if "region" in df.columns:
             df = df.loc[~df.loc[:, "region"].isnull()]
             df.loc[:, "region"] = df.loc[:, "region"].replace(self.region_renaming)
@@ -47,11 +59,11 @@ class Scraper:
         df = df.sort_values(by="date")
         for field in self.do_cumsum_fields:
             df[field] = df.groupby("region")[field].cumsum().values
-        # TODO: Insert here population info (need path to population.csv as class attribute)
+        #  TODO: Insert here population info (need path to population.csv as class attribute)
         return df
 
     def process(self, df):
-        # Common preprocessing
+        #  Common preprocessing
         df = self._preprocess(df)
         # Country-specific processing
         df = self._process(df)
@@ -74,17 +86,19 @@ class Scraper:
         self.last_update = df["date"].max()
         self.second_dose = int("people_fully_vaccinated" in df.columns)
 
-        # Export
+        #  Export
         df = df.sort_values(by=COLUMNS_ORDER)
         df.to_csv(output_file, index=False)
 
     def export_info(self, output_file):
         """Update or create source data file.
-        
+
         This file specifies data for each country such as the URL of the source data, last update, etc.
         """
         if self.last_update is None or self.second_dose is None:
-            raise AttributeError("Attributes last_update or second_dose are None! You may need to run `export`")
+            raise AttributeError(
+                "Attributes last_update or second_dose are None! You may need to run `export`"
+            )
         # Load tracking file
         if os.path.isfile(output_file):
             df = pd.read_csv(output_file, index_col="country")
@@ -99,14 +113,19 @@ class Scraper:
             df.loc[self.country, "country_iso"] = self.country_iso
         else:
             s = pd.Series(
-                data=[self.country_iso, self.data_url_reference, self.last_update, self.second_dose],
+                data=[
+                    self.country_iso,
+                    self.data_url_reference,
+                    self.last_update,
+                    self.second_dose,
+                ],
                 index=["country_iso", "data_source_url", "last_update", "second_dose"],
-                name=self.country
+                name=self.country,
             )
             df = df.append(s)
-        df = df[["country_iso", "data_source_url", "last_update", "second_dose"]].astype({
-            "second_dose": int
-        })
+        df = df[
+            ["country_iso", "data_source_url", "last_update", "second_dose"]
+        ].astype({"second_dose": int})
         df.to_csv(output_file)
 
     def run(self, output_file_data, output_file_info=None):
@@ -115,11 +134,11 @@ class Scraper:
             df = self.load_data()
         except pd.errors.EmptyDataError:
             return 0
-        # Process
+        #  Process
         df = self.process(df)
-        # Export country data
+        #  Export country data
         self.export(df, output_file=output_file_data)
-        # Export data info
+        #  Export data info
         if output_file_info is not None:
             self.export_info(output_file=output_file_info)
 
@@ -137,8 +156,10 @@ class IncrementalScraper(Scraper):
         # Load current data
         if os.path.isfile(filepath):
             df_current = pd.read_csv(filepath)
-            # Merge
+            #  Merge
             key = df.loc[:, "region"].astype(str) + df.loc[:, "date"]
-            df_current = df_current[~(df_current["region"].astype(str) + df_current["date"]).isin(key)]
+            df_current = df_current[
+                ~(df_current["region"].astype(str) + df_current["date"]).isin(key)
+            ]
             df = pd.concat([df, df_current])
         return df

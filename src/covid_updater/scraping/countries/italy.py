@@ -5,10 +5,10 @@ from covid_updater.scraping.base import Scraper
 class ItalyScraper(Scraper):
     def __init__(self):
         super().__init__(
-            country="Italy", 
-            country_iso="IT", 
-            data_url="https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-summary-latest.csv", 
-            data_url_reference="https://github.com/italia/covid19-opendata-vaccini/", 
+            country="Italy",
+            country_iso="IT",
+            data_url="https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-summary-latest.csv",
+            data_url_reference="https://github.com/italia/covid19-opendata-vaccini/",
             region_renaming={
                 "ABR": "Abruzzo",
                 "VEN": "Veneto",
@@ -30,16 +30,20 @@ class ItalyScraper(Scraper):
                 "CAM": "Campania",
                 "CAL": "Calabria",
                 "BAS": "Basilicata",
-                "MAR": "Marche"
-            }, 
+                "MAR": "Marche",
+            },
             column_renaming={
                 "data_somministrazione": "date",
                 "area": "region",
                 "totale": "total_vaccinations",
                 "prima_dose": "people_vaccinated",
-                "seconda_dose": "people_fully_vaccinated"
+                "seconda_dose": "people_fully_vaccinated",
             },
-            do_cumsum_fields=["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
+            do_cumsum_fields=[
+                "total_vaccinations",
+                "people_vaccinated",
+                "people_fully_vaccinated",
+            ],
         )
 
     def load_data(self):

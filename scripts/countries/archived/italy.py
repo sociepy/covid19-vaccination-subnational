@@ -29,38 +29,41 @@ REGION_RENAMING = {
     "CAM": "Campania",
     "CAL": "Calabria",
     "BAS": "Basilicata",
-    "MAR": "Marche"
+    "MAR": "Marche",
 }
 
 
 def main():
     df = pd.read_csv(DATA_URL, parse_dates=["data_somministrazione"])
-    df = df.rename(columns={
-        "data_somministrazione": "date",
-        "area": "region",
-        "totale": "total_vaccinations",
-        "prima_dose": "people_vaccinated",
-        "seconda_dose": "people_fully_vaccinated"
-    })
+    df = df.rename(
+        columns={
+            "data_somministrazione": "date",
+            "area": "region",
+            "totale": "total_vaccinations",
+            "prima_dose": "people_vaccinated",
+            "seconda_dose": "people_fully_vaccinated",
+        }
+    )
     df.loc[:, "date"] = pd.to_datetime(df.loc[:, "date"], format="%Y-%m-%d")
     df.loc[:, "date"] = df.loc[:, "date"].dt.strftime("%Y-%m-%d")
     df.loc[:, "location"] = COUNTRY
     # Compute cumsums
     df = df.sort_values(by="date")
-    df["total_vaccinations"] = df.groupby("region")["total_vaccinations"].cumsum().values
+    df["total_vaccinations"] = (
+        df.groupby("region")["total_vaccinations"].cumsum().values
+    )
     df["people_vaccinated"] = df.groupby("region")["people_vaccinated"].cumsum().values
-    df["people_fully_vaccinated"] = df.groupby("region")["people_fully_vaccinated"].cumsum().values
+    df["people_fully_vaccinated"] = (
+        df.groupby("region")["people_fully_vaccinated"].cumsum().values
+    )
     df = df[df.loc[:, "region"] != "ITA"]
     # Add ISO codes
     df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
     df = ISODB().merge(df, country_iso=COUNTRY_ISO)
-    
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
-    )
+
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
+
 
 if __name__ == "__main__":
     main()

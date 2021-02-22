@@ -34,9 +34,9 @@ REGION_RENAMING = {
     "Dalarna": "Dalarnas lan",
     "Gävleborg": "Gavleborgs lan",
     "Västernorrland": "Vasternorrlands lan",
-    "Jämtland": "Jamtlands lan"
+    "Jämtland": "Jamtlands lan",
 }
-locale.setlocale(locale.LC_TIME, 'sv_SE')
+locale.setlocale(locale.LC_TIME, "sv_SE")
 
 
 # Load
@@ -49,7 +49,7 @@ def load_data(url):
 
 def load_df(soup):
     tables = soup.find(id="content-primary").findAll("table")
-    if (len(tables)==2):
+    if len(tables) == 2:
         table = tables[1]
         dfs = pd.read_html(str(table))
         if len(dfs) == 1:
@@ -81,13 +81,13 @@ def main():
     # Load data
     df, date = load_data(DATA_URL)
 
-    # Rename columns 
-    df = df.rename(columns={
-        "Län": "region"
-    })
+    # Rename columns
+    df = df.rename(columns={"Län": "region"})
 
     # Process columns
-    df.loc[:, "total_vaccinations"] = column_str2int(df.loc[:, "Moderna"]) + column_str2int(df.loc[:, "Pfizer/BioNTech"])
+    df.loc[:, "total_vaccinations"] = column_str2int(
+        df.loc[:, "Moderna"]
+    ) + column_str2int(df.loc[:, "Pfizer/BioNTech"])
     df.loc[:, "location"] = COUNTRY
     df.loc[:, "date"] = date
 
@@ -102,12 +102,9 @@ def main():
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
 
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
-    )
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
+
 
 if __name__ == "__main__":
     main()

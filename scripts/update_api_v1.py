@@ -20,19 +20,19 @@ def get_parser():
         "input_vaccinations_path",
         type=str,
         help="Path to vaccinations data file.",
-        default="data/countries"
+        default="data/countries",
     )
     parser.add_argument(
         "input_country_info_path",
         type=str,
         help="Path country info file.",
-        default="data/country_info.csv"
+        default="data/country_info.csv",
     )
     parser.add_argument(
         "output_folder",
         type=str,
         help="Path to place all API files.",
-        default="data/api/v1"
+        default="data/api/v1",
     )
     args = parser.parse_args()
     return parser
@@ -41,8 +41,10 @@ def get_parser():
 def build_api_json(df, country, country_iso, source):
     df = df[region_fields + data_fields]
     df = df.astype({"total_vaccinations": int})
-    df = df[df.region_iso!="-"]
-    dfg = df.groupby(region_fields).apply(lambda x: x.drop(columns=region_fields).to_dict(orient="records"))
+    df = df[df.region_iso != "-"]
+    dfg = df.groupby(region_fields).apply(
+        lambda x: x.drop(columns=region_fields).to_dict(orient="records")
+    )
     dfg.name = "data"
     data = dfg.tolist()
     regions = dfg.index
@@ -53,12 +55,9 @@ def build_api_json(df, country, country_iso, source):
         "first_update": df["date"].min(),
         "source_url": source,
         "data": [
-            {
-                "region_iso": region[1],
-                "region_name": region[0],
-                "data": data_sample
-            } for region, data_sample in zip(regions, data)
-        ]
+            {"region_iso": region[1], "region_name": region[0], "data": data_sample}
+            for region, data_sample in zip(regions, data)
+        ],
     }
     dfg = df.groupby(region_fields)[data_fields].max()
     data = dfg.reset_index().rename(columns=rename_fields).to_dict(orient="records")
@@ -67,7 +66,7 @@ def build_api_json(df, country, country_iso, source):
         "country_iso": country_iso,
         "last_update": df["date"].max(),
         "source_url": source,
-        "data": data
+        "data": data,
     }
     return api_json_all, api_json_latest
 
@@ -78,7 +77,9 @@ def main():
 
     export_folder_all = os.path.join(args.output_folder, "all/country_by_iso/")
     export_folder_latest = os.path.join(args.output_folder, "latest/country_by_iso/")
-    api_endpoint = f"https://sociepy.org/covid19-vaccination-subnational/{args.output_folder}"
+    api_endpoint = (
+        f"https://sociepy.org/covid19-vaccination-subnational/{args.output_folder}"
+    )
 
     # Load data
     df_country_info = pd.read_csv(args.input_country_info_path, index_col="country_iso")
@@ -88,21 +89,27 @@ def main():
     metadata = []
     country_isos = df_country_info.index.tolist()
     for country_iso in country_isos:
-        country, source = df_country_info.loc[country_iso, ["country", "data_source_url"]]
+        country, source = df_country_info.loc[
+            country_iso, ["country", "data_source_url"]
+        ]
         print(f"  Generating API file for {country}...", sep=",")
         df_country = df_vaccinations[df_vaccinations["location_iso"] == country_iso]
         # Metadata
-        metadata.append({
-            "country_iso": country_iso,
-            "country_name": country,
-            "last_update": df_country["date"].max(),
-            "first_update": df_country["date"].min(),
-            "source_url": source,
-            "api_url_all": f"{api_endpoint}/all/country_by_iso/{country_iso}.json",
-            "api_url_latest": f"{api_endpoint}/latest/country_by_iso/{country_iso}.json"
-        })
+        metadata.append(
+            {
+                "country_iso": country_iso,
+                "country_name": country,
+                "last_update": df_country["date"].max(),
+                "first_update": df_country["date"].min(),
+                "source_url": source,
+                "api_url_all": f"{api_endpoint}/all/country_by_iso/{country_iso}.json",
+                "api_url_latest": f"{api_endpoint}/latest/country_by_iso/{country_iso}.json",
+            }
+        )
         # Build APIs (all + latest)
-        api_json_all, api_json_latest = build_api_json(df_country, country, country_iso, source)
+        api_json_all, api_json_latest = build_api_json(
+            df_country, country, country_iso, source
+        )
         # Export all
         path = os.path.join(export_folder_all, f"{country_iso}.json")
         with open(path, "w") as f:

@@ -6,16 +6,16 @@ from covid_updater.iso import ISODB
 
 
 def main():
-    # Load DB
+    #  Load DB
     db = ISODB.create_from_source()
 
     # Renaming
     iso_rename = {
         "Friuli-Venezia Giulia": "Friuli Venezia Giulia",
-        "Brussels Hoofdstedelijk Gewest": "Brussels"
+        "Brussels Hoofdstedelijk Gewest": "Brussels",
     }
 
-    # Add new entries
+    #  Add new entries
     items = [
         ["IT", "IT-TN", "Provincia autonoma di Trento"],
         ["IT", "IT-BZ", "Provincia autonoma di Bolzano - Alto Adige"],
@@ -39,7 +39,7 @@ def main():
         ["NO", "NO-38", "Vestfold og Telemark"],
         ["NO", "NO-34", "Innlandet"],
         ["CL", "CL-NB", "Nuble"],
-        ["IN", "IN-LA", "Ladakh"]
+        ["IN", "IN-LA", "Ladakh"],
     ]
 
     db.rename_values("subdivision_name", iso_rename)

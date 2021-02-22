@@ -102,7 +102,7 @@ Austria: [`https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/c
                 }
             ]
         }
- 
+
 ```
 
 ## Latest data

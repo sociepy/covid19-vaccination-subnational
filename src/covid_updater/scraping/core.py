@@ -46,7 +46,7 @@ scrappers = [
     CanadaScraper(),
     PeruScraper(),
     TurkeyScraper(),
-    IcelandScraper()
+    IcelandScraper(),
 ]
 scrappers_dict = {scrapper.country_iso: scrapper for scrapper in scrappers}
 iso_codes = list(scrappers_dict.keys())
@@ -57,10 +57,10 @@ def get_country_scraper(iso_code: str):
 
     Args:
         iso_code (str): ISO code 3166 alpha-2 of a country.
-    
+
     Returns:
         Scraper: Country scraper.
-    
+
     Raises:
         ValueError: If no scraper available for given iso code.
 
@@ -68,4 +68,6 @@ def get_country_scraper(iso_code: str):
     if iso_code in scrappers_dict:
         return scrappers_dict.get(iso_code)
     else:
-        raise ValueError(f"Not available iso code. Available iso codes are: {iso_codes}")
+        raise ValueError(
+            f"Not available iso code. Available iso codes are: {iso_codes}"
+        )

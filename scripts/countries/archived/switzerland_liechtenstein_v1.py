@@ -24,11 +24,9 @@ def main_ch(df):
     # Get region names
     df_ch = ISODB().merge(df_ch, mode="region")
 
-    # Export
+    #  Export
     export_data(
-        df=df_ch,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE_CH
+        df=df_ch, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE_CH
     )
 
 
@@ -40,20 +38,17 @@ def main_li(df):
     df_li.loc[:, "location_iso"] = COUNTRY_ISO_LI
     df_li.loc[:, "region"] = "-"
 
-    # Export
+    #  Export
     export_data(
-        df=df_li,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE_LI
+        df=df_li, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE_LI
     )
 
 
 def main():
     df = pd.read_csv(DATA_URL, usecols=["geounit", "date", "ncumul_vacc"])
-    df = df.rename(columns={
-        "geounit": "region_iso",
-        "ncumul_vacc": "total_vaccinations"
-    })
+    df = df.rename(
+        columns={"geounit": "region_iso", "ncumul_vacc": "total_vaccinations"}
+    )
 
     main_ch(df)
     main_li(df)

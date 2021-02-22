@@ -13,7 +13,7 @@ ISO_NEW_FILE = os.path.join(this_directory, "assets/ISO_3166_2.csv")
 ISO_NEW_FILE_URL = "https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/src/covid_updater/assets/ISO_3166_2.csv"
 
 
-class ISODB():
+class ISODB:
     def __init__(self, filepath=ISO_NEW_FILE_URL, df=None):
         self._file = filepath
         if isinstance(df, pd.DataFrame):
@@ -32,16 +32,15 @@ class ISODB():
 
         """
         df = pd.read_csv(source_file)
-        df = df.rename(columns={
-            "country_code": "location_iso",
-            "code": "region_iso"
-        })
+        df = df.rename(columns={"country_code": "location_iso", "code": "region_iso"})
         df = df.sort_values(["location_iso", "region_iso"])
         df.to_csv(filepath, index=False)
         return cls(filepath=filepath, df=df)
 
     def append(self, items):
-        new_items = pd.DataFrame(items, columns=["location_iso", "region_iso", "subdivision_name"])
+        new_items = pd.DataFrame(
+            items, columns=["location_iso", "region_iso", "subdivision_name"]
+        )
         self._df = self._df.append(new_items, ignore_index=True)
         self._df = self._df.sort_values(["location_iso", "region_iso"])
         self._df.to_csv(self._file, index=False)
@@ -63,16 +62,21 @@ class ISODB():
             pandas.DataFrame: Joined table.
         """
         if mode == "region_iso" and country_iso is not None:
-            df_iso_country = self._df[self._df["location_iso"]==country_iso]
-            df = df.merge(df_iso_country, left_on="region", right_on="subdivision_name", how="left")
+            df_iso_country = self._df[self._df["location_iso"] == country_iso]
+            df = df.merge(
+                df_iso_country,
+                left_on="region",
+                right_on="subdivision_name",
+                how="left",
+            )
             df["region_iso"] = df[["region_iso"]].fillna("-")
             df = df.drop(columns=["subdivision_name"])
         elif mode == "region":
             df = df.merge(self._df, on="region_iso")
-            df = df.rename(columns={
-                "subdivision_name": "region"
-            })
+            df = df.rename(columns={"subdivision_name": "region"})
         else:
-            raise ValueError(f"{mode} is not a  valid `mode` value. Choose either 'region_iso' or 'region'. If" + \
-                            "'region_iso', make sure to set a value for `country_iso`.")
+            raise ValueError(
+                f"{mode} is not a  valid `mode` value. Choose either 'region_iso' or 'region'. If"
+                + "'region_iso', make sure to set a value for `country_iso`."
+            )
         return df

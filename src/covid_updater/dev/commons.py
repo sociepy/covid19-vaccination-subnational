@@ -13,7 +13,7 @@ def get_vaccination_metrics(total_vaccinations=None, people_vaccinated=None, peo
 
 class BatchUpdater:
     def __init__(self, url, country_name, country_iso, region_replace, date_format,
-                date_field=None, region_field=None, 
+                date_field=None, region_field=None,
                 total_vaccinations_field=None, people_vaccinated=None, people_fully_vaccinated=None):
         self.url = url
         self.country_name = country_name
@@ -22,7 +22,7 @@ class BatchUpdater:
         self.date_format = date_format
 
         self.rename_columns = self._rename_columns(
-            date_field, region_field, total_vaccinations_field, 
+            date_field, region_field, total_vaccinations_field,
             people_vaccinated, people_fully_vaccinated
         )
         _ = self.rename_columns.pop(None)
@@ -52,7 +52,7 @@ class BatchUpdater:
         elif not total_vaccinations and people_vaccinated and people_fully_vaccinated:
             total_vaccinations = people_vaccinated + people_fully_vaccinated
         #return total_vaccinations, people_vaccinated, people_fully_vaccinated
-        
+
         if "total_vaccinations" not in df:
             if "people"
         total_vaccinations, people_vaccinated, people_fully_vaccinated = get_vaccination_metrics(
@@ -90,4 +90,3 @@ class BatchUpdater:
         df = df.sort_values(by=["region", "date"])
         # Export
         df.to_csv(output_file, index=False)
-

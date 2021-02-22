@@ -23,7 +23,7 @@ REGION_RENAMING = {
     "trøndelag": "Trondelag",
     "vestfold og telemark": "Vestfold og Telemark",
     "vestland": "Vestland",
-    "viken": "Viken" 
+    "viken": "Viken",
 }
 
 
@@ -69,10 +69,12 @@ def main():
     # Process region column
     df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
 
-    # Add columns
+    #  Add columns
     df.loc[:, "date"] = date
     df.loc[:, "location"] = COUNTRY
-    df.loc[:, "total_vaccinations"] = df.loc[:, "people_fully_vaccinated"] + df.loc[:, "people_vaccinated"]
+    df.loc[:, "total_vaccinations"] = (
+        df.loc[:, "people_fully_vaccinated"] + df.loc[:, "people_vaccinated"]
+    )
 
     # Add ISO codes
     df = ISODB().merge(df, country_iso=COUNTRY_ISO)
@@ -81,12 +83,9 @@ def main():
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
 
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
-    )
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
+
 
 if __name__ == "__main__":
     main()

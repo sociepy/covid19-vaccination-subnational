@@ -11,9 +11,9 @@ DATA_URL_2 = "https://raw.githubusercontent.com/ccodwg/Covid19Canada/master/time
 DATA_URL_REFERENCE = "https://github.com/ccodwg/Covid19Canada"
 REGION_RENAMING = {
     "BC": "British Columbia",
-    "NL": "Newfoundland and Labrador", 
-    "NWT": "Northwest Territories", 
-    "PEI": "Prince Edward Island"
+    "NL": "Newfoundland and Labrador",
+    "NWT": "Northwest Territories",
+    "PEI": "Prince Edward Island",
 }
 
 
@@ -21,7 +21,7 @@ def main():
     COLUMNS_RENAMING = {
         "date_vaccine_administered": "date",
         "province": "region",
-        "cumulative_avaccine": "total_vaccinations"
+        "cumulative_avaccine": "total_vaccinations",
     }
     df = pd.read_csv(DATA_URL_1, usecols=COLUMNS_RENAMING.keys())
     df = df.rename(columns=COLUMNS_RENAMING)
@@ -34,12 +34,11 @@ def main():
     # Add ISO codes
     df = ISODB().merge(df, country_iso=COUNTRY_ISO)
 
-    
-    # Add completed vaccinations
+    #  Add completed vaccinations
     COLUMNS_RENAMING = {
         "date_vaccine_completed": "date",
         "province": "region",
-        "cumulative_cvaccine": "people_fully_vaccinated"
+        "cumulative_cvaccine": "people_fully_vaccinated",
     }
     df_2 = pd.read_csv(DATA_URL_2, usecols=COLUMNS_RENAMING.keys())
     df_2 = df_2.rename(columns=COLUMNS_RENAMING)
@@ -48,17 +47,17 @@ def main():
     df_2.loc[:, "date"] = df_2.loc[:, "date"].dt.strftime("%Y-%m-%d")
     # New cols
     df_2.loc[:, "region"] = df_2.loc[:, "region"].replace(REGION_RENAMING)
-    
-    df = df.merge(df_2, on=["region", "date"], how="left")
-    df.loc[:, "people_fully_vaccinated"] = df.loc[:, "people_fully_vaccinated"].fillna(0).astype(int)
-    df.loc[:, "people_vaccinated"] = df.loc[:, "total_vaccinations"] - df.loc[:, "people_fully_vaccinated"].astype(int)
 
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
+    df = df.merge(df_2, on=["region", "date"], how="left")
+    df.loc[:, "people_fully_vaccinated"] = (
+        df.loc[:, "people_fully_vaccinated"].fillna(0).astype(int)
     )
+    df.loc[:, "people_vaccinated"] = df.loc[:, "total_vaccinations"] - df.loc[
+        :, "people_fully_vaccinated"
+    ].astype(int)
+
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
 
 
 if __name__ == "__main__":

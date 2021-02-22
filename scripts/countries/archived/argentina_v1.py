@@ -1,5 +1,5 @@
 import pandas as pd
-from bs4  import BeautifulSoup
+from bs4 import BeautifulSoup
 import urllib.request
 from datetime import datetime
 import locale
@@ -18,10 +18,9 @@ REGION_RENAMING = {
     "Entre Ríos": "Entre Rios",
     "Neuquén": "Neuquen",
     "Río Negro": "Rio Negro",
-    "Tucumán": "Tucuman"
+    "Tucumán": "Tucuman",
 }
-locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
-
+locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
 
 
 def get_df(soup):
@@ -35,12 +34,17 @@ def get_df(soup):
     else:
         raise Exception("HTML changed, no file to download was found!")
     return df
-    
+
+
 def get_date(soup):
     try:
         s = soup.find(id="info-container")
         rows = s.find_all(class_="col-xs-5 title")
-        idx = [idx for idx, row in enumerate(rows) if row.text.strip() == "Fecha de actualización"][0]
+        idx = [
+            idx
+            for idx, row in enumerate(rows)
+            if row.text.strip() == "Fecha de actualización"
+        ][0]
         date_str = rows[idx].parent.find(class_="col-xs-7 value").text.strip()
         date = datetime.strptime(date_str, "%d de %B de %Y").strftime("%Y-%m-%d")
     except:
@@ -59,19 +63,23 @@ def main():
     # Get new date
     date = get_date(soup)
 
-    # Get df
+    #  Get df
     df = get_df(soup)
 
-    # Rename columns
-    df = df.rename(columns={
-        "primera_dosis_cantidad": "people_vaccinated",
-        "segunda_dosis_cantidad": "people_fully_vaccinated",
-        "jurisdiccion_nombre": "region"
-    })
+    #  Rename columns
+    df = df.rename(
+        columns={
+            "primera_dosis_cantidad": "people_vaccinated",
+            "segunda_dosis_cantidad": "people_fully_vaccinated",
+            "jurisdiccion_nombre": "region",
+        }
+    )
 
-    # Process columns
+    #  Process columns
     df.loc[:, "region"] = df.loc[:, "region"].replace(REGION_RENAMING)
-    df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
+    df.loc[:, "total_vaccinations"] = (
+        df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
+    )
     df.loc[:, "location"] = COUNTRY
     df.loc[:, "date"] = date
 
@@ -82,12 +90,8 @@ def main():
     df_source = df_source.loc[~(df_source.loc[:, "date"] == date)]
     df = pd.concat([df, df_source])
 
-    # Export
-    export_data(
-        df=df,
-        data_url_reference=DATA_URL_REFERENCE,
-        output_file=OUTPUT_FILE
-    )
+    #  Export
+    export_data(df=df, data_url_reference=DATA_URL_REFERENCE, output_file=OUTPUT_FILE)
 
 
 if __name__ == "__main__":

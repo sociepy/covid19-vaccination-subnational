@@ -74,7 +74,7 @@ class DenmarkScraper(IncrementalScraper):
 
     def _remove_delimiter(self, x):
         if not pd.isnull(x):
-            return int(x.replace(".", ""))
+            return int(x.replace(".", "").replace(",", "")))
         else:
             return 0
 

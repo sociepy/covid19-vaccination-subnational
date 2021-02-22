@@ -33,6 +33,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install .
+          python -m pip install -r requirements-dev.txt
       - name: Locale
         run: |
           sudo locale-gen es_ES.UTF-8

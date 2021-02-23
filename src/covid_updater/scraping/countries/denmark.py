@@ -4,10 +4,10 @@ Reference: https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vac
 import requests
 import pandas as pd
 from datetime import datetime, timedelta
-from covid_updater.scraping.base import IncrementalScraper
+from covid_updater.scraping.base import Scraper
 
 
-class DenmarkScraper(IncrementalScraper):
+class DenmarkScraper(Scraper):
     def __init__(self):
         super().__init__(
             country="Denmark",

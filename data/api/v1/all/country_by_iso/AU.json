@@ -2,7 +2,7 @@
     "country": "Australia",
     "country_iso": "AU",
     "last_update": "2021-02-23",
-    "first_update": "2021-02-23",
+    "first_update": "2021-02-22",
     "source_url": "https://covidlive.com.au/report/vaccinations",
     "data": [
         {
@@ -12,7 +12,7 @@
                 {
                     "date": "2021-02-23",
                     "total_vaccinations": 50,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.01
                 }
             ]
         },
@@ -21,9 +21,14 @@
             "region_name": "New South Wales",
             "data": [
                 {
+                    "date": "2021-02-22",
+                    "total_vaccinations": 20,
+                    "total_vaccinations_per_100": 0.0
+                },
+                {
                     "date": "2021-02-23",
                     "total_vaccinations": 1320,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.02
                 }
             ]
         },
@@ -34,7 +39,7 @@
                 {
                     "date": "2021-02-23",
                     "total_vaccinations": 88,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.04
                 }
             ]
         },
@@ -45,7 +50,7 @@
                 {
                     "date": "2021-02-23",
                     "total_vaccinations": 203,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.0
                 }
             ]
         },
@@ -56,7 +61,7 @@
                 {
                     "date": "2021-02-23",
                     "total_vaccinations": 197,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.01
                 }
             ]
         },
@@ -67,7 +72,7 @@
                 {
                     "date": "2021-02-23",
                     "total_vaccinations": 90,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.02
                 }
             ]
         },
@@ -78,7 +83,7 @@
                 {
                     "date": "2021-02-23",
                     "total_vaccinations": 580,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.01
                 }
             ]
         },
@@ -89,7 +94,7 @@
                 {
                     "date": "2021-02-23",
                     "total_vaccinations": 330,
-                    "total_vaccinations_per_100": NaN
+                    "total_vaccinations_per_100": 0.01
                 }
             ]
         }

@@ -65,7 +65,7 @@
     {
         "country_iso": "DK",
         "country_name": "Denmark",
-        "last_update": "2021-02-20",
+        "last_update": "2021-02-21",
         "first_update": "2020-12-27",
         "source_url": "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/DK.json",
@@ -74,7 +74,7 @@
     {
         "country_iso": "FR",
         "country_name": "France",
-        "last_update": "2021-02-20",
+        "last_update": "2021-02-21",
         "first_update": "2020-12-27",
         "source_url": "https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/FR.json",
@@ -92,7 +92,7 @@
     {
         "country_iso": "IN",
         "country_name": "India",
-        "last_update": "2021-02-21",
+        "last_update": "2021-02-22",
         "first_update": "2021-01-16",
         "source_url": "https://india-covid19vaccine.github.io",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/IN.json",
@@ -101,7 +101,7 @@
     {
         "country_iso": "IT",
         "country_name": "Italy",
-        "last_update": "2021-02-21",
+        "last_update": "2021-02-22",
         "first_update": "2020-12-27",
         "source_url": "https://github.com/italia/covid19-opendata-vaccini/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/IT.json",
@@ -110,7 +110,7 @@
     {
         "country_iso": "NO",
         "country_name": "Norway",
-        "last_update": "2021-02-19",
+        "last_update": "2021-02-22",
         "first_update": "2021-01-21",
         "source_url": "https://www.fhi.no/sv/vaksine/koronavaksinasjonsprogrammet/koronavaksinasjonsstatistikk/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/NO.json",
@@ -128,7 +128,7 @@
     {
         "country_iso": "SK",
         "country_name": "Slovakia",
-        "last_update": "2021-02-21",
+        "last_update": "2021-02-22",
         "first_update": "2021-01-04",
         "source_url": "https://github.com/Institut-Zdravotnych-Analyz/covid19-data/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/SK.json",
@@ -137,7 +137,7 @@
     {
         "country_iso": "ES",
         "country_name": "Spain",
-        "last_update": "2021-02-19",
+        "last_update": "2021-02-22",
         "first_update": "2021-01-04",
         "source_url": "https://github.com/civio/covid-vaccination-spain/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/ES.json",
@@ -164,7 +164,7 @@
     {
         "country_iso": "US",
         "country_name": "United States",
-        "last_update": "2021-02-21",
+        "last_update": "2021-02-22",
         "first_update": "2020-12-14",
         "source_url": "https://github.com/youyanggu/covid19-cdc-vaccination-data",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/US.json",
@@ -173,7 +173,7 @@
     {
         "country_iso": "GB",
         "country_name": "United Kingdom",
-        "last_update": "2021-02-20",
+        "last_update": "2021-02-21",
         "first_update": "2021-01-10",
         "source_url": "https://coronavirus.data.gov.uk/details/download",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/GB.json",
@@ -182,7 +182,7 @@
     {
         "country_iso": "PE",
         "country_name": "Peru",
-        "last_update": "2021-02-22",
+        "last_update": "2021-02-23",
         "first_update": "2021-02-12",
         "source_url": "https://gis.minsa.gob.pe/GisVisorVacunados/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/PE.json",
@@ -191,7 +191,7 @@
     {
         "country_iso": "TR",
         "country_name": "Turkey",
-        "last_update": "2021-02-22",
+        "last_update": "2021-02-23",
         "first_update": "2021-02-15",
         "source_url": "https://covid19asi.saglik.gov.tr/",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/TR.json",
@@ -200,7 +200,7 @@
     {
         "country_iso": "IS",
         "country_name": "Iceland",
-        "last_update": "2021-02-21",
+        "last_update": "2021-02-22",
         "first_update": "2021-02-19",
         "source_url": "https://e.infogram.com/c3bc3569-c86d-48a7-9d4c-377928f102bf",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/IS.json",
@@ -210,7 +210,7 @@
         "country_iso": "AU",
         "country_name": "Australia",
         "last_update": "2021-02-23",
-        "first_update": "2021-02-23",
+        "first_update": "2021-02-22",
         "source_url": "https://covidlive.com.au/report/vaccinations",
         "api_url_all": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AU.json",
         "api_url_latest": "https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/AU.json"

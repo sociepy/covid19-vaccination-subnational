@@ -1,0 +1,97 @@
+{
+    "country": "Australia",
+    "country_iso": "AU",
+    "last_update": "2021-02-23",
+    "first_update": "2021-02-23",
+    "source_url": "https://covidlive.com.au/report/vaccinations",
+    "data": [
+        {
+            "region_iso": "AU-ACT",
+            "region_name": "Australian Capital Territory",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 50,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        },
+        {
+            "region_iso": "AU-NSW",
+            "region_name": "New South Wales",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 1320,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        },
+        {
+            "region_iso": "AU-NT",
+            "region_name": "Northern Territory",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 88,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        },
+        {
+            "region_iso": "AU-QLD",
+            "region_name": "Queensland",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 203,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        },
+        {
+            "region_iso": "AU-SA",
+            "region_name": "South Australia",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 197,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        },
+        {
+            "region_iso": "AU-TAS",
+            "region_name": "Tasmania",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 90,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        },
+        {
+            "region_iso": "AU-VIC",
+            "region_name": "Victoria",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 580,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        },
+        {
+            "region_iso": "AU-WA",
+            "region_name": "Western Australia",
+            "data": [
+                {
+                    "date": "2021-02-23",
+                    "total_vaccinations": 330,
+                    "total_vaccinations_per_100": NaN
+                }
+            ]
+        }
+    ]
+}

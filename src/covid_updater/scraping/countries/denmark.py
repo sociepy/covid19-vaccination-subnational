@@ -1,11 +1,9 @@
 """
 Reference: https://github.com/owid/covid-19-data/blob/master/scripts/scripts/vaccinations/automations/batch/denmark.py
 """
-import urllib.request
-from datetime import datetime, timedelta
-import tabula
+import requests
 import pandas as pd
-from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
 from covid_updater.scraping.base import IncrementalScraper
 
 
@@ -14,105 +12,40 @@ class DenmarkScraper(IncrementalScraper):
         super().__init__(
             country="Denmark",
             country_iso="DK",
-            data_url="https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
+            data_url=(
+                "https://services5.arcgis.com/Hx7l9qUpAnKPyvNz/ArcGIS/rest/services/Vaccine_REG_linelist_gdb/"
+                "FeatureServer/{code}/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=*&f=pjson"
+            ),
             data_url_reference="https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
-            region_renaming={
-                "Ukendt**": "Others",
-                "Ukendt*": "Others",
-                "Ukendt": "Others",
-                "Sjælland": "Sjaelland",
-            },
+            region_renaming={"Sjælland": "Sjaelland"},
             column_renaming={
-                0: "region",
-                2: "people_vaccinated",
-                4: "people_fully_vaccinated",
+                "Regionsnavn_current": "region",
+                "antal_foerste_vacc": "people_vaccinated",
+                "antal_faerdig_vacc": "people_fully_vaccinated",
             },
+            do_cumsum_fields=[
+                "people_vaccinated",
+                "people_fully_vaccinated",
+                "total_vaccinations",
+            ],
         )
-        self.regions = [
-            "Hovedstaden",
-            "Midtjylland",
-            "Nordjylland",
-            "Sjælland",
-            "Syddanmark",
-        ]
 
-    def _load_tables_from_html(self):
-        html_page = urllib.request.urlopen(self.data_url)
-        soup = BeautifulSoup(html_page, "html.parser")
-        pdf_path = soup.find("a", text="Download her").get(
-            "href"
-        )  # Get path to newest pdf
-        # Get preliminary dataframe
-        column_string = {
-            "dtype": str,
-            "header": None,
-        }  # Force dtype to be object because of thousand separator
-        kwargs = {"pandas_options": column_string}
-        tables = tabula.read_pdf(pdf_path, pages="all", **kwargs)
-        return tables
-
-    def _get_date_from_tables(self, tables):
-        df = None
-        for tbl in tables:
-            if "Vaccinationsdato" in tbl[0].values:
-                df = pd.DataFrame(tbl)
-                break
-        if df is not None:
-            df = df.drop(0).dropna()
-            date = (
-                df.loc[:, 0]
-                .apply(lambda x: datetime.strptime(x, "%d-%m-%Y").strftime("%Y-%m-%d"))
-                .max()
-            )
-        else:
-            date = (datetime.now().date() - timedelta(days=1)).strftime("%Y-%m-%d")
-        return date
-
-    def _get_df_from_tables(self, tables):
-        for tbl in tables:
-            if "Region" in tbl[0].values:
-                df = pd.DataFrame(tbl)
-                break
-        df = df.astype(pd.StringDtype())
-        # if df.shape != (11, 7):
-        #    raise Exception("Shape of table changed!")
-        if not all(region in df[0].dropna().tolist() for region in self.regions):
-            raise Exception("Region missing!")
-        df = df.drop([0, 1, 2, 3, len(df) - 1])
+    def _load_dose(self, url, date_field):
+        data = requests.get(url).json()
+        df = pd.DataFrame.from_records(elem["attributes"] for elem in data["features"])
+        date = pd.to_datetime(df[date_field], unit="ms").dt.strftime("%Y-%m-%d")
+        df = df.assign(date=date)
         return df
-
-    def _remove_delimiter(self, x):
-        if not pd.isnull(x):
-            return int(x.replace(".", "").replace(",", ""))
-        else:
-            return 0
 
     def load_data(self):
         # Load
-        tables = self._load_tables_from_html()
-        df = self._get_df_from_tables(tables)
-        date = self._get_date_from_tables(tables)
-        df.loc[:, "date"] = date
-        return df
+        df_1 = self._load_dose(self.data_url.format(code=19), "first_vaccinedate")
+        df_2 = self._load_dose(self.data_url.format(code=20), "second_vaccinedate")
+        df_2 = df_2[["date", "Regionsnavn_current", "antal_faerdig_vacc"]]
+        return pd.merge(df_1, df_2, how="left", on=["date", "Regionsnavn_current"])
 
     def _process(self, df):
-        df.loc[:, "people_vaccinated"] = (
-            df.loc[:, "people_vaccinated"]
-            .apply(self._remove_delimiter)
-            .fillna(0)
-            .astype(int)
-        )
-        df.loc[:, "people_fully_vaccinated"] = (
-            df.loc[:, "people_fully_vaccinated"]
-            .apply(self._remove_delimiter)
-            .astype("Int64")
-        )
-        df.loc[:, "total_vaccinations"] = (
-            df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
-        )
-        return df
-
-    def _postprocess(self, df):
-        df = super()._postprocess(df)
-        df.loc[df["region"] == "Others", "location_iso"] = self.country_iso
+        df.loc[:, "total_vaccinations"] = df.loc[:, "people_vaccinated"].fillna(
+            0
+        ) + df.loc[:, "people_fully_vaccinated"].fillna(0)
         return df

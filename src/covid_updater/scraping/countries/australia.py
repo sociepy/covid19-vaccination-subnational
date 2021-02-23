@@ -48,19 +48,27 @@ class AustraliaScraper(IncrementalScraper):
                 ]
             ),
             "date",
-        ] = datetime.now(pytz.timezone("Australia/Canberra")).date()
-        df.loc[df["region"] == "Western Australia", "date"] = datetime.now(
-            pytz.timezone("Australia/Perth")
-        ).date()
-        df.loc[df["region"] == "Northern Territory", "date"] = datetime.now(
-            pytz.timezone("Australia/Darwin")
-        ).date()
-        df.loc[df["region"] == "South Australia", "date"] = datetime.now(
-            pytz.timezone("Australia/Adelaide")
-        ).date()
-        df.loc[df["region"] == "Queensland", "date"] = datetime.now(
-            pytz.timezone("Australia/Brisbane")
-        ).date()
+        ] = (
+            datetime.now(pytz.timezone("Australia/Canberra"))
+            .date()
+            .strftime("%Y-%m-%d")
+        )
+        df.loc[df["region"] == "Western Australia", "date"] = (
+            datetime.now(pytz.timezone("Australia/Perth")).date().strftime("%Y-%m-%d")
+        )
+        df.loc[df["region"] == "Northern Territory", "date"] = (
+            datetime.now(pytz.timezone("Australia/Darwin")).date().strftime("%Y-%m-%d")
+        )
+        df.loc[df["region"] == "South Australia", "date"] = (
+            datetime.now(pytz.timezone("Australia/Adelaide"))
+            .date()
+            .strftime("%Y-%m-%d")
+        )
+        df.loc[df["region"] == "Queensland", "date"] = (
+            datetime.now(pytz.timezone("Australia/Brisbane"))
+            .date()
+            .strftime("%Y-%m-%d")
+        )
         return df
 
     def _process(self, df):

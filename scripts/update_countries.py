@@ -10,6 +10,7 @@ from covid_updater.scraping import get_country_scraper
 ISO_CODES = [
     "AR",
     "AT",
+    "AU",
     "BE",
     "BR",
     "CA",

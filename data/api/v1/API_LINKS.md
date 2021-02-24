@@ -1,3 +1,6 @@
+# Subnational COVID-19 vaccination data: API
+### [**Home**](https://sociepy.org/covid19-vaccination-subnational/) | [**Download data**](data/vaccinations.csv) | [**GitHub**](https://github.com/sociepy/covid19-vaccination-subnational)
+
 | Country           | All data                                                                                           | Latest data                                                                                           |
 |:------------------|:---------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
 | 🇧🇪 Belgium        | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/BE.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BE.json) |

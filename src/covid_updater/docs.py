@@ -7,6 +7,7 @@ import flag
 def country_api_links_as_md(country_info_path, api_url):
     # Load tracking csv
     df = pd.read_csv(country_info_path)
+    df = df.sort_values("country")
 
     #  Prettify country + flag
     flags = df["country_iso"].apply(lambda x: flag.flag(x))

@@ -4,6 +4,28 @@ import pandas as pd
 import flag
 
 
+def country_api_links_as_md(country_info_path, api_url):
+    # Load tracking csv
+    df = pd.read_csv(country_info_path)
+
+    #  Prettify country + flag
+    flags = df["country_iso"].apply(lambda x: flag.flag(x))
+    df.loc[:, "Country"] = flags + " " + df.loc[:, "country"]
+
+    #  Build df
+    url_base = f"{api_url}/{{mode}}/country_by_iso/{{iso}}.json"
+    df["All data"] = df.country_iso.apply(
+        lambda x: "[link]({url})".format(url=url_base.format(mode="all", iso=x))
+    )
+    df["Latest data"] = df.country_iso.apply(
+        lambda x: "[link]({url})".format(url=url_base.format(mode="latest", iso=x))
+    )
+    df = df[["Country", "All data", "Latest data"]]
+
+    # Get markdown
+    return df.to_markdown(index=False)
+
+
 def country_info_csv_as_md(country_info_path):
     # Load tracking csv
     df = pd.read_csv(country_info_path)
@@ -49,3 +71,19 @@ def generate_readme(input_country_info, input_readme_template, output_readme):
     readme = readme.format(data_sources=table_md)
     with open(output_readme, "w") as f:
         f.write(readme)
+
+
+def generate_api_links(
+    api_url, input_country_info, input_api_links_template, output_api_links
+):
+    #  Load table
+    table_md = country_api_links_as_md(
+        country_info_path=input_country_info, api_url=api_url
+    )
+
+    # Export API LINKS
+    with open(input_api_links_template, "r") as f:
+        api_links = f.read()
+    api_links = api_links.format(table=table_md)
+    with open(output_api_links, "w") as f:
+        f.write(api_links)

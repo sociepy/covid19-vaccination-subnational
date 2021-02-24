@@ -16,6 +16,9 @@ POPULATION_DATA_PATH="data/population.csv"
 API_PATH="data/api/v1"
 README_TEMPLATE_PATH="_templates/README.template.md"
 README_PATH="README.md"
+API_LINKS_TEMPLATE_PATH="_templates/API_LINKS.template.md"
+API_LINKS_PATH="data/api/v1/API_LINKS.md"
+API_URL="https://sociepy.org/covid19-vaccination-subnational/"${API_PATH}
 
 
 # Update country data (data/countries/*/*.csv)
@@ -37,4 +40,5 @@ echo ">>> UPDATING API FILES <<<"
 python scripts/update_api_v1.py ${VACCINATIONS_DATA_PATH} ${COUNTRY_INFO_PATH} ${API_PATH}
 # Update docs
 echo ">>> UPDATING DOCS <<<"
-python scripts/update_docs.py ${COUNTRY_INFO_PATH} ${README_TEMPLATE_PATH} ${README_PATH}
+python scripts/update_docs.py ${COUNTRY_INFO_PATH} ${README_TEMPLATE_PATH} ${API_LINKS_TEMPLATE_PATH} \
+                              ${README_PATH} ${API_LINKS_PATH} ${API_URL}

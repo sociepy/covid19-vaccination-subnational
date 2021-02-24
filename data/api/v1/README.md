@@ -17,6 +17,7 @@ aria-label="Star sociepy/covid19-vaccination-subnational on GitHub">Star</a>
 
 For a given country, you can access [all the tracked data](#all-data) using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2):
 
+
 ```
 https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/[COUNTRY_ISO].json
 ```
@@ -28,6 +29,10 @@ https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_b
 ```
 
 ### Available countries:
+[List with all available countries](API_LINKS.md)
+
+Or visit
+
 [`https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json`](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/metadata.json)
 
 

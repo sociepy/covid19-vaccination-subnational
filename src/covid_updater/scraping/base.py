@@ -52,7 +52,7 @@ class Scraper:
         return df
 
     def _process(self, df):
-        raise NotImplementedError("Call child's method instead!")
+        return df
 
     def _postprocess(self, df):
         df = ISODB().merge(df, country_iso=self.country_iso, mode=self.mode_iso_merge)

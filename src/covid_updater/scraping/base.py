@@ -63,12 +63,13 @@ class Scraper:
         return df
 
     def process(self, df):
-        #  Common preprocessing
-        df = self._preprocess(df)
-        # Country-specific processing
-        df = self._process(df)
-        # Add ISO codes
-        df = self._postprocess(df)
+        if not df.empty:
+            #  Common preprocessing
+            df = self._preprocess(df)
+            # Country-specific processing
+            df = self._process(df)
+            # Add ISO codes
+            df = self._postprocess(df)
         return df
 
     def export(self, df, output_file):

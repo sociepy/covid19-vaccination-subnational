@@ -64,7 +64,14 @@ def main():
             "population": [233034, 16662, 7322, 30600, 30600 + 7322],
         }
     )
-    df = pd.concat([df, iso_is])
+    iso_lb = pd.DataFrame(
+        {
+            "region_iso": ["LB-BA", "LB-BH", "LB-AK", "LB-AS"],
+            "date": ["2014-12-30", "2015-06-30", "2015-06-30", "2015-06-30"],
+            "population": [361366, 416427, 389899, 807204],
+        }
+    )
+    df = pd.concat([df, iso_is, iso_lb])
     #  Export
     df.drop_duplicates()
     df = df[["region_iso", "date", "population"]]

@@ -1,3 +1,4 @@
+<div align="center">
 | Country           | All data                                                                                           | Latest data                                                                                           |
 |:------------------|:---------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
 | 🇧🇪 Belgium        | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/BE.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/BE.json) |
@@ -25,3 +26,4 @@
 | 🇮🇸 Iceland        | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/IS.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/IS.json) |
 | 🇦🇺 Australia      | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/AU.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/AU.json) |
 | 🇱🇧 Lebanon        | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/LB.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/LB.json) |
+</div>

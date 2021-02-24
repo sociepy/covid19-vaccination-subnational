@@ -47,16 +47,15 @@ class LebanonScraper(IncrementalScraper):
             },
         )
 
-    def _load_json_request(self, date):
+    def _load_json_request(self, date, date_start=None):
         this_directory = os.path.abspath(os.path.dirname(__file__))
         path = os.path.join(this_directory, "assets", "lebanon.json.txt")
         with open(path, "r") as f:
             json_field = f.read()
-        json_field = json_field.replace(
-            "__VAR_date_start__", date.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
-        ).replace(
-            "__VAR_date_end__",
-            (date + timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
+        if date_start is None:
+            date_start = "2021-02-01T00:00:00.000Z"
+        json_field = json_field.replace("__VAR_date_start__", date_start).replace(
+            "__VAR_date_end__", date.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
         )
         return json.loads(json_field)
 
@@ -79,13 +78,13 @@ class LebanonScraper(IncrementalScraper):
 
     def load_data(self, date=None):
         if date is None:
-            date = datetime.now().date()
+            date = datetime.now()
         data = self._load_data_raw(date)
         return pd.DataFrame(
             [
                 {
                     "region": elem["key"],
-                    "total_vaccinations": elem["1"]["value"],
+                    "total_vaccinations": elem["3"]["value"],
                     "date": date.strftime("%Y-%m-%d"),
                 }
                 for elem in data["aggregations"]["2"]["buckets"]

@@ -22,6 +22,7 @@ from covid_updater.scraping.countries.peru import PeruScraper
 from covid_updater.scraping.countries.turkey import TurkeyScraper
 from covid_updater.scraping.countries.iceland import IcelandScraper
 from covid_updater.scraping.countries.australia import AustraliaScraper
+from covid_updater.scraping.countries.lebanon import LebanonScraper
 
 
 scrappers = [
@@ -49,6 +50,7 @@ scrappers = [
     TurkeyScraper(),
     IcelandScraper(),
     AustraliaScraper(),
+    LebanonScraper(),
 ]
 scrappers_dict = {scrapper.country_iso: scrapper for scrapper in scrappers}
 iso_codes = list(scrappers_dict.keys())

@@ -27,14 +27,16 @@ def main():
 
     print("Adding indices relative to population")
 
-    # Load data
+    # Load population data
     df_pop = pd.read_csv(args.input_population_path, index_col=False)
     df_pop = df_pop.drop_duplicates()
-    df_pop = df_pop.loc[
-        df_pop["date"] == df_pop["date"].max(), ["region_iso", "population"]
+    # Get latest population value for each region
+    df_dates = pd.DataFrame(df_pop.groupby("region_iso").date.max()).reset_index()
+    df_pop = df_pop.merge(df_dates, on=["region_iso", "date"])[
+        ["region_iso", "population"]
     ]
+    # Join vaccination + population data
     df_vac = pd.read_csv(args.input_vaccination_path, index_col=False)
-
     df = df_vac.merge(df_pop, on="region_iso", how="left")
 
     columns = ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated"]
@@ -45,7 +47,6 @@ def main():
 
     #  Process data
     df.loc[:, columns] = df.loc[:, columns].astype("Int64")
-
     df = df.drop(columns=["population"])
     df = df.sort_values(by=["location", "region", "date"])
     df.to_csv(args.input_vaccination_path, index=False)

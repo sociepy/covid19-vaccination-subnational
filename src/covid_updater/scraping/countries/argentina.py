@@ -69,6 +69,18 @@ class ArgentinaScraper(IncrementalScraper):
         return df
 
     def _process(self, df):
+        cols = [
+            col
+            for col in df.columns.tolist()
+            if col
+            not in [
+                "vacuna_nombre",
+                "people_vaccinated",
+                "total_vaccinations",
+                "people_fully_vaccinated",
+            ]
+        ]
+        df = df.drop(columns=["vacuna_nombre"]).groupby(cols, as_index=False).sum()
         df.loc[:, "total_vaccinations"] = (
             df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
         )

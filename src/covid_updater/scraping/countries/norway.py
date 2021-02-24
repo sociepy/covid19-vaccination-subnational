@@ -1,6 +1,8 @@
 import json
 import requests
 import pandas as pd
+from datetime import datetime
+import pytz
 from covid_updater.scraping.base import IncrementalScraper
 from covid_updater.scraping.utils import load_driver
 
@@ -32,10 +34,15 @@ class NorwayScraper(IncrementalScraper):
             },
         )
 
-    def _get_date(self):
-        driver = load_driver(self.data_url)
-        elem = driver.find_element_by_class_name("fhi-date")
-        date = elem.find_elements_by_tag_name("time")[-1].get_attribute("datetime")
+    def _get_date(self, scrape=False):
+        if scrape:
+            driver = load_driver(self.data_url)
+            elem = driver.find_element_by_class_name("fhi-date")
+            date = elem.find_elements_by_tag_name("time")[-1].get_attribute("datetime")
+        else:
+            date = (
+                datetime.now(pytz.timezone("Europe/Oslo")).date().strftime("%Y-%m-%d")
+            )
         return date
 
     def load_data(self):

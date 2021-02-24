@@ -71,7 +71,10 @@ def main():
             "population": [361366, 416427, 389899, 807204],
         }
     )
-    df = pd.concat([df, iso_is, iso_lb])
+    iso_fr = pd.DataFrame(
+        {"region_iso": ["FR-COR"], "date": ["2019-12-31"], "population": [339178]}
+    )
+    df = pd.concat([df, iso_is, iso_lb, iso_fr])
     #  Export
     df.drop_duplicates()
     df = df[["region_iso", "date", "population"]]

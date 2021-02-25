@@ -53,7 +53,7 @@ class LebanonScraper(IncrementalScraper):
             "https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/src/covid_updater/"
             "scraping/countries/assets/lebanon.json.txt"
         )
-        json_field = requests.get(link).text
+        json_field = requests.get(url).text
         if date_start is None:
             date_start = "2021-02-01T00:00:00.000Z"
         json_field = json_field.replace("__VAR_date_start__", date_start).replace(

@@ -49,9 +49,11 @@ class LebanonScraper(IncrementalScraper):
 
     def _load_json_request(self, date, date_start=None):
         this_directory = os.path.abspath(os.path.dirname(__file__))
-        path = os.path.join(this_directory, "assets", "lebanon.json.txt")
-        with open(path, "r") as f:
-            json_field = f.read()
+        url = (
+            "https://raw.githubusercontent.com/sociepy/covid19-vaccination-subnational/main/src/covid_updater/"
+            "scraping/countries/assets/lebanon.json.txt"
+        )
+        json_field = requests.get(link).text
         if date_start is None:
             date_start = "2021-02-01T00:00:00.000Z"
         json_field = json_field.replace("__VAR_date_start__", date_start).replace(

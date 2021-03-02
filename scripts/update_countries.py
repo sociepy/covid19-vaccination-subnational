@@ -23,7 +23,7 @@ ISO_CODES = [
     "IS",
     "IT",
     "NO",
-    "PL",
+    # "PL",
     "SK",
     "ES",
     "SE",

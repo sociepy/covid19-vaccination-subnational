@@ -1,64 +1,64 @@
 {
     "country": "Australia",
     "country_iso": "AU",
-    "last_update": "2021-02-28",
+    "last_update": "2021-03-02",
     "source_url": "https://covidlive.com.au/report/vaccinations",
     "data": [
         {
             "region_name": "Australian Capital Territory",
             "region_iso": "AU-ACT",
-            "date": "2021-02-27",
-            "total_vaccinations": 980,
-            "total_vaccinations_per_100": 0.23
+            "date": "2021-03-02",
+            "total_vaccinations": 1173,
+            "total_vaccinations_per_100": 0.27
         },
         {
             "region_name": "New South Wales",
             "region_iso": "AU-NSW",
-            "date": "2021-02-26",
-            "total_vaccinations": 7500,
-            "total_vaccinations_per_100": 0.09
+            "date": "2021-03-02",
+            "total_vaccinations": 12424,
+            "total_vaccinations_per_100": 0.15
         },
         {
             "region_name": "Northern Territory",
             "region_iso": "AU-NT",
-            "date": "2021-02-26",
-            "total_vaccinations": 581,
-            "total_vaccinations_per_100": 0.24
+            "date": "2021-03-02",
+            "total_vaccinations": 985,
+            "total_vaccinations_per_100": 0.4
         },
         {
             "region_name": "Queensland",
             "region_iso": "AU-QLD",
-            "date": "2021-02-27",
-            "total_vaccinations": 2030,
-            "total_vaccinations_per_100": 0.04
+            "date": "2021-03-02",
+            "total_vaccinations": 3010,
+            "total_vaccinations_per_100": 0.06
         },
         {
             "region_name": "South Australia",
             "region_iso": "AU-SA",
-            "date": "2021-02-28",
-            "total_vaccinations": 1481,
-            "total_vaccinations_per_100": 0.08
+            "date": "2021-03-02",
+            "total_vaccinations": 1920,
+            "total_vaccinations_per_100": 0.11
         },
         {
             "region_name": "Tasmania",
             "region_iso": "AU-TAS",
-            "date": "2021-02-26",
-            "total_vaccinations": 1159,
-            "total_vaccinations_per_100": 0.21
+            "date": "2021-03-01",
+            "total_vaccinations": 1165,
+            "total_vaccinations_per_100": 0.22
         },
         {
             "region_name": "Victoria",
             "region_iso": "AU-VIC",
-            "date": "2021-02-28",
-            "total_vaccinations": 3762,
-            "total_vaccinations_per_100": 0.06
+            "date": "2021-03-02",
+            "total_vaccinations": 5020,
+            "total_vaccinations_per_100": 0.08
         },
         {
             "region_name": "Western Australia",
             "region_iso": "AU-WA",
-            "date": "2021-02-28",
-            "total_vaccinations": 2584,
-            "total_vaccinations_per_100": 0.1
+            "date": "2021-03-02",
+            "total_vaccinations": 2879,
+            "total_vaccinations_per_100": 0.11
         }
     ]
 }

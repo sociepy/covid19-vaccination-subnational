@@ -13,6 +13,7 @@ def main():
     iso_rename = {
         "Friuli-Venezia Giulia": "Friuli Venezia Giulia",
         "Brussels Hoofdstedelijk Gewest": "Brussels",
+        "Saha, Respublika": "Sakha, Respublika",
     }
 
     #  Add new entries

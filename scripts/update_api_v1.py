@@ -7,6 +7,7 @@ import os
 import argparse
 import json
 import pandas as pd
+from covid_updater.utils import COLUMNS_INT
 
 
 region_fields = ["region", "region_iso"]
@@ -38,15 +39,22 @@ def get_parser():
     return parser
 
 
+def _process_dix(dix):
+    # Filter NaNs
+    dix_proc = {k: v for k, v in dix.items() if not pd.isnull(v)}
+    dix_proc = {k: int(v) if k in COLUMNS_INT else v for k, v in dix_proc.items()}
+    return dix_proc
+
+
 def build_api_json(df, country, country_iso, source):
     df = df[region_fields + data_fields]
-    df = df.astype({"total_vaccinations": int})
     df = df[df.region_iso != "-"]
     dfg = df.groupby(region_fields).apply(
         lambda x: x.drop(columns=region_fields).to_dict(orient="records")
     )
     dfg.name = "data"
     data = dfg.tolist()
+    data = [[_process_dix(sample) for sample in samples] for samples in data]
     regions = dfg.index
     api_json_all = {
         "country": country,
@@ -61,6 +69,7 @@ def build_api_json(df, country, country_iso, source):
     }
     dfg = df.groupby(region_fields)[data_fields].max()
     data = dfg.reset_index().rename(columns=rename_fields).to_dict(orient="records")
+    data = [_process_dix(sample) for sample in data]
     api_json_latest = {
         "country": country,
         "country_iso": country_iso,

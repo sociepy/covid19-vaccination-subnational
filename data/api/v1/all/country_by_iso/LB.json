@@ -1,7 +1,7 @@
 {
     "country": "Lebanon",
     "country_iso": "LB",
-    "last_update": "2021-03-02",
+    "last_update": "2021-03-03",
     "first_update": "2021-02-14",
     "source_url": "https://impact.cib.gov.lb/home/dashboard/vaccine",
     "data": [
@@ -72,6 +72,11 @@
                 {
                     "date": "2021-03-02",
                     "total_vaccinations": 1397,
+                    "total_vaccinations_per_100": 0.36
+                },
+                {
+                    "date": "2021-03-03",
+                    "total_vaccinations": 1398,
                     "total_vaccinations_per_100": 0.36
                 }
             ]
@@ -306,6 +311,11 @@
                     "date": "2021-03-02",
                     "total_vaccinations": 8010,
                     "total_vaccinations_per_100": 2.22
+                },
+                {
+                    "date": "2021-03-03",
+                    "total_vaccinations": 8018,
+                    "total_vaccinations_per_100": 2.22
                 }
             ]
         },
@@ -387,6 +397,11 @@
                     "date": "2021-03-02",
                     "total_vaccinations": 5889,
                     "total_vaccinations_per_100": 0.73
+                },
+                {
+                    "date": "2021-03-03",
+                    "total_vaccinations": 5895,
+                    "total_vaccinations_per_100": 0.73
                 }
             ]
         },
@@ -467,6 +482,11 @@
                 {
                     "date": "2021-03-02",
                     "total_vaccinations": 4277,
+                    "total_vaccinations_per_100": 0.79
+                },
+                {
+                    "date": "2021-03-03",
+                    "total_vaccinations": 4278,
                     "total_vaccinations_per_100": 0.79
                 }
             ]
@@ -554,6 +574,11 @@
                     "date": "2021-03-02",
                     "total_vaccinations": 19566,
                     "total_vaccinations_per_100": 1.32
+                },
+                {
+                    "date": "2021-03-03",
+                    "total_vaccinations": 19591,
+                    "total_vaccinations_per_100": 1.32
                 }
             ]
         },
@@ -634,6 +659,11 @@
                 {
                     "date": "2021-03-02",
                     "total_vaccinations": 2890,
+                    "total_vaccinations_per_100": 0.84
+                },
+                {
+                    "date": "2021-03-03",
+                    "total_vaccinations": 2891,
                     "total_vaccinations_per_100": 0.84
                 }
             ]

@@ -49,7 +49,7 @@ def keep_min_date(df):
     # Remove NaNs
     count_cols = [col for col in COLUMNS_INT if col in cols]
     df.loc[:, count_cols] = df.loc[:, count_cols].fillna(-1).astype(int)
-    #  Goup by
+    #  Group by
     df = df.groupby(by=[col for col in df.columns if col != "date"]).min().reset_index()
 
     #  Bring NaNs back

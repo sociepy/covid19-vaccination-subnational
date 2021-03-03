@@ -7,7 +7,7 @@ class AustriaScraper(Scraper):
         super().__init__(
             country="Austria",
             country_iso="AT",
-            data_url="https://info.gesundheitsministerium.gv.at/data/timeline.csv",
+            data_url="https://info.gesundheitsministerium.gv.at/data/timeline-eimpfpass.csv",
             data_url_reference="https://info.gesundheitsministerium.gv.at/",
             region_renaming={
                 "Kärnten": "Karnten",

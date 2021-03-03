@@ -26,7 +26,7 @@ from covid_updater.scraping.countries.lebanon import LebanonScraper
 from covid_updater.scraping.countries.russia import RussiaScraper
 
 
-scrappers = [
+scrapers = [
     AustriaScraper(),
     IndiaScraper(),
     SwedenScraper(),
@@ -54,8 +54,9 @@ scrappers = [
     LebanonScraper(),
     RussiaScraper(),
 ]
-scrappers_dict = {scrapper.country_iso: scrapper for scrapper in scrappers}
-iso_codes = list(scrappers_dict.keys())
+automated_countries = [scrapper.country for scrapper in scrapers]
+scrapers_dict = {scrapper.country_iso: scrapper for scrapper in scrapers}
+iso_codes = list(scrapers_dict.keys())
 
 
 def get_country_scraper(iso_code: str):
@@ -71,8 +72,8 @@ def get_country_scraper(iso_code: str):
         ValueError: If no scraper available for given iso code.
 
     """
-    if iso_code in scrappers_dict:
-        return scrappers_dict.get(iso_code)
+    if iso_code in scrapers_dict:
+        return scrapers_dict.get(iso_code)
     else:
         raise ValueError(
             f"Not available iso code. Available iso codes are: {iso_codes}"

@@ -22,7 +22,7 @@ def build_query(region_iso_list: list):
     return query
 
 
-def get_population(region_iso_list: list):
+def get_population(region_iso_list: list, verbose: bool = False):
     """Get population from given regions.
 
     Regions identified by `region_iso`.
@@ -38,6 +38,7 @@ def get_population(region_iso_list: list):
     dfs = []
     for i in range(num_iter):
         query = build_query(region_iso_list[i * chunk_size : (i + 1) * chunk_size])
+        print(query) if verbose else 0
         res = qwikidata.sparql.return_sparql_query_results(query)
         res = [
             (item["value"]["value"], int(item["population"]["value"]))

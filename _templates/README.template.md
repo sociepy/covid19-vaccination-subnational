@@ -87,6 +87,8 @@ $ bash scripts/update_all.sh
 ```
 
 ### Add new countries
+**New: Use [this notebook](docs/add-new-scraper.ipynb) as a guideline on how to add a new country scraper!**
+
 If you know of any reference publishing vaccination regional data for other countries, your contribution is very much
 appreciated! It is extremely helpfull if you could [report this in the issues](https://github.com/sociepy/covid19-vaccination-subnational/issues/new). Also, if you feel like automating it by
 yourself (that'd be awesome!), please fork this repository and issue a pull request

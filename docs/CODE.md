@@ -44,3 +44,8 @@ To check the currently available ISO information use the following code.
 3           AD               Ordino      AD-05
 4           AD  Sant Julia de Loria      AD-06
 ```
+
+## Contribute
+
+If you found new country data available, consider implementing the corresponding scraper. Find instructions and a
+tutorial in notebook [add-new-scraper.ipynb](add-new-scraper.ipynb).

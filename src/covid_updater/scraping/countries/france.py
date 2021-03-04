@@ -39,7 +39,7 @@ class FranceScraper(IncrementalScraper):
 
     def load_data(self):
         # Load
-        df = pd.read_csv(self.data_url)
+        df = pd.read_csv(self.data_url, sep=";")
         df = df[df["reg"] != 7]
         return df
 

@@ -41,6 +41,7 @@ def main():
         ["NO", "NO-34", "Innlandet"],
         ["CL", "CL-NB", "Nuble"],
         ["IN", "IN-LA", "Ladakh"],
+        ["FI", "FI-01", "Aland"],
     ]
 
     db.rename_values("subdivision_name", iso_rename)

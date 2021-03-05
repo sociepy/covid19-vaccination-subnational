@@ -26,6 +26,16 @@ class AustriaScraper(Scraper):
         )
 
     def load_data(self):
+        #  Avoid SSL "kew too small" error
+        # ref: https://stackoverflow.com/questions/38015537/python-requests-exceptions-sslerror-dh-key-too-small
+        requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += "HIGH:!DH:!aNULL"
+        try:
+            requests.packages.urllib3.contrib.pyopenssl.DEFAULT_SSL_CIPHER_LIST += (
+                "HIGH:!DH:!aNULL"
+            )
+        except AttributeError:
+            # no pyopenssl support used / needed / available
+            pass
         # Load
         raw = requests.get(self.data_url)
         text = raw.content.decode()

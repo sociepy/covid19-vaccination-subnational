@@ -1,3 +1,5 @@
+import io
+import requests
 import pandas as pd
 from covid_updater.scraping.base import Scraper
 
@@ -7,7 +9,7 @@ class AustriaScraper(Scraper):
         super().__init__(
             country="Austria",
             country_iso="AT",
-            data_url="https://info.gesundheitsministerium.gv.at/data/timeline-eimpfpass.csv",
+            data_url="http://info.gesundheitsministerium.gv.at/data/timeline-eimpfpass.csv",
             data_url_reference="https://info.gesundheitsministerium.gv.at/",
             region_renaming={
                 "Kärnten": "Karnten",
@@ -25,8 +27,10 @@ class AustriaScraper(Scraper):
 
     def load_data(self):
         # Load
-        df = pd.read_csv(
-            self.data_url,
+        raw = requests.get(self.data_url)
+        text = raw.content.decode()
+        return pd.read_csv(
+            io.StringIO(text),
             sep=";",
             usecols=[
                 "Datum",
@@ -36,7 +40,6 @@ class AustriaScraper(Scraper):
                 "Vollimmunisierte",
             ],
         )
-        return df
 
     def _process(self, df):
         # Column proccess

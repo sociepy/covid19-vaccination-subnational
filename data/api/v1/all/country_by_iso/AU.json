@@ -111,7 +111,9 @@
                     "total_vaccinations_per_100": 0.21
                 },
                 {
-                    "date": "2021-03-06"
+                    "date": "2021-03-06",
+                    "total_vaccinations": 19027,
+                    "total_vaccinations_per_100": 0.23
                 }
             ]
         },
@@ -367,6 +369,11 @@
                     "date": "2021-03-05",
                     "total_vaccinations": 10907,
                     "total_vaccinations_per_100": 0.16
+                },
+                {
+                    "date": "2021-03-06",
+                    "total_vaccinations": 12851,
+                    "total_vaccinations_per_100": 0.19
                 }
             ]
         },

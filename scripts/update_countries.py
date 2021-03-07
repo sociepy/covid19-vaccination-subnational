@@ -34,6 +34,7 @@ ISO_CODES = [
     "TR",
     "LB",
     "RU",
+    "FI",
 ]
 ISO_CODES.sort()
 OUTPUT_PATH = os.path.join("data", "countries")

@@ -63,7 +63,7 @@ class FinlandScraper(Scraper):
         # Regions to be ignored
         df = df[~df["region"].isin(["All areas", "Other areas"])]
         # Avoid duplicates
-        df = df.groupby(["region", "date"]).sum().reset_index()
+        df = df.groupby(["location", "region", "date"]).sum().reset_index()
         # Add missing fields
         df.loc[:, "total_vaccinations"] = (
             df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]

@@ -1,7 +1,7 @@
 {
     "country": "Peru",
     "country_iso": "PE",
-    "last_update": "2021-03-07",
+    "last_update": "2021-03-08",
     "first_update": "2021-02-12",
     "source_url": "https://gis.minsa.gob.pe/GisVisorVacunados/",
     "data": [
@@ -1867,6 +1867,11 @@
                 {
                     "date": "2021-03-07",
                     "total_vaccinations": 7324,
+                    "total_vaccinations_per_100": 0.83
+                },
+                {
+                    "date": "2021-03-08",
+                    "total_vaccinations": 7326,
                     "total_vaccinations_per_100": 0.83
                 }
             ]

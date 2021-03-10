@@ -52,7 +52,7 @@ class KoreaScraper(IncrementalScraper):
         return df.drop(columns=["delete"])
 
     def _process(self, df):
-        df = df.assign(date=datetime.now(pytz.timezone("Atlantic/Reykjavik")).date())
+        df = df.assign(date=datetime.now(pytz.timezone("Asia/Seoul")).date())
         df.loc[:, "total_vaccinations"] = (
             df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
         )

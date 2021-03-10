@@ -31,3 +31,4 @@
 | 🇹🇷 Turkey         | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/TR.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/TR.json) |
 | 🇬🇧 United Kingdom | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/GB.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/GB.json) |
 | 🇺🇸 United States  | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/US.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/US.json) |
+| 🇺🇾 Uruguay        | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/all/country_by_iso/UY.json) | [link](https://sociepy.org/covid19-vaccination-subnational/data/api/v1/latest/country_by_iso/UY.json) |

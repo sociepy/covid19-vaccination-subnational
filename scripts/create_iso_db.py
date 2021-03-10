@@ -42,6 +42,7 @@ def main():
         ["CL", "CL-NB", "Nuble"],
         ["IN", "IN-LA", "Ladakh"],
         ["FI", "FI-01", "Aland"],
+        ["KR", "KR-50", "Sejong-teukbyeoljachisi"],
     ]
 
     db.rename_values("subdivision_name", iso_rename)

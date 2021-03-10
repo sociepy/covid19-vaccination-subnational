@@ -74,7 +74,48 @@ def main():
     iso_fr = pd.DataFrame(
         {"region_iso": ["FR-COR"], "date": ["2019-12-31"], "population": [339178]}
     )
-    df = pd.concat([df, iso_is, iso_lb, iso_fr])
+    iso_uy = pd.DataFrame(
+        {
+            "region_iso": [
+                "UY-AR",
+                "UY-CL",
+                "UY-CO",
+                "UY-DU",
+                "UY-FS",
+                "UY-FD",
+                "UY-MA",
+                "UY-PA",
+                "UY-RN",
+                "UY-RV",
+                "UY-RO",
+                "UY-SA",
+                "UY-SJ",
+                "UY-SO",
+                "UY-TA",
+                "UY-TT",
+            ],
+            "date": ["2011-01-01"] * 16,
+            "population": [
+                73378,
+                84698,
+                123203,
+                57088,
+                25050,
+                67048,
+                164300,
+                113124,
+                54765,
+                103493,
+                68088,
+                124878,
+                108309,
+                82595,
+                90053,
+                48134,
+            ],
+        }
+    )
+    df = pd.concat([df, iso_is, iso_lb, iso_fr, iso_uy])
     #  Export
     df.drop_duplicates()
     df = df[["region_iso", "date", "population"]]

@@ -9,7 +9,7 @@ class UruguayScraper(IncrementalScraper):
             country="Uruguay",
             country_iso="UY",
             data_url="https://msp.gxportal.net/data-vaccine.json",
-            data_url_reference="https://monitor.uruguaysevacuna.gub.uy//",
+            data_url_reference="https://monitor.uruguaysevacuna.gub.uy/",
             region_renaming={
                 "Tacuarembó": "Tacuarembo",
                 "Paysandú": "Paysandu",

@@ -36,6 +36,7 @@ ISO_CODES = [
     "RU",
     "FI",
     "KR",
+    "UY",
 ]
 ISO_CODES.sort()
 OUTPUT_PATH = os.path.join("data", "countries")

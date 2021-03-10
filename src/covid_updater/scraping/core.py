@@ -26,6 +26,7 @@ from covid_updater.scraping.countries.lebanon import LebanonScraper
 from covid_updater.scraping.countries.russia import RussiaScraper
 from covid_updater.scraping.countries.finland import FinlandScraper
 from covid_updater.scraping.countries.korea import KoreaScraper
+from covid_updater.scraping.countries.uruguay import UruguayScraper
 
 
 scrapers = [
@@ -57,6 +58,7 @@ scrapers = [
     RussiaScraper(),
     FinlandScraper(),
     KoreaScraper(),
+    UruguayScraper(),
 ]
 automated_countries = [scrapper.country for scrapper in scrapers]
 scrapers_dict = {scrapper.country_iso: scrapper for scrapper in scrapers}

@@ -1,7 +1,7 @@
 {
     "country": "Australia",
     "country_iso": "AU",
-    "last_update": "2021-03-11",
+    "last_update": "2021-03-12",
     "first_update": "2021-02-22",
     "source_url": "https://covidlive.com.au/report/vaccinations",
     "data": [
@@ -428,6 +428,11 @@
                     "date": "2021-03-11",
                     "total_vaccinations": 3255,
                     "total_vaccinations_per_100": 0.6
+                },
+                {
+                    "date": "2021-03-12",
+                    "total_vaccinations": 3661,
+                    "total_vaccinations_per_100": 0.68
                 }
             ]
         },
@@ -519,6 +524,11 @@
                     "date": "2021-03-11",
                     "total_vaccinations": 22317,
                     "total_vaccinations_per_100": 0.33
+                },
+                {
+                    "date": "2021-03-12",
+                    "total_vaccinations": 25948,
+                    "total_vaccinations_per_100": 0.39
                 }
             ]
         },

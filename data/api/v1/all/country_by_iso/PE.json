@@ -1,7 +1,7 @@
 {
     "country": "Peru",
     "country_iso": "PE",
-    "last_update": "2021-03-12",
+    "last_update": "2021-03-13",
     "first_update": "2021-02-12",
     "source_url": "https://gis.minsa.gob.pe/GisVisorVacunados/",
     "data": [
@@ -580,6 +580,11 @@
                 {
                     "date": "2021-03-12",
                     "total_vaccinations": 19922,
+                    "total_vaccinations_per_100": 1.44
+                },
+                {
+                    "date": "2021-03-13",
+                    "total_vaccinations": 19936,
                     "total_vaccinations_per_100": 1.44
                 }
             ]
@@ -1558,6 +1563,11 @@
                     "date": "2021-03-12",
                     "total_vaccinations": 12800,
                     "total_vaccinations_per_100": 1.5
+                },
+                {
+                    "date": "2021-03-13",
+                    "total_vaccinations": 12716,
+                    "total_vaccinations_per_100": 1.49
                 }
             ]
         },
@@ -1976,6 +1986,11 @@
                     "date": "2021-03-12",
                     "total_vaccinations": 15191,
                     "total_vaccinations_per_100": 1.27
+                },
+                {
+                    "date": "2021-03-13",
+                    "total_vaccinations": 15305,
+                    "total_vaccinations_per_100": 1.28
                 }
             ]
         },
@@ -2126,6 +2141,11 @@
                 {
                     "date": "2021-03-12",
                     "total_vaccinations": 184293,
+                    "total_vaccinations_per_100": 1.94
+                },
+                {
+                    "date": "2021-03-13",
+                    "total_vaccinations": 184312,
                     "total_vaccinations_per_100": 1.94
                 }
             ]
@@ -2515,6 +2535,11 @@
                     "date": "2021-03-12",
                     "total_vaccinations": 4777,
                     "total_vaccinations_per_100": 2.73
+                },
+                {
+                    "date": "2021-03-13",
+                    "total_vaccinations": 4809,
+                    "total_vaccinations_per_100": 2.75
                 }
             ]
         },

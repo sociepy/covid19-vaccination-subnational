@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-03-19",
+    "last_update": "2021-03-20",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -353,6 +353,11 @@
                     "date": "2021-03-19",
                     "total_vaccinations": 24393759,
                     "total_vaccinations_per_100": 44.14
+                },
+                {
+                    "date": "2021-03-20",
+                    "total_vaccinations": 25150632,
+                    "total_vaccinations_per_100": 45.51
                 }
             ]
         },
@@ -704,6 +709,11 @@
                     "date": "2021-03-19",
                     "total_vaccinations": 738286,
                     "total_vaccinations_per_100": 39.65
+                },
+                {
+                    "date": "2021-03-20",
+                    "total_vaccinations": 746254,
+                    "total_vaccinations_per_100": 40.08
                 }
             ]
         },
@@ -1053,8 +1063,13 @@
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 2292553,
-                    "total_vaccinations_per_100": 42.42
+                    "total_vaccinations": 2322052,
+                    "total_vaccinations_per_100": 42.96
+                },
+                {
+                    "date": "2021-03-20",
+                    "total_vaccinations": 2365128,
+                    "total_vaccinations_per_100": 43.76
                 }
             ]
         },
@@ -1396,6 +1411,11 @@
                     "date": "2021-03-19",
                     "total_vaccinations": 1561360,
                     "total_vaccinations_per_100": 50.16
+                },
+                {
+                    "date": "2021-03-20",
+                    "total_vaccinations": 1597728,
+                    "total_vaccinations_per_100": 51.32
                 }
             ]
         }

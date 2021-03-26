@@ -1,7 +1,7 @@
 {
     "country": "Uruguay",
     "country_iso": "UY",
-    "last_update": "2021-03-25",
+    "last_update": "2021-03-26",
     "first_update": "2021-03-10",
     "source_url": "https://monitor.uruguaysevacuna.gub.uy/",
     "data": [
@@ -164,6 +164,11 @@
                     "date": "2021-03-25",
                     "total_vaccinations": 40443,
                     "total_vaccinations_per_100": 6.87
+                },
+                {
+                    "date": "2021-03-26",
+                    "total_vaccinations": 40445,
+                    "total_vaccinations_per_100": 6.87
                 }
             ]
         },
@@ -239,6 +244,11 @@
                 {
                     "date": "2021-03-25",
                     "total_vaccinations": 15098,
+                    "total_vaccinations_per_100": 17.83
+                },
+                {
+                    "date": "2021-03-26",
+                    "total_vaccinations": 15101,
                     "total_vaccinations_per_100": 17.83
                 }
             ]

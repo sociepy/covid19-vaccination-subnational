@@ -33,7 +33,7 @@ ISO_CODES = [
     "PE",
     "TR",
     "LB",
-    # "RU",
+    "RU",
     "FI",
     "KR",
     "UY",

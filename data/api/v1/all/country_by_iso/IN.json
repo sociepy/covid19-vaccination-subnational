@@ -1,14 +1,19 @@
 {
     "country": "India",
     "country_iso": "IN",
-    "last_update": "2021-03-30",
-    "first_update": "2021-01-16",
+    "last_update": "2021-03-31",
+    "first_update": "201-02-10",
     "source_url": "https://india-covid19vaccine.github.io",
     "data": [
         {
             "region_iso": "IN-AN",
             "region_name": "Andaman and Nicobar Islands",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 3413,
+                    "total_vaccinations_per_100": 0.96
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 225,
@@ -83,11 +88,6 @@
                     "date": "2021-02-07",
                     "total_vaccinations": 3397,
                     "total_vaccinations_per_100": 0.95
-                },
-                {
-                    "date": "2021-02-09",
-                    "total_vaccinations": 3413,
-                    "total_vaccinations_per_100": 0.96
                 },
                 {
                     "date": "2021-02-11",
@@ -271,6 +271,11 @@
             "region_name": "Andhra Pradesh",
             "data": [
                 {
+                    "date": "201-02-10",
+                    "total_vaccinations": 335268,
+                    "total_vaccinations_per_100": 0.68
+                },
+                {
                     "date": "2021-01-16",
                     "total_vaccinations": 19108,
                     "total_vaccinations_per_100": 0.04
@@ -369,11 +374,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 325538,
                     "total_vaccinations_per_100": 0.66
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 335268,
-                    "total_vaccinations_per_100": 0.68
                 },
                 {
                     "date": "2021-02-11",
@@ -584,6 +584,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 2504479,
                     "total_vaccinations_per_100": 5.07
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 2605169,
+                    "total_vaccinations_per_100": 5.28
                 }
             ]
         },
@@ -591,6 +596,11 @@
             "region_iso": "IN-AR",
             "region_name": "Arunachal Pradesh",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 13480,
+                    "total_vaccinations_per_100": 0.97
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 829,
@@ -674,11 +684,6 @@
                 {
                     "date": "2021-02-08",
                     "total_vaccinations": 13479,
-                    "total_vaccinations_per_100": 0.97
-                },
-                {
-                    "date": "2021-02-09",
-                    "total_vaccinations": 13480,
                     "total_vaccinations_per_100": 0.97
                 },
                 {
@@ -868,6 +873,11 @@
             "region_name": "Assam",
             "data": [
                 {
+                    "date": "201-02-10",
+                    "total_vaccinations": 110977,
+                    "total_vaccinations_per_100": 0.36
+                },
+                {
                     "date": "2021-01-16",
                     "total_vaccinations": 3528,
                     "total_vaccinations_per_100": 0.01
@@ -961,11 +971,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 108887,
                     "total_vaccinations_per_100": 0.35
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 110977,
-                    "total_vaccinations_per_100": 0.36
                 },
                 {
                     "date": "2021-02-11",
@@ -1196,6 +1201,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 1039302,
                     "total_vaccinations_per_100": 3.33
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 1048974,
+                    "total_vaccinations_per_100": 3.36
                 }
             ]
         },
@@ -1203,6 +1213,11 @@
             "region_iso": "IN-BR",
             "region_name": "Bihar",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 430307,
+                    "total_vaccinations_per_100": 0.41
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 18122,
@@ -1312,11 +1327,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 415989,
                     "total_vaccinations_per_100": 0.4
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 430307,
-                    "total_vaccinations_per_100": 0.41
                 },
                 {
                     "date": "2021-02-11",
@@ -1517,6 +1527,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 2711697,
                     "total_vaccinations_per_100": 2.6
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 2834138,
+                    "total_vaccinations_per_100": 2.72
                 }
             ]
         },
@@ -1524,6 +1539,11 @@
             "region_iso": "IN-CH",
             "region_name": "Chandigarh",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 6903,
+                    "total_vaccinations_per_100": 0.65
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 265,
@@ -1613,11 +1633,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 6458,
                     "total_vaccinations_per_100": 0.61
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 6903,
-                    "total_vaccinations_per_100": 0.65
                 },
                 {
                     "date": "2021-02-11",
@@ -1828,6 +1843,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 75953,
                     "total_vaccinations_per_100": 7.2
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 77581,
+                    "total_vaccinations_per_100": 7.35
                 }
             ]
         },
@@ -1835,6 +1855,11 @@
             "region_iso": "IN-CT",
             "region_name": "Chhattisgarh",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 216784,
+                    "total_vaccinations_per_100": 0.85
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 5592,
@@ -1929,11 +1954,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 198567,
                     "total_vaccinations_per_100": 0.78
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 216784,
-                    "total_vaccinations_per_100": 0.85
                 },
                 {
                     "date": "2021-02-11",
@@ -2159,6 +2179,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 1818746,
                     "total_vaccinations_per_100": 7.12
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 1942105,
+                    "total_vaccinations_per_100": 7.6
                 }
             ]
         },
@@ -2166,6 +2191,11 @@
             "region_iso": "IN-DN",
             "region_name": "Dadra and Nagar Haveli",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 2326,
+                    "total_vaccinations_per_100": 0.68
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 80,
@@ -2245,11 +2275,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 1697,
                     "total_vaccinations_per_100": 0.49
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 2326,
-                    "total_vaccinations_per_100": 0.68
                 },
                 {
                     "date": "2021-02-11",
@@ -2430,6 +2455,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 13197,
                     "total_vaccinations_per_100": 3.84
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 13524,
+                    "total_vaccinations_per_100": 3.93
                 }
             ]
         },
@@ -2437,6 +2467,11 @@
             "region_iso": "IN-DD",
             "region_name": "Daman and Diu",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 1030,
+                    "total_vaccinations_per_100": 0.42
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 43,
@@ -2506,11 +2541,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 843,
                     "total_vaccinations_per_100": 0.35
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 1030,
-                    "total_vaccinations_per_100": 0.42
                 },
                 {
                     "date": "2021-02-12",
@@ -2691,6 +2721,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 14034,
                     "total_vaccinations_per_100": 5.77
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 14542,
+                    "total_vaccinations_per_100": 5.98
                 }
             ]
         },
@@ -2698,6 +2733,11 @@
             "region_iso": "IN-DL",
             "region_name": "Delhi",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 146789,
+                    "total_vaccinations_per_100": 0.55
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 4319,
@@ -2782,11 +2822,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 132046,
                     "total_vaccinations_per_100": 0.5
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 146789,
-                    "total_vaccinations_per_100": 0.55
                 },
                 {
                     "date": "2021-02-11",
@@ -2992,6 +3027,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 1237955,
                     "total_vaccinations_per_100": 4.67
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 1265652,
+                    "total_vaccinations_per_100": 4.78
                 }
             ]
         },
@@ -2999,6 +3039,11 @@
             "region_iso": "IN-GA",
             "region_name": "Goa",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 9961,
+                    "total_vaccinations_per_100": 0.68
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 426,
@@ -3078,11 +3123,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 8929,
                     "total_vaccinations_per_100": 0.61
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 9961,
-                    "total_vaccinations_per_100": 0.68
                 },
                 {
                     "date": "2021-02-11",
@@ -3283,6 +3323,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 112654,
                     "total_vaccinations_per_100": 7.72
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 115750,
+                    "total_vaccinations_per_100": 7.94
                 }
             ]
         },
@@ -3290,6 +3335,11 @@
             "region_iso": "IN-GJ",
             "region_name": "Gujarat",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 614530,
+                    "total_vaccinations_per_100": 1.02
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 10787,
@@ -3389,11 +3439,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 572412,
                     "total_vaccinations_per_100": 0.95
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 614530,
-                    "total_vaccinations_per_100": 1.02
                 },
                 {
                     "date": "2021-02-11",
@@ -3624,6 +3669,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 5482050,
                     "total_vaccinations_per_100": 9.07
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 5700174,
+                    "total_vaccinations_per_100": 9.43
                 }
             ]
         },
@@ -3631,6 +3681,11 @@
             "region_iso": "IN-HR",
             "region_name": "Haryana",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 183529,
+                    "total_vaccinations_per_100": 0.66
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 5907,
@@ -3745,11 +3800,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 180663,
                     "total_vaccinations_per_100": 0.65
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 183529,
-                    "total_vaccinations_per_100": 0.66
                 },
                 {
                     "date": "2021-02-11",
@@ -3970,6 +4020,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 1482699,
                     "total_vaccinations_per_100": 5.34
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 1591599,
+                    "total_vaccinations_per_100": 5.73
                 }
             ]
         },
@@ -3977,6 +4032,11 @@
             "region_iso": "IN-HP",
             "region_name": "Himachal Pradesh",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 66101,
+                    "total_vaccinations_per_100": 0.96
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 1536,
@@ -4071,11 +4131,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 61271,
                     "total_vaccinations_per_100": 0.89
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 66101,
-                    "total_vaccinations_per_100": 0.96
                 },
                 {
                     "date": "2021-02-11",
@@ -4296,6 +4351,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 522818,
                     "total_vaccinations_per_100": 7.62
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 532053,
+                    "total_vaccinations_per_100": 7.75
                 }
             ]
         },
@@ -4303,6 +4363,11 @@
             "region_iso": "IN-JK",
             "region_name": "Jammu and Kashmir",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 74219,
+                    "total_vaccinations_per_100": 0.61
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 2160,
@@ -4372,11 +4437,6 @@
                     "date": "2021-02-08",
                     "total_vaccinations": 61035,
                     "total_vaccinations_per_100": 0.5
-                },
-                {
-                    "date": "2021-02-09",
-                    "total_vaccinations": 74219,
-                    "total_vaccinations_per_100": 0.61
                 },
                 {
                     "date": "2021-02-11",
@@ -4565,6 +4625,11 @@
             "region_name": "Jharkhand",
             "data": [
                 {
+                    "date": "201-02-10",
+                    "total_vaccinations": 160492,
+                    "total_vaccinations_per_100": 0.49
+                },
+                {
                     "date": "2021-01-16",
                     "total_vaccinations": 3096,
                     "total_vaccinations_per_100": 0.01
@@ -4663,11 +4728,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 143401,
                     "total_vaccinations_per_100": 0.43
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 160492,
-                    "total_vaccinations_per_100": 0.49
                 },
                 {
                     "date": "2021-02-11",
@@ -4898,6 +4958,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 1574368,
                     "total_vaccinations_per_100": 4.77
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 1596433,
+                    "total_vaccinations_per_100": 4.84
                 }
             ]
         },
@@ -4905,6 +4970,11 @@
             "region_iso": "IN-KA",
             "region_name": "Karnataka",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 464485,
+                    "total_vaccinations_per_100": 0.76
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 13594,
@@ -5024,11 +5094,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 441692,
                     "total_vaccinations_per_100": 0.72
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 464485,
-                    "total_vaccinations_per_100": 0.76
                 },
                 {
                     "date": "2021-02-11",
@@ -5259,6 +5324,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 3669473,
                     "total_vaccinations_per_100": 6.0
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 3811007,
+                    "total_vaccinations_per_100": 6.23
                 }
             ]
         },
@@ -5266,6 +5336,11 @@
             "region_iso": "IN-KL",
             "region_name": "Kerala",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 326246,
+                    "total_vaccinations_per_100": 0.94
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 8062,
@@ -5380,11 +5455,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 322016,
                     "total_vaccinations_per_100": 0.93
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 326246,
-                    "total_vaccinations_per_100": 0.94
                 },
                 {
                     "date": "2021-02-11",
@@ -5615,6 +5685,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 3339861,
                     "total_vaccinations_per_100": 9.67
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 3401918,
+                    "total_vaccinations_per_100": 9.85
                 }
             ]
         },
@@ -5622,6 +5697,11 @@
             "region_iso": "IN-LA",
             "region_name": "Ladakh",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 2536,
+                    "total_vaccinations_per_100": 0.92
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 79,
@@ -5696,11 +5776,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 2309,
                     "total_vaccinations_per_100": 0.84
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 2536,
-                    "total_vaccinations_per_100": 0.92
                 },
                 {
                     "date": "2021-02-11",
@@ -5896,6 +5971,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 45812,
                     "total_vaccinations_per_100": 16.7
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 46010,
+                    "total_vaccinations_per_100": 16.77
                 }
             ]
         },
@@ -5903,6 +5983,11 @@
             "region_iso": "IN-LD",
             "region_name": "Lakshadweep",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 920,
+                    "total_vaccinations_per_100": 1.52
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 21,
@@ -5957,11 +6042,6 @@
                     "date": "2021-02-08",
                     "total_vaccinations": 868,
                     "total_vaccinations_per_100": 1.43
-                },
-                {
-                    "date": "2021-02-09",
-                    "total_vaccinations": 920,
-                    "total_vaccinations_per_100": 1.52
                 },
                 {
                     "date": "2021-02-12",
@@ -6100,6 +6180,11 @@
             "region_name": "Madhya Pradesh",
             "data": [
                 {
+                    "date": "201-02-10",
+                    "total_vaccinations": 431702,
+                    "total_vaccinations_per_100": 0.59
+                },
+                {
                     "date": "2021-01-16",
                     "total_vaccinations": 9600,
                     "total_vaccinations_per_100": 0.01
@@ -6173,11 +6258,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 380285,
                     "total_vaccinations_per_100": 0.52
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 431702,
-                    "total_vaccinations_per_100": 0.59
                 },
                 {
                     "date": "2021-02-11",
@@ -6358,6 +6438,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 3191792,
                     "total_vaccinations_per_100": 4.39
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 3356666,
+                    "total_vaccinations_per_100": 4.62
                 }
             ]
         },
@@ -6365,6 +6450,11 @@
             "region_iso": "IN-MH",
             "region_name": "Maharashtra",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 573681,
+                    "total_vaccinations_per_100": 0.51
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 18338,
@@ -6464,11 +6554,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 536436,
                     "total_vaccinations_per_100": 0.48
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 573681,
-                    "total_vaccinations_per_100": 0.51
                 },
                 {
                     "date": "2021-02-11",
@@ -6699,6 +6784,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 5993126,
                     "total_vaccinations_per_100": 5.33
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 6209337,
+                    "total_vaccinations_per_100": 5.53
                 }
             ]
         },
@@ -6706,6 +6796,11 @@
             "region_iso": "IN-MN",
             "region_name": "Manipur",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 13747,
+                    "total_vaccinations_per_100": 0.48
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 585,
@@ -6805,11 +6900,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 11078,
                     "total_vaccinations_per_100": 0.39
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 13747,
-                    "total_vaccinations_per_100": 0.48
                 },
                 {
                     "date": "2021-02-11",
@@ -7030,6 +7120,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 119573,
                     "total_vaccinations_per_100": 4.19
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 120838,
+                    "total_vaccinations_per_100": 4.23
                 }
             ]
         },
@@ -7037,6 +7132,11 @@
             "region_iso": "IN-ML",
             "region_name": "Meghalaya",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 9760,
+                    "total_vaccinations_per_100": 0.3
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 509,
@@ -7136,11 +7236,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 9069,
                     "total_vaccinations_per_100": 0.28
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 9760,
-                    "total_vaccinations_per_100": 0.3
                 },
                 {
                     "date": "2021-02-11",
@@ -7351,6 +7446,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 99837,
                     "total_vaccinations_per_100": 3.11
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 101476,
+                    "total_vaccinations_per_100": 3.16
                 }
             ]
         },
@@ -7358,6 +7458,11 @@
             "region_iso": "IN-MZ",
             "region_name": "Mizoram",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 11046,
+                    "total_vaccinations_per_100": 1.01
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 314,
@@ -7442,11 +7547,6 @@
                     "date": "2021-02-06",
                     "total_vaccinations": 10937,
                     "total_vaccinations_per_100": 1.0
-                },
-                {
-                    "date": "2021-02-09",
-                    "total_vaccinations": 11046,
-                    "total_vaccinations_per_100": 1.01
                 },
                 {
                     "date": "2021-02-12",
@@ -7637,6 +7737,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 66312,
                     "total_vaccinations_per_100": 6.04
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 66666,
+                    "total_vaccinations_per_100": 6.08
                 }
             ]
         },
@@ -7644,6 +7749,11 @@
             "region_iso": "IN-NL",
             "region_name": "Nagaland",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 7167,
+                    "total_vaccinations_per_100": 0.36
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 561,
@@ -7728,11 +7838,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 5826,
                     "total_vaccinations_per_100": 0.29
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 7167,
-                    "total_vaccinations_per_100": 0.36
                 },
                 {
                     "date": "2021-02-11",
@@ -7943,6 +8048,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 85287,
                     "total_vaccinations_per_100": 4.31
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 87247,
+                    "total_vaccinations_per_100": 4.41
                 }
             ]
         },
@@ -7950,6 +8060,11 @@
             "region_iso": "IN-OR",
             "region_name": "Odisha",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 361623,
+                    "total_vaccinations_per_100": 0.86
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 13746,
@@ -8054,11 +8169,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 342254,
                     "total_vaccinations_per_100": 0.82
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 361623,
-                    "total_vaccinations_per_100": 0.86
                 },
                 {
                     "date": "2021-02-11",
@@ -8259,6 +8369,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 2326922,
                     "total_vaccinations_per_100": 5.54
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 2411021,
+                    "total_vaccinations_per_100": 5.74
                 }
             ]
         },
@@ -8266,6 +8381,11 @@
             "region_iso": "IN-PY",
             "region_name": "Puducherry",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 4770,
+                    "total_vaccinations_per_100": 0.49
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 274,
@@ -8335,11 +8455,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 4301,
                     "total_vaccinations_per_100": 0.44
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 4770,
-                    "total_vaccinations_per_100": 0.49
                 },
                 {
                     "date": "2021-02-11",
@@ -8540,6 +8655,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 70258,
                     "total_vaccinations_per_100": 7.21
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 74165,
+                    "total_vaccinations_per_100": 7.62
                 }
             ]
         },
@@ -8547,6 +8667,11 @@
             "region_iso": "IN-PB",
             "region_name": "Punjab",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 91669,
+                    "total_vaccinations_per_100": 0.33
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 1327,
@@ -8651,11 +8776,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 87181,
                     "total_vaccinations_per_100": 0.31
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 91669,
-                    "total_vaccinations_per_100": 0.33
                 },
                 {
                     "date": "2021-02-11",
@@ -8881,6 +9001,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 792329,
                     "total_vaccinations_per_100": 2.86
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 842448,
+                    "total_vaccinations_per_100": 3.04
                 }
             ]
         },
@@ -8888,6 +9013,11 @@
             "region_iso": "IN-RJ",
             "region_name": "Rajasthan",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 559990,
+                    "total_vaccinations_per_100": 0.82
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 9279,
@@ -8997,11 +9127,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 491543,
                     "total_vaccinations_per_100": 0.72
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 559990,
-                    "total_vaccinations_per_100": 0.82
                 },
                 {
                     "date": "2021-02-11",
@@ -9217,6 +9342,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 5582172,
                     "total_vaccinations_per_100": 8.14
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 5721312,
+                    "total_vaccinations_per_100": 8.35
                 }
             ]
         },
@@ -9224,6 +9354,11 @@
             "region_iso": "IN-SK",
             "region_name": "Sikkim",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 7808,
+                    "total_vaccinations_per_100": 1.19
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 120,
@@ -9308,11 +9443,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 6961,
                     "total_vaccinations_per_100": 1.06
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 7808,
-                    "total_vaccinations_per_100": 1.19
                 },
                 {
                     "date": "2021-02-11",
@@ -9498,6 +9628,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 73286,
                     "total_vaccinations_per_100": 11.14
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 73741,
+                    "total_vaccinations_per_100": 11.21
                 }
             ]
         },
@@ -9505,6 +9640,11 @@
             "region_iso": "IN-TN",
             "region_name": "Tamil Nadu",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 197392,
+                    "total_vaccinations_per_100": 0.27
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 2945,
@@ -9619,11 +9759,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 185577,
                     "total_vaccinations_per_100": 0.26
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 197392,
-                    "total_vaccinations_per_100": 0.27
                 },
                 {
                     "date": "2021-02-11",
@@ -9824,6 +9959,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 2952311,
                     "total_vaccinations_per_100": 4.09
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 3031631,
+                    "total_vaccinations_per_100": 4.2
                 }
             ]
         },
@@ -9831,6 +9971,11 @@
             "region_iso": "IN-TG",
             "region_name": "Telangana",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 258122,
+                    "total_vaccinations_per_100": 0.73
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 3962,
@@ -9920,11 +10065,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 243665,
                     "total_vaccinations_per_100": 0.69
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 258122,
-                    "total_vaccinations_per_100": 0.73
                 },
                 {
                     "date": "2021-02-11",
@@ -10120,6 +10260,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 1262125,
                     "total_vaccinations_per_100": 3.59
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 1295814,
+                    "total_vaccinations_per_100": 3.68
                 }
             ]
         },
@@ -10127,6 +10272,11 @@
             "region_iso": "IN-TR",
             "region_name": "Tripura",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 52908,
+                    "total_vaccinations_per_100": 1.44
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 355,
@@ -10216,11 +10366,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 51449,
                     "total_vaccinations_per_100": 1.4
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 52908,
-                    "total_vaccinations_per_100": 1.44
                 },
                 {
                     "date": "2021-02-11",
@@ -10431,6 +10576,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 687224,
                     "total_vaccinations_per_100": 18.71
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 697346,
+                    "total_vaccinations_per_100": 18.98
                 }
             ]
         },
@@ -10438,6 +10588,11 @@
             "region_iso": "IN-UP",
             "region_name": "Uttar Pradesh",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 673542,
+                    "total_vaccinations_per_100": 0.34
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 22620,
@@ -10467,11 +10622,6 @@
                     "date": "2021-02-04",
                     "total_vaccinations": 589101,
                     "total_vaccinations_per_100": 0.29
-                },
-                {
-                    "date": "2021-02-05",
-                    "total_vaccinations": 673542,
-                    "total_vaccinations_per_100": 0.34
                 },
                 {
                     "date": "2021-02-11",
@@ -10642,6 +10792,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 5328419,
                     "total_vaccinations_per_100": 2.67
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 5398684,
+                    "total_vaccinations_per_100": 2.7
                 }
             ]
         },
@@ -10649,6 +10804,11 @@
             "region_iso": "IN-UT",
             "region_name": "Uttarakhand",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 90483,
+                    "total_vaccinations_per_100": 0.9
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 2276,
@@ -10748,11 +10908,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 85359,
                     "total_vaccinations_per_100": 0.85
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 90483,
-                    "total_vaccinations_per_100": 0.9
                 },
                 {
                     "date": "2021-02-11",
@@ -10978,6 +11133,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 683007,
                     "total_vaccinations_per_100": 6.77
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 698899,
+                    "total_vaccinations_per_100": 6.93
                 }
             ]
         },
@@ -10985,6 +11145,11 @@
             "region_iso": "IN-WB",
             "region_name": "West Bengal",
             "data": [
+                {
+                    "date": "201-02-10",
+                    "total_vaccinations": 427042,
+                    "total_vaccinations_per_100": 0.47
+                },
                 {
                     "date": "2021-01-16",
                     "total_vaccinations": 15707,
@@ -11084,11 +11249,6 @@
                     "date": "2021-02-09",
                     "total_vaccinations": 404001,
                     "total_vaccinations_per_100": 0.44
-                },
-                {
-                    "date": "2021-02-10",
-                    "total_vaccinations": 427042,
-                    "total_vaccinations_per_100": 0.47
                 },
                 {
                     "date": "2021-02-11",
@@ -11319,6 +11479,11 @@
                     "date": "2021-03-30",
                     "total_vaccinations": 5091103,
                     "total_vaccinations_per_100": 5.58
+                },
+                {
+                    "date": "2021-03-31",
+                    "total_vaccinations": 5230166,
+                    "total_vaccinations_per_100": 5.73
                 }
             ]
         }

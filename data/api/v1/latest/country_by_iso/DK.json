@@ -1,43 +1,43 @@
 {
     "country": "Denmark",
     "country_iso": "DK",
-    "last_update": "2021-04-01",
+    "last_update": "2021-04-02",
     "source_url": "https://covid19.ssi.dk/overvagningsdata/vaccinationstilslutning",
     "data": [
         {
             "region_name": "Hovedstaden",
             "region_iso": "DK-84",
-            "date": "2021-04-01",
-            "total_vaccinations": 347789,
-            "total_vaccinations_per_100": 18.81
+            "date": "2021-04-02",
+            "total_vaccinations": 351901,
+            "total_vaccinations_per_100": 19.03
         },
         {
             "region_name": "Midtjylland",
             "region_iso": "DK-82",
-            "date": "2021-04-01",
-            "total_vaccinations": 263766,
-            "total_vaccinations_per_100": 19.88
+            "date": "2021-04-02",
+            "total_vaccinations": 265321,
+            "total_vaccinations_per_100": 20.0
         },
         {
             "region_name": "Nordjylland",
             "region_iso": "DK-81",
-            "date": "2021-04-01",
-            "total_vaccinations": 118542,
-            "total_vaccinations_per_100": 20.07
+            "date": "2021-04-02",
+            "total_vaccinations": 120679,
+            "total_vaccinations_per_100": 20.43
         },
         {
             "region_name": "Sjaelland",
             "region_iso": "DK-85",
-            "date": "2021-04-01",
-            "total_vaccinations": 174075,
-            "total_vaccinations_per_100": 20.8
+            "date": "2021-04-02",
+            "total_vaccinations": 174555,
+            "total_vaccinations_per_100": 20.85
         },
         {
             "region_name": "Syddanmark",
             "region_iso": "DK-83",
-            "date": "2021-04-01",
-            "total_vaccinations": 240865,
-            "total_vaccinations_per_100": 19.68
+            "date": "2021-04-02",
+            "total_vaccinations": 244540,
+            "total_vaccinations_per_100": 19.98
         }
     ]
 }

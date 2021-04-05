@@ -1,7 +1,7 @@
 {
     "country": "Canada",
     "country_iso": "CA",
-    "last_update": "2021-04-03",
+    "last_update": "2021-04-04",
     "first_update": "2020-12-14",
     "source_url": "https://github.com/ccodwg/Covid19Canada",
     "data": [
@@ -1546,6 +1546,11 @@
                     "date": "2021-04-03",
                     "total_vaccinations": 116885,
                     "total_vaccinations_per_100": 15.36
+                },
+                {
+                    "date": "2021-04-04",
+                    "total_vaccinations": 120673,
+                    "total_vaccinations_per_100": 15.86
                 }
             ]
         },
@@ -3598,6 +3603,11 @@
                     "date": "2021-04-03",
                     "total_vaccinations": 1488347,
                     "total_vaccinations_per_100": 17.3
+                },
+                {
+                    "date": "2021-04-04",
+                    "total_vaccinations": 1529541,
+                    "total_vaccinations_per_100": 17.78
                 }
             ]
         },

@@ -1,7 +1,7 @@
 {
     "country": "Italy",
     "country_iso": "IT",
-    "last_update": "2021-04-05",
+    "last_update": "2021-04-06",
     "first_update": "2020-12-27",
     "source_url": "https://github.com/italia/covid19-opendata-vaccini/",
     "data": [
@@ -451,33 +451,38 @@
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 227959,
+                    "total_vaccinations": 227960,
                     "total_vaccinations_per_100": 17.42
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 233489,
+                    "total_vaccinations": 233490,
                     "total_vaccinations_per_100": 17.84
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 240172,
+                    "total_vaccinations": 240173,
                     "total_vaccinations_per_100": 18.36
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 245244,
+                    "total_vaccinations": 245245,
                     "total_vaccinations_per_100": 18.74
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 246869,
+                    "total_vaccinations": 246870,
                     "total_vaccinations_per_100": 18.87
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 249565,
+                    "total_vaccinations": 249566,
                     "total_vaccinations_per_100": 19.07
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 251474,
+                    "total_vaccinations_per_100": 19.22
                 }
             ]
         },
@@ -959,6 +964,11 @@
                     "date": "2021-04-05",
                     "total_vaccinations": 104598,
                     "total_vaccinations_per_100": 18.58
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 105003,
+                    "total_vaccinations_per_100": 18.65
                 }
             ]
         },
@@ -1303,148 +1313,153 @@
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 140476,
+                    "total_vaccinations": 140478,
                     "total_vaccinations_per_100": 7.21
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 146300,
+                    "total_vaccinations": 146302,
                     "total_vaccinations_per_100": 7.51
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 152745,
+                    "total_vaccinations": 152747,
                     "total_vaccinations_per_100": 7.84
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 159622,
+                    "total_vaccinations": 159624,
                     "total_vaccinations_per_100": 8.2
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 164715,
+                    "total_vaccinations": 164717,
                     "total_vaccinations_per_100": 8.46
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 171371,
+                    "total_vaccinations": 171373,
                     "total_vaccinations_per_100": 8.8
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 173914,
+                    "total_vaccinations": 173916,
                     "total_vaccinations_per_100": 8.93
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 177362,
+                    "total_vaccinations": 177364,
                     "total_vaccinations_per_100": 9.11
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 181131,
+                    "total_vaccinations": 181133,
                     "total_vaccinations_per_100": 9.3
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 184765,
+                    "total_vaccinations": 184767,
                     "total_vaccinations_per_100": 9.49
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 189005,
+                    "total_vaccinations": 189007,
                     "total_vaccinations_per_100": 9.71
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 193190,
+                    "total_vaccinations": 193192,
                     "total_vaccinations_per_100": 9.92
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 199669,
+                    "total_vaccinations": 199671,
                     "total_vaccinations_per_100": 10.25
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 204031,
+                    "total_vaccinations": 204033,
                     "total_vaccinations_per_100": 10.48
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 208738,
+                    "total_vaccinations": 208740,
                     "total_vaccinations_per_100": 10.72
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 213945,
+                    "total_vaccinations": 213947,
                     "total_vaccinations_per_100": 10.99
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 221297,
+                    "total_vaccinations": 221299,
                     "total_vaccinations_per_100": 11.37
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 228296,
+                    "total_vaccinations": 228298,
                     "total_vaccinations_per_100": 11.72
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 235934,
+                    "total_vaccinations": 235936,
                     "total_vaccinations_per_100": 12.12
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 244162,
+                    "total_vaccinations": 244164,
                     "total_vaccinations_per_100": 12.54
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 246696,
+                    "total_vaccinations": 246698,
                     "total_vaccinations_per_100": 12.67
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 252242,
+                    "total_vaccinations": 252244,
                     "total_vaccinations_per_100": 12.95
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 258027,
+                    "total_vaccinations": 258029,
                     "total_vaccinations_per_100": 13.25
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 266822,
+                    "total_vaccinations": 266824,
                     "total_vaccinations_per_100": 13.7
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 275057,
+                    "total_vaccinations": 275059,
                     "total_vaccinations_per_100": 14.13
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 283122,
+                    "total_vaccinations": 283126,
                     "total_vaccinations_per_100": 14.54
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 291941,
+                    "total_vaccinations": 291945,
                     "total_vaccinations_per_100": 14.99
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 293676,
+                    "total_vaccinations": 293680,
                     "total_vaccinations_per_100": 15.08
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 297094,
+                    "total_vaccinations": 297124,
                     "total_vaccinations_per_100": 15.26
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 298501,
+                    "total_vaccinations_per_100": 15.33
                 }
             ]
         },
@@ -1774,168 +1789,173 @@
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 445970,
+                    "total_vaccinations": 445972,
                     "total_vaccinations_per_100": 7.71
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 462443,
+                    "total_vaccinations": 462445,
                     "total_vaccinations_per_100": 7.99
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 478740,
+                    "total_vaccinations": 478742,
                     "total_vaccinations_per_100": 8.27
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 490651,
+                    "total_vaccinations": 490653,
                     "total_vaccinations_per_100": 8.48
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 505187,
+                    "total_vaccinations": 505189,
                     "total_vaccinations_per_100": 8.73
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 519026,
+                    "total_vaccinations": 519028,
                     "total_vaccinations_per_100": 8.97
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 534265,
+                    "total_vaccinations": 534268,
                     "total_vaccinations_per_100": 9.23
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 551838,
+                    "total_vaccinations": 551841,
                     "total_vaccinations_per_100": 9.54
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 566083,
+                    "total_vaccinations": 566086,
                     "total_vaccinations_per_100": 9.78
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 580338,
+                    "total_vaccinations": 580341,
                     "total_vaccinations_per_100": 10.03
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 588844,
+                    "total_vaccinations": 588847,
                     "total_vaccinations_per_100": 10.18
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 601742,
+                    "total_vaccinations": 601746,
                     "total_vaccinations_per_100": 10.4
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 609829,
+                    "total_vaccinations": 609833,
                     "total_vaccinations_per_100": 10.54
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 621413,
+                    "total_vaccinations": 621417,
                     "total_vaccinations_per_100": 10.74
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 633577,
+                    "total_vaccinations": 633581,
                     "total_vaccinations_per_100": 10.95
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 644606,
+                    "total_vaccinations": 644610,
                     "total_vaccinations_per_100": 11.14
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 658501,
+                    "total_vaccinations": 658505,
                     "total_vaccinations_per_100": 11.38
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 668480,
+                    "total_vaccinations": 668484,
                     "total_vaccinations_per_100": 11.55
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 681225,
+                    "total_vaccinations": 681228,
                     "total_vaccinations_per_100": 11.77
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 696559,
+                    "total_vaccinations": 696562,
                     "total_vaccinations_per_100": 12.04
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 714177,
+                    "total_vaccinations": 714180,
                     "total_vaccinations_per_100": 12.34
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 734171,
+                    "total_vaccinations": 734174,
                     "total_vaccinations_per_100": 12.69
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 753625,
+                    "total_vaccinations": 753628,
                     "total_vaccinations_per_100": 13.02
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 774859,
+                    "total_vaccinations": 774862,
                     "total_vaccinations_per_100": 13.39
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 790406,
+                    "total_vaccinations": 790409,
                     "total_vaccinations_per_100": 13.66
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 809315,
+                    "total_vaccinations": 809359,
                     "total_vaccinations_per_100": 13.99
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 830986,
+                    "total_vaccinations": 831030,
                     "total_vaccinations_per_100": 14.36
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 853691,
+                    "total_vaccinations": 853735,
                     "total_vaccinations_per_100": 14.75
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 877947,
+                    "total_vaccinations": 877991,
                     "total_vaccinations_per_100": 15.17
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 891738,
+                    "total_vaccinations": 891789,
                     "total_vaccinations_per_100": 15.41
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 912858,
+                    "total_vaccinations": 912917,
                     "total_vaccinations_per_100": 15.78
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 920796,
+                    "total_vaccinations": 920856,
                     "total_vaccinations_per_100": 15.91
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 932395,
-                    "total_vaccinations_per_100": 16.11
+                    "total_vaccinations": 932485,
+                    "total_vaccinations_per_100": 16.12
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 940522,
+                    "total_vaccinations_per_100": 16.25
                 }
             ]
         },
@@ -2255,27 +2275,27 @@
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 424150,
+                    "total_vaccinations": 424151,
                     "total_vaccinations_per_100": 9.51
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 440489,
+                    "total_vaccinations": 440490,
                     "total_vaccinations_per_100": 9.88
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 458047,
+                    "total_vaccinations": 458048,
                     "total_vaccinations_per_100": 10.27
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 478434,
+                    "total_vaccinations": 478435,
                     "total_vaccinations_per_100": 10.73
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 484976,
+                    "total_vaccinations": 484977,
                     "total_vaccinations_per_100": 10.88
                 },
                 {
@@ -2290,138 +2310,143 @@
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 529260,
+                    "total_vaccinations": 529261,
                     "total_vaccinations_per_100": 11.87
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 546255,
+                    "total_vaccinations": 546256,
                     "total_vaccinations_per_100": 12.25
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 564072,
+                    "total_vaccinations": 564073,
                     "total_vaccinations_per_100": 12.65
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 579913,
+                    "total_vaccinations": 579932,
                     "total_vaccinations_per_100": 13.0
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 588406,
+                    "total_vaccinations": 588425,
                     "total_vaccinations_per_100": 13.19
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 601156,
+                    "total_vaccinations": 601175,
                     "total_vaccinations_per_100": 13.48
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 613185,
+                    "total_vaccinations": 613204,
                     "total_vaccinations_per_100": 13.75
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 626671,
+                    "total_vaccinations": 626690,
                     "total_vaccinations_per_100": 14.05
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 640103,
+                    "total_vaccinations": 640122,
                     "total_vaccinations_per_100": 14.35
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 654147,
+                    "total_vaccinations": 654166,
                     "total_vaccinations_per_100": 14.67
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 669631,
+                    "total_vaccinations": 669650,
                     "total_vaccinations_per_100": 15.02
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 681062,
+                    "total_vaccinations": 681081,
                     "total_vaccinations_per_100": 15.27
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 697811,
+                    "total_vaccinations": 697850,
                     "total_vaccinations_per_100": 15.65
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 715721,
+                    "total_vaccinations": 715760,
                     "total_vaccinations_per_100": 16.05
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 735723,
+                    "total_vaccinations": 735762,
                     "total_vaccinations_per_100": 16.5
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 755915,
+                    "total_vaccinations": 755954,
                     "total_vaccinations_per_100": 16.95
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 778564,
+                    "total_vaccinations": 778604,
                     "total_vaccinations_per_100": 17.46
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 799699,
+                    "total_vaccinations": 799741,
                     "total_vaccinations_per_100": 17.93
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 811386,
-                    "total_vaccinations_per_100": 18.19
+                    "total_vaccinations": 811429,
+                    "total_vaccinations_per_100": 18.2
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 831915,
-                    "total_vaccinations_per_100": 18.65
+                    "total_vaccinations": 831958,
+                    "total_vaccinations_per_100": 18.66
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 849890,
+                    "total_vaccinations": 849936,
                     "total_vaccinations_per_100": 19.06
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 873515,
+                    "total_vaccinations": 873574,
                     "total_vaccinations_per_100": 19.59
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 895644,
-                    "total_vaccinations_per_100": 20.08
+                    "total_vaccinations": 895711,
+                    "total_vaccinations_per_100": 20.09
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 911700,
-                    "total_vaccinations_per_100": 20.44
+                    "total_vaccinations": 911788,
+                    "total_vaccinations_per_100": 20.45
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 925439,
+                    "total_vaccinations": 925528,
                     "total_vaccinations_per_100": 20.75
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 933331,
+                    "total_vaccinations": 933421,
                     "total_vaccinations_per_100": 20.93
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 944262,
-                    "total_vaccinations_per_100": 21.17
+                    "total_vaccinations": 944542,
+                    "total_vaccinations_per_100": 21.18
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 948928,
+                    "total_vaccinations_per_100": 21.28
                 }
             ]
         },
@@ -2561,348 +2586,353 @@
                 },
                 {
                     "date": "2021-01-25",
-                    "total_vaccinations": 38012,
+                    "total_vaccinations": 38013,
                     "total_vaccinations_per_100": 3.13
                 },
                 {
                     "date": "2021-01-26",
-                    "total_vaccinations": 39985,
+                    "total_vaccinations": 39986,
                     "total_vaccinations_per_100": 3.29
                 },
                 {
                     "date": "2021-01-27",
-                    "total_vaccinations": 41257,
+                    "total_vaccinations": 41258,
                     "total_vaccinations_per_100": 3.4
                 },
                 {
                     "date": "2021-01-28",
-                    "total_vaccinations": 43493,
+                    "total_vaccinations": 43494,
                     "total_vaccinations_per_100": 3.58
                 },
                 {
                     "date": "2021-01-29",
-                    "total_vaccinations": 45906,
+                    "total_vaccinations": 45907,
                     "total_vaccinations_per_100": 3.78
                 },
                 {
                     "date": "2021-01-30",
-                    "total_vaccinations": 48177,
+                    "total_vaccinations": 48178,
                     "total_vaccinations_per_100": 3.96
                 },
                 {
                     "date": "2021-01-31",
-                    "total_vaccinations": 50892,
+                    "total_vaccinations": 50893,
                     "total_vaccinations_per_100": 4.19
                 },
                 {
                     "date": "2021-02-01",
-                    "total_vaccinations": 52986,
+                    "total_vaccinations": 52987,
                     "total_vaccinations_per_100": 4.36
                 },
                 {
                     "date": "2021-02-02",
-                    "total_vaccinations": 55452,
+                    "total_vaccinations": 55453,
                     "total_vaccinations_per_100": 4.56
                 },
                 {
                     "date": "2021-02-03",
-                    "total_vaccinations": 58098,
+                    "total_vaccinations": 58099,
                     "total_vaccinations_per_100": 4.78
                 },
                 {
                     "date": "2021-02-04",
-                    "total_vaccinations": 60829,
+                    "total_vaccinations": 60830,
                     "total_vaccinations_per_100": 5.01
                 },
                 {
                     "date": "2021-02-05",
-                    "total_vaccinations": 63442,
+                    "total_vaccinations": 63443,
                     "total_vaccinations_per_100": 5.22
                 },
                 {
                     "date": "2021-02-06",
-                    "total_vaccinations": 64596,
+                    "total_vaccinations": 64597,
                     "total_vaccinations_per_100": 5.32
                 },
                 {
                     "date": "2021-02-07",
-                    "total_vaccinations": 66157,
+                    "total_vaccinations": 66158,
                     "total_vaccinations_per_100": 5.44
                 },
                 {
                     "date": "2021-02-08",
-                    "total_vaccinations": 68513,
+                    "total_vaccinations": 68514,
                     "total_vaccinations_per_100": 5.64
                 },
                 {
                     "date": "2021-02-09",
-                    "total_vaccinations": 70361,
+                    "total_vaccinations": 70362,
                     "total_vaccinations_per_100": 5.79
                 },
                 {
                     "date": "2021-02-10",
-                    "total_vaccinations": 71713,
+                    "total_vaccinations": 71714,
                     "total_vaccinations_per_100": 5.9
                 },
                 {
                     "date": "2021-02-11",
-                    "total_vaccinations": 73648,
+                    "total_vaccinations": 73649,
                     "total_vaccinations_per_100": 6.06
                 },
                 {
                     "date": "2021-02-12",
-                    "total_vaccinations": 74848,
+                    "total_vaccinations": 74849,
                     "total_vaccinations_per_100": 6.16
                 },
                 {
                     "date": "2021-02-13",
-                    "total_vaccinations": 75415,
+                    "total_vaccinations": 75416,
                     "total_vaccinations_per_100": 6.21
                 },
                 {
                     "date": "2021-02-15",
-                    "total_vaccinations": 77869,
+                    "total_vaccinations": 77870,
                     "total_vaccinations_per_100": 6.41
                 },
                 {
                     "date": "2021-02-16",
-                    "total_vaccinations": 80385,
+                    "total_vaccinations": 80386,
                     "total_vaccinations_per_100": 6.61
                 },
                 {
                     "date": "2021-02-17",
-                    "total_vaccinations": 82737,
+                    "total_vaccinations": 82738,
                     "total_vaccinations_per_100": 6.81
                 },
                 {
                     "date": "2021-02-18",
-                    "total_vaccinations": 85947,
+                    "total_vaccinations": 85948,
                     "total_vaccinations_per_100": 7.07
                 },
                 {
                     "date": "2021-02-19",
-                    "total_vaccinations": 89201,
+                    "total_vaccinations": 89202,
                     "total_vaccinations_per_100": 7.34
                 },
                 {
                     "date": "2021-02-20",
-                    "total_vaccinations": 91269,
+                    "total_vaccinations": 91270,
                     "total_vaccinations_per_100": 7.51
                 },
                 {
                     "date": "2021-02-21",
-                    "total_vaccinations": 92069,
+                    "total_vaccinations": 92070,
                     "total_vaccinations_per_100": 7.58
                 },
                 {
                     "date": "2021-02-22",
-                    "total_vaccinations": 94562,
+                    "total_vaccinations": 94563,
                     "total_vaccinations_per_100": 7.78
                 },
                 {
                     "date": "2021-02-23",
-                    "total_vaccinations": 97177,
+                    "total_vaccinations": 97178,
                     "total_vaccinations_per_100": 8.0
                 },
                 {
                     "date": "2021-02-24",
-                    "total_vaccinations": 99695,
+                    "total_vaccinations": 99696,
                     "total_vaccinations_per_100": 8.2
                 },
                 {
                     "date": "2021-02-25",
-                    "total_vaccinations": 102769,
+                    "total_vaccinations": 102770,
                     "total_vaccinations_per_100": 8.46
                 },
                 {
                     "date": "2021-02-26",
-                    "total_vaccinations": 106507,
+                    "total_vaccinations": 106508,
                     "total_vaccinations_per_100": 8.76
                 },
                 {
                     "date": "2021-02-27",
-                    "total_vaccinations": 109929,
+                    "total_vaccinations": 109930,
                     "total_vaccinations_per_100": 9.05
                 },
                 {
                     "date": "2021-02-28",
-                    "total_vaccinations": 112597,
+                    "total_vaccinations": 112598,
                     "total_vaccinations_per_100": 9.27
                 },
                 {
                     "date": "2021-03-01",
-                    "total_vaccinations": 115554,
+                    "total_vaccinations": 115555,
                     "total_vaccinations_per_100": 9.51
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 119772,
+                    "total_vaccinations": 119775,
                     "total_vaccinations_per_100": 9.86
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 123412,
+                    "total_vaccinations": 123415,
                     "total_vaccinations_per_100": 10.16
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 126823,
+                    "total_vaccinations": 126826,
                     "total_vaccinations_per_100": 10.44
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 130560,
+                    "total_vaccinations": 130563,
                     "total_vaccinations_per_100": 10.74
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 134051,
+                    "total_vaccinations": 134054,
                     "total_vaccinations_per_100": 11.03
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 136588,
+                    "total_vaccinations": 136591,
                     "total_vaccinations_per_100": 11.24
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 140629,
+                    "total_vaccinations": 140632,
                     "total_vaccinations_per_100": 11.57
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 144491,
+                    "total_vaccinations": 144494,
                     "total_vaccinations_per_100": 11.89
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 147851,
+                    "total_vaccinations": 147854,
                     "total_vaccinations_per_100": 12.17
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 151177,
+                    "total_vaccinations": 151180,
                     "total_vaccinations_per_100": 12.44
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 155111,
+                    "total_vaccinations": 155114,
                     "total_vaccinations_per_100": 12.76
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 158043,
+                    "total_vaccinations": 158046,
                     "total_vaccinations_per_100": 13.01
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 159438,
+                    "total_vaccinations": 159441,
                     "total_vaccinations_per_100": 13.12
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 163192,
+                    "total_vaccinations": 163197,
                     "total_vaccinations_per_100": 13.43
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 166329,
+                    "total_vaccinations": 166334,
                     "total_vaccinations_per_100": 13.69
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 169536,
+                    "total_vaccinations": 169541,
                     "total_vaccinations_per_100": 13.95
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 172873,
+                    "total_vaccinations": 172878,
                     "total_vaccinations_per_100": 14.23
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 176073,
+                    "total_vaccinations": 176078,
                     "total_vaccinations_per_100": 14.49
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 179418,
+                    "total_vaccinations": 179423,
                     "total_vaccinations_per_100": 14.76
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 182017,
+                    "total_vaccinations": 182022,
                     "total_vaccinations_per_100": 14.98
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 185492,
+                    "total_vaccinations": 185497,
                     "total_vaccinations_per_100": 15.26
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 189213,
+                    "total_vaccinations": 189218,
                     "total_vaccinations_per_100": 15.57
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 192909,
+                    "total_vaccinations": 192914,
                     "total_vaccinations_per_100": 15.87
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 198132,
+                    "total_vaccinations": 198138,
                     "total_vaccinations_per_100": 16.3
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 203790,
+                    "total_vaccinations": 203796,
                     "total_vaccinations_per_100": 16.77
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 208767,
+                    "total_vaccinations": 208773,
                     "total_vaccinations_per_100": 17.18
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 213570,
-                    "total_vaccinations_per_100": 17.57
+                    "total_vaccinations": 213576,
+                    "total_vaccinations_per_100": 17.58
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 220327,
+                    "total_vaccinations": 220333,
                     "total_vaccinations_per_100": 18.13
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 227177,
-                    "total_vaccinations_per_100": 18.69
+                    "total_vaccinations": 227248,
+                    "total_vaccinations_per_100": 18.7
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 234441,
-                    "total_vaccinations_per_100": 19.29
+                    "total_vaccinations": 234656,
+                    "total_vaccinations_per_100": 19.31
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 239948,
-                    "total_vaccinations_per_100": 19.75
+                    "total_vaccinations": 240167,
+                    "total_vaccinations_per_100": 19.76
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 245358,
-                    "total_vaccinations_per_100": 20.19
+                    "total_vaccinations": 245597,
+                    "total_vaccinations_per_100": 20.21
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 248518,
-                    "total_vaccinations_per_100": 20.45
+                    "total_vaccinations": 248762,
+                    "total_vaccinations_per_100": 20.47
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 251091,
-                    "total_vaccinations_per_100": 20.66
+                    "total_vaccinations": 251543,
+                    "total_vaccinations_per_100": 20.7
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 253375,
+                    "total_vaccinations_per_100": 20.85
                 }
             ]
         },
@@ -3167,248 +3197,253 @@
                 },
                 {
                     "date": "2021-02-16",
-                    "total_vaccinations": 297906,
+                    "total_vaccinations": 297907,
                     "total_vaccinations_per_100": 5.07
                 },
                 {
                     "date": "2021-02-17",
-                    "total_vaccinations": 306716,
+                    "total_vaccinations": 306717,
                     "total_vaccinations_per_100": 5.22
                 },
                 {
                     "date": "2021-02-18",
-                    "total_vaccinations": 316392,
+                    "total_vaccinations": 316393,
                     "total_vaccinations_per_100": 5.38
                 },
                 {
                     "date": "2021-02-19",
-                    "total_vaccinations": 326090,
+                    "total_vaccinations": 326091,
                     "total_vaccinations_per_100": 5.55
                 },
                 {
                     "date": "2021-02-20",
-                    "total_vaccinations": 334885,
+                    "total_vaccinations": 334886,
                     "total_vaccinations_per_100": 5.7
                 },
                 {
                     "date": "2021-02-21",
-                    "total_vaccinations": 341684,
+                    "total_vaccinations": 341685,
                     "total_vaccinations_per_100": 5.81
                 },
                 {
                     "date": "2021-02-22",
-                    "total_vaccinations": 353101,
+                    "total_vaccinations": 353102,
                     "total_vaccinations_per_100": 6.01
                 },
                 {
                     "date": "2021-02-23",
-                    "total_vaccinations": 364003,
+                    "total_vaccinations": 364004,
                     "total_vaccinations_per_100": 6.19
                 },
                 {
                     "date": "2021-02-24",
-                    "total_vaccinations": 375998,
+                    "total_vaccinations": 375999,
                     "total_vaccinations_per_100": 6.4
                 },
                 {
                     "date": "2021-02-25",
-                    "total_vaccinations": 388634,
+                    "total_vaccinations": 388635,
                     "total_vaccinations_per_100": 6.61
                 },
                 {
                     "date": "2021-02-26",
-                    "total_vaccinations": 401528,
+                    "total_vaccinations": 401529,
                     "total_vaccinations_per_100": 6.83
                 },
                 {
                     "date": "2021-02-27",
-                    "total_vaccinations": 412907,
+                    "total_vaccinations": 412908,
                     "total_vaccinations_per_100": 7.02
                 },
                 {
                     "date": "2021-02-28",
-                    "total_vaccinations": 423131,
+                    "total_vaccinations": 423132,
                     "total_vaccinations_per_100": 7.2
                 },
                 {
                     "date": "2021-03-01",
-                    "total_vaccinations": 439779,
+                    "total_vaccinations": 439780,
                     "total_vaccinations_per_100": 7.48
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 456384,
+                    "total_vaccinations": 456385,
                     "total_vaccinations_per_100": 7.76
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 473493,
+                    "total_vaccinations": 473494,
                     "total_vaccinations_per_100": 8.05
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 491736,
+                    "total_vaccinations": 491737,
                     "total_vaccinations_per_100": 8.36
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 510241,
+                    "total_vaccinations": 510242,
                     "total_vaccinations_per_100": 8.68
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 528233,
+                    "total_vaccinations": 528234,
                     "total_vaccinations_per_100": 8.98
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 542291,
+                    "total_vaccinations": 542292,
                     "total_vaccinations_per_100": 9.22
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 562171,
+                    "total_vaccinations": 562172,
                     "total_vaccinations_per_100": 9.56
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 582983,
+                    "total_vaccinations": 582984,
                     "total_vaccinations_per_100": 9.92
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 604837,
+                    "total_vaccinations": 604844,
                     "total_vaccinations_per_100": 10.29
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 628482,
+                    "total_vaccinations": 628489,
                     "total_vaccinations_per_100": 10.69
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 651132,
+                    "total_vaccinations": 651139,
                     "total_vaccinations_per_100": 11.08
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 672431,
+                    "total_vaccinations": 672438,
                     "total_vaccinations_per_100": 11.44
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 689481,
+                    "total_vaccinations": 689489,
                     "total_vaccinations_per_100": 11.73
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 708681,
+                    "total_vaccinations": 708689,
                     "total_vaccinations_per_100": 12.05
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 722127,
+                    "total_vaccinations": 722139,
                     "total_vaccinations_per_100": 12.28
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 735611,
+                    "total_vaccinations": 735623,
                     "total_vaccinations_per_100": 12.51
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 749767,
+                    "total_vaccinations": 749779,
                     "total_vaccinations_per_100": 12.75
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 766762,
+                    "total_vaccinations": 766774,
                     "total_vaccinations_per_100": 13.04
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 784879,
+                    "total_vaccinations": 784891,
                     "total_vaccinations_per_100": 13.35
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 802655,
+                    "total_vaccinations": 802667,
                     "total_vaccinations_per_100": 13.65
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 823972,
+                    "total_vaccinations": 823984,
                     "total_vaccinations_per_100": 14.02
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 847076,
+                    "total_vaccinations": 847088,
                     "total_vaccinations_per_100": 14.41
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 872648,
+                    "total_vaccinations": 872660,
                     "total_vaccinations_per_100": 14.84
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 898992,
+                    "total_vaccinations": 899005,
                     "total_vaccinations_per_100": 15.29
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 926566,
+                    "total_vaccinations": 926580,
                     "total_vaccinations_per_100": 15.76
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 952110,
-                    "total_vaccinations_per_100": 16.19
+                    "total_vaccinations": 952124,
+                    "total_vaccinations_per_100": 16.2
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 970891,
+                    "total_vaccinations": 970905,
                     "total_vaccinations_per_100": 16.51
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 994473,
+                    "total_vaccinations": 994487,
                     "total_vaccinations_per_100": 16.92
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 1019365,
+                    "total_vaccinations": 1019379,
                     "total_vaccinations_per_100": 17.34
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 1044848,
+                    "total_vaccinations": 1044878,
                     "total_vaccinations_per_100": 17.77
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 1072132,
+                    "total_vaccinations": 1072176,
                     "total_vaccinations_per_100": 18.24
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 1099394,
+                    "total_vaccinations": 1099501,
                     "total_vaccinations_per_100": 18.7
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 1123022,
+                    "total_vaccinations": 1123170,
                     "total_vaccinations_per_100": 19.1
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 1140341,
+                    "total_vaccinations": 1140490,
                     "total_vaccinations_per_100": 19.4
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 1159808,
+                    "total_vaccinations": 1159965,
                     "total_vaccinations_per_100": 19.73
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 1171039,
+                    "total_vaccinations_per_100": 19.92
                 }
             ]
         },
@@ -4034,393 +4069,398 @@
                 },
                 {
                     "date": "2021-01-18",
-                    "total_vaccinations": 216668,
+                    "total_vaccinations": 216679,
                     "total_vaccinations_per_100": 2.15
                 },
                 {
                     "date": "2021-01-19",
-                    "total_vaccinations": 224745,
+                    "total_vaccinations": 224756,
                     "total_vaccinations_per_100": 2.23
                 },
                 {
                     "date": "2021-01-20",
-                    "total_vaccinations": 230323,
+                    "total_vaccinations": 230334,
                     "total_vaccinations_per_100": 2.29
                 },
                 {
                     "date": "2021-01-21",
-                    "total_vaccinations": 235653,
+                    "total_vaccinations": 235664,
                     "total_vaccinations_per_100": 2.34
                 },
                 {
                     "date": "2021-01-22",
-                    "total_vaccinations": 238611,
+                    "total_vaccinations": 238622,
                     "total_vaccinations_per_100": 2.37
                 },
                 {
                     "date": "2021-01-23",
-                    "total_vaccinations": 239725,
+                    "total_vaccinations": 239736,
                     "total_vaccinations_per_100": 2.38
                 },
                 {
                     "date": "2021-01-24",
-                    "total_vaccinations": 240924,
+                    "total_vaccinations": 240935,
                     "total_vaccinations_per_100": 2.39
                 },
                 {
                     "date": "2021-01-25",
-                    "total_vaccinations": 247944,
+                    "total_vaccinations": 247955,
                     "total_vaccinations_per_100": 2.46
                 },
                 {
                     "date": "2021-01-26",
-                    "total_vaccinations": 256270,
+                    "total_vaccinations": 256281,
                     "total_vaccinations_per_100": 2.55
                 },
                 {
                     "date": "2021-01-27",
-                    "total_vaccinations": 264298,
+                    "total_vaccinations": 264309,
                     "total_vaccinations_per_100": 2.63
                 },
                 {
                     "date": "2021-01-28",
-                    "total_vaccinations": 276456,
+                    "total_vaccinations": 276467,
                     "total_vaccinations_per_100": 2.75
                 },
                 {
                     "date": "2021-01-29",
-                    "total_vaccinations": 289893,
+                    "total_vaccinations": 289904,
                     "total_vaccinations_per_100": 2.88
                 },
                 {
                     "date": "2021-01-30",
-                    "total_vaccinations": 302203,
+                    "total_vaccinations": 302214,
                     "total_vaccinations_per_100": 3.0
                 },
                 {
                     "date": "2021-01-31",
-                    "total_vaccinations": 311930,
+                    "total_vaccinations": 311941,
                     "total_vaccinations_per_100": 3.1
                 },
                 {
                     "date": "2021-02-01",
-                    "total_vaccinations": 327964,
+                    "total_vaccinations": 327975,
                     "total_vaccinations_per_100": 3.26
                 },
                 {
                     "date": "2021-02-02",
-                    "total_vaccinations": 347787,
+                    "total_vaccinations": 347798,
                     "total_vaccinations_per_100": 3.45
                 },
                 {
                     "date": "2021-02-03",
-                    "total_vaccinations": 373249,
+                    "total_vaccinations": 373260,
                     "total_vaccinations_per_100": 3.71
                 },
                 {
                     "date": "2021-02-04",
-                    "total_vaccinations": 400534,
+                    "total_vaccinations": 400545,
                     "total_vaccinations_per_100": 3.98
                 },
                 {
                     "date": "2021-02-05",
-                    "total_vaccinations": 425856,
+                    "total_vaccinations": 425867,
                     "total_vaccinations_per_100": 4.23
                 },
                 {
                     "date": "2021-02-06",
-                    "total_vaccinations": 441091,
+                    "total_vaccinations": 441102,
                     "total_vaccinations_per_100": 4.38
                 },
                 {
                     "date": "2021-02-07",
-                    "total_vaccinations": 448264,
+                    "total_vaccinations": 448275,
                     "total_vaccinations_per_100": 4.45
                 },
                 {
                     "date": "2021-02-08",
-                    "total_vaccinations": 458104,
+                    "total_vaccinations": 458128,
                     "total_vaccinations_per_100": 4.55
                 },
                 {
                     "date": "2021-02-09",
-                    "total_vaccinations": 470274,
+                    "total_vaccinations": 470298,
                     "total_vaccinations_per_100": 4.67
                 },
                 {
                     "date": "2021-02-10",
-                    "total_vaccinations": 484629,
+                    "total_vaccinations": 484653,
                     "total_vaccinations_per_100": 4.81
                 },
                 {
                     "date": "2021-02-11",
-                    "total_vaccinations": 501561,
+                    "total_vaccinations": 501585,
                     "total_vaccinations_per_100": 4.98
                 },
                 {
                     "date": "2021-02-12",
-                    "total_vaccinations": 515162,
+                    "total_vaccinations": 515186,
                     "total_vaccinations_per_100": 5.12
                 },
                 {
                     "date": "2021-02-13",
-                    "total_vaccinations": 521560,
+                    "total_vaccinations": 521584,
                     "total_vaccinations_per_100": 5.18
                 },
                 {
                     "date": "2021-02-14",
-                    "total_vaccinations": 525131,
+                    "total_vaccinations": 525155,
                     "total_vaccinations_per_100": 5.22
                 },
                 {
                     "date": "2021-02-15",
-                    "total_vaccinations": 533936,
+                    "total_vaccinations": 533960,
                     "total_vaccinations_per_100": 5.3
                 },
                 {
                     "date": "2021-02-16",
-                    "total_vaccinations": 543441,
+                    "total_vaccinations": 543465,
                     "total_vaccinations_per_100": 5.4
                 },
                 {
                     "date": "2021-02-17",
-                    "total_vaccinations": 555266,
+                    "total_vaccinations": 555290,
                     "total_vaccinations_per_100": 5.52
                 },
                 {
                     "date": "2021-02-18",
-                    "total_vaccinations": 569221,
+                    "total_vaccinations": 569245,
                     "total_vaccinations_per_100": 5.65
                 },
                 {
                     "date": "2021-02-19",
-                    "total_vaccinations": 583256,
+                    "total_vaccinations": 583280,
                     "total_vaccinations_per_100": 5.79
                 },
                 {
                     "date": "2021-02-20",
-                    "total_vaccinations": 592647,
+                    "total_vaccinations": 592671,
                     "total_vaccinations_per_100": 5.89
                 },
                 {
                     "date": "2021-02-21",
-                    "total_vaccinations": 597651,
+                    "total_vaccinations": 597675,
                     "total_vaccinations_per_100": 5.94
                 },
                 {
                     "date": "2021-02-22",
-                    "total_vaccinations": 609309,
+                    "total_vaccinations": 609333,
                     "total_vaccinations_per_100": 6.05
                 },
                 {
                     "date": "2021-02-23",
-                    "total_vaccinations": 621006,
+                    "total_vaccinations": 621030,
                     "total_vaccinations_per_100": 6.17
                 },
                 {
                     "date": "2021-02-24",
-                    "total_vaccinations": 635639,
+                    "total_vaccinations": 635663,
                     "total_vaccinations_per_100": 6.31
                 },
                 {
                     "date": "2021-02-25",
-                    "total_vaccinations": 650782,
+                    "total_vaccinations": 650806,
                     "total_vaccinations_per_100": 6.46
                 },
                 {
                     "date": "2021-02-26",
-                    "total_vaccinations": 668994,
+                    "total_vaccinations": 669018,
                     "total_vaccinations_per_100": 6.65
                 },
                 {
                     "date": "2021-02-27",
-                    "total_vaccinations": 682912,
+                    "total_vaccinations": 682936,
                     "total_vaccinations_per_100": 6.78
                 },
                 {
                     "date": "2021-02-28",
-                    "total_vaccinations": 690795,
+                    "total_vaccinations": 690819,
                     "total_vaccinations_per_100": 6.86
                 },
                 {
                     "date": "2021-03-01",
-                    "total_vaccinations": 709417,
+                    "total_vaccinations": 709441,
                     "total_vaccinations_per_100": 7.05
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 731989,
+                    "total_vaccinations": 732013,
                     "total_vaccinations_per_100": 7.27
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 758711,
+                    "total_vaccinations": 758735,
                     "total_vaccinations_per_100": 7.54
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 787840,
+                    "total_vaccinations": 787864,
                     "total_vaccinations_per_100": 7.83
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 816411,
+                    "total_vaccinations": 816454,
                     "total_vaccinations_per_100": 8.11
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 837656,
+                    "total_vaccinations": 837706,
                     "total_vaccinations_per_100": 8.32
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 849446,
+                    "total_vaccinations": 849496,
                     "total_vaccinations_per_100": 8.44
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 878860,
+                    "total_vaccinations": 878910,
                     "total_vaccinations_per_100": 8.73
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 911887,
+                    "total_vaccinations": 911938,
                     "total_vaccinations_per_100": 9.06
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 944809,
-                    "total_vaccinations_per_100": 9.38
+                    "total_vaccinations": 944860,
+                    "total_vaccinations_per_100": 9.39
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 980716,
+                    "total_vaccinations": 980768,
                     "total_vaccinations_per_100": 9.74
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 1015708,
+                    "total_vaccinations": 1015761,
                     "total_vaccinations_per_100": 10.09
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 1042682,
+                    "total_vaccinations": 1042736,
                     "total_vaccinations_per_100": 10.36
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 1057448,
+                    "total_vaccinations": 1057502,
                     "total_vaccinations_per_100": 10.5
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 1088722,
+                    "total_vaccinations": 1088776,
                     "total_vaccinations_per_100": 10.81
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 1114102,
+                    "total_vaccinations": 1114158,
                     "total_vaccinations_per_100": 11.07
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 1140144,
+                    "total_vaccinations": 1140200,
                     "total_vaccinations_per_100": 11.33
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 1167436,
+                    "total_vaccinations": 1167492,
                     "total_vaccinations_per_100": 11.6
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 1199673,
+                    "total_vaccinations": 1199729,
                     "total_vaccinations_per_100": 11.92
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 1231836,
+                    "total_vaccinations": 1231892,
                     "total_vaccinations_per_100": 12.24
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 1255285,
+                    "total_vaccinations": 1255341,
                     "total_vaccinations_per_100": 12.47
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 1295170,
-                    "total_vaccinations_per_100": 12.86
+                    "total_vaccinations": 1295256,
+                    "total_vaccinations_per_100": 12.87
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 1337126,
+                    "total_vaccinations": 1337244,
                     "total_vaccinations_per_100": 13.28
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 1379654,
-                    "total_vaccinations_per_100": 13.7
+                    "total_vaccinations": 1379775,
+                    "total_vaccinations_per_100": 13.71
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 1421039,
+                    "total_vaccinations": 1421189,
                     "total_vaccinations_per_100": 14.12
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 1460981,
+                    "total_vaccinations": 1461213,
                     "total_vaccinations_per_100": 14.51
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 1492649,
+                    "total_vaccinations": 1492921,
                     "total_vaccinations_per_100": 14.83
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 1512571,
-                    "total_vaccinations_per_100": 15.02
+                    "total_vaccinations": 1512878,
+                    "total_vaccinations_per_100": 15.03
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 1552024,
+                    "total_vaccinations": 1552333,
                     "total_vaccinations_per_100": 15.42
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 1590101,
-                    "total_vaccinations_per_100": 15.79
+                    "total_vaccinations": 1590452,
+                    "total_vaccinations_per_100": 15.8
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 1630519,
+                    "total_vaccinations": 1630944,
                     "total_vaccinations_per_100": 16.2
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 1670857,
+                    "total_vaccinations": 1671665,
                     "total_vaccinations_per_100": 16.6
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 1708378,
-                    "total_vaccinations_per_100": 16.97
+                    "total_vaccinations": 1709378,
+                    "total_vaccinations_per_100": 16.98
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 1742159,
-                    "total_vaccinations_per_100": 17.3
+                    "total_vaccinations": 1743198,
+                    "total_vaccinations_per_100": 17.32
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 1749453,
-                    "total_vaccinations_per_100": 17.38
+                    "total_vaccinations": 1750492,
+                    "total_vaccinations_per_100": 17.39
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 1775683,
-                    "total_vaccinations_per_100": 17.64
+                    "total_vaccinations": 1776800,
+                    "total_vaccinations_per_100": 17.65
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 1790465,
+                    "total_vaccinations_per_100": 17.78
                 }
             ]
         },
@@ -4795,123 +4835,128 @@
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 175290,
-                    "total_vaccinations_per_100": 11.51
+                    "total_vaccinations": 175332,
+                    "total_vaccinations_per_100": 11.52
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 177805,
+                    "total_vaccinations": 177847,
                     "total_vaccinations_per_100": 11.68
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 182308,
-                    "total_vaccinations_per_100": 11.97
+                    "total_vaccinations": 182350,
+                    "total_vaccinations_per_100": 11.98
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 185885,
+                    "total_vaccinations": 185927,
                     "total_vaccinations_per_100": 12.21
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 189320,
-                    "total_vaccinations_per_100": 12.43
+                    "total_vaccinations": 189362,
+                    "total_vaccinations_per_100": 12.44
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 192765,
+                    "total_vaccinations": 192807,
                     "total_vaccinations_per_100": 12.66
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 196634,
-                    "total_vaccinations_per_100": 12.91
+                    "total_vaccinations": 196676,
+                    "total_vaccinations_per_100": 12.92
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 200780,
+                    "total_vaccinations": 200822,
                     "total_vaccinations_per_100": 13.19
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 205291,
-                    "total_vaccinations_per_100": 13.48
+                    "total_vaccinations": 205333,
+                    "total_vaccinations_per_100": 13.49
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 210951,
-                    "total_vaccinations_per_100": 13.85
+                    "total_vaccinations": 210993,
+                    "total_vaccinations_per_100": 13.86
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 216769,
+                    "total_vaccinations": 216811,
                     "total_vaccinations_per_100": 14.24
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 223804,
+                    "total_vaccinations": 223846,
                     "total_vaccinations_per_100": 14.7
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 230461,
+                    "total_vaccinations": 230503,
                     "total_vaccinations_per_100": 15.14
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 236806,
-                    "total_vaccinations_per_100": 15.55
+                    "total_vaccinations": 236848,
+                    "total_vaccinations_per_100": 15.56
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 244224,
+                    "total_vaccinations": 244266,
                     "total_vaccinations_per_100": 16.04
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 248356,
+                    "total_vaccinations": 248398,
                     "total_vaccinations_per_100": 16.31
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 254251,
+                    "total_vaccinations": 254293,
                     "total_vaccinations_per_100": 16.7
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 261688,
+                    "total_vaccinations": 261730,
                     "total_vaccinations_per_100": 17.19
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 269057,
+                    "total_vaccinations": 269099,
                     "total_vaccinations_per_100": 17.67
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 276543,
-                    "total_vaccinations_per_100": 18.16
+                    "total_vaccinations": 276585,
+                    "total_vaccinations_per_100": 18.17
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 283521,
+                    "total_vaccinations": 283563,
                     "total_vaccinations_per_100": 18.62
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 291093,
+                    "total_vaccinations": 291137,
                     "total_vaccinations_per_100": 19.12
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 294914,
+                    "total_vaccinations": 294958,
                     "total_vaccinations_per_100": 19.37
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 300599,
-                    "total_vaccinations_per_100": 19.74
+                    "total_vaccinations": 300647,
+                    "total_vaccinations_per_100": 19.75
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 303497,
+                    "total_vaccinations_per_100": 19.93
                 }
             ]
         },
@@ -5341,33 +5386,38 @@
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 65907,
+                    "total_vaccinations": 65908,
                     "total_vaccinations_per_100": 21.66
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 67319,
+                    "total_vaccinations": 67320,
                     "total_vaccinations_per_100": 22.12
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 68700,
+                    "total_vaccinations": 68701,
                     "total_vaccinations_per_100": 22.58
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 70409,
-                    "total_vaccinations_per_100": 23.14
+                    "total_vaccinations": 70465,
+                    "total_vaccinations_per_100": 23.16
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 70661,
-                    "total_vaccinations_per_100": 23.22
+                    "total_vaccinations": 70717,
+                    "total_vaccinations_per_100": 23.24
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 71031,
-                    "total_vaccinations_per_100": 23.34
+                    "total_vaccinations": 71087,
+                    "total_vaccinations_per_100": 23.36
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 71474,
+                    "total_vaccinations_per_100": 23.49
                 }
             ]
         },
@@ -5692,183 +5742,188 @@
                 },
                 {
                     "date": "2021-03-01",
-                    "total_vaccinations": 405845,
+                    "total_vaccinations": 405847,
                     "total_vaccinations_per_100": 9.35
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 416980,
+                    "total_vaccinations": 416982,
                     "total_vaccinations_per_100": 9.6
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 429039,
+                    "total_vaccinations": 429042,
                     "total_vaccinations_per_100": 9.88
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 443464,
+                    "total_vaccinations": 443467,
                     "total_vaccinations_per_100": 10.21
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 458716,
+                    "total_vaccinations": 458719,
                     "total_vaccinations_per_100": 10.57
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 472693,
+                    "total_vaccinations": 472696,
                     "total_vaccinations_per_100": 10.89
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 484654,
+                    "total_vaccinations": 484657,
                     "total_vaccinations_per_100": 11.16
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 498561,
+                    "total_vaccinations": 498564,
                     "total_vaccinations_per_100": 11.48
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 512437,
+                    "total_vaccinations": 512441,
                     "total_vaccinations_per_100": 11.8
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 525899,
+                    "total_vaccinations": 525903,
                     "total_vaccinations_per_100": 12.11
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 539532,
+                    "total_vaccinations": 539536,
                     "total_vaccinations_per_100": 12.43
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 553415,
+                    "total_vaccinations": 553419,
                     "total_vaccinations_per_100": 12.75
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 566436,
+                    "total_vaccinations": 566440,
                     "total_vaccinations_per_100": 13.05
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 574633,
+                    "total_vaccinations": 574637,
                     "total_vaccinations_per_100": 13.24
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 585259,
+                    "total_vaccinations": 585263,
                     "total_vaccinations_per_100": 13.48
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 595770,
+                    "total_vaccinations": 595775,
                     "total_vaccinations_per_100": 13.72
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 608265,
+                    "total_vaccinations": 608270,
                     "total_vaccinations_per_100": 14.01
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 619984,
+                    "total_vaccinations": 619989,
                     "total_vaccinations_per_100": 14.28
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 630733,
+                    "total_vaccinations": 630738,
                     "total_vaccinations_per_100": 14.53
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 642583,
+                    "total_vaccinations": 642588,
                     "total_vaccinations_per_100": 14.8
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 652948,
+                    "total_vaccinations": 652953,
                     "total_vaccinations_per_100": 15.04
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 663917,
+                    "total_vaccinations": 663922,
                     "total_vaccinations_per_100": 15.29
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 676855,
+                    "total_vaccinations": 676860,
                     "total_vaccinations_per_100": 15.59
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 692263,
+                    "total_vaccinations": 692269,
                     "total_vaccinations_per_100": 15.95
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 709227,
+                    "total_vaccinations": 709237,
                     "total_vaccinations_per_100": 16.34
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 726895,
+                    "total_vaccinations": 726905,
                     "total_vaccinations_per_100": 16.74
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 745182,
-                    "total_vaccinations_per_100": 17.16
+                    "total_vaccinations": 745198,
+                    "total_vaccinations_per_100": 17.17
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 761180,
+                    "total_vaccinations": 761196,
                     "total_vaccinations_per_100": 17.53
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 776251,
+                    "total_vaccinations": 776267,
                     "total_vaccinations_per_100": 17.88
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 792997,
+                    "total_vaccinations": 793013,
                     "total_vaccinations_per_100": 18.27
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 811922,
+                    "total_vaccinations": 811938,
                     "total_vaccinations_per_100": 18.7
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 830870,
+                    "total_vaccinations": 830918,
                     "total_vaccinations_per_100": 19.14
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 850496,
+                    "total_vaccinations": 850559,
                     "total_vaccinations_per_100": 19.59
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 869567,
+                    "total_vaccinations": 869661,
                     "total_vaccinations_per_100": 20.03
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 878796,
+                    "total_vaccinations": 878890,
                     "total_vaccinations_per_100": 20.24
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 893501,
+                    "total_vaccinations": 893602,
                     "total_vaccinations_per_100": 20.58
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 901402,
+                    "total_vaccinations_per_100": 20.76
                 }
             ]
         },
@@ -6303,43 +6358,48 @@
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 103039,
+                    "total_vaccinations": 103040,
                     "total_vaccinations_per_100": 19.4
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 104022,
+                    "total_vaccinations": 104023,
                     "total_vaccinations_per_100": 19.58
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 105312,
+                    "total_vaccinations": 105313,
                     "total_vaccinations_per_100": 19.83
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 107123,
+                    "total_vaccinations": 107124,
                     "total_vaccinations_per_100": 20.17
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 109902,
+                    "total_vaccinations": 109903,
                     "total_vaccinations_per_100": 20.69
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 111850,
+                    "total_vaccinations": 111882,
                     "total_vaccinations_per_100": 21.06
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 112665,
-                    "total_vaccinations_per_100": 21.21
+                    "total_vaccinations": 112697,
+                    "total_vaccinations_per_100": 21.22
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 112965,
+                    "total_vaccinations": 112997,
                     "total_vaccinations_per_100": 21.27
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 113784,
+                    "total_vaccinations_per_100": 21.42
                 }
             ]
         },
@@ -6659,168 +6719,178 @@
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 46006,
+                    "total_vaccinations": 46007,
                     "total_vaccinations_per_100": 8.5
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 47659,
+                    "total_vaccinations": 47660,
                     "total_vaccinations_per_100": 8.8
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 50009,
+                    "total_vaccinations": 50010,
                     "total_vaccinations_per_100": 9.24
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 52223,
+                    "total_vaccinations": 52235,
                     "total_vaccinations_per_100": 9.65
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 52995,
+                    "total_vaccinations": 53007,
                     "total_vaccinations_per_100": 9.79
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 53017,
-                    "total_vaccinations_per_100": 9.79
+                    "total_vaccinations": 53029,
+                    "total_vaccinations_per_100": 9.8
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 54414,
+                    "total_vaccinations": 54426,
                     "total_vaccinations_per_100": 10.05
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 55969,
+                    "total_vaccinations": 55992,
                     "total_vaccinations_per_100": 10.34
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 58353,
+                    "total_vaccinations": 58387,
                     "total_vaccinations_per_100": 10.78
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 60621,
-                    "total_vaccinations_per_100": 11.2
+                    "total_vaccinations": 60666,
+                    "total_vaccinations_per_100": 11.21
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 63044,
+                    "total_vaccinations": 63091,
                     "total_vaccinations_per_100": 11.65
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 63875,
-                    "total_vaccinations_per_100": 11.8
+                    "total_vaccinations": 63922,
+                    "total_vaccinations_per_100": 11.81
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 63982,
-                    "total_vaccinations_per_100": 11.82
+                    "total_vaccinations": 64029,
+                    "total_vaccinations_per_100": 11.83
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 65372,
+                    "total_vaccinations": 65419,
                     "total_vaccinations_per_100": 12.08
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 66751,
-                    "total_vaccinations_per_100": 12.33
+                    "total_vaccinations": 66798,
+                    "total_vaccinations_per_100": 12.34
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 68795,
-                    "total_vaccinations_per_100": 12.71
+                    "total_vaccinations": 68842,
+                    "total_vaccinations_per_100": 12.72
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 71031,
-                    "total_vaccinations_per_100": 13.12
+                    "total_vaccinations": 71087,
+                    "total_vaccinations_per_100": 13.13
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 73376,
-                    "total_vaccinations_per_100": 13.55
+                    "total_vaccinations": 73441,
+                    "total_vaccinations_per_100": 13.57
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 74241,
-                    "total_vaccinations_per_100": 13.71
+                    "total_vaccinations": 74308,
+                    "total_vaccinations_per_100": 13.73
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 74370,
-                    "total_vaccinations_per_100": 13.74
+                    "total_vaccinations": 74437,
+                    "total_vaccinations_per_100": 13.75
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 76632,
-                    "total_vaccinations_per_100": 14.15
+                    "total_vaccinations": 76701,
+                    "total_vaccinations_per_100": 14.17
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 79000,
-                    "total_vaccinations_per_100": 14.59
+                    "total_vaccinations": 79069,
+                    "total_vaccinations_per_100": 14.61
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 81273,
-                    "total_vaccinations_per_100": 15.01
+                    "total_vaccinations": 81342,
+                    "total_vaccinations_per_100": 15.02
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 83996,
-                    "total_vaccinations_per_100": 15.52
+                    "total_vaccinations": 84068,
+                    "total_vaccinations_per_100": 15.53
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 86972,
-                    "total_vaccinations_per_100": 16.06
+                    "total_vaccinations": 87045,
+                    "total_vaccinations_per_100": 16.08
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 88547,
-                    "total_vaccinations_per_100": 16.36
+                    "total_vaccinations": 88620,
+                    "total_vaccinations_per_100": 16.37
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 89300,
-                    "total_vaccinations_per_100": 16.49
+                    "total_vaccinations": 89373,
+                    "total_vaccinations_per_100": 16.51
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 91700,
-                    "total_vaccinations_per_100": 16.94
+                    "total_vaccinations": 91773,
+                    "total_vaccinations_per_100": 16.95
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 94058,
-                    "total_vaccinations_per_100": 17.37
+                    "total_vaccinations": 94131,
+                    "total_vaccinations_per_100": 17.39
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 96563,
-                    "total_vaccinations_per_100": 17.84
+                    "total_vaccinations": 96639,
+                    "total_vaccinations_per_100": 17.85
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 99325,
-                    "total_vaccinations_per_100": 18.35
+                    "total_vaccinations": 99428,
+                    "total_vaccinations_per_100": 18.37
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 101926,
-                    "total_vaccinations_per_100": 18.83
+                    "total_vaccinations": 102134,
+                    "total_vaccinations_per_100": 18.87
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 102743,
-                    "total_vaccinations_per_100": 18.98
+                    "total_vaccinations": 103062,
+                    "total_vaccinations_per_100": 19.04
+                },
+                {
+                    "date": "2021-04-05",
+                    "total_vaccinations": 103095,
+                    "total_vaccinations_per_100": 19.04
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 104018,
+                    "total_vaccinations_per_100": 19.21
                 }
             ]
         },
@@ -6865,222 +6935,222 @@
                 },
                 {
                     "date": "2021-01-05",
-                    "total_vaccinations": 16840,
+                    "total_vaccinations": 16841,
                     "total_vaccinations_per_100": 0.42
                 },
                 {
                     "date": "2021-01-06",
-                    "total_vaccinations": 20783,
+                    "total_vaccinations": 20784,
                     "total_vaccinations_per_100": 0.52
                 },
                 {
                     "date": "2021-01-07",
-                    "total_vaccinations": 26494,
+                    "total_vaccinations": 26495,
                     "total_vaccinations_per_100": 0.66
                 },
                 {
                     "date": "2021-01-08",
-                    "total_vaccinations": 32070,
+                    "total_vaccinations": 32071,
                     "total_vaccinations_per_100": 0.8
                 },
                 {
                     "date": "2021-01-09",
-                    "total_vaccinations": 36939,
+                    "total_vaccinations": 36940,
                     "total_vaccinations_per_100": 0.92
                 },
                 {
                     "date": "2021-01-10",
-                    "total_vaccinations": 39286,
+                    "total_vaccinations": 39287,
                     "total_vaccinations_per_100": 0.98
                 },
                 {
                     "date": "2021-01-11",
-                    "total_vaccinations": 43035,
+                    "total_vaccinations": 43036,
                     "total_vaccinations_per_100": 1.07
                 },
                 {
                     "date": "2021-01-12",
-                    "total_vaccinations": 47238,
+                    "total_vaccinations": 47239,
                     "total_vaccinations_per_100": 1.17
                 },
                 {
                     "date": "2021-01-13",
-                    "total_vaccinations": 51775,
+                    "total_vaccinations": 51776,
                     "total_vaccinations_per_100": 1.29
                 },
                 {
                     "date": "2021-01-14",
-                    "total_vaccinations": 55838,
+                    "total_vaccinations": 55839,
                     "total_vaccinations_per_100": 1.39
                 },
                 {
                     "date": "2021-01-15",
-                    "total_vaccinations": 60388,
+                    "total_vaccinations": 60389,
                     "total_vaccinations_per_100": 1.5
                 },
                 {
                     "date": "2021-01-16",
-                    "total_vaccinations": 62898,
+                    "total_vaccinations": 62899,
                     "total_vaccinations_per_100": 1.56
                 },
                 {
                     "date": "2021-01-17",
-                    "total_vaccinations": 64206,
+                    "total_vaccinations": 64207,
                     "total_vaccinations_per_100": 1.59
                 },
                 {
                     "date": "2021-01-18",
-                    "total_vaccinations": 66050,
+                    "total_vaccinations": 66051,
                     "total_vaccinations_per_100": 1.64
                 },
                 {
                     "date": "2021-01-19",
-                    "total_vaccinations": 67271,
+                    "total_vaccinations": 67272,
                     "total_vaccinations_per_100": 1.67
                 },
                 {
                     "date": "2021-01-20",
-                    "total_vaccinations": 68820,
+                    "total_vaccinations": 68821,
                     "total_vaccinations_per_100": 1.71
                 },
                 {
                     "date": "2021-01-21",
-                    "total_vaccinations": 70949,
+                    "total_vaccinations": 70950,
                     "total_vaccinations_per_100": 1.76
                 },
                 {
                     "date": "2021-01-22",
-                    "total_vaccinations": 72357,
+                    "total_vaccinations": 72358,
                     "total_vaccinations_per_100": 1.8
                 },
                 {
                     "date": "2021-01-23",
-                    "total_vaccinations": 75393,
+                    "total_vaccinations": 75394,
                     "total_vaccinations_per_100": 1.87
                 },
                 {
                     "date": "2021-01-24",
-                    "total_vaccinations": 77061,
+                    "total_vaccinations": 77062,
                     "total_vaccinations_per_100": 1.91
                 },
                 {
                     "date": "2021-01-25",
-                    "total_vaccinations": 80881,
+                    "total_vaccinations": 80882,
                     "total_vaccinations_per_100": 2.01
                 },
                 {
                     "date": "2021-01-26",
-                    "total_vaccinations": 86241,
+                    "total_vaccinations": 86242,
                     "total_vaccinations_per_100": 2.14
                 },
                 {
                     "date": "2021-01-27",
-                    "total_vaccinations": 90817,
+                    "total_vaccinations": 90818,
                     "total_vaccinations_per_100": 2.25
                 },
                 {
                     "date": "2021-01-28",
-                    "total_vaccinations": 96281,
+                    "total_vaccinations": 96282,
                     "total_vaccinations_per_100": 2.39
                 },
                 {
                     "date": "2021-01-29",
-                    "total_vaccinations": 102472,
+                    "total_vaccinations": 102473,
                     "total_vaccinations_per_100": 2.54
                 },
                 {
                     "date": "2021-01-30",
-                    "total_vaccinations": 107998,
+                    "total_vaccinations": 107999,
                     "total_vaccinations_per_100": 2.68
                 },
                 {
                     "date": "2021-01-31",
-                    "total_vaccinations": 109805,
+                    "total_vaccinations": 109806,
                     "total_vaccinations_per_100": 2.73
                 },
                 {
                     "date": "2021-02-01",
-                    "total_vaccinations": 113766,
+                    "total_vaccinations": 113767,
                     "total_vaccinations_per_100": 2.82
                 },
                 {
                     "date": "2021-02-02",
-                    "total_vaccinations": 118097,
+                    "total_vaccinations": 118098,
                     "total_vaccinations_per_100": 2.93
                 },
                 {
                     "date": "2021-02-03",
-                    "total_vaccinations": 123127,
+                    "total_vaccinations": 123128,
                     "total_vaccinations_per_100": 3.06
                 },
                 {
                     "date": "2021-02-04",
-                    "total_vaccinations": 129022,
+                    "total_vaccinations": 129024,
                     "total_vaccinations_per_100": 3.2
                 },
                 {
                     "date": "2021-02-05",
-                    "total_vaccinations": 134650,
+                    "total_vaccinations": 134652,
                     "total_vaccinations_per_100": 3.34
                 },
                 {
                     "date": "2021-02-06",
-                    "total_vaccinations": 139164,
+                    "total_vaccinations": 139166,
                     "total_vaccinations_per_100": 3.45
                 },
                 {
                     "date": "2021-02-07",
-                    "total_vaccinations": 140705,
+                    "total_vaccinations": 140707,
                     "total_vaccinations_per_100": 3.49
                 },
                 {
                     "date": "2021-02-08",
-                    "total_vaccinations": 144695,
+                    "total_vaccinations": 144697,
                     "total_vaccinations_per_100": 3.59
                 },
                 {
                     "date": "2021-02-09",
-                    "total_vaccinations": 148530,
+                    "total_vaccinations": 148532,
                     "total_vaccinations_per_100": 3.69
                 },
                 {
                     "date": "2021-02-10",
-                    "total_vaccinations": 152133,
+                    "total_vaccinations": 152135,
                     "total_vaccinations_per_100": 3.78
                 },
                 {
                     "date": "2021-02-11",
-                    "total_vaccinations": 155826,
+                    "total_vaccinations": 155828,
                     "total_vaccinations_per_100": 3.87
                 },
                 {
                     "date": "2021-02-12",
-                    "total_vaccinations": 159924,
+                    "total_vaccinations": 159926,
                     "total_vaccinations_per_100": 3.97
                 },
                 {
                     "date": "2021-02-13",
-                    "total_vaccinations": 163645,
+                    "total_vaccinations": 163647,
                     "total_vaccinations_per_100": 4.06
                 },
                 {
                     "date": "2021-02-14",
-                    "total_vaccinations": 164429,
+                    "total_vaccinations": 164431,
                     "total_vaccinations_per_100": 4.08
                 },
                 {
                     "date": "2021-02-15",
-                    "total_vaccinations": 167681,
+                    "total_vaccinations": 167683,
                     "total_vaccinations_per_100": 4.16
                 },
                 {
                     "date": "2021-02-16",
-                    "total_vaccinations": 171060,
+                    "total_vaccinations": 171062,
                     "total_vaccinations_per_100": 4.25
                 },
                 {
                     "date": "2021-02-17",
-                    "total_vaccinations": 175323,
+                    "total_vaccinations": 175325,
                     "total_vaccinations_per_100": 4.35
                 },
                 {
@@ -7120,203 +7190,208 @@
                 },
                 {
                     "date": "2021-02-25",
-                    "total_vaccinations": 230381,
+                    "total_vaccinations": 230382,
                     "total_vaccinations_per_100": 5.72
                 },
                 {
                     "date": "2021-02-26",
-                    "total_vaccinations": 243971,
+                    "total_vaccinations": 243972,
                     "total_vaccinations_per_100": 6.06
                 },
                 {
                     "date": "2021-02-27",
-                    "total_vaccinations": 258073,
+                    "total_vaccinations": 258075,
                     "total_vaccinations_per_100": 6.41
                 },
                 {
                     "date": "2021-02-28",
-                    "total_vaccinations": 263919,
+                    "total_vaccinations": 263921,
                     "total_vaccinations_per_100": 6.55
                 },
                 {
                     "date": "2021-03-01",
-                    "total_vaccinations": 278954,
+                    "total_vaccinations": 278956,
                     "total_vaccinations_per_100": 6.92
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 295221,
+                    "total_vaccinations": 295223,
                     "total_vaccinations_per_100": 7.33
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 311671,
+                    "total_vaccinations": 311673,
                     "total_vaccinations_per_100": 7.74
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 326672,
+                    "total_vaccinations": 326674,
                     "total_vaccinations_per_100": 8.11
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 343668,
+                    "total_vaccinations": 343670,
                     "total_vaccinations_per_100": 8.53
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 359445,
+                    "total_vaccinations": 359447,
                     "total_vaccinations_per_100": 8.92
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 364355,
+                    "total_vaccinations": 364357,
                     "total_vaccinations_per_100": 9.04
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 378912,
+                    "total_vaccinations": 378929,
                     "total_vaccinations_per_100": 9.4
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 391923,
+                    "total_vaccinations": 391942,
                     "total_vaccinations_per_100": 9.73
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 406259,
+                    "total_vaccinations": 406278,
                     "total_vaccinations_per_100": 10.08
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 420545,
+                    "total_vaccinations": 420566,
                     "total_vaccinations_per_100": 10.44
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 434292,
+                    "total_vaccinations": 434313,
                     "total_vaccinations_per_100": 10.78
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 444348,
+                    "total_vaccinations": 444369,
                     "total_vaccinations_per_100": 11.03
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 447625,
+                    "total_vaccinations": 447647,
                     "total_vaccinations_per_100": 11.11
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 459289,
+                    "total_vaccinations": 459313,
                     "total_vaccinations_per_100": 11.4
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 468858,
+                    "total_vaccinations": 468885,
                     "total_vaccinations_per_100": 11.64
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 479045,
+                    "total_vaccinations": 479072,
                     "total_vaccinations_per_100": 11.89
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 488109,
-                    "total_vaccinations_per_100": 12.11
+                    "total_vaccinations": 488136,
+                    "total_vaccinations_per_100": 12.12
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 495988,
+                    "total_vaccinations": 496015,
                     "total_vaccinations_per_100": 12.31
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 503915,
+                    "total_vaccinations": 503942,
                     "total_vaccinations_per_100": 12.51
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 506584,
+                    "total_vaccinations": 506611,
                     "total_vaccinations_per_100": 12.57
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 515827,
+                    "total_vaccinations": 515854,
                     "total_vaccinations_per_100": 12.8
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 526176,
+                    "total_vaccinations": 526203,
                     "total_vaccinations_per_100": 13.06
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 538680,
+                    "total_vaccinations": 538707,
                     "total_vaccinations_per_100": 13.37
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 549291,
+                    "total_vaccinations": 549318,
                     "total_vaccinations_per_100": 13.63
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 560569,
+                    "total_vaccinations": 560597,
                     "total_vaccinations_per_100": 13.91
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 572105,
+                    "total_vaccinations": 572133,
                     "total_vaccinations_per_100": 14.2
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 575374,
+                    "total_vaccinations": 575402,
                     "total_vaccinations_per_100": 14.28
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 587737,
+                    "total_vaccinations": 587776,
                     "total_vaccinations_per_100": 14.59
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 598753,
-                    "total_vaccinations_per_100": 14.86
+                    "total_vaccinations": 598961,
+                    "total_vaccinations_per_100": 14.87
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 611994,
+                    "total_vaccinations": 612207,
                     "total_vaccinations_per_100": 15.19
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 624420,
+                    "total_vaccinations": 624651,
                     "total_vaccinations_per_100": 15.5
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 635408,
-                    "total_vaccinations_per_100": 15.77
+                    "total_vaccinations": 635886,
+                    "total_vaccinations_per_100": 15.78
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 643911,
-                    "total_vaccinations_per_100": 15.98
+                    "total_vaccinations": 644568,
+                    "total_vaccinations_per_100": 16.0
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 649446,
-                    "total_vaccinations_per_100": 16.12
+                    "total_vaccinations": 650284,
+                    "total_vaccinations_per_100": 16.14
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 660820,
-                    "total_vaccinations_per_100": 16.4
+                    "total_vaccinations": 661892,
+                    "total_vaccinations_per_100": 16.43
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 664598,
+                    "total_vaccinations_per_100": 16.5
                 }
             ]
         },
@@ -7606,218 +7681,223 @@
                 },
                 {
                     "date": "2021-02-22",
-                    "total_vaccinations": 75927,
+                    "total_vaccinations": 75928,
                     "total_vaccinations_per_100": 4.63
                 },
                 {
                     "date": "2021-02-23",
-                    "total_vaccinations": 77446,
+                    "total_vaccinations": 77447,
                     "total_vaccinations_per_100": 4.72
                 },
                 {
                     "date": "2021-02-24",
-                    "total_vaccinations": 79856,
+                    "total_vaccinations": 79857,
                     "total_vaccinations_per_100": 4.87
                 },
                 {
                     "date": "2021-02-25",
-                    "total_vaccinations": 82755,
+                    "total_vaccinations": 82756,
                     "total_vaccinations_per_100": 5.05
                 },
                 {
                     "date": "2021-02-26",
-                    "total_vaccinations": 85552,
+                    "total_vaccinations": 85553,
                     "total_vaccinations_per_100": 5.22
                 },
                 {
                     "date": "2021-02-27",
-                    "total_vaccinations": 87472,
-                    "total_vaccinations_per_100": 5.33
+                    "total_vaccinations": 87473,
+                    "total_vaccinations_per_100": 5.34
                 },
                 {
                     "date": "2021-02-28",
-                    "total_vaccinations": 87840,
+                    "total_vaccinations": 87841,
                     "total_vaccinations_per_100": 5.36
                 },
                 {
                     "date": "2021-03-01",
-                    "total_vaccinations": 90000,
+                    "total_vaccinations": 90001,
                     "total_vaccinations_per_100": 5.49
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 92762,
+                    "total_vaccinations": 92763,
                     "total_vaccinations_per_100": 5.66
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 96505,
+                    "total_vaccinations": 96506,
                     "total_vaccinations_per_100": 5.89
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 100454,
+                    "total_vaccinations": 100455,
                     "total_vaccinations_per_100": 6.13
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 105417,
+                    "total_vaccinations": 105418,
                     "total_vaccinations_per_100": 6.43
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 108054,
+                    "total_vaccinations": 108055,
                     "total_vaccinations_per_100": 6.59
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 109711,
+                    "total_vaccinations": 109712,
                     "total_vaccinations_per_100": 6.69
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 113710,
+                    "total_vaccinations": 113711,
                     "total_vaccinations_per_100": 6.94
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 118854,
+                    "total_vaccinations": 118857,
                     "total_vaccinations_per_100": 7.25
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 124858,
+                    "total_vaccinations": 124861,
                     "total_vaccinations_per_100": 7.62
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 130759,
+                    "total_vaccinations": 130762,
                     "total_vaccinations_per_100": 7.98
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 136510,
+                    "total_vaccinations": 136513,
                     "total_vaccinations_per_100": 8.33
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 139236,
+                    "total_vaccinations": 139239,
                     "total_vaccinations_per_100": 8.49
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 139842,
+                    "total_vaccinations": 139845,
                     "total_vaccinations_per_100": 8.53
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 142525,
+                    "total_vaccinations": 142528,
                     "total_vaccinations_per_100": 8.69
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 146895,
+                    "total_vaccinations": 146897,
                     "total_vaccinations_per_100": 8.96
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 153429,
+                    "total_vaccinations": 153433,
                     "total_vaccinations_per_100": 9.36
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 160641,
+                    "total_vaccinations": 160645,
                     "total_vaccinations_per_100": 9.8
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 167829,
+                    "total_vaccinations": 167833,
                     "total_vaccinations_per_100": 10.24
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 172927,
+                    "total_vaccinations": 172976,
                     "total_vaccinations_per_100": 10.55
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 176957,
-                    "total_vaccinations_per_100": 10.79
+                    "total_vaccinations": 177006,
+                    "total_vaccinations_per_100": 10.8
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 180449,
+                    "total_vaccinations": 180498,
                     "total_vaccinations_per_100": 11.01
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 186525,
+                    "total_vaccinations": 186574,
                     "total_vaccinations_per_100": 11.38
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 193404,
+                    "total_vaccinations": 193525,
                     "total_vaccinations_per_100": 11.8
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 201741,
-                    "total_vaccinations_per_100": 12.3
+                    "total_vaccinations": 201827,
+                    "total_vaccinations_per_100": 12.31
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 209447,
-                    "total_vaccinations_per_100": 12.77
+                    "total_vaccinations": 209540,
+                    "total_vaccinations_per_100": 12.78
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 214887,
+                    "total_vaccinations": 214997,
                     "total_vaccinations_per_100": 13.11
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 219386,
-                    "total_vaccinations_per_100": 13.38
+                    "total_vaccinations": 219496,
+                    "total_vaccinations_per_100": 13.39
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 223658,
-                    "total_vaccinations_per_100": 13.64
+                    "total_vaccinations": 223768,
+                    "total_vaccinations_per_100": 13.65
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 230467,
-                    "total_vaccinations_per_100": 14.06
+                    "total_vaccinations": 230624,
+                    "total_vaccinations_per_100": 14.07
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 239812,
-                    "total_vaccinations_per_100": 14.63
+                    "total_vaccinations": 240023,
+                    "total_vaccinations_per_100": 14.64
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 248942,
-                    "total_vaccinations_per_100": 15.18
+                    "total_vaccinations": 249239,
+                    "total_vaccinations_per_100": 15.2
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 257061,
-                    "total_vaccinations_per_100": 15.68
+                    "total_vaccinations": 257448,
+                    "total_vaccinations_per_100": 15.7
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 261240,
-                    "total_vaccinations_per_100": 15.93
+                    "total_vaccinations": 261628,
+                    "total_vaccinations_per_100": 15.96
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 261279,
-                    "total_vaccinations_per_100": 15.94
+                    "total_vaccinations": 261667,
+                    "total_vaccinations_per_100": 15.96
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 263309,
-                    "total_vaccinations_per_100": 16.06
+                    "total_vaccinations": 263697,
+                    "total_vaccinations_per_100": 16.08
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 266297,
+                    "total_vaccinations_per_100": 16.24
                 }
             ]
         },
@@ -8207,123 +8287,128 @@
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 515068,
+                    "total_vaccinations": 515070,
                     "total_vaccinations_per_100": 10.34
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 523892,
+                    "total_vaccinations": 523894,
                     "total_vaccinations_per_100": 10.51
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 534655,
+                    "total_vaccinations": 534657,
                     "total_vaccinations_per_100": 10.73
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 544824,
+                    "total_vaccinations": 544826,
                     "total_vaccinations_per_100": 10.93
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 560214,
+                    "total_vaccinations": 560216,
                     "total_vaccinations_per_100": 11.24
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 575797,
+                    "total_vaccinations": 575799,
                     "total_vaccinations_per_100": 11.55
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 592284,
+                    "total_vaccinations": 592286,
                     "total_vaccinations_per_100": 11.88
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 611188,
+                    "total_vaccinations": 611190,
                     "total_vaccinations_per_100": 12.26
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 626390,
+                    "total_vaccinations": 626392,
                     "total_vaccinations_per_100": 12.57
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 643199,
+                    "total_vaccinations": 643201,
                     "total_vaccinations_per_100": 12.91
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 664231,
+                    "total_vaccinations": 664233,
                     "total_vaccinations_per_100": 13.33
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 685353,
+                    "total_vaccinations": 685355,
                     "total_vaccinations_per_100": 13.75
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 705822,
+                    "total_vaccinations": 705824,
                     "total_vaccinations_per_100": 14.16
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 723694,
+                    "total_vaccinations": 723696,
                     "total_vaccinations_per_100": 14.52
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 739493,
+                    "total_vaccinations": 739495,
                     "total_vaccinations_per_100": 14.84
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 750492,
+                    "total_vaccinations": 750494,
                     "total_vaccinations_per_100": 15.06
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 765484,
+                    "total_vaccinations": 765486,
                     "total_vaccinations_per_100": 15.36
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 780050,
+                    "total_vaccinations": 780052,
                     "total_vaccinations_per_100": 15.65
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 794640,
+                    "total_vaccinations": 794643,
                     "total_vaccinations_per_100": 15.95
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 809098,
+                    "total_vaccinations": 809103,
                     "total_vaccinations_per_100": 16.24
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 823131,
+                    "total_vaccinations": 823136,
                     "total_vaccinations_per_100": 16.52
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 838166,
+                    "total_vaccinations": 838184,
                     "total_vaccinations_per_100": 16.82
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 845144,
+                    "total_vaccinations": 845162,
                     "total_vaccinations_per_100": 16.96
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 853327,
+                    "total_vaccinations": 853351,
                     "total_vaccinations_per_100": 17.12
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 860078,
+                    "total_vaccinations_per_100": 17.26
                 }
             ]
         },
@@ -8653,173 +8738,178 @@
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 333286,
+                    "total_vaccinations": 333298,
                     "total_vaccinations_per_100": 8.94
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 350781,
+                    "total_vaccinations": 350793,
                     "total_vaccinations_per_100": 9.41
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 367181,
-                    "total_vaccinations_per_100": 9.84
+                    "total_vaccinations": 367193,
+                    "total_vaccinations_per_100": 9.85
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 374277,
+                    "total_vaccinations": 374289,
                     "total_vaccinations_per_100": 10.04
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 379924,
+                    "total_vaccinations": 379936,
                     "total_vaccinations_per_100": 10.19
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 386268,
+                    "total_vaccinations": 386280,
                     "total_vaccinations_per_100": 10.36
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 396855,
+                    "total_vaccinations": 396867,
                     "total_vaccinations_per_100": 10.64
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 414692,
+                    "total_vaccinations": 414710,
                     "total_vaccinations_per_100": 11.12
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 430056,
+                    "total_vaccinations": 430086,
                     "total_vaccinations_per_100": 11.53
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 446346,
+                    "total_vaccinations": 446384,
                     "total_vaccinations_per_100": 11.97
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 455606,
+                    "total_vaccinations": 455647,
                     "total_vaccinations_per_100": 12.22
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 462773,
+                    "total_vaccinations": 462814,
                     "total_vaccinations_per_100": 12.41
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 471080,
+                    "total_vaccinations": 471121,
                     "total_vaccinations_per_100": 12.63
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 475944,
+                    "total_vaccinations": 475987,
                     "total_vaccinations_per_100": 12.76
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 487167,
+                    "total_vaccinations": 487216,
                     "total_vaccinations_per_100": 13.06
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 496946,
-                    "total_vaccinations_per_100": 13.32
+                    "total_vaccinations": 497006,
+                    "total_vaccinations_per_100": 13.33
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 506913,
+                    "total_vaccinations": 506985,
                     "total_vaccinations_per_100": 13.59
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 513341,
-                    "total_vaccinations_per_100": 13.76
+                    "total_vaccinations": 513413,
+                    "total_vaccinations_per_100": 13.77
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 516572,
+                    "total_vaccinations": 516644,
                     "total_vaccinations_per_100": 13.85
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 521413,
+                    "total_vaccinations": 521486,
                     "total_vaccinations_per_100": 13.98
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 530395,
+                    "total_vaccinations": 530470,
                     "total_vaccinations_per_100": 14.22
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 549702,
+                    "total_vaccinations": 549792,
                     "total_vaccinations_per_100": 14.74
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 572812,
+                    "total_vaccinations": 572937,
                     "total_vaccinations_per_100": 15.36
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 592803,
-                    "total_vaccinations_per_100": 15.89
+                    "total_vaccinations": 592960,
+                    "total_vaccinations_per_100": 15.9
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 601471,
+                    "total_vaccinations": 601636,
                     "total_vaccinations_per_100": 16.13
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 607558,
+                    "total_vaccinations": 607735,
                     "total_vaccinations_per_100": 16.29
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 616724,
+                    "total_vaccinations": 616933,
                     "total_vaccinations_per_100": 16.54
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 633180,
+                    "total_vaccinations": 633411,
                     "total_vaccinations_per_100": 16.98
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 664678,
-                    "total_vaccinations_per_100": 17.82
+                    "total_vaccinations": 665018,
+                    "total_vaccinations_per_100": 17.83
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 690018,
-                    "total_vaccinations_per_100": 18.5
+                    "total_vaccinations": 690508,
+                    "total_vaccinations_per_100": 18.51
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 720147,
-                    "total_vaccinations_per_100": 19.31
+                    "total_vaccinations": 720824,
+                    "total_vaccinations_per_100": 19.33
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 734517,
-                    "total_vaccinations_per_100": 19.69
+                    "total_vaccinations": 735318,
+                    "total_vaccinations_per_100": 19.72
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 748356,
-                    "total_vaccinations_per_100": 20.07
+                    "total_vaccinations": 749190,
+                    "total_vaccinations_per_100": 20.09
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 763052,
-                    "total_vaccinations_per_100": 20.46
+                    "total_vaccinations": 764417,
+                    "total_vaccinations_per_100": 20.5
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 770652,
+                    "total_vaccinations_per_100": 20.66
                 }
             ]
         },
@@ -9189,108 +9279,113 @@
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 98214,
+                    "total_vaccinations": 98215,
                     "total_vaccinations_per_100": 11.14
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 101543,
+                    "total_vaccinations": 101544,
                     "total_vaccinations_per_100": 11.51
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 104328,
+                    "total_vaccinations": 104329,
                     "total_vaccinations_per_100": 11.83
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 106062,
-                    "total_vaccinations_per_100": 12.02
+                    "total_vaccinations": 106063,
+                    "total_vaccinations_per_100": 12.03
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 108334,
+                    "total_vaccinations": 108335,
                     "total_vaccinations_per_100": 12.28
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 108999,
+                    "total_vaccinations": 109000,
                     "total_vaccinations_per_100": 12.36
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 112557,
+                    "total_vaccinations": 112558,
                     "total_vaccinations_per_100": 12.76
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 116350,
+                    "total_vaccinations": 116351,
                     "total_vaccinations_per_100": 13.19
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 120417,
+                    "total_vaccinations": 120418,
                     "total_vaccinations_per_100": 13.65
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 124276,
+                    "total_vaccinations": 124277,
                     "total_vaccinations_per_100": 14.09
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 128837,
+                    "total_vaccinations": 128838,
                     "total_vaccinations_per_100": 14.61
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 133067,
+                    "total_vaccinations": 133069,
                     "total_vaccinations_per_100": 15.09
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 134160,
+                    "total_vaccinations": 134162,
                     "total_vaccinations_per_100": 15.21
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 137941,
+                    "total_vaccinations": 137943,
                     "total_vaccinations_per_100": 15.64
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 141874,
+                    "total_vaccinations": 141876,
                     "total_vaccinations_per_100": 16.09
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 145733,
+                    "total_vaccinations": 145735,
                     "total_vaccinations_per_100": 16.52
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 149807,
+                    "total_vaccinations": 149810,
                     "total_vaccinations_per_100": 16.98
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 153945,
-                    "total_vaccinations_per_100": 17.45
+                    "total_vaccinations": 153989,
+                    "total_vaccinations_per_100": 17.46
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 155885,
-                    "total_vaccinations_per_100": 17.67
+                    "total_vaccinations": 155937,
+                    "total_vaccinations_per_100": 17.68
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 155904,
+                    "total_vaccinations": 155956,
                     "total_vaccinations_per_100": 17.68
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 160043,
+                    "total_vaccinations": 160102,
                     "total_vaccinations_per_100": 18.15
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 162344,
+                    "total_vaccinations_per_100": 18.41
                 }
             ]
         },
@@ -9660,108 +9755,113 @@
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 17223,
+                    "total_vaccinations": 17224,
                     "total_vaccinations_per_100": 13.71
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 17653,
+                    "total_vaccinations": 17654,
                     "total_vaccinations_per_100": 14.05
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 17787,
+                    "total_vaccinations": 17788,
                     "total_vaccinations_per_100": 14.15
                 },
                 {
                     "date": "2021-03-19",
-                    "total_vaccinations": 18106,
+                    "total_vaccinations": 18107,
                     "total_vaccinations_per_100": 14.41
                 },
                 {
                     "date": "2021-03-20",
-                    "total_vaccinations": 18311,
+                    "total_vaccinations": 18312,
                     "total_vaccinations_per_100": 14.57
                 },
                 {
                     "date": "2021-03-21",
-                    "total_vaccinations": 18664,
+                    "total_vaccinations": 18665,
                     "total_vaccinations_per_100": 14.85
                 },
                 {
                     "date": "2021-03-22",
-                    "total_vaccinations": 19220,
-                    "total_vaccinations_per_100": 15.29
+                    "total_vaccinations": 19221,
+                    "total_vaccinations_per_100": 15.3
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 19595,
+                    "total_vaccinations": 19596,
                     "total_vaccinations_per_100": 15.59
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 20107,
+                    "total_vaccinations": 20108,
                     "total_vaccinations_per_100": 16.0
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 20493,
+                    "total_vaccinations": 20494,
                     "total_vaccinations_per_100": 16.31
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 20987,
+                    "total_vaccinations": 20988,
                     "total_vaccinations_per_100": 16.7
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 21319,
-                    "total_vaccinations_per_100": 16.96
+                    "total_vaccinations": 21320,
+                    "total_vaccinations_per_100": 16.97
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 21839,
+                    "total_vaccinations": 21840,
                     "total_vaccinations_per_100": 17.38
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 22328,
+                    "total_vaccinations": 22329,
                     "total_vaccinations_per_100": 17.77
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 22727,
+                    "total_vaccinations": 22728,
                     "total_vaccinations_per_100": 18.09
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 23277,
+                    "total_vaccinations": 23278,
                     "total_vaccinations_per_100": 18.52
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 24045,
+                    "total_vaccinations": 24046,
                     "total_vaccinations_per_100": 19.13
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 24913,
-                    "total_vaccinations_per_100": 19.82
+                    "total_vaccinations": 24914,
+                    "total_vaccinations_per_100": 19.83
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 25586,
+                    "total_vaccinations": 25587,
                     "total_vaccinations_per_100": 20.36
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 26155,
+                    "total_vaccinations": 26156,
                     "total_vaccinations_per_100": 20.81
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 26613,
+                    "total_vaccinations": 26614,
                     "total_vaccinations_per_100": 21.18
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 26708,
+                    "total_vaccinations_per_100": 21.25
                 }
             ]
         },
@@ -9836,7 +9936,7 @@
                 },
                 {
                     "date": "2021-01-11",
-                    "total_vaccinations": 77351,
+                    "total_vaccinations": 77352,
                     "total_vaccinations_per_100": 1.58
                 },
                 {
@@ -10066,107 +10166,107 @@
                 },
                 {
                     "date": "2021-02-26",
-                    "total_vaccinations": 326405,
+                    "total_vaccinations": 326406,
                     "total_vaccinations_per_100": 6.65
                 },
                 {
                     "date": "2021-02-27",
-                    "total_vaccinations": 335382,
+                    "total_vaccinations": 335383,
                     "total_vaccinations_per_100": 6.84
                 },
                 {
                     "date": "2021-02-28",
-                    "total_vaccinations": 339509,
+                    "total_vaccinations": 339510,
                     "total_vaccinations_per_100": 6.92
                 },
                 {
                     "date": "2021-03-01",
-                    "total_vaccinations": 348867,
+                    "total_vaccinations": 348868,
                     "total_vaccinations_per_100": 7.11
                 },
                 {
                     "date": "2021-03-02",
-                    "total_vaccinations": 360193,
+                    "total_vaccinations": 360194,
                     "total_vaccinations_per_100": 7.34
                 },
                 {
                     "date": "2021-03-03",
-                    "total_vaccinations": 372148,
+                    "total_vaccinations": 372149,
                     "total_vaccinations_per_100": 7.59
                 },
                 {
                     "date": "2021-03-04",
-                    "total_vaccinations": 384884,
+                    "total_vaccinations": 384885,
                     "total_vaccinations_per_100": 7.85
                 },
                 {
                     "date": "2021-03-05",
-                    "total_vaccinations": 398050,
+                    "total_vaccinations": 398051,
                     "total_vaccinations_per_100": 8.11
                 },
                 {
                     "date": "2021-03-06",
-                    "total_vaccinations": 408560,
+                    "total_vaccinations": 408561,
                     "total_vaccinations_per_100": 8.33
                 },
                 {
                     "date": "2021-03-07",
-                    "total_vaccinations": 413015,
+                    "total_vaccinations": 413016,
                     "total_vaccinations_per_100": 8.42
                 },
                 {
                     "date": "2021-03-08",
-                    "total_vaccinations": 426476,
+                    "total_vaccinations": 426477,
                     "total_vaccinations_per_100": 8.69
                 },
                 {
                     "date": "2021-03-09",
-                    "total_vaccinations": 442865,
+                    "total_vaccinations": 442866,
                     "total_vaccinations_per_100": 9.03
                 },
                 {
                     "date": "2021-03-10",
-                    "total_vaccinations": 461697,
+                    "total_vaccinations": 461698,
                     "total_vaccinations_per_100": 9.41
                 },
                 {
                     "date": "2021-03-11",
-                    "total_vaccinations": 481173,
+                    "total_vaccinations": 481174,
                     "total_vaccinations_per_100": 9.81
                 },
                 {
                     "date": "2021-03-12",
-                    "total_vaccinations": 499704,
+                    "total_vaccinations": 499705,
                     "total_vaccinations_per_100": 10.19
                 },
                 {
                     "date": "2021-03-13",
-                    "total_vaccinations": 516846,
+                    "total_vaccinations": 516848,
                     "total_vaccinations_per_100": 10.54
                 },
                 {
                     "date": "2021-03-14",
-                    "total_vaccinations": 531970,
+                    "total_vaccinations": 531972,
                     "total_vaccinations_per_100": 10.84
                 },
                 {
                     "date": "2021-03-15",
-                    "total_vaccinations": 548447,
+                    "total_vaccinations": 548449,
                     "total_vaccinations_per_100": 11.18
                 },
                 {
                     "date": "2021-03-16",
-                    "total_vaccinations": 560825,
+                    "total_vaccinations": 560826,
                     "total_vaccinations_per_100": 11.43
                 },
                 {
                     "date": "2021-03-17",
-                    "total_vaccinations": 575317,
+                    "total_vaccinations": 575318,
                     "total_vaccinations_per_100": 11.73
                 },
                 {
                     "date": "2021-03-18",
-                    "total_vaccinations": 587843,
+                    "total_vaccinations": 587844,
                     "total_vaccinations_per_100": 11.98
                 },
                 {
@@ -10191,73 +10291,78 @@
                 },
                 {
                     "date": "2021-03-23",
-                    "total_vaccinations": 666186,
+                    "total_vaccinations": 666185,
                     "total_vaccinations_per_100": 13.58
                 },
                 {
                     "date": "2021-03-24",
-                    "total_vaccinations": 687957,
+                    "total_vaccinations": 687956,
                     "total_vaccinations_per_100": 14.02
                 },
                 {
                     "date": "2021-03-25",
-                    "total_vaccinations": 713404,
+                    "total_vaccinations": 713468,
                     "total_vaccinations_per_100": 14.54
                 },
                 {
                     "date": "2021-03-26",
-                    "total_vaccinations": 742651,
+                    "total_vaccinations": 742726,
                     "total_vaccinations_per_100": 15.14
                 },
                 {
                     "date": "2021-03-27",
-                    "total_vaccinations": 774126,
+                    "total_vaccinations": 774213,
                     "total_vaccinations_per_100": 15.78
                 },
                 {
                     "date": "2021-03-28",
-                    "total_vaccinations": 805362,
+                    "total_vaccinations": 805449,
                     "total_vaccinations_per_100": 16.42
                 },
                 {
                     "date": "2021-03-29",
-                    "total_vaccinations": 836379,
+                    "total_vaccinations": 836466,
                     "total_vaccinations_per_100": 17.05
                 },
                 {
                     "date": "2021-03-30",
-                    "total_vaccinations": 871717,
+                    "total_vaccinations": 871804,
                     "total_vaccinations_per_100": 17.77
                 },
                 {
                     "date": "2021-03-31",
-                    "total_vaccinations": 909058,
+                    "total_vaccinations": 909223,
                     "total_vaccinations_per_100": 18.53
                 },
                 {
                     "date": "2021-04-01",
-                    "total_vaccinations": 932342,
-                    "total_vaccinations_per_100": 19.0
+                    "total_vaccinations": 932507,
+                    "total_vaccinations_per_100": 19.01
                 },
                 {
                     "date": "2021-04-02",
-                    "total_vaccinations": 955467,
+                    "total_vaccinations": 955680,
                     "total_vaccinations_per_100": 19.48
                 },
                 {
                     "date": "2021-04-03",
-                    "total_vaccinations": 976741,
+                    "total_vaccinations": 976981,
                     "total_vaccinations_per_100": 19.91
                 },
                 {
                     "date": "2021-04-04",
-                    "total_vaccinations": 984301,
-                    "total_vaccinations_per_100": 20.06
+                    "total_vaccinations": 984541,
+                    "total_vaccinations_per_100": 20.07
                 },
                 {
                     "date": "2021-04-05",
-                    "total_vaccinations": 1003362,
-                    "total_vaccinations_per_100": 20.45
+                    "total_vaccinations": 1003605,
+                    "total_vaccinations_per_100": 20.46
+                },
+                {
+                    "date": "2021-04-06",
+                    "total_vaccinations": 1013816,
+                    "total_vaccinations_per_100": 20.67
                 }
             ]
         }

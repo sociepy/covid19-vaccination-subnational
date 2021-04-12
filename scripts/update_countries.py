@@ -19,7 +19,7 @@ ISO_CODES = [
     "DK",
     "FR",
     "DE",
-    "IN",
+    # "IN",
     "IS",
     "IT",
     "NO",

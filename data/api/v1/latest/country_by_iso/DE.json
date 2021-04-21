@@ -1,120 +1,120 @@
 {
     "country": "Germany",
     "country_iso": "DE",
-    "last_update": "2021-04-19",
+    "last_update": "2021-04-20",
     "source_url": "https://github.com/mathiasbynens/covid-19-vaccinations-germany/",
     "data": [
         {
             "region_name": "Baden-Wurttemberg",
             "region_iso": "DE-BW",
-            "date": "2021-04-19",
-            "total_vaccinations": 2873810,
-            "total_vaccinations_per_100": 25.96
+            "date": "2021-04-20",
+            "total_vaccinations": 2946817,
+            "total_vaccinations_per_100": 26.62
         },
         {
             "region_name": "Bayern",
             "region_iso": "DE-BY",
-            "date": "2021-04-19",
-            "total_vaccinations": 3612948,
-            "total_vaccinations_per_100": 27.94
+            "date": "2021-04-20",
+            "total_vaccinations": 3698989,
+            "total_vaccinations_per_100": 28.61
         },
         {
             "region_name": "Berlin",
             "region_iso": "DE-BE",
-            "date": "2021-04-19",
-            "total_vaccinations": 1019867,
-            "total_vaccinations_per_100": 27.98
+            "date": "2021-04-20",
+            "total_vaccinations": 1041209,
+            "total_vaccinations_per_100": 28.57
         },
         {
             "region_name": "Brandenburg",
             "region_iso": "DE-BB",
-            "date": "2021-04-19",
-            "total_vaccinations": 660923,
-            "total_vaccinations_per_100": 26.99
+            "date": "2021-04-20",
+            "total_vaccinations": 677243,
+            "total_vaccinations_per_100": 27.65
         },
         {
             "region_name": "Bremen",
             "region_iso": "DE-HB",
-            "date": "2021-04-19",
-            "total_vaccinations": 206862,
-            "total_vaccinations_per_100": 31.3
+            "date": "2021-04-20",
+            "total_vaccinations": 210626,
+            "total_vaccinations_per_100": 31.86
         },
         {
             "region_name": "Hamburg",
             "region_iso": "DE-HH",
-            "date": "2021-04-19",
-            "total_vaccinations": 483629,
-            "total_vaccinations_per_100": 26.27
+            "date": "2021-04-20",
+            "total_vaccinations": 496622,
+            "total_vaccinations_per_100": 26.97
         },
         {
             "region_name": "Hessen",
             "region_iso": "DE-HE",
-            "date": "2021-04-19",
-            "total_vaccinations": 1603156,
-            "total_vaccinations_per_100": 25.59
+            "date": "2021-04-20",
+            "total_vaccinations": 1641283,
+            "total_vaccinations_per_100": 26.19
         },
         {
             "region_name": "Mecklenburg-Vorpommern",
             "region_iso": "DE-MV",
-            "date": "2021-04-19",
-            "total_vaccinations": 422421,
-            "total_vaccinations_per_100": 26.24
+            "date": "2021-04-20",
+            "total_vaccinations": 436523,
+            "total_vaccinations_per_100": 27.12
         },
         {
             "region_name": "Niedersachsen",
             "region_iso": "DE-NI",
-            "date": "2021-04-19",
-            "total_vaccinations": 2054627,
-            "total_vaccinations_per_100": 25.74
+            "date": "2021-04-20",
+            "total_vaccinations": 2109317,
+            "total_vaccinations_per_100": 26.42
         },
         {
             "region_name": "Nordrhein-Westfalen",
             "region_iso": "DE-NW",
-            "date": "2021-04-19",
-            "total_vaccinations": 4940756,
-            "total_vaccinations_per_100": 27.55
+            "date": "2021-04-20",
+            "total_vaccinations": 5063327,
+            "total_vaccinations_per_100": 28.24
         },
         {
             "region_name": "Rheinland-Pfalz",
             "region_iso": "DE-RP",
-            "date": "2021-04-19",
-            "total_vaccinations": 1091655,
-            "total_vaccinations_per_100": 26.72
+            "date": "2021-04-20",
+            "total_vaccinations": 1121984,
+            "total_vaccinations_per_100": 27.47
         },
         {
             "region_name": "Saarland",
             "region_iso": "DE-SL",
-            "date": "2021-04-19",
-            "total_vaccinations": 296498,
-            "total_vaccinations_per_100": 30.04
+            "date": "2021-04-20",
+            "total_vaccinations": 304808,
+            "total_vaccinations_per_100": 30.89
         },
         {
             "region_name": "Sachsen",
             "region_iso": "DE-SN",
-            "date": "2021-04-19",
-            "total_vaccinations": 1109041,
-            "total_vaccinations_per_100": 27.2
+            "date": "2021-04-20",
+            "total_vaccinations": 1132336,
+            "total_vaccinations_per_100": 27.77
         },
         {
             "region_name": "Sachsen-Anhalt",
             "region_iso": "DE-ST",
-            "date": "2021-04-19",
-            "total_vaccinations": 584031,
-            "total_vaccinations_per_100": 26.01
+            "date": "2021-04-20",
+            "total_vaccinations": 601596,
+            "total_vaccinations_per_100": 26.79
         },
         {
             "region_name": "Schleswig-Holstein",
             "region_iso": "DE-SH",
-            "date": "2021-04-19",
-            "total_vaccinations": 781461,
-            "total_vaccinations_per_100": 26.98
+            "date": "2021-04-20",
+            "total_vaccinations": 798611,
+            "total_vaccinations_per_100": 27.57
         },
         {
             "region_name": "Thuringen",
             "region_iso": "DE-TH",
-            "date": "2021-04-19",
-            "total_vaccinations": 601593,
-            "total_vaccinations_per_100": 28.07
+            "date": "2021-04-20",
+            "total_vaccinations": 616583,
+            "total_vaccinations_per_100": 28.77
         }
     ]
 }

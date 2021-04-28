@@ -33,7 +33,7 @@ class FranceScraper(IncrementalScraper):
                 "reg": "region",
                 "jour": "date",
                 "n_tot_dose1": "people_vaccinated",
-                "n_tot_dose2": "people_fully_vaccinated",
+                "n_tot_complet": "people_fully_vaccinated",
             },
         )
 

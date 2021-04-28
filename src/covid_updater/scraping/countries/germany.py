@@ -15,8 +15,8 @@ class GermanyScraper(Scraper):
             },
             column_renaming={
                 "state": "region",
-                "firstDosesCumulative": "people_vaccinated",
-                "secondDosesCumulative": "people_fully_vaccinated",
+                "initialDosesCumulative": "people_vaccinated",
+                "finalDosesCumulative": "people_fully_vaccinated",
             },
         )
 
@@ -24,7 +24,7 @@ class GermanyScraper(Scraper):
         # Load
         df = pd.read_csv(
             self.data_url,
-            usecols=["date", "state", "firstDosesCumulative", "secondDosesCumulative"],
+            usecols=["date", "state", "initialDosesCumulative", "finalDosesCumulative"],
         )
         return df
 

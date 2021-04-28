@@ -9,7 +9,7 @@ class BelgiumScraper(Scraper):
         super().__init__(
             country="Belgium",
             country_iso="BE",
-            data_url="http://covid-vaccinatie.be/en/vaccines-administered.xlsx",
+            data_url="https://covid-vaccinatie.be/en/vaccines-administered.xlsx",
             data_url_reference="https://covid-vaccinatie.be/en",
             column_renaming={
                 "Date": "date",

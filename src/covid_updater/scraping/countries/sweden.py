@@ -51,7 +51,7 @@ class SwedenScraper(Scraper):
         df = pd.read_excel(
             self.data_url,
             sheet_name="Vaccinerade tidsserie",
-            usecols=["Region", "Vecka", "År", "Antal vaccinerade", "Dosnummer"],
+            usecols=["Region", "Vecka", "År", "Antal vaccinerade", "Vaccinationsstatus"],
         )
         return df
 
@@ -64,12 +64,12 @@ class SwedenScraper(Scraper):
         df = df.pivot_table(
             values="Antal vaccinerade",
             index=[
-                c for c in df.columns if c not in ("Dosnummer", "Antal vaccinerade")
+                c for c in df.columns if c not in ("Vaccinationsstatus", "Antal vaccinerade")
             ],
-            columns="Dosnummer",
+            columns="Vaccinationsstatus",
         ).reset_index()
         df = df.rename(
-            columns={"Dos 1": "people_vaccinated", "Dos 2": "people_fully_vaccinated"}
+            columns={"Minst 1 dos": "people_vaccinated", "Färdigvaccinerade": "people_fully_vaccinated"}
         )
         #  Add total_vaccinations field
         df.loc[:, "total_vaccinations"] = (

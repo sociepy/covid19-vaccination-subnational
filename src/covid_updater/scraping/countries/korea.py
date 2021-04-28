@@ -11,8 +11,8 @@ class KoreaScraper(IncrementalScraper):
         super().__init__(
             country="Korea",
             country_iso="KR",
-            data_url="http://ncv.kdca.go.kr/mainStatus.es?mid=a11702000000",
-            data_url_reference="ncv.kdca.go.kr/",
+            data_url="https://ncv.kdca.go.kr/mainStatus.es?mid=a11702000000",
+            data_url_reference="https://ncv.kdca.go.kr/",
             region_renaming={
                 "서울": "Seoul-teukbyeolsi",
                 "부산": "Busan-gwangyeoksi",

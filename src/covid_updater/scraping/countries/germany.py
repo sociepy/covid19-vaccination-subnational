@@ -24,12 +24,19 @@ class GermanyScraper(Scraper):
         # Load
         df = pd.read_csv(
             self.data_url,
-            usecols=["date", "state", "atLeastPartiallyVaccinatedCumulative", "fullyVaccinatedCumulative"],
+            usecols=[
+                "date",
+                "state",
+                "atLeastPartiallyVaccinatedCumulative",
+                "fullyVaccinatedCumulative",
+                "initialDosesCumulative",
+            ],
         )
         return df
 
     def _process(self, df):
         df.loc[:, "total_vaccinations"] = (
-            df.loc[:, "people_vaccinated"] + df.loc[:, "people_fully_vaccinated"]
+            df.loc[:, "initialDosesCumulative"] + df.loc[:, "people_fully_vaccinated"]
         )
+        df = df.drop(columns=["initialDosesCumulative"])
         return df

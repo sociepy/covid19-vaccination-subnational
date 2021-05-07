@@ -67,16 +67,16 @@ def main():
     for iso_code in ISO_CODES:
         scraper = get_country_scraper(iso_code=iso_code)
         print(scraper.country)
-        # try:
-        scraper.run(
-            output_file_data=os.path.join(
-                args.output_data_folder, f"{scraper.filename}.csv"
-            ),
-            output_file_info=args.output_info_path,
-        )
-        # except Exception as e:
-        #    print("error in updating : "+scraper.country)
-        #    print(e)
+        try:
+            scraper.run(
+                output_file_data=os.path.join(
+                    args.output_data_folder, f"{scraper.filename}.csv"
+                ),
+                output_file_info=args.output_info_path,
+            )
+        except Exception as e:
+            print("error in updating : " + scraper.country)
+            print(e)
 
 
 if __name__ == "__main__":

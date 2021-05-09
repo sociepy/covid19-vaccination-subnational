@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-05-07",
+    "last_update": "2021-05-08",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -598,6 +598,11 @@
                     "date": "2021-05-07",
                     "total_vaccinations": 43907911,
                     "total_vaccinations_per_100": 79.45
+                },
+                {
+                    "date": "2021-05-08",
+                    "total_vaccinations": 44449424,
+                    "total_vaccinations_per_100": 80.43
                 }
             ]
         },
@@ -1189,6 +1194,11 @@
                     "date": "2021-05-07",
                     "total_vaccinations": 1450283,
                     "total_vaccinations_per_100": 77.88
+                },
+                {
+                    "date": "2021-05-08",
+                    "total_vaccinations": 1460425,
+                    "total_vaccinations_per_100": 78.43
                 }
             ]
         },
@@ -1785,6 +1795,11 @@
                     "date": "2021-05-07",
                     "total_vaccinations": 4334182,
                     "total_vaccinations_per_100": 80.19
+                },
+                {
+                    "date": "2021-05-08",
+                    "total_vaccinations": 4366271,
+                    "total_vaccinations_per_100": 80.79
                 }
             ]
         },
@@ -2366,6 +2381,16 @@
                     "date": "2021-05-06",
                     "total_vaccinations": 2711041,
                     "total_vaccinations_per_100": 87.09
+                },
+                {
+                    "date": "2021-05-07",
+                    "total_vaccinations": 2740808,
+                    "total_vaccinations_per_100": 88.04
+                },
+                {
+                    "date": "2021-05-08",
+                    "total_vaccinations": 2764928,
+                    "total_vaccinations_per_100": 88.82
                 }
             ]
         }

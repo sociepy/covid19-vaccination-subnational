@@ -1,7 +1,7 @@
 {
     "country": "Peru",
     "country_iso": "PE",
-    "last_update": "2021-05-08",
+    "last_update": "2021-05-09",
     "first_update": "2021-02-12",
     "source_url": "https://gis.minsa.gob.pe/GisVisorVacunados/",
     "data": [
@@ -743,6 +743,11 @@
                 {
                     "date": "2021-05-08",
                     "total_vaccinations": 43446,
+                    "total_vaccinations_per_100": 4.01
+                },
+                {
+                    "date": "2021-05-09",
+                    "total_vaccinations": 43450,
                     "total_vaccinations_per_100": 4.01
                 }
             ]
@@ -4504,6 +4509,11 @@
                     "date": "2021-05-08",
                     "total_vaccinations": 39013,
                     "total_vaccinations_per_100": 3.13
+                },
+                {
+                    "date": "2021-05-09",
+                    "total_vaccinations": 39014,
+                    "total_vaccinations_per_100": 3.13
                 }
             ]
         },
@@ -5632,6 +5642,11 @@
                     "date": "2021-05-08",
                     "total_vaccinations": 871973,
                     "total_vaccinations_per_100": 9.19
+                },
+                {
+                    "date": "2021-05-09",
+                    "total_vaccinations": 872454,
+                    "total_vaccinations_per_100": 9.2
                 }
             ]
         },

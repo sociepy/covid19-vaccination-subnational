@@ -1,7 +1,7 @@
 {
     "country": "Australia",
     "country_iso": "AU",
-    "last_update": "2021-05-26",
+    "last_update": "2021-05-27",
     "first_update": "2021-02-22",
     "source_url": "https://covidlive.com.au/report/vaccinations",
     "data": [
@@ -2684,6 +2684,11 @@
                     "date": "2021-05-26",
                     "total_vaccinations": 971029,
                     "total_vaccinations_per_100": 14.52
+                },
+                {
+                    "date": "2021-05-27",
+                    "total_vaccinations": 983718,
+                    "total_vaccinations_per_100": 14.71
                 }
             ]
         },

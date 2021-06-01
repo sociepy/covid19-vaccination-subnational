@@ -1,4 +1,6 @@
 # Subnational COVID-19 vaccination data
+**⚠️ Note: This project is not actively maintained, if you want to take over let me know via the issues section. As an alternative project, you can find regional data for some countries at [govex/COVID-19](https://github.com/govex/COVID-19/tree/master/data_tables/vaccine_data/global_data).**
+
 ### [**API**](https://sociepy.org/covid19-vaccination-subnational/data/api/v1) | [**Download data**](data/vaccinations.csv) | [**GitHub**](https://github.com/sociepy/covid19-vaccination-subnational)
 
 ![refresh](https://github.com/sociepy/covid19-vaccination-subnational/workflows/refresh/badge.svg?branch=main)

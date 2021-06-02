@@ -1,7 +1,7 @@
 {
     "country": "Russia",
     "country_iso": "RU",
-    "last_update": "2021-06-01",
+    "last_update": "2021-06-02",
     "first_update": "2020-12-15",
     "source_url": "https://gogov.ru/articles/covid-v-stats",
     "data": [
@@ -13514,6 +13514,11 @@
                     "date": "2021-06-01",
                     "total_vaccinations": 279033,
                     "total_vaccinations_per_100": 28.76
+                },
+                {
+                    "date": "2021-06-02",
+                    "total_vaccinations": 283504,
+                    "total_vaccinations_per_100": 29.22
                 }
             ]
         },
@@ -20471,6 +20476,11 @@
                     "date": "2021-06-01",
                     "total_vaccinations": 289216,
                     "total_vaccinations_per_100": 26.96
+                },
+                {
+                    "date": "2021-06-02",
+                    "total_vaccinations": 291668,
+                    "total_vaccinations_per_100": 27.19
                 }
             ]
         }

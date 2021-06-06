@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-06-04",
+    "last_update": "2021-06-05",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -738,6 +738,11 @@
                     "date": "2021-06-04",
                     "total_vaccinations": 56602996,
                     "total_vaccinations_per_100": 102.42
+                },
+                {
+                    "date": "2021-06-05",
+                    "total_vaccinations": 57193641,
+                    "total_vaccinations_per_100": 103.48
                 }
             ]
         },
@@ -1469,6 +1474,11 @@
                     "date": "2021-06-04",
                     "total_vaccinations": 1782596,
                     "total_vaccinations_per_100": 95.73
+                },
+                {
+                    "date": "2021-06-05",
+                    "total_vaccinations": 1790718,
+                    "total_vaccinations_per_100": 96.17
                 }
             ]
         },
@@ -2205,6 +2215,11 @@
                     "date": "2021-06-04",
                     "total_vaccinations": 5548389,
                     "total_vaccinations_per_100": 102.66
+                },
+                {
+                    "date": "2021-06-05",
+                    "total_vaccinations": 5593272,
+                    "total_vaccinations_per_100": 103.49
                 }
             ]
         },
@@ -2926,6 +2941,16 @@
                     "date": "2021-06-03",
                     "total_vaccinations": 3350883,
                     "total_vaccinations_per_100": 107.64
+                },
+                {
+                    "date": "2021-06-04",
+                    "total_vaccinations": 3383612,
+                    "total_vaccinations_per_100": 108.69
+                },
+                {
+                    "date": "2021-06-05",
+                    "total_vaccinations": 3416953,
+                    "total_vaccinations_per_100": 109.76
                 }
             ]
         }

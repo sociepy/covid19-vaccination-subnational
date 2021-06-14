@@ -1,15 +1,15 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-06-12",
+    "last_update": "2021-06-13",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
         {
             "region_name": "England",
             "region_iso": "GB-ENG",
-            "date": "2021-06-12",
-            "total_vaccinations": 59965740,
-            "total_vaccinations_per_100": 108.5
+            "date": "2021-06-13",
+            "total_vaccinations": 60243055,
+            "total_vaccinations_per_100": 109.0
         },
         {
             "region_name": "Northern Ireland",
@@ -21,16 +21,16 @@
         {
             "region_name": "Scotland",
             "region_iso": "GB-SCT",
-            "date": "2021-06-12",
-            "total_vaccinations": 5923112,
-            "total_vaccinations_per_100": 109.59
+            "date": "2021-06-13",
+            "total_vaccinations": 5964502,
+            "total_vaccinations_per_100": 110.36
         },
         {
             "region_name": "Wales",
             "region_iso": "GB-WLS",
-            "date": "2021-06-12",
-            "total_vaccinations": 3591060,
-            "total_vaccinations_per_100": 115.36
+            "date": "2021-06-13",
+            "total_vaccinations": 3600704,
+            "total_vaccinations_per_100": 115.67
         }
     ]
 }

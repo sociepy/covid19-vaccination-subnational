@@ -1,29 +1,29 @@
 {
     "country": "Belgium",
     "country_iso": "BE",
-    "last_update": "2021-06-12",
+    "last_update": "2021-06-13",
     "source_url": "https://covid-vaccinatie.be/en",
     "data": [
         {
             "region_name": "Brussels",
             "region_iso": "BE-BRU",
-            "date": "2021-06-12",
-            "total_vaccinations": 669408,
-            "total_vaccinations_per_100": 54.95
+            "date": "2021-06-13",
+            "total_vaccinations": 674824,
+            "total_vaccinations_per_100": 55.39
         },
         {
             "region_name": "Flanders",
             "region_iso": "BE-VLG",
-            "date": "2021-06-12",
-            "total_vaccinations": 5023029,
-            "total_vaccinations_per_100": 75.77
+            "date": "2021-06-13",
+            "total_vaccinations": 5048610,
+            "total_vaccinations_per_100": 76.16
         },
         {
             "region_name": "Wallonia",
             "region_iso": "BE-WAL",
-            "date": "2021-06-12",
-            "total_vaccinations": 2613385,
-            "total_vaccinations_per_100": 71.69
+            "date": "2021-06-13",
+            "total_vaccinations": 2627679,
+            "total_vaccinations_per_100": 72.09
         }
     ]
 }

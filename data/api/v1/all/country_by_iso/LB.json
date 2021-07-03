@@ -1,7 +1,7 @@
 {
     "country": "Lebanon",
     "country_iso": "LB",
-    "last_update": "2021-07-02",
+    "last_update": "2021-07-03",
     "first_update": "2021-02-14",
     "source_url": "https://impact.cib.gov.lb/home/dashboard/vaccine",
     "data": [
@@ -2942,6 +2942,11 @@
                     "date": "2021-07-02",
                     "total_vaccinations": 108636,
                     "total_vaccinations_per_100": 13.46
+                },
+                {
+                    "date": "2021-07-03",
+                    "total_vaccinations": 108642,
+                    "total_vaccinations_per_100": 13.46
                 }
             ]
         },
@@ -4213,6 +4218,11 @@
                 {
                     "date": "2021-07-02",
                     "total_vaccinations": 506920,
+                    "total_vaccinations_per_100": 34.15
+                },
+                {
+                    "date": "2021-07-03",
+                    "total_vaccinations": 506922,
                     "total_vaccinations_per_100": 34.15
                 }
             ]

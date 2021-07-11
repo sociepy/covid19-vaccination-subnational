@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-07-09",
+    "last_update": "2021-07-10",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -908,6 +908,11 @@
                     "date": "2021-07-09",
                     "total_vaccinations": 67361912,
                     "total_vaccinations_per_100": 121.88
+                },
+                {
+                    "date": "2021-07-10",
+                    "total_vaccinations": 67618807,
+                    "total_vaccinations_per_100": 122.35
                 }
             ]
         },
@@ -1809,6 +1814,11 @@
                     "date": "2021-07-09",
                     "total_vaccinations": 2115735,
                     "total_vaccinations_per_100": 113.62
+                },
+                {
+                    "date": "2021-07-10",
+                    "total_vaccinations": 2122962,
+                    "total_vaccinations_per_100": 114.01
                 }
             ]
         },
@@ -2720,6 +2730,11 @@
                     "date": "2021-07-09",
                     "total_vaccinations": 6781255,
                     "total_vaccinations_per_100": 125.47
+                },
+                {
+                    "date": "2021-07-10",
+                    "total_vaccinations": 6805735,
+                    "total_vaccinations_per_100": 125.92
                 }
             ]
         },
@@ -3616,6 +3631,16 @@
                     "date": "2021-07-08",
                     "total_vaccinations": 4068777,
                     "total_vaccinations_per_100": 130.7
+                },
+                {
+                    "date": "2021-07-09",
+                    "total_vaccinations": 4082121,
+                    "total_vaccinations_per_100": 131.13
+                },
+                {
+                    "date": "2021-07-10",
+                    "total_vaccinations": 4098728,
+                    "total_vaccinations_per_100": 131.66
                 }
             ]
         }

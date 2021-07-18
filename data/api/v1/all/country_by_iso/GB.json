@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-07-16",
+    "last_update": "2021-07-17",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -943,6 +943,11 @@
                     "date": "2021-07-16",
                     "total_vaccinations": 68688329,
                     "total_vaccinations_per_100": 124.28
+                },
+                {
+                    "date": "2021-07-17",
+                    "total_vaccinations": 68944019,
+                    "total_vaccinations_per_100": 124.74
                 }
             ]
         },
@@ -1879,6 +1884,11 @@
                     "date": "2021-07-16",
                     "total_vaccinations": 2175046,
                     "total_vaccinations_per_100": 116.81
+                },
+                {
+                    "date": "2021-07-17",
+                    "total_vaccinations": 2180618,
+                    "total_vaccinations_per_100": 117.11
                 }
             ]
         },
@@ -2825,6 +2835,11 @@
                     "date": "2021-07-16",
                     "total_vaccinations": 6924802,
                     "total_vaccinations_per_100": 128.13
+                },
+                {
+                    "date": "2021-07-17",
+                    "total_vaccinations": 6942076,
+                    "total_vaccinations_per_100": 128.45
                 }
             ]
         },
@@ -3756,6 +3771,16 @@
                     "date": "2021-07-15",
                     "total_vaccinations": 4171221,
                     "total_vaccinations_per_100": 133.99
+                },
+                {
+                    "date": "2021-07-16",
+                    "total_vaccinations": 4186094,
+                    "total_vaccinations_per_100": 134.47
+                },
+                {
+                    "date": "2021-07-17",
+                    "total_vaccinations": 4199989,
+                    "total_vaccinations_per_100": 134.92
                 }
             ]
         }

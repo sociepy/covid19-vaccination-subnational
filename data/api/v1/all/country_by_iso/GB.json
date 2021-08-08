@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-08-06",
+    "last_update": "2021-08-07",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -1048,6 +1048,11 @@
                     "date": "2021-08-06",
                     "total_vaccinations": 72168920,
                     "total_vaccinations_per_100": 130.58
+                },
+                {
+                    "date": "2021-08-07",
+                    "total_vaccinations": 72386948,
+                    "total_vaccinations_per_100": 130.97
                 }
             ]
         },
@@ -2089,6 +2094,11 @@
                     "date": "2021-08-06",
                     "total_vaccinations": 2310931,
                     "total_vaccinations_per_100": 124.1
+                },
+                {
+                    "date": "2021-08-07",
+                    "total_vaccinations": 2316713,
+                    "total_vaccinations_per_100": 124.41
                 }
             ]
         },
@@ -3140,6 +3150,11 @@
                     "date": "2021-08-06",
                     "total_vaccinations": 7328239,
                     "total_vaccinations_per_100": 135.59
+                },
+                {
+                    "date": "2021-08-07",
+                    "total_vaccinations": 7348318,
+                    "total_vaccinations_per_100": 135.96
                 }
             ]
         },
@@ -4176,6 +4191,16 @@
                     "date": "2021-08-05",
                     "total_vaccinations": 4399761,
                     "total_vaccinations_per_100": 141.34
+                },
+                {
+                    "date": "2021-08-06",
+                    "total_vaccinations": 4406601,
+                    "total_vaccinations_per_100": 141.55
+                },
+                {
+                    "date": "2021-08-07",
+                    "total_vaccinations": 4414285,
+                    "total_vaccinations_per_100": 141.8
                 }
             ]
         }

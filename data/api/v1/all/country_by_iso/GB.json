@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-08-21",
+    "last_update": "2021-08-22",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -1123,6 +1123,11 @@
                     "date": "2021-08-21",
                     "total_vaccinations": 74803203,
                     "total_vaccinations_per_100": 135.35
+                },
+                {
+                    "date": "2021-08-22",
+                    "total_vaccinations": 74931873,
+                    "total_vaccinations_per_100": 135.58
                 }
             ]
         },
@@ -2239,6 +2244,11 @@
                     "date": "2021-08-21",
                     "total_vaccinations": 2408221,
                     "total_vaccinations_per_100": 129.33
+                },
+                {
+                    "date": "2021-08-22",
+                    "total_vaccinations": 2414189,
+                    "total_vaccinations_per_100": 129.65
                 }
             ]
         },
@@ -3365,6 +3375,11 @@
                     "date": "2021-08-21",
                     "total_vaccinations": 7636443,
                     "total_vaccinations_per_100": 141.29
+                },
+                {
+                    "date": "2021-08-22",
+                    "total_vaccinations": 7654740,
+                    "total_vaccinations_per_100": 141.63
                 }
             ]
         },
@@ -4471,6 +4486,21 @@
                     "date": "2021-08-19",
                     "total_vaccinations": 4483833,
                     "total_vaccinations_per_100": 144.04
+                },
+                {
+                    "date": "2021-08-20",
+                    "total_vaccinations": 4490373,
+                    "total_vaccinations_per_100": 144.25
+                },
+                {
+                    "date": "2021-08-21",
+                    "total_vaccinations": 4496930,
+                    "total_vaccinations_per_100": 144.46
+                },
+                {
+                    "date": "2021-08-22",
+                    "total_vaccinations": 4500692,
+                    "total_vaccinations_per_100": 144.58
                 }
             ]
         }

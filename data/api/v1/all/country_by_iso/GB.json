@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-09-03",
+    "last_update": "2021-09-04",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -1188,6 +1188,11 @@
                     "date": "2021-09-03",
                     "total_vaccinations": 76617503,
                     "total_vaccinations_per_100": 138.63
+                },
+                {
+                    "date": "2021-09-04",
+                    "total_vaccinations": 76767817,
+                    "total_vaccinations_per_100": 138.9
                 }
             ]
         },
@@ -2369,6 +2374,11 @@
                     "date": "2021-09-03",
                     "total_vaccinations": 2459543,
                     "total_vaccinations_per_100": 132.08
+                },
+                {
+                    "date": "2021-09-04",
+                    "total_vaccinations": 2462140,
+                    "total_vaccinations_per_100": 132.22
                 }
             ]
         },
@@ -3560,6 +3570,11 @@
                     "date": "2021-09-03",
                     "total_vaccinations": 7834734,
                     "total_vaccinations_per_100": 144.96
+                },
+                {
+                    "date": "2021-09-04",
+                    "total_vaccinations": 7848731,
+                    "total_vaccinations_per_100": 145.22
                 }
             ]
         },

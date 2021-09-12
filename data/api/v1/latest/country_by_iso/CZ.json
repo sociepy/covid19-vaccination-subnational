@@ -1,29 +1,29 @@
 {
     "country": "Czechia",
     "country_iso": "CZ",
-    "last_update": "2021-09-10",
+    "last_update": "2021-09-11",
     "source_url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/",
     "data": [
         {
             "region_name": "Jihocesky kraj",
             "region_iso": "CZ-31",
-            "date": "2021-09-10",
-            "total_vaccinations": 705144,
+            "date": "2021-09-11",
+            "total_vaccinations": 705168,
             "total_vaccinations_per_100": 109.48
         },
         {
             "region_name": "Jihomoravsky kraj",
             "region_iso": "CZ-64",
-            "date": "2021-09-10",
-            "total_vaccinations": 1305890,
-            "total_vaccinations_per_100": 109.56
+            "date": "2021-09-11",
+            "total_vaccinations": 1306200,
+            "total_vaccinations_per_100": 109.58
         },
         {
             "region_name": "Karlovarsky kraj",
             "region_iso": "CZ-41",
-            "date": "2021-09-10",
-            "total_vaccinations": 308986,
-            "total_vaccinations_per_100": 104.86
+            "date": "2021-09-11",
+            "total_vaccinations": 309075,
+            "total_vaccinations_per_100": 104.89
         },
         {
             "region_name": "Kraj Vysocina",
@@ -36,71 +36,71 @@
             "region_name": "Kralovehradecky kraj",
             "region_iso": "CZ-52",
             "date": "2021-09-10",
-            "total_vaccinations": 605626,
+            "total_vaccinations": 605629,
             "total_vaccinations_per_100": 109.79
         },
         {
             "region_name": "Liberecky kraj",
             "region_iso": "CZ-51",
             "date": "2021-09-10",
-            "total_vaccinations": 456641,
+            "total_vaccinations": 456643,
             "total_vaccinations_per_100": 102.92
         },
         {
             "region_name": "Moravskoslezsky kraj",
             "region_iso": "CZ-80",
-            "date": "2021-09-10",
-            "total_vaccinations": 1189831,
-            "total_vaccinations_per_100": 99.11
+            "date": "2021-09-11",
+            "total_vaccinations": 1190118,
+            "total_vaccinations_per_100": 99.13
         },
         {
             "region_name": "Olomoucky kraj",
             "region_iso": "CZ-71",
-            "date": "2021-09-10",
-            "total_vaccinations": 616273,
-            "total_vaccinations_per_100": 97.51
+            "date": "2021-09-11",
+            "total_vaccinations": 616432,
+            "total_vaccinations_per_100": 97.53
         },
         {
             "region_name": "Pardubicky kraj",
             "region_iso": "CZ-53",
-            "date": "2021-09-10",
-            "total_vaccinations": 510627,
-            "total_vaccinations_per_100": 97.7
+            "date": "2021-09-11",
+            "total_vaccinations": 510688,
+            "total_vaccinations_per_100": 97.71
         },
         {
             "region_name": "Plzensky kraj",
             "region_iso": "CZ-32",
-            "date": "2021-09-10",
-            "total_vaccinations": 632498,
-            "total_vaccinations_per_100": 107.22
+            "date": "2021-09-11",
+            "total_vaccinations": 632888,
+            "total_vaccinations_per_100": 107.29
         },
         {
             "region_name": "Praha, Hlavni mesto",
             "region_iso": "CZ-10",
-            "date": "2021-09-10",
-            "total_vaccinations": 2122937,
-            "total_vaccinations_per_100": 160.31
+            "date": "2021-09-11",
+            "total_vaccinations": 2124408,
+            "total_vaccinations_per_100": 160.42
         },
         {
             "region_name": "Stredocesky kraj",
             "region_iso": "CZ-20",
-            "date": "2021-09-10",
-            "total_vaccinations": 1216774,
-            "total_vaccinations_per_100": 87.84
+            "date": "2021-09-11",
+            "total_vaccinations": 1217087,
+            "total_vaccinations_per_100": 87.87
         },
         {
             "region_name": "Ustecky kraj",
             "region_iso": "CZ-42",
-            "date": "2021-09-10",
-            "total_vaccinations": 823282,
-            "total_vaccinations_per_100": 100.28
+            "date": "2021-09-11",
+            "total_vaccinations": 823645,
+            "total_vaccinations_per_100": 100.33
         },
         {
             "region_name": "Zlinsky kraj",
             "region_iso": "CZ-72",
-            "date": "2021-09-10",
-            "total_vaccinations": 593156,
-            "total_vaccinations_per_100": 101.82
+            "date": "2021-09-11",
+            "total_vaccinations": 593347,
+            "total_vaccinations_per_100": 101.85
         }
     ]
 }

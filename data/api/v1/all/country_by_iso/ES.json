@@ -1,7 +1,7 @@
 {
     "country": "Spain",
     "country_iso": "ES",
-    "last_update": "2021-10-28",
+    "last_update": "2021-10-29",
     "first_update": "2021-01-04",
     "source_url": "https://github.com/civio/covid-vaccination-spain/",
     "data": [
@@ -5222,6 +5222,11 @@
                     "date": "2021-10-28",
                     "total_vaccinations": 924246,
                     "total_vaccinations_per_100": 158.71
+                },
+                {
+                    "date": "2021-10-29",
+                    "total_vaccinations": 926275,
+                    "total_vaccinations_per_100": 159.06
                 }
             ]
         },
@@ -6940,6 +6945,11 @@
                     "date": "2021-10-28",
                     "total_vaccinations": 11198984,
                     "total_vaccinations_per_100": 144.93
+                },
+                {
+                    "date": "2021-10-29",
+                    "total_vaccinations": 11220382,
+                    "total_vaccinations_per_100": 145.21
                 }
             ]
         },

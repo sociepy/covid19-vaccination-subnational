@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-10-27",
+    "last_update": "2021-10-28",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -1458,6 +1458,11 @@
                     "date": "2021-10-27",
                     "total_vaccinations": 80006667,
                     "total_vaccinations_per_100": 144.76
+                },
+                {
+                    "date": "2021-10-28",
+                    "total_vaccinations": 80065650,
+                    "total_vaccinations_per_100": 144.87
                 }
             ]
         },
@@ -2909,6 +2914,11 @@
                     "date": "2021-10-27",
                     "total_vaccinations": 2566971,
                     "total_vaccinations_per_100": 137.85
+                },
+                {
+                    "date": "2021-10-28",
+                    "total_vaccinations": 2569458,
+                    "total_vaccinations_per_100": 137.99
                 }
             ]
         },
@@ -4370,6 +4380,11 @@
                     "date": "2021-10-27",
                     "total_vaccinations": 8212631,
                     "total_vaccinations_per_100": 151.95
+                },
+                {
+                    "date": "2021-10-28",
+                    "total_vaccinations": 8217443,
+                    "total_vaccinations_per_100": 152.04
                 }
             ]
         },
@@ -5821,6 +5836,11 @@
                     "date": "2021-10-27",
                     "total_vaccinations": 4679432,
                     "total_vaccinations_per_100": 150.32
+                },
+                {
+                    "date": "2021-10-28",
+                    "total_vaccinations": 4681575,
+                    "total_vaccinations_per_100": 150.39
                 }
             ]
         }

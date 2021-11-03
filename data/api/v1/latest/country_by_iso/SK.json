@@ -1,64 +1,64 @@
 {
     "country": "Slovakia",
     "country_iso": "SK",
-    "last_update": "2021-11-02",
+    "last_update": "2021-11-03",
     "source_url": "https://github.com/Institut-Zdravotnych-Analyz/covid19-data/",
     "data": [
         {
             "region_name": "Banskobystricky kraj",
             "region_iso": "SK-BC",
-            "date": "2021-10-30",
-            "total_vaccinations": 496592,
-            "total_vaccinations_per_100": 76.42
+            "date": "2021-11-02",
+            "total_vaccinations": 496937,
+            "total_vaccinations_per_100": 76.48
         },
         {
             "region_name": "Bratislavsky kraj",
             "region_iso": "SK-BL",
             "date": "2021-11-02",
-            "total_vaccinations": 839144,
-            "total_vaccinations_per_100": 128.93
+            "total_vaccinations": 839733,
+            "total_vaccinations_per_100": 129.02
         },
         {
             "region_name": "Kosicky kraj",
             "region_iso": "SK-KI",
-            "date": "2021-11-01",
-            "total_vaccinations": 633513,
-            "total_vaccinations_per_100": 79.04
+            "date": "2021-11-03",
+            "total_vaccinations": 634351,
+            "total_vaccinations_per_100": 79.15
         },
         {
             "region_name": "Nitriansky kraj",
             "region_iso": "SK-NI",
-            "date": "2021-10-31",
-            "total_vaccinations": 601721,
-            "total_vaccinations_per_100": 88.66
+            "date": "2021-11-02",
+            "total_vaccinations": 602236,
+            "total_vaccinations_per_100": 88.73
         },
         {
             "region_name": "Presovsky kraj",
             "region_iso": "SK-PV",
-            "date": "2021-11-01",
-            "total_vaccinations": 645591,
-            "total_vaccinations_per_100": 78.45
+            "date": "2021-11-02",
+            "total_vaccinations": 646308,
+            "total_vaccinations_per_100": 78.54
         },
         {
             "region_name": "Trenciansky kraj",
             "region_iso": "SK-TC",
-            "date": "2021-10-30",
-            "total_vaccinations": 458920,
-            "total_vaccinations_per_100": 78.13
+            "date": "2021-11-02",
+            "total_vaccinations": 459390,
+            "total_vaccinations_per_100": 78.21
         },
         {
             "region_name": "Trnavsky kraj",
             "region_iso": "SK-TA",
-            "date": "2021-10-31",
-            "total_vaccinations": 564507,
-            "total_vaccinations_per_100": 100.38
+            "date": "2021-11-02",
+            "total_vaccinations": 564899,
+            "total_vaccinations_per_100": 100.45
         },
         {
             "region_name": "Zilinsky kraj",
             "region_iso": "SK-ZI",
             "date": "2021-11-02",
-            "total_vaccinations": 567467,
-            "total_vaccinations_per_100": 82.12
+            "total_vaccinations": 570247,
+            "total_vaccinations_per_100": 82.52
         }
     ]
 }

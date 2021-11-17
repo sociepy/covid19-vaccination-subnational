@@ -1,7 +1,7 @@
 {
     "country": "Uruguay",
     "country_iso": "UY",
-    "last_update": "2021-11-16",
+    "last_update": "2021-11-17",
     "first_update": "2021-02-27",
     "source_url": "https://github.com/3dgiordano/covid-19-uy-vacc-data/",
     "data": [
@@ -6799,6 +6799,11 @@
                     "date": "2021-11-12",
                     "total_vaccinations": 102191,
                     "total_vaccinations_per_100": 152.41
+                },
+                {
+                    "date": "2021-11-17",
+                    "total_vaccinations": 102198,
+                    "total_vaccinations_per_100": 152.43
                 }
             ]
         },
@@ -16439,6 +16444,11 @@
                     "date": "2021-11-12",
                     "total_vaccinations": 130868,
                     "total_vaccinations_per_100": 158.45
+                },
+                {
+                    "date": "2021-11-17",
+                    "total_vaccinations": 130876,
+                    "total_vaccinations_per_100": 158.46
                 }
             ]
         },

@@ -1,7 +1,7 @@
 {
     "country": "United Kingdom",
     "country_iso": "GB",
-    "last_update": "2021-11-27",
+    "last_update": "2021-11-28",
     "first_update": "2021-01-10",
     "source_url": "https://coronavirus.data.gov.uk/details/download",
     "data": [
@@ -1613,6 +1613,11 @@
                     "date": "2021-11-27",
                     "total_vaccinations": 81581021,
                     "total_vaccinations_per_100": 147.61
+                },
+                {
+                    "date": "2021-11-28",
+                    "total_vaccinations": 81618804,
+                    "total_vaccinations_per_100": 147.68
                 }
             ]
         },
@@ -3209,6 +3214,11 @@
                     "date": "2021-11-25",
                     "total_vaccinations": 2628733,
                     "total_vaccinations_per_100": 141.17
+                },
+                {
+                    "date": "2021-11-28",
+                    "total_vaccinations": 2637367,
+                    "total_vaccinations_per_100": 141.63
                 }
             ]
         },
@@ -4825,6 +4835,11 @@
                     "date": "2021-11-27",
                     "total_vaccinations": 8291499,
                     "total_vaccinations_per_100": 153.41
+                },
+                {
+                    "date": "2021-11-28",
+                    "total_vaccinations": 8294338,
+                    "total_vaccinations_per_100": 153.47
                 }
             ]
         },
@@ -6421,6 +6436,21 @@
                     "date": "2021-11-25",
                     "total_vaccinations": 4726605,
                     "total_vaccinations_per_100": 151.83
+                },
+                {
+                    "date": "2021-11-26",
+                    "total_vaccinations": 4727502,
+                    "total_vaccinations_per_100": 151.86
+                },
+                {
+                    "date": "2021-11-27",
+                    "total_vaccinations": 4730193,
+                    "total_vaccinations_per_100": 151.95
+                },
+                {
+                    "date": "2021-11-28",
+                    "total_vaccinations": 4731875,
+                    "total_vaccinations_per_100": 152.0
                 }
             ]
         }

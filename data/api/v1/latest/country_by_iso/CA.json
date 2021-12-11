@@ -1,36 +1,36 @@
 {
     "country": "Canada",
     "country_iso": "CA",
-    "last_update": "2021-12-09",
+    "last_update": "2021-12-10",
     "source_url": "https://github.com/ccodwg/Covid19Canada",
     "data": [
         {
             "region_name": "Alberta",
             "region_iso": "CA-AB",
-            "date": "2021-12-09",
-            "total_vaccinations": 7072355,
-            "total_vaccinations_per_100": 164.24
+            "date": "2021-12-10",
+            "total_vaccinations": 7094431,
+            "total_vaccinations_per_100": 164.76
         },
         {
             "region_name": "British Columbia",
             "region_iso": "CA-BC",
-            "date": "2021-12-09",
-            "total_vaccinations": 8889167,
-            "total_vaccinations_per_100": 183.62
+            "date": "2021-12-10",
+            "total_vaccinations": 8919000,
+            "total_vaccinations_per_100": 184.24
         },
         {
             "region_name": "Manitoba",
             "region_iso": "CA-MB",
-            "date": "2021-12-09",
-            "total_vaccinations": 2230712,
-            "total_vaccinations_per_100": 166.05
+            "date": "2021-12-10",
+            "total_vaccinations": 2345821,
+            "total_vaccinations_per_100": 174.62
         },
         {
             "region_name": "New Brunswick",
             "region_iso": "CA-NB",
-            "date": "2021-12-09",
-            "total_vaccinations": 1277158,
-            "total_vaccinations_per_100": 167.86
+            "date": "2021-12-10",
+            "total_vaccinations": 1342380,
+            "total_vaccinations_per_100": 176.43
         },
         {
             "region_name": "Newfoundland and Labrador",
@@ -49,7 +49,7 @@
         {
             "region_name": "Nova Scotia",
             "region_iso": "CA-NS",
-            "date": "2021-12-08",
+            "date": "2021-12-10",
             "total_vaccinations": 1673788,
             "total_vaccinations_per_100": 174.79
         },
@@ -63,9 +63,9 @@
         {
             "region_name": "Ontario",
             "region_iso": "CA-ON",
-            "date": "2021-12-09",
-            "total_vaccinations": 24225882,
-            "total_vaccinations_per_100": 169.66
+            "date": "2021-12-10",
+            "total_vaccinations": 24304272,
+            "total_vaccinations_per_100": 170.21
         },
         {
             "region_name": "Prince Edward Island",
@@ -77,23 +77,23 @@
         {
             "region_name": "Quebec",
             "region_iso": "CA-QC",
-            "date": "2021-12-09",
-            "total_vaccinations": 14100473,
-            "total_vaccinations_per_100": 163.87
+            "date": "2021-12-10",
+            "total_vaccinations": 14136479,
+            "total_vaccinations_per_100": 164.29
         },
         {
             "region_name": "Saskatchewan",
             "region_iso": "CA-SK",
-            "date": "2021-12-09",
-            "total_vaccinations": 1769044,
-            "total_vaccinations_per_100": 151.45
+            "date": "2021-12-10",
+            "total_vaccinations": 1771230,
+            "total_vaccinations_per_100": 151.64
         },
         {
             "region_name": "Yukon",
             "region_iso": "CA-YT",
-            "date": "2021-12-08",
-            "total_vaccinations": 78190,
-            "total_vaccinations_per_100": 185.94
+            "date": "2021-12-10",
+            "total_vaccinations": 79139,
+            "total_vaccinations_per_100": 188.19
         }
     ]
 }

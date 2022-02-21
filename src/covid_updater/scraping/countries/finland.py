@@ -9,7 +9,7 @@ class FinlandScraper(Scraper):
         super().__init__(
             country="Finland",
             country_iso="FI",
-            data_url="https://piikki-api.lab.juiciness.io/administrations",
+            data_url="https://piikki-api.lab.juiciness.io/administrations/areas",
             data_url_reference="https://piikki.juiciness.io/",
             region_renaming={
                 "Åland": "Aland",
